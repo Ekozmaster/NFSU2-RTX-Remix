@@ -1,0 +1,324 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_F66EFD0741EC2BD5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/F66EFD0741EC2BD5_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/F66EFD0741EC2BD5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/F66EFD0741EC2BD5_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_0A7B458B502723D5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/0A7B458B502723D5_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/0A7B458B502723D5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/0A7B458B502723D5_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_B7BA994D1D61DFE8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/B7BA994D1D61DFE8_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./textures/tires/B7BA994D1D61DFE8_metallic.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/B7BA994D1D61DFE8_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/B7BA994D1D61DFE8_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_90506A3B84D02E8D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/90506A3B84D02E8D_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/90506A3B84D02E8D_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/90506A3B84D02E8D_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_6DC7138D479CD297"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/6DC7138D479CD297.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/6DC7138D479CD297_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/6DC7138D479CD297_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_281696A432A2E283"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/281696A432A2E283_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/281696A432A2E283_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/281696A432A2E283_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_5E4D15C46CBC5EB6"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/5E4D15C46CBC5EB6_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/5E4D15C46CBC5EB6_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/5E4D15C46CBC5EB6_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_C9C90505C26364D6"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/C9C90505C26364D6_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/C9C90505C26364D6_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/C9C90505C26364D6_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_FA922E6CC3B5A98B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/FA922E6CC3B5A98B_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/FA922E6CC3B5A98B_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/FA922E6CC3B5A98B_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_B6E4688AA4A0F3FE"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/B6E4688AA4A0F3FE.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/B6E4688AA4A0F3FE_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/B6E4688AA4A0F3FE_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_1D1F7B027D177193"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/1D1F7B027D177193_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/1D1F7B027D177193_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/1D1F7B027D177193_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_303BC6B96775BF63"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tires/303BC6B96775BF63_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tires/303BC6B96775BF63_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tires/303BC6B96775BF63_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}

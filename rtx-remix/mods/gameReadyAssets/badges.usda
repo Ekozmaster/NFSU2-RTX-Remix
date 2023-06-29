@@ -1,0 +1,390 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_A06DF05ADFFC7867"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/A06DF05ADFFC7867.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/A06DF05ADFFC7867_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/A06DF05ADFFC7867_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_007BEAA7727440DA"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/007BEAA7727440DA_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/007BEAA7727440DA_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/007BEAA7727440DA_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_9F2C7BC5625E49CC"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/9F2C7BC5625E49CC_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/9F2C7BC5625E49CC_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/9F2C7BC5625E49CC_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_8B99ABD05D867BEB"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/8B99ABD05D867BEB.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/8B99ABD05D867BEB_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/8B99ABD05D867BEB_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_750D3C80D49844D9"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/750D3C80D49844D9_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/750D3C80D49844D9_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/750D3C80D49844D9_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_837A18C5C2D605DF"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/837A18C5C2D605DF_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/837A18C5C2D605DF_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/837A18C5C2D605DF_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_F3B9D46ACC3060C0"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/F3B9D46ACC3060C0.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/F3B9D46ACC3060C0_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/F3B9D46ACC3060C0_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_2B0B316FB11C6F5E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/2B0B316FB11C6F5E_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/2B0B316FB11C6F5E_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/2B0B316FB11C6F5E_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_2E3975DDD8EB0E66"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/2E3975DDD8EB0E66.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/2E3975DDD8EB0E66_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/2E3975DDD8EB0E66_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_1C5C33FB94540F67"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/1C5C33FB94540F67_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/1C5C33FB94540F67_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/1C5C33FB94540F67_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_C29ACAD3573F7AED"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/C29ACAD3573F7AED_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/C29ACAD3573F7AED_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/C29ACAD3573F7AED_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_9B3DF477A16E940A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/9B3DF477A16E940A.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/9B3DF477A16E940A_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/9B3DF477A16E940A_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_960728C7AADFC1E9"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/960728C7AADFC1E9_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/960728C7AADFC1E9_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/960728C7AADFC1E9_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_EDE524B560642367"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/EDE524B560642367.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/EDE524B560642367_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/EDE524B560642367_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_859A8A8400E7DD05"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/badges/859A8A8400E7DD05.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/badges/859A8A8400E7DD05_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/badges/859A8A8400E7DD05_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}

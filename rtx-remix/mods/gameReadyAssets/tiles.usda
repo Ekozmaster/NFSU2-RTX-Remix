@@ -1,0 +1,40 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_9B6E11B301EFFDDE"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tiles/9B6E11B301EFFDDE.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tiles/9B6E11B301EFFDDE_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tiles/9B6E11B301EFFDDE_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}

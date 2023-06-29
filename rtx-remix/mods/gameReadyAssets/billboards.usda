@@ -1,0 +1,147 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_B014959E904D38C4"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/billboards/B014959E904D38C4_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./textures/billboards/B014959E904D38C4_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_CD0DF36F5240E173"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/billboards/CD0DF36F5240E173.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_1DB6E39506187AF9"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/billboards/1DB6E39506187AF9_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_AAB9D1F2EF988026"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/billboards/AAB9D1F2EF988026.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./textures/billboards/AAB9D1F2EF988026_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_1D29C41F5969B33D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/billboards/1D29C41F5969B33D_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_2FFA68F081439896"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/billboards/2FFA68F081439896_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./textures/billboards/2FFA68F081439896_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_E7BF75A1EC6F5CF7"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/billboards/E7BF75A1EC6F5CF7.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+            }
+        }
+    }
+}

@@ -1,0 +1,667 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_2AF4F4DC2477AB65"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/2AF4F4DC2477AB65_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./textures/player_cars/2AF4F4DC2477AB65_metallic.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/2AF4F4DC2477AB65_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/2AF4F4DC2477AB65_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_97BC23F491F11F6C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/97BC23F491F11F6C.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/97BC23F491F11F6C_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/97BC23F491F11F6C_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_093AF0903399EAA9"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/093AF0903399EAA9_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/093AF0903399EAA9_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/093AF0903399EAA9_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_1CE66F49F8DD8668"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/1CE66F49F8DD8668.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/1CE66F49F8DD8668_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/1CE66F49F8DD8668_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_94D0A1EA49BDE669"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/94D0A1EA49BDE669_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/94D0A1EA49BDE669_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/94D0A1EA49BDE669_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_09360715C30FEFB2"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/09360715C30FEFB2.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/09360715C30FEFB2_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/09360715C30FEFB2_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_BD229724252D59A9"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/BD229724252D59A9.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/BD229724252D59A9_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/BD229724252D59A9_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_16F3DC8B3FFEB0C3"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/16F3DC8B3FFEB0C3_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/16F3DC8B3FFEB0C3_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/16F3DC8B3FFEB0C3_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_C5AC63C6A5C2301C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/C5AC63C6A5C2301C.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/C5AC63C6A5C2301C_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/C5AC63C6A5C2301C_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_BD4230EA2795207F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/BD4230EA2795207F_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/BD4230EA2795207F_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/BD4230EA2795207F_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_289CFCB898FA27B1"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/289CFCB898FA27B1_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/289CFCB898FA27B1_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/289CFCB898FA27B1_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_9D4D4763F0A71416"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/9D4D4763F0A71416.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/9D4D4763F0A71416_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/9D4D4763F0A71416_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_EBDD4F79BF8E5191"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/EBDD4F79BF8E5191_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/EBDD4F79BF8E5191_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/EBDD4F79BF8E5191_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_53881D411A998E60"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/53881D411A998E60.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/53881D411A998E60_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/53881D411A998E60_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_5607B3428880AC21"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/5607B3428880AC21_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/5607B3428880AC21_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/5607B3428880AC21_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_7D309F38F519EA2B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/7D309F38F519EA2B_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/7D309F38F519EA2B_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/7D309F38F519EA2B_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_6B74CA25BB033A1D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/6B74CA25BB033A1D_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/6B74CA25BB033A1D_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/6B74CA25BB033A1D_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_7EFF0D1F0D2E891C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/7EFF0D1F0D2E891C_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/7EFF0D1F0D2E891C_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/7EFF0D1F0D2E891C_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_B5C1EC416E22E66C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/B5C1EC416E22E66C_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./textures/player_cars/B5C1EC416E22E66C_metallic.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/B5C1EC416E22E66C_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/B5C1EC416E22E66C_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_B818ED615965E0E4"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/B818ED615965E0E4_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/B818ED615965E0E4_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/B818ED615965E0E4_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_97D7B0A451E33397"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/97D7B0A451E33397_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/97D7B0A451E33397_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/97D7B0A451E33397_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_981C356012F91CDD"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/981C356012F91CDD_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/981C356012F91CDD_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/981C356012F91CDD_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_D220A9883C155A29"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/D220A9883C155A29_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/D220A9883C155A29_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/D220A9883C155A29_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_9C14F5E1AB970434"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/9C14F5E1AB970434_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./textures/player_cars/9C14F5E1AB970434_metallic.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/9C14F5E1AB970434_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/9C14F5E1AB970434_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_C78139D7D2BA48DC"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/player_cars/C78139D7D2BA48DC_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/player_cars/C78139D7D2BA48DC_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/player_cars/C78139D7D2BA48DC_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}

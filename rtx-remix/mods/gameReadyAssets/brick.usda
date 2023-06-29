@@ -1,0 +1,115 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_637E83C6D64EF6FD"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/brick/637E83C6D64EF6FD_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/brick/637E83C6D64EF6FD_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/brick/637E83C6D64EF6FD_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_280557C3B734578B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/brick/280557C3B734578B_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/brick/280557C3B734578B_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/brick/280557C3B734578B_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_59B591AB8D28CCB3"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/brick/59B591AB8D28CCB3.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/brick/59B591AB8D28CCB3_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/brick/59B591AB8D28CCB3_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_F8548FC84AE17EBF"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/brick/F8548FC84AE17EBF_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/brick/F8548FC84AE17EBF_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/brick/F8548FC84AE17EBF_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}

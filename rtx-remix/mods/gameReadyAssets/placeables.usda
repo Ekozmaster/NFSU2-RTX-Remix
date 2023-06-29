@@ -1,0 +1,81 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_E1014712C983FFC2"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/placeables/E1014712C983FFC2.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/placeables/E1014712C983FFC2_normal.dds@
+            }
+        }
+        over "mat_CDC5BB3C8CFA9133"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/placeables/CDC5BB3C8CFA9133.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/placeables/CDC5BB3C8CFA9133_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/placeables/CDC5BB3C8CFA9133_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_76359FB35D45F610"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/placeables/76359FB35D45F610.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/placeables/76359FB35D45F610_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/placeables/76359FB35D45F610_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
