@@ -5,6 +5,7 @@
         @./mod_lights.usda@,
         @./traffic.usda@,
         @./world_sprites.usda@,
+        @./emissive_lights.usda@,
         @./e-man.usda@
     ]
     upAxis = "Z"
