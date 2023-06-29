@@ -1,0 +1,3548 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (0.25121004810716263, -0.4390832050609735, 1.8408297306842651)
+                double3 target = (-5.839134539309457, 194.10956619346965, -28.34911089614831)
+            }
+            dictionary Right = {
+                double3 position = (-50000, 0, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 50000, 0)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./mods/gameReadyAssets/mod.usda"
+            dictionary muteness = {
+            }
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            bool "rtx:directLighting:sampledLighting:enabled" = 1
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            bool "rtx:indirectDiffuse:enabled" = 1
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            double "rtx:post:lensFlares:flareScale" = 0.075
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            float3 "rtx:sceneDb:ambientLightColor" = (0, 0, 0)
+        }
+    }
+    defaultPrim = "World"
+    endTimeCode = 100
+    metersPerUnit = 0.01
+    startTimeCode = 0
+    timeCodesPerSecond = 24
+    upAxis = "Y"
+)
+
+over "RootNode"
+{
+    over "instances"
+    {
+        over "inst_B3BE5C134A533293_0" (
+            delete references = @../../captures/meshes/mesh_B3BE5C134A533293.usd@
+            prepend references = @./meshes//mesh_B3BE5C134A533293.usd@
+        )
+        {
+        }
+
+        over "inst_CF0F4B847A80131F_0" (
+            delete references = @../../captures/meshes/mesh_CF0F4B847A80131F.usd@
+            prepend references = @./meshes//mesh_CF0F4B847A80131F.usd@
+        )
+        {
+        }
+
+        over "inst_1BD92D51F8A6365F_0"
+        {
+            over "Sphere"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.9893827865259821, -0.33804705317959804, 0.6654265982713188)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "inst_1467B80306403128_0"
+        {
+            over "mesh"
+            {
+                bool primvars:invisibleToSecondaryRays = 0
+            }
+        }
+
+        over "inst_B99C2395952398F2_0"
+        {
+            over "SphereLight"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.02086914267135853, -2.944315870099217, 6.329999999999963)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "inst_71B5455DF09E4264_1"
+        {
+            over "LightCrossing_01"
+            {
+                double3 xformOp:translate = (0, -5.900000087916851, 0.6000000089406967)
+            }
+        }
+
+        over "inst_F9FE8448E029A504_1"
+        {
+            over "SphereLight_01"
+            {
+                double3 xformOp:rotateXYZ = (-35, 0, 0)
+                double3 xformOp:translate = (0, -3.9, 8.800000131130219)
+            }
+        }
+
+        over "inst_6865573BC8FE9A8F_0"
+        {
+            over "SphereLight"
+            {
+                double3 xformOp:rotateXYZ = (53.500000797212124, 360, 0)
+            }
+        }
+
+        over "inst_F6D1DD4F7199E7B3_0"
+        {
+            over "SphereLight"
+            {
+                double3 xformOp:translate = (0, -3.33, 7.475)
+            }
+        }
+
+        over "inst_99F9E53C3C305384_4"
+        {
+            over "SphereLight"
+            {
+                float radius = 0.4
+                double3 xformOp:rotateXYZ = (-50.00000074505806, 0, 0)
+            }
+        }
+
+        over "inst_A7A17FBBF0E9AAF3_2"
+        {
+            over "SphereLight" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "inst_26A6E5758911C4FE_2"
+        {
+            over "SphereLight" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "inst_B7BFEE6C2E9157D2_0"
+        {
+            over "mesh"
+            {
+                bool primvars:doNotCastShadows = 0
+                bool primvars:enableShadowTerminatorFix = 1
+                bool primvars:holdoutObject = 0
+                bool primvars:invisibleToSecondaryRays = 0
+                bool primvars:isMatteObject = 0
+                int primvars:multimatte_id = -1
+                token visibility = "inherited"
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_B3BE5C134A533293"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 1
+                float exposure = 1.5
+                float intensity = 15
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float radius = 0.15
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2.5
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.62, 12.51, 3.300000049173832)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 1
+                float exposure = 1.5
+                float intensity = 15
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float radius = 0.15
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2.5
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.571173912917642, 32.637754800895, 4.400000065565109)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_CF0F4B847A80131F"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 1
+                float exposure = 0.5
+                float intensity = 2
+                bool light:enableCaustics = 1
+                bool normalize = 0
+                float radius = 0.8
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 2.500000037252903)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D446FBC0E6A20286"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "StreetAir" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1.01)
+                float colorTemperature = 5000
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 4.5
+                float intensity = 10.5
+                bool light:enableCaustics = 1
+                float radius = 0.15
+                float shaping:cone:angle = 62.5
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (20.000000298023224, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -2.8000000417232513, 8.400000125169754)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_44EE96CA4E84EB2E"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "BeamAir" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0.99999, 0.99999)
+                float colorTemperature = 5000
+                float diffuse = 2.5
+                bool enableColorTemperature = 1
+                float exposure = 0.5
+                float intensity = 120
+                bool light:enableCaustics = 1
+                float radius = 0.15
+                float shaping:cone:angle = 100
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (100.00000149011612, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.20000000298023224, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_ED0B178C4FD9E9ED"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "PoleAir" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 6000
+                bool enableColorTemperature = 1
+                float intensity = 7
+                bool light:enableCaustics = 1
+                float radius = 0.35
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 4.6000000685453415)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_812749A140906549"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Fassade" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 10000
+                bool enableColorTemperature = 1
+                float exposure = 3
+                float intensity = 100
+                bool light:enableCaustics = 1
+                float radius = 0.1
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.20000000298023224, 0.5000000074505806)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_13529FE6A735E871"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "LightHighway" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 3.5
+                float intensity = 11
+                bool light:enableCaustics = 1
+                float radius = 0.3
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-16.50000024586916, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -6.100000090897083, 12.90000019222498)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A10895411C428E15"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "LightCrossing" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 1.5
+                bool enableColorTemperature = 1
+                float exposure = 3.5
+                float intensity = 11
+                bool light:enableCaustics = 1
+                float radius = 0.3
+                float shaping:cone:angle = 65
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-16.50000024586916, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -5.900000087916851, 9.900000147521496)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B99C2395952398F2"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 1.5
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 8
+                float radius = 0.4
+                float shaping:cone:angle = 140
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -2.94, 6.33)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_BE00262D4673348B"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 1.5
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 8
+                bool light:enableCaustics = 1
+                float radius = 0.4
+                float shaping:cone:angle = 140
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -2.94, 6.33)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5A49914A127594AB"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 7.5
+                float radius = 0.3
+                float shaping:cone:angle = 100
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 4.27)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C0D5F5691630281C"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 1.5
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 8
+                float radius = 0.4
+                float shaping:cone:angle = 140
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.015, -0.49)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2A67BE21D2145212"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 1.5
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 8
+                float radius = 0.4
+                float shaping:cone:angle = 140
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.015, -0.49)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_71B5455DF09E4264"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "LightCrossing_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 1.5
+                bool enableColorTemperature = 1
+                float exposure = 3.5
+                float intensity = 11
+                bool light:enableCaustics = 1
+                float radius = 0.3
+                float shaping:cone:angle = 65
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-16.50000024586916, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -5.900000087916851, 0.7000000104308128)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B48D327374ECCE06"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 2.5
+                bool enableColorTemperature = 1
+                float exposure = 0.25
+                float intensity = 4
+                bool light:enableCaustics = 1
+                float radius = 0.39
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 4.62)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        def "mesh_1FDB2DE7E27CFADF"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 2.5
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float intensity = 3.5
+                bool light:enableCaustics = 0
+                float radius = 1.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.019, -1.9000000283122063, 7.400000110268593)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F268CA8A196CC299"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 2.5
+                bool enableColorTemperature = 1
+                float exposure = 0.2
+                float intensity = 4
+                bool light:enableCaustics = 0
+                float radius = 0.90000004
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.019, -2.3000000342726707, -0.6000000089406967)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_E710D608E53DF2C2"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 1.5
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.83)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_3DE13A0F409C78FE"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 1.5
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.7000000104308128)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_069090C05961E2D8"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 0.5
+                float intensity = 7
+                bool light:enableCaustics = 1
+                float radius = 0.6
+                float shaping:cone:angle = 120
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.300000049173832, 7.300000108778477)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_E0D0218D67EF4CF5"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                float diffuse = 3
+                bool enableColorTemperature = 0
+                float exposure = 2.5
+                float intensity = 9
+                float radius = 0.4
+                float shaping:cone:angle = 140
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (110.00000163912773, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.11, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_E3DB1133F73198AA"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 0.5
+                float intensity = 7
+                bool light:enableCaustics = 1
+                float radius = 0.6
+                float shaping:cone:angle = 120
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.300000049173832, 7.300000108778477)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C6963368CA3EE3FC"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 0.5
+                float intensity = 7
+                bool light:enableCaustics = 1
+                float radius = 0.6
+                float shaping:cone:angle = 120
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.45, 0.20000000298023224)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_3793FF139D5B1646"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "LightCrossing_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 1.5
+                bool enableColorTemperature = 1
+                float exposure = 3.5
+                float intensity = 11
+                bool light:enableCaustics = 1
+                float radius = 0.3
+                float shaping:cone:angle = 65
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-16.50000024586916, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -5.900000087916851, 0.6000000089406967)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5EACC17501C97B35"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1.01)
+                float colorTemperature = 5000
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float intensity = 4.5
+                float radius = 1.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 6.900000102818012)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_69B8408704629C17"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "GarageFront1" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 2
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float height = 4
+                float intensity = 1.5
+                bool isProjector = 0
+                bool light:enableCaustics = 0
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool visibleInPrimaryRay = 0
+                float width = 4
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.7, -5.800000086426735, 5.200000077486038)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "GarageFront2" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 2
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float height = 4
+                float intensity = 1.5
+                bool isProjector = 0
+                bool light:enableCaustics = 0
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool visibleInPrimaryRay = 0
+                float width = 4
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-11.700000174343586, -5.800000086426735, 5.200000077486038)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "GarageBack1" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float height = 4
+                float intensity = 0.5
+                bool isProjector = 0
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                float width = 4
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 18.100000269711018, 5.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "GarageBack2" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 0.5
+                float height = 4
+                float intensity = 0.5
+                bool isProjector = 0
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                float width = 4
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 25.300000376999378, 6.500000096857548)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_0F2D29DA18465BCE"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 1.5
+                bool enableColorTemperature = 1
+                float exposure = 0.5
+                float intensity = 6.5
+                float radius = 0.4
+                float shaping:cone:angle = 140
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.48, 0.20000000298023224)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F9FE8448E029A504"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 3.5
+                float intensity = 9.5
+                float radius = 0.2
+                float shaping:cone:angle = 70
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (10, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 3.9000000581145287, 8.800000131130219)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 10
+                float radius = 0.2
+                float shaping:cone:angle = 70
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-10, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.9, 8.800000131130219)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6865573BC8FE9A8F"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 0
+                float exposure = 8.5
+                float intensity = 45
+                float radius = 0.3
+                float shaping:cone:angle = 42.5
+                float shaping:cone:softness = 4
+                float shaping:focus = 15
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (53.5, 360, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 1.1000000163912773, 11.89999999)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_18A21893B547C72A"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 7.5
+                float radius = 0.4
+                float shaping:cone:angle = 80
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.35, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_94CFB21577CE9C25"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 2.5
+                float intensity = 7.5
+                float radius = 0.2
+                float shaping:cone:angle = 75
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.65, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_AD71EA092F00A53D"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 7.5
+                float radius = 0.4
+                float shaping:cone:angle = 80
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.35, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F6D1DD4F7199E7B3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 2.5
+                float intensity = 7.5
+                float radius = 0.2
+                float shaping:cone:angle = 75
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.33, 7.475)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_19D18C6105DC144E"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 2.5
+                float intensity = 7.5
+                float radius = 0.2
+                float shaping:cone:angle = 75
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.65, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_799FDFA61DC79E17"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                float diffuse = 2.5
+                bool enableColorTemperature = 1
+                float exposure = 5
+                float intensity = 11
+                float radius = 0.35
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 2.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0, -2.14, -0.35)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_99F9E53C3C305384"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = 0.5
+                float intensity = 7
+                float radius = 0.4
+                float shaping:cone:angle = 37.5
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (55.000000819563866, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.057, -3.200000047683716, 20.000000298023224)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_FBD9E9B8E4AB8B74"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 6000
+                float diffuse = 2.5
+                bool enableColorTemperature = 1
+                float exposure = 1.7
+                float intensity = 8.5
+                bool normalize = 1
+                float radius = 0.4
+                float shaping:cone:angle = 100
+                float shaping:cone:softness = 0.2
+                float shaping:focus = 0
+                color3f shaping:focusTint = (0, 0, 0)
+                asset shaping:ies:file
+                bool shaping:ies:normalize = 0
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.06, 7.400000110268593)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_30F7E1EF7ED34BF6"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4750
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 6.5
+                float radius = 0.3
+                float shaping:cone:angle = 100
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.1000000461935997, 7.15)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_13BB9780DD8CB91D"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2500
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 3.5
+                float radius = 0.25
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2.1000001
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 4.57)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4B9AD0BE5E3868C5"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1.01, 1)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 10
+                float radius = 0.3
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint = (0, 0, 0)
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (128.5000019147992, 0, 0)
+                double3 xformOp:scale = (1.0000000149011612, 1.0000000149011612, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.10000018030405)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1.01, 1)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 10
+                float radius = 0.3
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint = (0, 0, 0)
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (128.5, 0, 0)
+                double3 xformOp:scale = (1.0000000149011612, 1.0000000149011612, 1)
+                double3 xformOp:translate = (-2.955, -2.600000038743019, 12.10000018030405)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1.01, 1)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 10
+                float radius = 0.3
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint = (0, 0, 0)
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (128.5, 0, 0)
+                double3 xformOp:scale = (1.0000000149011612, 1.0000000149011612, 1)
+                double3 xformOp:translate = (2.98, -2.600000038743019, 12.10000018030405)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1.01, 1)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1.5
+                float intensity = 10
+                float radius = 0.3
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint = (0, 0, 0)
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (128.5, 0, 0)
+                double3 xformOp:scale = (1.0000000149011612, 1.0000000149011612, 1)
+                double3 xformOp:translate = (9.13, -2.600000038743019, 12.10000018030405)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_754D96C5AB8CE3B5"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float exposure = 2.5
+                float intensity = 7
+                float radius = 0.4
+                float shaping:cone:angle = 75
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (120.00000178813934, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_973F878350B4B0FC"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = 1.5
+                float intensity = 8.5
+                float radius = 0.35
+                float shaping:cone:angle = 55
+                float shaping:cone:softness = 0.25
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (140.00000208616257, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.04, -2.3000000342726707, 8.400000125169754)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = 1.5
+                float intensity = 8.5
+                float radius = 0.35
+                float shaping:cone:angle = 55
+                float shaping:cone:softness = 0.25
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (140.00000208616257, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.07, -2.3000000342726707, 8.400000125169754)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_77E5EF1B29C11A08"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "LightHighway_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 3.5
+                float intensity = 11
+                bool light:enableCaustics = 0
+                float radius = 0.3
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-16.50000024586916, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -7.000000104308128, 1.8000000268220901)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_95AA1349B182296F"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3750
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float intensity = 4
+                float radius = 0.5
+                float shaping:cone:angle = 160
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, -3.8000000566244125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8169FA6B907FE7AA"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 10000
+                float diffuse = 10
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 12
+                float radius = 0.4
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 10
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 5.200000077486038)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def CylinderLight "CylinderLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.99999, 0.99999666, 1)
+                float colorTemperature = 5000
+                float diffuse = 5
+                bool enableColorTemperature = 1
+                float exposure = 0.5
+                float intensity = 2.5
+                float length = 9.2
+                float radius = 0.55
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 2
+                bool treatAsLine = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4CF5D7A60E3B7450"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 2.5
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 5.100000075995922)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8AF9FE94FBAF7A9F"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float intensity = 2
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.1000000461935997, 1.45, 14.500000216066837)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_FE61AA5CB798C3D0"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float intensity = 2
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.8000000268220901, -15.65, 18.500000275671482)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_CE950D1E9B93006A"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 2
+                float intensity = 10
+                bool light:enableCaustics = 0
+                float radius = 0.4
+                float shaping:cone:angle = 75
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-20.000000298023224, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -12.200000181794167, 9.900000147521496)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D537E513276AB8EF"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 6000
+                bool enableColorTemperature = 0
+                float exposure = 6.5
+                float intensity = 8
+                float radius = 0.05
+                float shaping:cone:angle = 100
+                float shaping:cone:softness = 0.25
+                float shaping:focus = 25
+                color3f shaping:focusTint = (1, 1.01, 1.01)
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.300000064074993, 4.700000070035458, 5.4000000804662704)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C4BDD237A7107912"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 0.75
+                float radius = 1.7
+                float shaping:cone:angle = 200
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, -1.8000000268220901)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_125B8CA933E51E33"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131.00000195205212, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.400000035762787, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131.00000195205212, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131.00000195205212, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131.00000195205212, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.100000135600567, -2.400000035762787, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_81DA80B2E160C9CA"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.96, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.96, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.1, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_217BE892EF9F4673"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.1, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_093C3B8E5387785B"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.06, -2.4, 8.600000128149986)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.06, -2.4, 8.600000128149986)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6ED57CAD3055F4D7"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.1, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_0E8F835C2AFDCBF3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.1, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_ADADAEC0F81AC850"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.1, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_BD00CE8D233E2843"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.06, -2.4, 8.600000128149986)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.06, -2.4, 8.600000128149986)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_869B7DAF2283E6D0"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.1, -2.4, 12.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5500
+                bool enableColorTemperature = 1
+                float exposure = 1.25
+                float intensity = 6
+                float radius = 0.4
+                float shaping:cone:angle = 50
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (131, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.96, -2.4, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A2793162B10D9D03"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2500
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 1.5
+                float radius = 0.25
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (6.400000095367432, 0, 2.48)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2500
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 1.5
+                float radius = 0.25
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.500000037252903, 0, 2.48)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F60B88C0D48F51C6"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2500
+                float diffuse = 2
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 1.5
+                float radius = 0.25
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1.5
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (6.400000095367432, 0, 2.48)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2875CF57CF619633"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 1.55, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.35, 0, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.025, -1.425, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.0000000149011612, -1.0000000149011612, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.45, 0, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.17, 1.1, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.05, 1.1000000163912773, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SphereLight_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 8000
+                float diffuse = 3
+                bool enableColorTemperature = 1
+                float exposure = 4
+                float intensity = 20
+                float radius = 0.2
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 0.15
+                float shaping:focus = 0
+                color3f shaping:focusTint = (1, 0.99999, 0.99999)
+                asset shaping:ies:file
+                float specular = 0
+                bool treatAsPoint = 1
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.1000000163912773, -1.1000000163912773, 18.30000027269125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_51DBE826BEF7CEBC"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5750
+                bool enableColorTemperature = 1
+                float exposure = 0.75
+                float intensity = 3.5
+                float radius = 0.3
+                float shaping:cone:angle = 120
+                float shaping:cone:softness = 0.25
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_952E501EB3175B1C"
+        {
+            over "Shader"
+            {
+                reorder properties = ["inputs:diffuse_color_constant", "inputs:diffuse_texture", "inputs:enable_thin_film", "inputs:thin_film_thickness_from_albedo_alpha", "inputs:thin_film_thickness_constant", "inputs:reflection_roughness_constant", "inputs:reflectionroughness_texture", "inputs:anisotropy_constant", "inputs:anisotropy_texture", "inputs:metallic_constant", "inputs:metallic_texture", "inputs:enable_emission", "inputs:emissive_color_constant", "inputs:emissive_mask_texture", "inputs:emissive_intensity", "inputs:sprite_sheet_fps", "inputs:sprite_sheet_cols", "inputs:sprite_sheet_rows", "inputs:enable_opacity", "inputs:opacity_constant", "inputs:ignore_material", "inputs:normalmap_texture", "inputs:encoding"]
+                float inputs:anisotropy_constant = 1 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = -1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Amount"
+                    doc = "0 for isotropic, extents of -1 to 1 for anisotropy"
+                    hidden = false
+                )
+                asset inputs:diffuse_texture = @./Textures/FloorMain A-Map.dds@ (
+                    colorSpace = "sRGB"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                int inputs:encoding = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map Encoding"
+                    doc = "Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."
+                    hidden = false
+                    renderType = "::Z73file_3A::Z17D_3A::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "octahedral"
+                        string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
+                    }
+                )
+                bool inputs:excludeFromWhiteMode = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Material Flags"
+                    displayName = "Exclude from White Mode"
+                    hidden = false
+                )
+                bool inputs:ignore_material = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Material Flags"
+                    displayName = "Ignore Material"
+                    doc = "Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard."
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/FloorMain N-Map.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                float inputs:opacity_constant = 0.98999995 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Opacity Amount"
+                    doc = "Used when no albedo/opacity texture is specified. 0 for completely transparent, 1 for completly opaque."
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.5 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/FloorMain H-Map.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_A6A3162DF54A4D4C"
+        {
+            over "Shader"
+            {
+                reorder properties = ["inputs:diffuse_color_constant", "inputs:diffuse_texture", "inputs:enable_thin_film", "inputs:thin_film_thickness_from_albedo_alpha", "inputs:thin_film_thickness_constant", "inputs:reflection_roughness_constant", "inputs:reflectionroughness_texture", "inputs:anisotropy_constant", "inputs:anisotropy_texture", "inputs:metallic_constant", "inputs:metallic_texture", "inputs:enable_emission", "inputs:emissive_color_constant", "inputs:emissive_mask_texture", "inputs:emissive_intensity", "inputs:sprite_sheet_fps", "inputs:sprite_sheet_cols", "inputs:sprite_sheet_rows", "inputs:enable_opacity", "inputs:opacity_constant", "inputs:ignore_material", "inputs:normalmap_texture", "inputs:encoding"]
+                float inputs:anisotropy_constant = -0 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = -1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Amount"
+                    doc = "0 for isotropic, extents of -1 to 1 for anisotropy"
+                    hidden = false
+                )
+                asset inputs:anisotropy_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Map"
+                    hidden = false
+                )
+                asset inputs:diffuse_texture = @./Textures/FloorMain A-Map.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                color3f inputs:emissive_color_constant = (0.09266406, 0.09266313, 0.09266313) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 0.01 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:metallic_constant = 1 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./Textures/FloorMain N-Map.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/FloorMain N-Map.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.39999998 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/FloorMain H-Map.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_763515CF20F59897"
+        {
+            over "Shader"
+            {
+                reorder properties = ["inputs:diffuse_color_constant", "inputs:diffuse_texture", "inputs:enable_thin_film", "inputs:thin_film_thickness_from_albedo_alpha", "inputs:thin_film_thickness_constant", "inputs:reflection_roughness_constant", "inputs:reflectionroughness_texture", "inputs:anisotropy_constant", "inputs:anisotropy_texture", "inputs:metallic_constant", "inputs:metallic_texture", "inputs:enable_emission", "inputs:emissive_color_constant", "inputs:emissive_mask_texture", "inputs:emissive_intensity", "inputs:sprite_sheet_fps", "inputs:sprite_sheet_cols", "inputs:sprite_sheet_rows", "inputs:enable_opacity", "inputs:opacity_constant", "inputs:ignore_material", "inputs:normalmap_texture", "inputs:encoding"]
+                asset inputs:diffuse_texture = @./Textures/763515CF20F59897.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 0.5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./Textures/763515CF20F59897.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_A56E0164DE273F09"
+        {
+            over "Shader"
+            {
+                reorder properties = ["inputs:diffuse_color_constant", "inputs:diffuse_texture", "inputs:enable_thin_film", "inputs:thin_film_thickness_from_albedo_alpha", "inputs:thin_film_thickness_constant", "inputs:reflection_roughness_constant", "inputs:reflectionroughness_texture", "inputs:anisotropy_constant", "inputs:anisotropy_texture", "inputs:metallic_constant", "inputs:metallic_texture", "inputs:enable_emission", "inputs:emissive_color_constant", "inputs:emissive_mask_texture", "inputs:emissive_intensity", "inputs:sprite_sheet_fps", "inputs:sprite_sheet_cols", "inputs:sprite_sheet_rows", "inputs:enable_opacity", "inputs:opacity_constant", "inputs:ignore_material", "inputs:normalmap_texture", "inputs:encoding"]
+                float inputs:anisotropy_constant = 0 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = -1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Amount"
+                    doc = "0 for isotropic, extents of -1 to 1 for anisotropy"
+                    hidden = false
+                )
+                asset inputs:anisotropy_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Map"
+                    hidden = false
+                )
+                asset inputs:diffuse_texture = @./Textures/WallCenterD.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                int inputs:encoding = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map Encoding"
+                    doc = "Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."
+                    hidden = false
+                    renderType = "::Z73file_3A::Z17D_3A::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "octahedral"
+                        string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
+                    }
+                )
+                asset inputs:normalmap_texture = @./Textures/WallCenterN.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.75 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/WallCenterR.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_9B6E11B301EFFDDE"
+        {
+            over "Shader"
+            {
+                reorder properties = ["inputs:diffuse_color_constant", "inputs:diffuse_texture", "inputs:enable_thin_film", "inputs:thin_film_thickness_from_albedo_alpha", "inputs:thin_film_thickness_constant", "inputs:reflection_roughness_constant", "inputs:reflectionroughness_texture", "inputs:anisotropy_constant", "inputs:anisotropy_texture", "inputs:metallic_constant", "inputs:metallic_texture", "inputs:enable_emission", "inputs:emissive_color_constant", "inputs:emissive_mask_texture", "inputs:emissive_intensity", "inputs:sprite_sheet_fps", "inputs:sprite_sheet_cols", "inputs:sprite_sheet_rows", "inputs:enable_opacity", "inputs:opacity_constant", "inputs:ignore_material", "inputs:normalmap_texture", "inputs:encoding"]
+                float inputs:anisotropy_constant = 0 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = -1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Amount"
+                    doc = "0 for isotropic, extents of -1 to 1 for anisotropy"
+                    hidden = false
+                )
+                asset inputs:anisotropy_texture = @./Textures/tiles_0002_height_4k.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Map"
+                    hidden = false
+                )
+                asset inputs:diffuse_texture = @./Textures/tiles_0002_color_4k_brown.dds@ (
+                    colorSpace = "sRGB"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_thin_film = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Enable thin film"
+                    doc = "Adds a thin film coating to the material"
+                    hidden = false
+                )
+                int inputs:encoding = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map Encoding"
+                    doc = "Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."
+                    hidden = false
+                    renderType = "::Z73file_3A::Z17D_3A::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "octahedral"
+                        string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
+                    }
+                )
+                float inputs:metallic_constant = 0.5 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./Textures/tiles_0002_roughness_4k.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/tiles_0002_normal_4k.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.5 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/tiles_0002_roughness_4k.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+                float inputs:thin_film_thickness_constant = 200 (
+                    customData = {
+                        float default = 200
+                        dictionary range = {
+                            float max = 1500
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film constant thickness in nm"
+                    doc = "Thickness of the thin film if not specified in albedo texture"
+                    hidden = false
+                )
+                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film thickness from albedo alpha"
+                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_2D290613DF19656A"
+        {
+            over "Shader"
+            {
+                float inputs:anisotropy_constant = -0 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = -1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Amount"
+                    doc = "0 for isotropic, extents of -1 to 1 for anisotropy"
+                    hidden = false
+                )
+                asset inputs:diffuse_texture = @./Textures/PoleCenter_D-Map.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                color3f inputs:emissive_color_constant = (1, 0.99999, 0.99999) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./Textures/PoleCenter_E-Map.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./Textures/PoleCenter_M-Map.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/PoleCenter_N-Map.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/PoleCenter_R-Map.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+

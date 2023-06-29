@@ -1,0 +1,10 @@
+#usda 1.0
+(
+    subLayers = [
+        @./uncle_burrito.usda@,
+        @./mod_lights.usda@,
+        @./e-man.usda@
+    ]
+    upAxis = "Z"
+)
+

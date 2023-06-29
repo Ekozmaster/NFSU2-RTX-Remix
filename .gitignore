@@ -1,2 +1,11 @@
 /*
 !/rtx-remix/
+!/rtx-remix-defaults/
+!/dxvk.conf
+!/.gitattributes
+
+!/.trex
+/.trex/*
+!/.trex/bridge.conf
+
+captures/
