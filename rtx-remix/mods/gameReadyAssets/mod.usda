@@ -3,6 +3,7 @@
     subLayers = [
         @./uncle_burrito.usda@,
         @./mod_lights.usda@,
+        @./traffic.usda@,
         @./e-man.usda@
     ]
     upAxis = "Z"
