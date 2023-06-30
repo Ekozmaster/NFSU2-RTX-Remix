@@ -1,0 +1,390 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_15969FB25CA086CA"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/15969FB25CA086CA.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/15969FB25CA086CA_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/15969FB25CA086CA_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_008B5071178E7812"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/008B5071178E7812.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/008B5071178E7812_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/008B5071178E7812_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_C4B7B0DC7C284B03"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/C4B7B0DC7C284B03.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/C4B7B0DC7C284B03_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/C4B7B0DC7C284B03_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_18223680BACC82C5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/18223680BACC82C5_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/18223680BACC82C5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/18223680BACC82C5_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_C186CB68CAF341B8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/C186CB68CAF341B8.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/C186CB68CAF341B8_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/C186CB68CAF341B8_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_3D151FF526E18018"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/3D151FF526E18018.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/3D151FF526E18018_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/3D151FF526E18018_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_70E2456CE964AF2E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/70E2456CE964AF2E.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/70E2456CE964AF2E_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/70E2456CE964AF2E_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_205A40CF41D50A81"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/205A40CF41D50A81.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/205A40CF41D50A81_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/205A40CF41D50A81_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_47AD97303EAB21FC"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/47AD97303EAB21FC.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/47AD97303EAB21FC_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/47AD97303EAB21FC_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_830A3591F28DDF00"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/830A3591F28DDF00_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/830A3591F28DDF00_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/830A3591F28DDF00_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_9E4C550805F21384"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/9E4C550805F21384_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/9E4C550805F21384_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/9E4C550805F21384_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_ECE9DBB2B08A8AD5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/ECE9DBB2B08A8AD5.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/ECE9DBB2B08A8AD5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/ECE9DBB2B08A8AD5_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_A82495883FD6B325"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/A82495883FD6B325.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/A82495883FD6B325_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/A82495883FD6B325_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_D18DABCFCD634994"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/D18DABCFCD634994.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/D18DABCFCD634994_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/D18DABCFCD634994_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_A53A4CE21C693849"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wet_roads/A53A4CE21C693849.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wet_roads/A53A4CE21C693849_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wet_roads/A53A4CE21C693849_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
