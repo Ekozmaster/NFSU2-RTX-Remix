@@ -15,7 +15,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/40BC4B9B5C1CED20_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/40BC4B9B5C1CED20_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -24,7 +24,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/40BC4B9B5C1CED20_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/40BC4B9B5C1CED20_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -56,8 +56,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/40BC4B9B5C1CED20_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/40BC4B9B5C1CED20_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/40BC4B9B5C1CED20_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/40BC4B9B5C1CED20_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -72,7 +72,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/0DF687DB4D3F12B0_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/0DF687DB4D3F12B0_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -81,7 +81,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/0DF687DB4D3F12B0_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/0DF687DB4D3F12B0_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -119,7 +119,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/EBCA9AC555A19678_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/EBCA9AC555A19678_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -128,7 +128,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/EBCA9AC555A19678_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/EBCA9AC555A19678_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -160,8 +160,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/EBCA9AC555A19678_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/EBCA9AC555A19678_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/EBCA9AC555A19678_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/EBCA9AC555A19678_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -176,7 +176,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/A4B743EEE334F2C0_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/A4B743EEE334F2C0_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -185,7 +185,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/A4B743EEE334F2C0_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/A4B743EEE334F2C0_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -217,8 +217,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/A4B743EEE334F2C0_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/A4B743EEE334F2C0_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/A4B743EEE334F2C0_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/A4B743EEE334F2C0_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -233,7 +233,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/AF54C8B333D777D0_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/AF54C8B333D777D0_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -242,7 +242,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/AF54C8B333D777D0_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/AF54C8B333D777D0_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -274,8 +274,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/AF54C8B333D777D0_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/AF54C8B333D777D0_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/AF54C8B333D777D0_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/AF54C8B333D777D0_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -290,7 +290,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/37D82C6E0BC04ADC_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/37D82C6E0BC04ADC_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -299,7 +299,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/37D82C6E0BC04ADC_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/37D82C6E0BC04ADC_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -331,8 +331,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/37D82C6E0BC04ADC_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/37D82C6E0BC04ADC_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/37D82C6E0BC04ADC_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/37D82C6E0BC04ADC_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -347,7 +347,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/FADCB33582B60A28_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/FADCB33582B60A28_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -356,7 +356,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/FADCB33582B60A28_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/FADCB33582B60A28_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -388,8 +388,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/FADCB33582B60A28_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/FADCB33582B60A28_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/FADCB33582B60A28_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/FADCB33582B60A28_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -404,7 +404,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/ED5691B6B27E00D5_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/ED5691B6B27E00D5_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -413,7 +413,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/ED5691B6B27E00D5_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/ED5691B6B27E00D5_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -445,8 +445,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/ED5691B6B27E00D5_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/ED5691B6B27E00D5_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/ED5691B6B27E00D5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/ED5691B6B27E00D5_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -461,7 +461,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/0F4E9BD910297CEA_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/0F4E9BD910297CEA_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -470,7 +470,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/0F4E9BD910297CEA_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/0F4E9BD910297CEA_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -502,8 +502,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/0F4E9BD910297CEA_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/0F4E9BD910297CEA_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/0F4E9BD910297CEA_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/0F4E9BD910297CEA_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -518,7 +518,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/97D4F0B09DB0F70C_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/97D4F0B09DB0F70C_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -527,7 +527,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/97D4F0B09DB0F70C_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/97D4F0B09DB0F70C_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -559,8 +559,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/97D4F0B09DB0F70C_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/97D4F0B09DB0F70C_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/97D4F0B09DB0F70C_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/97D4F0B09DB0F70C_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -575,7 +575,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/F281E2DC3EA576CE.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/F281E2DC3EA576CE.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -584,7 +584,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/F281E2DC3EA576CE_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/F281E2DC3EA576CE_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -616,8 +616,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/F281E2DC3EA576CE_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/F281E2DC3EA576CE_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/F281E2DC3EA576CE_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/F281E2DC3EA576CE_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -632,7 +632,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/8D069EAEA0DB7FEC.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/8D069EAEA0DB7FEC.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -641,7 +641,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/8D069EAEA0DB7FEC_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/8D069EAEA0DB7FEC_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -673,8 +673,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/8D069EAEA0DB7FEC_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/8D069EAEA0DB7FEC_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/8D069EAEA0DB7FEC_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/8D069EAEA0DB7FEC_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -689,7 +689,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/74C78C6BA8EAF944_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/74C78C6BA8EAF944_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -698,7 +698,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/74C78C6BA8EAF944_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/74C78C6BA8EAF944_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -730,8 +730,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/74C78C6BA8EAF944_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/74C78C6BA8EAF944_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/74C78C6BA8EAF944_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/74C78C6BA8EAF944_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -746,7 +746,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/E214184A0B80F1D7_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/E214184A0B80F1D7_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -755,7 +755,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/E214184A0B80F1D7_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/E214184A0B80F1D7_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -787,8 +787,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/E214184A0B80F1D7_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/E214184A0B80F1D7_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/E214184A0B80F1D7_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/E214184A0B80F1D7_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -803,7 +803,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/game/8FEAC91537BB1503_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/world sprites/8FEAC91537BB1503_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -812,7 +812,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/game/8FEAC91537BB1503_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/world sprites/8FEAC91537BB1503_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -844,8 +844,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/game/8FEAC91537BB1503_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/game/8FEAC91537BB1503_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/world sprites/8FEAC91537BB1503_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/world sprites/8FEAC91537BB1503_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@

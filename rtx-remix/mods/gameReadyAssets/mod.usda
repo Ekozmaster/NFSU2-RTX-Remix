@@ -4,7 +4,7 @@
         @./uncle_burrito.usda@,
         @./mod_lights.usda@,
         @./traffic.usda@,
-        @./game.usda@,
+        @./world_sprites.usda@,
         @./e-man.usda@
     ]
     upAxis = "Z"
