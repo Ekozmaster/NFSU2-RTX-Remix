@@ -11,11 +11,11 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_993D022DE71F87C0"
+        over "mat_61015C8DDAADF282"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tail_lights/993D022DE71F87C0_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/tail_lights/61015C8DDAADF282.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -24,7 +24,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/993D022DE71F87C0_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/61015C8DDAADF282_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -56,8 +56,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/tail_lights/993D022DE71F87C0_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/993D022DE71F87C0_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/tail_lights/61015C8DDAADF282_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/61015C8DDAADF282_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -68,11 +68,11 @@ over "RootNode"
                 )
             }
         }
-        over "mat_6974344290D72095"
+        over "mat_A9526ED9BEBDBDBB"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tail_lights/6974344290D72095_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/tail_lights/A9526ED9BEBDBDBB.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -81,7 +81,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/6974344290D72095_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/A9526ED9BEBDBDBB_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -113,8 +113,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/tail_lights/6974344290D72095_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/6974344290D72095_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/tail_lights/A9526ED9BEBDBDBB_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/A9526ED9BEBDBDBB_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -125,11 +125,11 @@ over "RootNode"
                 )
             }
         }
-        over "mat_E0437FB55AF630FF"
+        over "mat_11B0BA88407CDB4A"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tail_lights/E0437FB55AF630FF_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/tail_lights/11B0BA88407CDB4A_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -138,7 +138,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/E0437FB55AF630FF_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/11B0BA88407CDB4A_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -170,464 +170,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/tail_lights/E0437FB55AF630FF_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/E0437FB55AF630FF_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_542FFB7021A410B4"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/542FFB7021A410B4_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/542FFB7021A410B4_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/542FFB7021A410B4_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/542FFB7021A410B4_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_F4C717EAFD14945B"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/F4C717EAFD14945B_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/F4C717EAFD14945B_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/F4C717EAFD14945B_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/F4C717EAFD14945B_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_D1EF865EE23C63A1"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/D1EF865EE23C63A1_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/D1EF865EE23C63A1_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/D1EF865EE23C63A1_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/D1EF865EE23C63A1_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_087F09D98A2DF0D2"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/087F09D98A2DF0D2_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/087F09D98A2DF0D2_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/087F09D98A2DF0D2_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/087F09D98A2DF0D2_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_11331937CD98CD4A"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/11331937CD98CD4A_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/11331937CD98CD4A_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/11331937CD98CD4A_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/11331937CD98CD4A_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_3E752CABBD5190BB"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/3E752CABBD5190BB_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/3E752CABBD5190BB_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/3E752CABBD5190BB_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/3E752CABBD5190BB_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_51B9666C2ABDD9B0"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/51B9666C2ABDD9B0_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/51B9666C2ABDD9B0_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/51B9666C2ABDD9B0_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/51B9666C2ABDD9B0_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_C57ABA37CA6572F5"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/C57ABA37CA6572F5_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/C57ABA37CA6572F5_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/C57ABA37CA6572F5_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/C57ABA37CA6572F5_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/tail_lights/11B0BA88407CDB4A_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/11B0BA88407CDB4A_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -695,11 +239,11 @@ over "RootNode"
                 )
             }
         }
-        over "mat_05D0B5C6732EAB28"
+        over "mat_CA20F06726BDBAA7"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tail_lights/05D0B5C6732EAB28_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/tail_lights/CA20F06726BDBAA7_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -708,7 +252,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/05D0B5C6732EAB28_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/CA20F06726BDBAA7_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -740,8 +284,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/tail_lights/05D0B5C6732EAB28_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/05D0B5C6732EAB28_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/tail_lights/CA20F06726BDBAA7_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/CA20F06726BDBAA7_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -752,11 +296,11 @@ over "RootNode"
                 )
             }
         }
-        over "mat_E4A4B17E585D24C5"
+        over "mat_E0437FB55AF630FF"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tail_lights/E4A4B17E585D24C5_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/tail_lights/E0437FB55AF630FF_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -765,7 +309,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/E4A4B17E585D24C5_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/E0437FB55AF630FF_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -797,8 +341,350 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/tail_lights/E4A4B17E585D24C5_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/E4A4B17E585D24C5_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/tail_lights/E0437FB55AF630FF_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/E0437FB55AF630FF_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_51B9666C2ABDD9B0"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/51B9666C2ABDD9B0_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/51B9666C2ABDD9B0_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/51B9666C2ABDD9B0_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/51B9666C2ABDD9B0_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_EA4058BA64C650E9"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/EA4058BA64C650E9_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/EA4058BA64C650E9_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/EA4058BA64C650E9_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/EA4058BA64C650E9_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_087F09D98A2DF0D2"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/087F09D98A2DF0D2_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/087F09D98A2DF0D2_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/087F09D98A2DF0D2_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/087F09D98A2DF0D2_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_48BD13CA34F47918"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/48BD13CA34F47918.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/48BD13CA34F47918_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/48BD13CA34F47918_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/48BD13CA34F47918_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_AE208DC14A4CE123"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/AE208DC14A4CE123.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/AE208DC14A4CE123_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/AE208DC14A4CE123_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/AE208DC14A4CE123_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_56894E2036FA5EC5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/56894E2036FA5EC5.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/56894E2036FA5EC5_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/56894E2036FA5EC5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/56894E2036FA5EC5_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -866,11 +752,11 @@ over "RootNode"
                 )
             }
         }
-        over "mat_9487A47378CADA28"
+        over "mat_C57ABA37CA6572F5"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tail_lights/9487A47378CADA28_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./textures/tail_lights/C57ABA37CA6572F5.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -879,7 +765,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/9487A47378CADA28_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/C57ABA37CA6572F5_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -911,122 +797,8 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/tail_lights/9487A47378CADA28_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/9487A47378CADA28_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_457DEBE30EEC5422"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/457DEBE30EEC5422_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/457DEBE30EEC5422_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/457DEBE30EEC5422_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/457DEBE30EEC5422_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_43FA3D67BEDF9219"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/43FA3D67BEDF9219_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/43FA3D67BEDF9219_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/43FA3D67BEDF9219_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/43FA3D67BEDF9219_rough.dds@ (
+                asset inputs:normalmap_texture = @./textures/tail_lights/C57ABA37CA6572F5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/C57ABA37CA6572F5_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1094,6 +866,405 @@ over "RootNode"
                 )
             }
         }
+        over "mat_E4A4B17E585D24C5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/E4A4B17E585D24C5_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/E4A4B17E585D24C5_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/E4A4B17E585D24C5_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/E4A4B17E585D24C5_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_9487A47378CADA28"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/9487A47378CADA28_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/9487A47378CADA28_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/9487A47378CADA28_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/9487A47378CADA28_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_05D0B5C6732EAB28"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/05D0B5C6732EAB28_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/05D0B5C6732EAB28_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/05D0B5C6732EAB28_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/05D0B5C6732EAB28_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_D1EF865EE23C63A1"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/D1EF865EE23C63A1_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/D1EF865EE23C63A1_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/D1EF865EE23C63A1_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/D1EF865EE23C63A1_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_993D022DE71F87C0"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/993D022DE71F87C0_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/993D022DE71F87C0_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/993D022DE71F87C0_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/993D022DE71F87C0_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_F4C717EAFD14945B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/F4C717EAFD14945B_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/F4C717EAFD14945B_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/F4C717EAFD14945B_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/F4C717EAFD14945B_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_ED94DCC248CEB938"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/ED94DCC248CEB938.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/ED94DCC248CEB938_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/ED94DCC248CEB938_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/ED94DCC248CEB938_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
         over "mat_3BF2D4EB21AD45A3"
         {
             over "Shader"
@@ -1141,6 +1312,633 @@ over "RootNode"
                 )
                 asset inputs:normalmap_texture = @./textures/tail_lights/3BF2D4EB21AD45A3_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/tail_lights/3BF2D4EB21AD45A3_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_11331937CD98CD4A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/11331937CD98CD4A_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/11331937CD98CD4A_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/11331937CD98CD4A_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/11331937CD98CD4A_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_457DEBE30EEC5422"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/457DEBE30EEC5422_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/457DEBE30EEC5422_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/457DEBE30EEC5422_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/457DEBE30EEC5422_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_EFB888FEA299DC62"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/EFB888FEA299DC62_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/EFB888FEA299DC62_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/EFB888FEA299DC62_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/EFB888FEA299DC62_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_3E752CABBD5190BB"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/3E752CABBD5190BB_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/3E752CABBD5190BB_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/3E752CABBD5190BB_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/3E752CABBD5190BB_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_6974344290D72095"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/6974344290D72095_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/6974344290D72095_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/6974344290D72095_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/6974344290D72095_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_A5B6F9DC3522B86F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/A5B6F9DC3522B86F_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/A5B6F9DC3522B86F_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/A5B6F9DC3522B86F_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/A5B6F9DC3522B86F_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_43FA3D67BEDF9219"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/43FA3D67BEDF9219.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/43FA3D67BEDF9219_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/43FA3D67BEDF9219_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/43FA3D67BEDF9219_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_2BBCBCBAC753090A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/2BBCBCBAC753090A.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/2BBCBCBAC753090A_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/2BBCBCBAC753090A_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/2BBCBCBAC753090A_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_E0AEE0FE1129FF36"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/E0AEE0FE1129FF36_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/E0AEE0FE1129FF36_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/E0AEE0FE1129FF36_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/E0AEE0FE1129FF36_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_57013D37D23F8B53"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/57013D37D23F8B53_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/57013D37D23F8B53_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/57013D37D23F8B53_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/57013D37D23F8B53_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_542FFB7021A410B4"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tail_lights/542FFB7021A410B4_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/tail_lights/542FFB7021A410B4_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tail_lights/542FFB7021A410B4_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tail_lights/542FFB7021A410B4_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
