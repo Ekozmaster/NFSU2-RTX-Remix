@@ -1,0 +1,181 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_D447F4C61B12492F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/stone/D447F4C61B12492F.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/stone/D447F4C61B12492F_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/stone/D447F4C61B12492F_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_B0B1183DF9997B1B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/stone/B0B1183DF9997B1B.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/stone/B0B1183DF9997B1B_normal.dds@
+            }
+        }
+        over "mat_5C69B92E4E1E2BB3"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/stone/5C69B92E4E1E2BB3.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/stone/5C69B92E4E1E2BB3_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/stone/5C69B92E4E1E2BB3_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_D76C8FDA79ED5816"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/stone/D76C8FDA79ED5816.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/stone/D76C8FDA79ED5816_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/stone/D76C8FDA79ED5816_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_9DF697030FF35061"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/stone/9DF697030FF35061_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/stone/9DF697030FF35061_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/stone/9DF697030FF35061_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_46B0603FDF0FA1A8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/stone/46B0603FDF0FA1A8_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/stone/46B0603FDF0FA1A8_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/stone/46B0603FDF0FA1A8_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_302303336FF37518"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/stone/302303336FF37518.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/stone/302303336FF37518_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/stone/302303336FF37518_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
