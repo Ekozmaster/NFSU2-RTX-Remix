@@ -15,7 +15,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/metal/FDA84ADD9D36EF65.dds@ (
+                asset inputs:diffuse_texture = @./Textures/metal/FDA84ADD9D36EF65.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -24,7 +24,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:metallic_texture = @./textures/metal/FDA84ADD9D36EF65_metallic.dds@ (
+                asset inputs:metallic_texture = @./Textures/metal/FDA84ADD9D36EF65_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -33,8 +33,8 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/metal/FDA84ADD9D36EF65_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/metal/FDA84ADD9D36EF65_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/metal/FDA84ADD9D36EF65_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/metal/FDA84ADD9D36EF65_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -49,7 +49,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/metal/6702AD2370D9130E_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./Textures/metal/6702AD2370D9130E_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -58,7 +58,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:metallic_texture = @./textures/metal/6702AD2370D9130E_metallic.dds@ (
+                asset inputs:metallic_texture = @./Textures/metal/6702AD2370D9130E_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -67,8 +67,8 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/metal/6702AD2370D9130E_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/metal/6702AD2370D9130E_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/metal/6702AD2370D9130E_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/metal/6702AD2370D9130E_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -83,7 +83,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/metal/570C7EF44091BC60.dds@ (
+                asset inputs:diffuse_texture = @./Textures/metal/570C7EF44091BC60.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -92,7 +92,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:metallic_texture = @./textures/metal/570C7EF44091BC60_metallic.dds@ (
+                asset inputs:metallic_texture = @./Textures/metal/570C7EF44091BC60_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -101,8 +101,8 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/metal/570C7EF44091BC60_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/metal/570C7EF44091BC60_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/metal/570C7EF44091BC60_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/metal/570C7EF44091BC60_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -117,7 +117,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/metal/0E81495377CF5F97.dds@ (
+                asset inputs:diffuse_texture = @./Textures/metal/0E81495377CF5F97.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -126,7 +126,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:metallic_texture = @./textures/metal/0E81495377CF5F97_metallic.dds@ (
+                asset inputs:metallic_texture = @./Textures/metal/0E81495377CF5F97_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -135,14 +135,14 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/metal/0E81495377CF5F97_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/metal/0E81495377CF5F97_normal.dds@
             }
         }
         over "mat_8018F0C3045D2E72"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/metal/8018F0C3045D2E72_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./Textures/metal/8018F0C3045D2E72_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -151,7 +151,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:metallic_texture = @./textures/metal/8018F0C3045D2E72_metallic.dds@ (
+                asset inputs:metallic_texture = @./Textures/metal/8018F0C3045D2E72_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -160,8 +160,8 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/metal/8018F0C3045D2E72_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/metal/8018F0C3045D2E72_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/metal/8018F0C3045D2E72_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/metal/8018F0C3045D2E72_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -176,7 +176,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/metal/9DF697030FF35061.dds@ (
+                asset inputs:diffuse_texture = @./Textures/metal/9DF697030FF35061.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -185,7 +185,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:metallic_texture = @./textures/metal/9DF697030FF35061_metallic.dds@ (
+                asset inputs:metallic_texture = @./Textures/metal/9DF697030FF35061_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -194,8 +194,8 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/metal/9DF697030FF35061_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/metal/9DF697030FF35061_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/metal/9DF697030FF35061_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/metal/9DF697030FF35061_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -210,7 +210,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/metal/C5DB6869DCCBCA0B.dds@ (
+                asset inputs:diffuse_texture = @./Textures/metal/C5DB6869DCCBCA0B.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -219,7 +219,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:metallic_texture = @./textures/metal/C5DB6869DCCBCA0B_metallic.dds@ (
+                asset inputs:metallic_texture = @./Textures/metal/C5DB6869DCCBCA0B_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -228,8 +228,8 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/metal/C5DB6869DCCBCA0B_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/metal/C5DB6869DCCBCA0B_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/metal/C5DB6869DCCBCA0B_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/metal/C5DB6869DCCBCA0B_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@

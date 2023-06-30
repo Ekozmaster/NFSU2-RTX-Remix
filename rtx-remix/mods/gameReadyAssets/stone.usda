@@ -15,7 +15,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/stone/D447F4C61B12492F.dds@ (
+                asset inputs:diffuse_texture = @./Textures/stone/D447F4C61B12492F.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -24,8 +24,8 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/stone/D447F4C61B12492F_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/stone/D447F4C61B12492F_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/stone/D447F4C61B12492F_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/stone/D447F4C61B12492F_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -40,7 +40,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/stone/B0B1183DF9997B1B.dds@ (
+                asset inputs:diffuse_texture = @./Textures/stone/B0B1183DF9997B1B.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -49,14 +49,14 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/stone/B0B1183DF9997B1B_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/stone/B0B1183DF9997B1B_normal.dds@
             }
         }
         over "mat_5C69B92E4E1E2BB3"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/stone/5C69B92E4E1E2BB3.dds@ (
+                asset inputs:diffuse_texture = @./Textures/stone/5C69B92E4E1E2BB3.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -65,8 +65,8 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/stone/5C69B92E4E1E2BB3_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/stone/5C69B92E4E1E2BB3_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/stone/5C69B92E4E1E2BB3_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/stone/5C69B92E4E1E2BB3_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -81,7 +81,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/stone/D76C8FDA79ED5816.dds@ (
+                asset inputs:diffuse_texture = @./Textures/stone/D76C8FDA79ED5816.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -90,8 +90,8 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/stone/D76C8FDA79ED5816_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/stone/D76C8FDA79ED5816_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/stone/D76C8FDA79ED5816_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/stone/D76C8FDA79ED5816_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -106,7 +106,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/stone/9DF697030FF35061_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./Textures/stone/9DF697030FF35061_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -115,8 +115,8 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/stone/9DF697030FF35061_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/stone/9DF697030FF35061_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/stone/9DF697030FF35061_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/stone/9DF697030FF35061_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -131,7 +131,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/stone/46B0603FDF0FA1A8_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./Textures/stone/46B0603FDF0FA1A8_diffuse.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -140,8 +140,8 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/stone/46B0603FDF0FA1A8_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/stone/46B0603FDF0FA1A8_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/stone/46B0603FDF0FA1A8_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/stone/46B0603FDF0FA1A8_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -156,7 +156,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/stone/302303336FF37518.dds@ (
+                asset inputs:diffuse_texture = @./Textures/stone/302303336FF37518.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -165,8 +165,8 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/stone/302303336FF37518_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/stone/302303336FF37518_rough.dds@ (
+                asset inputs:normalmap_texture = @./Textures/stone/302303336FF37518_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/stone/302303336FF37518_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
