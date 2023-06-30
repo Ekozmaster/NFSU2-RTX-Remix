@@ -59,10 +59,6 @@
     endTimeCode = 100
     metersPerUnit = 0.01
     startTimeCode = 0
-    subLayers = [
-        @./e-man.usd@,
-        @./mod_lights.usda@
-    ]
     timeCodesPerSecond = 24
     upAxis = "Y"
 )
@@ -3016,98 +3012,6 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Thin film thickness from albedo alpha"
                     doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_02C488A7978DFB91"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./Textures/Sidewalk/sidewalk_short/sidewalk_short_c.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./Textures/Sidewalk/sidewalk_short/sidewalk_short_n.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./Textures/Sidewalk/sidewalk_short/sidewalk_short_r.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_6A976885455CBFF1"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./Textures/Sidewalk/sidewalk_c.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                int inputs:encoding = 0 (
-                    customData = {
-                        int default = 0
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map Encoding"
-                    doc = "Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."
-                    hidden = false
-                    renderType = "::Z73file_3A::Z19F_3A::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
-                    sdrMetadata = {
-                        string __SDR__enum_value = "octahedral"
-                        string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
-                    }
-                )
-                asset inputs:normalmap_texture = @./Textures/Sidewalk/sidewalk_n.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./Textures/Sidewalk/sidewalk_r.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
                     hidden = false
                 )
             }
