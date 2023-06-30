@@ -1,7 +1,6 @@
 #usda 1.0
 (
     subLayers = [
-        @./uncle_burrito.usda@,
         @./mod_lights.usda@,
         @./traffic.usda@,
         @./world_sprites.usda@,
