@@ -10,6 +10,7 @@
         @./emissive_lights.usda@,
         @./metal.usda@,
         @./stone.usda@,
+        @./vegetation.usda@,
         @./e-man.usda@
     ]
     upAxis = "Z"
