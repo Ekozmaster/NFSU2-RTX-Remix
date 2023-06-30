@@ -3,6 +3,7 @@
     subLayers = [
         @./uncle_burrito.usda@,
         @./mod_lights.usda@,
+		@./player_car_lights.usda@,
         @./tiles.usda@,
         @./sidewalk.usda@,
         @./traffic.usda@,
