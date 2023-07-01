@@ -1,0 +1,65 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_C64571D13F41B067"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wood/C64571D13F41B067_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wood/C64571D13F41B067_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wood/C64571D13F41B067_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+        over "mat_E9130FB985DED082"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/wood/E9130FB985DED082.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/wood/E9130FB985DED082_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/wood/E9130FB985DED082_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
