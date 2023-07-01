@@ -25,6 +25,7 @@
         @./01_lights/03_cars/03_cars.usda@,
         @./01_lights/04_unique/0104_unique.usda@,
         @./01_lights/05_global/0105_Global.usda@,
+        @./tunnels.usda@,
     ]
     upAxis = "Z"
 )
