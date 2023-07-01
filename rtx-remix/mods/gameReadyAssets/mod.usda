@@ -6,6 +6,7 @@
 		@./player_car_lights.usda@,
         @./tiles.usda@,
         @./sidewalk.usda@,
+        @./e-man.usda@,
         @./traffic.usda@,
         @./world_sprites.usda@,
         @./emissive_lights.usda@,
@@ -14,7 +15,7 @@
         @./vegetation.usda@,
         @./headlights.usda@,
         @./tail_lights.usda@,
-        @./e-man.usda@
+        @./signs.usda@,
     ]
     upAxis = "Z"
 )
