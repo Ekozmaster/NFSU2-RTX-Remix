@@ -13,6 +13,7 @@
         @./stone.usda@,
         @./vegetation.usda@,
         @./headlights.usda@,
+        @./tail_lights.usda@,
         @./e-man.usda@
     ]
     upAxis = "Z"
