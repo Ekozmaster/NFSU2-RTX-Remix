@@ -2,15 +2,19 @@
 (
     subLayers = [
         @./mod_lights.usda@,
+		@./player_car_lights.usda@,
         @./tiles.usda@,
         @./sidewalk.usda@,
+        @./e-man.usda@,
         @./traffic.usda@,
         @./world_sprites.usda@,
         @./emissive_lights.usda@,
         @./metal.usda@,
         @./stone.usda@,
         @./vegetation.usda@,
-        @./e-man.usda@
+        @./headlights.usda@,
+        @./tail_lights.usda@,
+        @./signs.usda@,
     ]
     upAxis = "Z"
 )
