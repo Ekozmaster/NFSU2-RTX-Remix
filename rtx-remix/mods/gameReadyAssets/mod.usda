@@ -15,7 +15,10 @@
         @./vegetation.usda@,
         @./headlights.usda@,
         @./tail_lights.usda@,
+		@./wood.usda@,
         @./signs.usda@,
+        @./walls.usda@,
+        @./concrete.usda@,
     ]
     upAxis = "Z"
 )
