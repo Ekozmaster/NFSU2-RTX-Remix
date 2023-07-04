@@ -2,5 +2,33 @@
 
 over "RootNode"
 {
+    over "meshes"
+    {
+        over "mesh_18F5585C2A92AFD3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "RoundRLM" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 150
+                bool normalize = 1
+                float radius = 0.8
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 1.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -2.8000000417232513, 8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
 }
 
