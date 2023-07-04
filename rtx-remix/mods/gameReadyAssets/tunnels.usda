@@ -40,6 +40,40 @@ over "RootNode"
                 )
             }
         }
+
+        over "mat_F7D8A7B171CD19C6"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/tunnels/F7D8A7B171CD19C6_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/tunnels/F7D8A7B171CD19C6_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./textures/tunnels/F7D8A7B171CD19C6_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
     }
 }
 
