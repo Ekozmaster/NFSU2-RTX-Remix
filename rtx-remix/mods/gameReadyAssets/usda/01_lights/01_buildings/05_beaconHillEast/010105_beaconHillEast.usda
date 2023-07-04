@@ -1,0 +1,59 @@
+#usda 1.0
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_A013300D89CC4FA7"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SmallLamp" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float intensity = 200
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 1.2000000178813934)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_AEFDBDC7BEA9A6C1"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SmallSpotLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float intensity = 300.10004
+                bool normalize = 1
+                float radius = 0.2
+                float shaping:cone:angle = 80
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
+

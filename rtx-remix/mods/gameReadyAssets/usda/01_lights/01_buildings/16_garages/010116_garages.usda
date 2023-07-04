@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    subLayers = [
+        @./01_garageLobby/01011601_garages-garageLobby.usda@,
+        @./02_garageCareer/01011602_garages-garageCareer.usda@,
+        @./03_garageCar/01011603_garages-garageCar.usda@,
+        @./04_garagePerf/01011604_garages-garagePerf.usda@,
+        @./05_garageSpec/01011605_garages-garageSpec.usda@,
+        @./06_garageBody/01011606_garages-garageBody.usda@,
+        @./07_garageGraph/01011607_garages-garageGraph.usda@,
+        @./08_garageDyno/01011608_garages-garageDyno.usda@
+    ]
+)
+
