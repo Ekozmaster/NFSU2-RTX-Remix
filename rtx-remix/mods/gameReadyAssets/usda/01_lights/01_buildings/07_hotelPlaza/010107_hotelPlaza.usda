@@ -559,7 +559,7 @@ over "RootNode"
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 1
+                float exposure = 6.1
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 39.100002
@@ -567,7 +567,7 @@ over "RootNode"
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:rotateXYZ = (196.1000029221177, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (4.300000064074993, -13.000000193715096, 0.30000000447034836)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
@@ -580,7 +580,7 @@ over "RootNode"
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 1
+                float exposure = 6.1
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 39.100002
@@ -588,7 +588,7 @@ over "RootNode"
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:rotateXYZ = (196.1000029221177, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.8000000417232513, -13.000000193715096, 0.30000000447034836)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
@@ -601,7 +601,7 @@ over "RootNode"
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 1
+                float exposure = 6.1
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 39.100002
@@ -609,7 +609,7 @@ over "RootNode"
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:rotateXYZ = (196.1000029221177, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-9.80000014603138, -13.700000204145908, 0.30000000447034836)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
@@ -622,7 +622,7 @@ over "RootNode"
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 1
+                float exposure = 6.1
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 39.100002
@@ -630,20 +630,21 @@ over "RootNode"
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:rotateXYZ = (196.1000029221177, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.200000166893005, -13.800000205636024, 0.30000000447034836)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
             def SphereLight "CurvedStoreFrontAccent_04" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 0.1
+                float exposure = 5.8
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 45.100002
@@ -658,13 +659,14 @@ over "RootNode"
             }
 
             def SphereLight "CurvedStoreFrontAccent_05" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 0.1
+                float exposure = 5.8
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 45.100002
@@ -679,13 +681,14 @@ over "RootNode"
             }
 
             def SphereLight "CurvedStoreFrontAccent_06" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 0.1
+                float exposure = 5.8
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 45.100002
@@ -700,13 +703,14 @@ over "RootNode"
             }
 
             def SphereLight "CurvedStoreFrontAccent_07" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 color3f color = (0.17092769, 0.36893952, 0.9034749)
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 0.1
+                float exposure = 5.8
                 float intensity = 453.9
                 float radius = 0.2
                 float shaping:cone:angle = 45.100002
@@ -727,7 +731,7 @@ over "RootNode"
                 color3f color = (1, 1, 1)
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
-                float exposure = 6.3
+                float exposure = 0
                 float intensity = 453.9
                 float radius = 0.05
                 float shaping:cone:angle = 64.1
@@ -748,7 +752,7 @@ over "RootNode"
                 color3f color = (1, 1, 1)
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
-                float exposure = 6.3
+                float exposure = 0
                 float intensity = 453.9
                 float radius = 0.05
                 float shaping:cone:angle = 64.1
@@ -769,7 +773,7 @@ over "RootNode"
                 color3f color = (1, 1, 1)
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
-                float exposure = 6.3
+                float exposure = 0
                 float intensity = 453.9
                 float radius = 0.05
                 float shaping:cone:angle = 64.1
@@ -780,6 +784,375 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-6.70000009983778, -11.60000017285347, 6.400000095367432)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 6.1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (172.90000257641077, -23.500000350177288, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (20.800000309944153, -14.400000214576721, 0.5000000074505806)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 6.1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, -19.80000029504299, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (24.400000363588333, -5.4000000804662704, 0.5000000074505806)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 6.1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, -19.80000029504299, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (27.200000405311584, 3.6000000536441803, 0.7000000104308128)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 3.4
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (30.200000450015068, 12.300000183284283, 3.6000000536441803)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6FF484B6D8C43BFF"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "RoundTowerColorTop" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 3.7
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 1.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.3000000342726707, -8.00000011920929, 100.00000149011612)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerColorSideBottom_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 12.3
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 0.5
+                float shaping:cone:angle = 11
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.300000049173832, -22.800000339746475, 11.500000171363354)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerColorSideBottom_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 12.3
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 0.5
+                float shaping:cone:angle = 11
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (-180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.1000000163912773, -22.800000339746475, 11.500000171363354)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerColorSideTop" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 12.3
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 0.5
+                float shaping:cone:angle = 11
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.300000049173832, -22.800000339746475, 121.70000181347132)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerColorSideTop_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 12.3
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 0.5
+                float shaping:cone:angle = 11
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.1000000163912773, -22.800000339746475, 121.70000181347132)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerCutout" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 8.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 495.7
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-14.900000222027302, -18.500000275671482, 52.00000077486038)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerCutout_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 8.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 495.7
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-21.90000032633543, -11.900000177323818, 52.00000077486038)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerCutout_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 8.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 495.7
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.50000036507845, -4.200000062584877, 52.00000077486038)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerCutout_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 8.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 495.7
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-14.900000222027302, -18.500000275671482, 97.10000144690275)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerCutout_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 8.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 495.7
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-21.90000032633543, -11.900000177323818, 97.10000144690275)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerCutout_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 8.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 495.7
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.50000036507845, -4.200000062584877, 97.10000144690275)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerColorSideBottom_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 12.3
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 0.5
+                float shaping:cone:angle = 11
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-11.400000169873238, -23.70000035315752, 10.700000159442425)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerColorSideBottom_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 12.3
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 0.5
+                float shaping:cone:angle = 11
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.100000135600567, -24.2000003606081, 10.700000159442425)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RoundTowerColorSideBottom_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.301815, 0.7154317, 0.855)
+                float exposure = 12.3
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 500
+                float radius = 0.5
+                float shaping:cone:angle = 11
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-7.1000001057982445, -24.70000036805868, 10.700000159442425)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
