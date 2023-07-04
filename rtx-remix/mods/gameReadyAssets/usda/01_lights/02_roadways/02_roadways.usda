@@ -65,7 +65,7 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3500
+                float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float exposure = 1.3000001
                 float intensity = 500
@@ -91,7 +91,7 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3000
+                float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float exposure = 0
                 float intensity = 1800
@@ -116,7 +116,7 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3000
+                float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float exposure = 3.5
                 float height = 0.6
