@@ -887,6 +887,194 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_2FE1E276C11F025F"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "AutozoneBillboard" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3800
+                bool enableColorTemperature = 1
+                float intensity = 240.6
+                float radius = 0.5
+                float shaping:cone:angle = 51.8
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                double3 xformOp:rotateXYZ = (180, 52.700000785291195, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.100000135600567, -2.7000000402331352, 12.500000186264515)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "AutozoneBillboard_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3800
+                bool enableColorTemperature = 1
+                float intensity = 240.6
+                float radius = 0.5
+                float shaping:cone:angle = 51.8
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                double3 xformOp:rotateXYZ = (180, 52.700000785291195, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.7000000402331352, 12.500000186264515)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "AutozoneBillboard_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3800
+                bool enableColorTemperature = 1
+                float intensity = 240.6
+                float radius = 0.5
+                float shaping:cone:angle = 51.8
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                double3 xformOp:rotateXYZ = (180, 52.700000785291195, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.8000000417232513, -2.7000000402331352, 12.500000186264515)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "AutozoneBillboard_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3800
+                bool enableColorTemperature = 1
+                float intensity = 240.6
+                float radius = 0.5
+                float shaping:cone:angle = 51.8
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                double3 xformOp:rotateXYZ = (180, 52.700000785291195, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-8.700000129640102, -2.7000000402331352, 12.500000186264515)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A1ED219B2E1CA851"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "DualHead" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 1.8000001
+                float intensity = 300
+                bool normalize = 0
+                float radius = 0.5
+                float shaping:cone:angle = 58.4
+                float shaping:cone:softness = 0.2
+                float shaping:focus = 0.6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 3.8000000566244125, 8.600000128149986)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "DualHead_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 1.8000001
+                float intensity = 300
+                float radius = 0.5
+                float shaping:cone:angle = 58.600002
+                float shaping:cone:softness = 0.2
+                float shaping:focus = 0.6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.8000000566244125, 8.600000128149986)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A2793162B10D9D03"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "WallLightSphere" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float inputs:colorTemperature = 3000
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 150
+                float intensity = 300
+                bool normalize = 1
+                custom int preserveOriginalDrawCall = 1
+                float radius = 0.2
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.600000038743019, -0.5000000074505806, 2.500000037252903)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "WallLightSphere_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float inputs:colorTemperature = 3000
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 150
+                float intensity = 1000
+                bool normalize = 1
+                custom int preserveOriginalDrawCall = 1
+                float radius = 0.2
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (6.400000095367432, -0.5000000074505806, 2.500000037252903)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 
