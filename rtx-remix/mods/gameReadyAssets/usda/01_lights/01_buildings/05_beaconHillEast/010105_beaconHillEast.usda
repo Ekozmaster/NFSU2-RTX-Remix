@@ -692,6 +692,737 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_1C2BBE7B3D38FE2E"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "LiwenFacade_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.500000037252903, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.500000171363354, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (7.400000110268593, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (12.400000184774399, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.600000023841858, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (16.600000247359276, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.200000092387199, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-11.500000171363354, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-16.600000247359276, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.3000000342726707, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-7.300000108778477, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-12.400000184774399, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.4000000208616257, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 19.800001
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (6.500000096857548, -10.2, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenEntry" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 5.7000003
+                float intensity = 78.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 1
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -10.400000154972076, 4.700000070035458)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 9.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 29.300001
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 31.100000463426113, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.200000062584877, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 11.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 19.7
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 22.40000033378601, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (19.3, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 11.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 19.7
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 22.40000033378601, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.30000028759241, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 11.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 19.7
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 22.40000033378601, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (14.8, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 11.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 19.7
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 22.40000033378601, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-14.800000220537186, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 11.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 19.7
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 22.40000033378601, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.88, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 11.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 19.7
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 22.40000033378601, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.88, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 9.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 29.300001
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 31.100000463426113, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.2, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_14" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 20.5
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.400000274181366, -2.5, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_15" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 20.5
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.400000274181366, -8.200000122189522, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_16" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 20.5
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.400000274181366, -1.5000000223517418, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_17" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 20.5
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (-90, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.400000274181366, 5.200000077486038, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_18" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 20.5
+                float intensity = 26.800001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (90, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.400000274181366, 3.9000000581145287, 19.80000029504299)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_19" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 10.7
+                float intensity = 20
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (180, 30.4000004529953, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (12.700000189244747, -12.400000184774399, 5.800000086426735)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_20" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 10.7
+                float intensity = 12.900001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (180, 30.4000004529953, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.20000000298023224, -12.400000184774399, 5.800000086426735)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "LiwenFacade_21" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 10.7
+                float intensity = 20
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (180, 30.4000004529953, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-12.600000187754631, -12.400000184774399, 5.800000086426735)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 18.5
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 10.1
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 7.300000108778477, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-17.900000266730785, -11.200000166893005, 8.900000132620335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 18.5
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 10.1
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 7.300000108778477, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (17.9, -11.200000166893005, 8.900000132620335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RedFacadeLight_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 18.5
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.05
+                float shaping:cone:angle = 10.1
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (172, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (19.400000289082527, -9.300000138580799, 8.900000132620335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 
