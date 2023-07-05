@@ -94,7 +94,7 @@ and 0 Exposure*.
 - Map to orient on (for better experience, please download it): [Vector map in PDF format](https://drive.google.com/file/d/19Vm7AYMqBA9o0kP-r8bYHkXg0utPkTGW/view?usp=sharing)
 
 <details>
-<summary>File structure</summary>
+<summary>FILE STRUCTURE</summary>
   
 - gameReadyAssets
   - 01_lights
