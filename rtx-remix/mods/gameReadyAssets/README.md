@@ -6,7 +6,7 @@ Prefix list: *..._albedo; ..._roughness; ..._normal; ..._emissive; ..._metallic;
 > Example:  *1290B1ECE63951FA_albedo.dds, 30AB9D52A75E6601_metallic.dds,
  53B3E936B785E132_emissive.dds*.
 
--   Make sure to put your textures in the separate folder under *[game folder]\rtx-remix\mods\gameReadyAssets\02_materials]* path. More detailed paths can be found down the notes, in the [**Shared File Hierarchy**](https://github.com/Ekozmaster/NFSU2-RTX-Remix/edit/main/README.md#shared-file-hierarchy) section.
+-   Make sure to put your textures in the separate folder under *[game folder]\rtx-remix\mods\gameReadyAssets\02_materials]* path. More detailed paths can be found down the notes, in the [**Shared File Hierarchy**](https://github.com/Ekozmaster/NFSU2-RTX-Remix/blob/readmeChanges/rtx-remix/mods/gameReadyAssets/README.md#shared-file-hierarchy) section.
 
 > Example: *[game folder]\rtx-remix\mods\gameReadyAssets\02_materials\01_environment\13_airport*.
 
@@ -15,7 +15,7 @@ Prefix list: *..._albedo; ..._roughness; ..._normal; ..._emissive; ..._metallic;
 > Example: good looking texture path: @./textures/env/garageLobby/952E501EB3175B1C_albedo.dds@;
 > bad looking path: *@C:/Games/NFSU2/rtx-remix/mods/gameReadyAssets/textures/env/garageLobby/952E501EB3175B1C_albedo.dds@*
 
--   For better project merging capabilities, use custom *.usda* naming and place it as a sublayer for *mod.usda*. Your naming should briefly describe the content of the *.usda* file. More detailed naming can be found down the notes, in the [**Shared File Hierarchy**](https://github.com/Ekozmaster/NFSU2-RTX-Remix/edit/main/README.md#shared-file-hierarchy) section.
+-   For better project merging capabilities, use custom *.usda* naming and place it as a sublayer for *mod.usda*. Your naming should briefly describe the content of the *.usda* file. More detailed naming can be found down the notes, in the [**Shared File Hierarchy**](https://github.com/Ekozmaster/NFSU2-RTX-Remix/blob/readmeChanges/rtx-remix/mods/gameReadyAssets/README.md#shared-file-hierarchy) section.
     
 > Example: good naming: *burritoLightPlazaV01.usda*; bad naming: *burritoV01.usda*.
 
@@ -47,7 +47,7 @@ Prefix list: *..._albedo; ..._roughness; ..._normal; ..._emissive; ..._metallic;
 
 > Example: *350zHeadlight_part05_01*, *SphereLight8953*, *RectLight_0A48A0D79FB6594C_01*, etc.
 
--   For better project merging capabilities, use custom *.usda* naming and place it as a sublayer for mod.usda. Your naming should briefly describe the content of the *.usda file*. More detailed naming can be found down the notes, in the [**Shared File Hierarchy**](https://github.com/Ekozmaster/NFSU2-RTX-Remix/edit/main/README.md#shared-file-hierarchy) section.
+-   For better project merging capabilities, use custom *.usda* naming and place it as a sublayer for mod.usda. Your naming should briefly describe the content of the *.usda file*. More detailed naming can be found down the notes, in the [**Shared File Hierarchy**](https://github.com/Ekozmaster/NFSU2-RTX-Remix/blob/readmeChanges/rtx-remix/mods/gameReadyAssets/README.md#shared-file-hierarchy) section.
    
 
 > Example: good naming: *burritoLightPlazaV01.usda*; bad naming: *burritoV01.usda*.
