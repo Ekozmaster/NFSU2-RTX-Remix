@@ -12,10 +12,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4000
+                float colorTemperature = 4000.0
                 bool enableColorTemperature = 1
                 float exposure = 14.8
-                float intensity = 300
+                float intensity = 90.0
                 custom int preserveOriginalDrawCall = 1
                 float radius = 0.08
                 float shaping:cone:angle = 77.200005
@@ -39,10 +39,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 4500.0
                 bool enableColorTemperature = 1
                 float exposure = 12.1
-                float intensity = 874.9
+                float intensity = 262.46999999999997
                 float radius = 0.01
                 float shaping:cone:angle = 76.200005
                 float shaping:cone:softness = 0.1
@@ -65,10 +65,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 4500.0
                 bool enableColorTemperature = 1
                 float exposure = 1.3000001
-                float intensity = 500
+                float intensity = 150.0
                 float radius = 0.5
                 float shaping:cone:angle = 82.6
                 float shaping:cone:softness = 0.2
@@ -91,10 +91,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 4500.0
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 1800
+                float intensity = 540.0
                 float radius = 0.5
                 float shaping:cone:angle = 67.3
                 float shaping:cone:softness = 0.2
@@ -116,11 +116,11 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 4500.0
                 bool enableColorTemperature = 1
                 float exposure = 3.5
                 float height = 0.6
-                float intensity = 1500
+                float intensity = 450.0
                 bool normalize = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -144,10 +144,10 @@ over "RootNode"
             )
             {
                 color3f color = (1, 1, 1)
-                float colorTemperature = 3000
+                float colorTemperature = 3000.0
                 bool enableColorTemperature = 1
                 float exposure = 8
-                float intensity = 2000
+                float intensity = 600.0
                 bool normalize = 0
                 float radius = 0.1
                 float shaping:cone:angle = 60.2
@@ -172,11 +172,11 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 4500.0
                 float diffuse = 1
                 bool enableColorTemperature = 1
                 float exposure = 0.2
-                float intensity = 100
+                float intensity = 30.0
                 bool normalize = 0
                 float radius = 2.1000001
                 float shaping:cone:angle = 180
@@ -201,10 +201,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 5000
+                float colorTemperature = 5000.0
                 bool enableColorTemperature = 1
                 float exposure = 16.7
-                float intensity = 500
+                float intensity = 150.0
                 bool normalize = 0
                 float radius = 0.01
                 float shaping:cone:angle = 79.8
@@ -228,9 +228,9 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3500
+                float colorTemperature = 3500.0
                 bool enableColorTemperature = 1
-                float intensity = 300
+                float intensity = 90.0
                 float radius = 0.5
                 float shaping:cone:angle = 90
                 float shaping:cone:softness
@@ -252,9 +252,9 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3000
+                float colorTemperature = 3000.0
                 bool enableColorTemperature = 1
-                float intensity = 300
+                float intensity = 90.0
                 bool normalize = 0
                 custom int preserveOriginalDrawCall = 1
                 float radius = 0.2
@@ -274,9 +274,9 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3000
+                float colorTemperature = 3000.0
                 bool enableColorTemperature = 1
-                float intensity = 300
+                float intensity = 90.0
                 bool normalize = 0
                 custom int preserveOriginalDrawCall = 1
                 float radius = 0.2
@@ -301,9 +301,9 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4000
+                float colorTemperature = 4000.0
                 bool enableColorTemperature = 1
-                float intensity = 300
+                float intensity = 90.0
                 bool normalize = 1
                 float radius = 0.2
                 float shaping:cone:angle = 79
@@ -327,10 +327,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 2100
+                float colorTemperature = 2100.0
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 281.6
+                float intensity = 84.48
                 bool normalize = 0
                 float radius = 0.4
                 float shaping:cone:angle = 180
@@ -354,9 +354,9 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 2000
+                float colorTemperature = 2000.0
                 bool enableColorTemperature = 1
-                float intensity = 150
+                float intensity = 45.0
                 float radius = 0.3
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -376,10 +376,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4000
+                float colorTemperature = 4000.0
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 294.80002
+                float intensity = 88.440006
                 float radius = 0.4
                 float shaping:cone:angle = 90
                 float shaping:cone:softness
@@ -399,10 +399,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3500
+                float colorTemperature = 3500.0
                 bool enableColorTemperature = 1
                 float exposure = 1.1
-                float intensity = 300
+                float intensity = 90.0
                 bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 90
@@ -425,11 +425,11 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 4500.0
                 bool enableColorTemperature = 1
                 float exposure = 2.2
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float intensity = 500
+                float intensity = 150.0
                 float radius = 0.5
                 float shaping:cone:angle = 140.6
                 float shaping:cone:softness = 0.09
