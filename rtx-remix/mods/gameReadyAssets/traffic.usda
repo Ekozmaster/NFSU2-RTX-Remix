@@ -24,6 +24,19 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
                 asset inputs:emissive_mask_texture = @./textures/traffic/3538D41491ACFF80_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -43,19 +56,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/traffic/3538D41491ACFF80_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/traffic/3538D41491ACFF80_rough.dds@ (
                     colorSpace = "auto"
@@ -68,6 +68,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_30BE152A3F95EEC1"
         {
             over "Shader"
@@ -80,25 +81,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/30BE152A3F95EEC1_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -113,7 +96,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/30BE152A3F95EEC1_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/30BE152A3F95EEC1_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/30BE152A3F95EEC1_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/30BE152A3F95EEC1_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -122,9 +128,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_65F8890EC78909F2"
         {
             over "Shader"
@@ -137,25 +145,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/65F8890EC78909F2_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -170,7 +160,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/65F8890EC78909F2_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/65F8890EC78909F2_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/65F8890EC78909F2_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/65F8890EC78909F2_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -179,9 +192,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_B8C3DE638E2F2539"
         {
             over "Shader"
@@ -194,8 +209,12 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/B8C3DE638E2F2539_normal.dds@
+                asset inputs:normalmap_texture = @./textures/traffic/B8C3DE638E2F2539_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/B8C3DE638E2F2539_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -204,9 +223,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_324555C8E8E0AE5B"
         {
             over "Shader"
@@ -219,25 +240,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/324555C8E8E0AE5B_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -252,7 +255,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/324555C8E8E0AE5B_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/324555C8E8E0AE5B_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/324555C8E8E0AE5B_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/324555C8E8E0AE5B_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -261,9 +287,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_5D2F33EE28E6A494"
         {
             over "Shader"
@@ -276,25 +304,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/5D2F33EE28E6A494_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -309,7 +319,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/5D2F33EE28E6A494_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/5D2F33EE28E6A494_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/5D2F33EE28E6A494_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/5D2F33EE28E6A494_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -318,9 +351,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_6DF21418F6030E9A"
         {
             over "Shader"
@@ -333,25 +368,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/6DF21418F6030E9A_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -366,7 +383,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/6DF21418F6030E9A_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/6DF21418F6030E9A_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/6DF21418F6030E9A_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/6DF21418F6030E9A_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -375,9 +415,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_6954EAF94B26B539"
         {
             over "Shader"
@@ -390,25 +432,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/6954EAF94B26B539_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -423,7 +447,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/6954EAF94B26B539_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/6954EAF94B26B539_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/6954EAF94B26B539_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/6954EAF94B26B539_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -432,9 +479,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_9B418E14D86A3AA4"
         {
             over "Shader"
@@ -446,6 +495,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/traffic/9B418E14D86A3AA4_emissive.dds@ (
@@ -467,19 +529,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/traffic/9B418E14D86A3AA4_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/traffic/9B418E14D86A3AA4_rough.dds@ (
                     colorSpace = "auto"
@@ -492,6 +541,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_0D71F8FC3592B542"
         {
             over "Shader"
@@ -504,25 +554,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/0D71F8FC3592B542_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -537,7 +569,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/0D71F8FC3592B542_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/0D71F8FC3592B542_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/0D71F8FC3592B542_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/0D71F8FC3592B542_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -546,9 +601,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_BD199C7718CD8DC8"
         {
             over "Shader"
@@ -561,25 +618,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/BD199C7718CD8DC8_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -594,7 +633,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/BD199C7718CD8DC8_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/BD199C7718CD8DC8_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/BD199C7718CD8DC8_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/BD199C7718CD8DC8_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -603,9 +665,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_632FB2E21FBE527F"
         {
             over "Shader"
@@ -617,6 +681,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/traffic/632FB2E21FBE527F_emissive.dds@ (
@@ -638,19 +715,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/traffic/632FB2E21FBE527F_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/traffic/632FB2E21FBE527F_rough.dds@ (
                     colorSpace = "auto"
@@ -663,6 +727,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_55140B973C31AA93"
         {
             over "Shader"
@@ -675,25 +740,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/55140B973C31AA93_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -708,7 +755,35 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/55140B973C31AA93_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/55140B973C31AA93_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/55140B973C31AA93_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/55140B973C31AA93_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -717,9 +792,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_39AC59F85FD4D7B4"
         {
             over "Shader"
@@ -732,25 +809,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/39AC59F85FD4D7B4_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -765,7 +824,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/39AC59F85FD4D7B4_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/39AC59F85FD4D7B4_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/39AC59F85FD4D7B4_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/39AC59F85FD4D7B4_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -774,9 +856,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_1968358E59872413"
         {
             over "Shader"
@@ -789,25 +873,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/traffic/1968358E59872413_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -822,7 +888,30 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/traffic/1968358E59872413_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/traffic/1968358E59872413_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/traffic/1968358E59872413_normal.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/traffic/1968358E59872413_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -831,8 +920,10 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
     }
 }
+
