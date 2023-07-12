@@ -1,0 +1,52 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        def "mesh_26A6E5758911C4FE"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "LightBollard" (
+                references = @../LightBolllard.usd@
+            )
+            {
+                rel material:binding = </RootNode/Looks/mat_LightBollard> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.02)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A7A17FBBF0E9AAF3"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_A7A17FBBF0E9AAF3_3" (
+            delete references = @../../../../captures/meshes/mesh_A7A17FBBF0E9AAF3.usd@
+            prepend references = @./meshes/mesh_A7A17FBBF0E9AAF3.usd@
+        )
+        {
+        }
+    }
+}
+
