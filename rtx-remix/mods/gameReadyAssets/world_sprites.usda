@@ -24,6 +24,19 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/40BC4B9B5C1CED20_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -43,19 +56,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/40BC4B9B5C1CED20_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/40BC4B9B5C1CED20_rough.dds@ (
                     colorSpace = "auto"
@@ -68,6 +68,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_0DF687DB4D3F12B0"
         {
             over "Shader"
@@ -79,6 +80,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/0DF687DB4D3F12B0_emissive.dds@ (
@@ -100,21 +114,9 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
             }
         }
+
         over "mat_EBCA9AC555A19678"
         {
             over "Shader"
@@ -128,25 +130,6 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./textures/world sprites/EBCA9AC555A19678_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
                 float inputs:emissive_intensity = 5 (
                     customData = {
                         float default = 40
@@ -158,6 +141,26 @@ over "RootNode"
                     displayGroup = "Emissive"
                     displayName = "Emissive Intensity"
                     doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/world sprites/EBCA9AC555A19678_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./textures/world sprites/EBCA9AC555A19678_normal.dds@
@@ -172,6 +175,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_A4B743EEE334F2C0"
         {
             over "Shader"
@@ -183,6 +187,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/A4B743EEE334F2C0_emissive.dds@ (
@@ -204,19 +221,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/A4B743EEE334F2C0_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/A4B743EEE334F2C0_rough.dds@ (
                     colorSpace = "auto"
@@ -229,6 +233,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_AF54C8B333D777D0"
         {
             over "Shader"
@@ -240,6 +245,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/AF54C8B333D777D0_emissive.dds@ (
@@ -261,19 +279,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/AF54C8B333D777D0_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/AF54C8B333D777D0_rough.dds@ (
                     colorSpace = "auto"
@@ -286,6 +291,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_37D82C6E0BC04ADC"
         {
             over "Shader"
@@ -297,6 +303,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/37D82C6E0BC04ADC_emissive.dds@ (
@@ -318,19 +337,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/37D82C6E0BC04ADC_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/37D82C6E0BC04ADC_rough.dds@ (
                     colorSpace = "auto"
@@ -343,6 +349,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_FADCB33582B60A28"
         {
             over "Shader"
@@ -354,6 +361,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/FADCB33582B60A28_emissive.dds@ (
@@ -375,19 +395,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/FADCB33582B60A28_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/FADCB33582B60A28_rough.dds@ (
                     colorSpace = "auto"
@@ -400,6 +407,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_ED5691B6B27E00D5"
         {
             over "Shader"
@@ -412,25 +420,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/world sprites/ED5691B6B27E00D5_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 5 (
                     customData = {
@@ -445,7 +435,35 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/world sprites/ED5691B6B27E00D5_normal.dds@
+                asset inputs:emissive_mask_texture = @./textures/world sprites/ED5691B6B27E00D5_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/world sprites/ED5691B6B27E00D5_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/ED5691B6B27E00D5_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -454,9 +472,11 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+
         over "mat_0F4E9BD910297CEA"
         {
             over "Shader"
@@ -468,6 +488,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/0F4E9BD910297CEA_emissive.dds@ (
@@ -489,19 +522,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/0F4E9BD910297CEA_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/0F4E9BD910297CEA_rough.dds@ (
                     colorSpace = "auto"
@@ -514,6 +534,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_97D4F0B09DB0F70C"
         {
             over "Shader"
@@ -525,6 +546,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/97D4F0B09DB0F70C_emissive.dds@ (
@@ -546,19 +580,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/97D4F0B09DB0F70C_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/97D4F0B09DB0F70C_rough.dds@ (
                     colorSpace = "auto"
@@ -571,6 +592,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_F281E2DC3EA576CE"
         {
             over "Shader"
@@ -582,6 +604,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/F281E2DC3EA576CE_emissive.dds@ (
@@ -603,19 +638,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/F281E2DC3EA576CE_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/F281E2DC3EA576CE_rough.dds@ (
                     colorSpace = "auto"
@@ -628,6 +650,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_8D069EAEA0DB7FEC"
         {
             over "Shader"
@@ -639,6 +662,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/8D069EAEA0DB7FEC_emissive.dds@ (
@@ -660,19 +696,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/8D069EAEA0DB7FEC_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/8D069EAEA0DB7FEC_rough.dds@ (
                     colorSpace = "auto"
@@ -685,6 +708,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_74C78C6BA8EAF944"
         {
             over "Shader"
@@ -696,6 +720,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/74C78C6BA8EAF944_emissive.dds@ (
@@ -717,19 +754,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/74C78C6BA8EAF944_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/74C78C6BA8EAF944_rough.dds@ (
                     colorSpace = "auto"
@@ -742,6 +766,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_E214184A0B80F1D7"
         {
             over "Shader"
@@ -753,6 +778,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/E214184A0B80F1D7_emissive.dds@ (
@@ -774,19 +812,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/E214184A0B80F1D7_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/E214184A0B80F1D7_rough.dds@ (
                     colorSpace = "auto"
@@ -799,6 +824,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_8FEAC91537BB1503"
         {
             over "Shader"
@@ -810,6 +836,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/world sprites/8FEAC91537BB1503_emissive.dds@ (
@@ -831,19 +870,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/world sprites/8FEAC91537BB1503_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/world sprites/8FEAC91537BB1503_rough.dds@ (
                     colorSpace = "auto"
@@ -858,3 +884,4 @@ over "RootNode"
         }
     }
 }
+

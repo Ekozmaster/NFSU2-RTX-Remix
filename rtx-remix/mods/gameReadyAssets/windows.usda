@@ -1,0 +1,456 @@
+#usda 1.0
+
+def "RootNode"
+{
+    def Scope "Looks"
+    {
+        def Material "mat_06C3F5B93AA5BF4A_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_06C3F5B93AA5BF4A_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_06C3F5B93AA5BF4A_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_06C3F5B93AA5BF4A_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/06C3F5B93AA5BF4A_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_27C049532CC2267B_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_27C049532CC2267B_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_27C049532CC2267B_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_27C049532CC2267B_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/27C049532CC2267B_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_2DDD1307716D7AD5_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_2DDD1307716D7AD5_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_2DDD1307716D7AD5_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_2DDD1307716D7AD5_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/2DDD1307716D7AD5_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_3BDE143384B191AE_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_3BDE143384B191AE_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_3BDE143384B191AE_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_3BDE143384B191AE_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/3BDE143384B191AE_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_3E974B84B83334E3_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_3E974B84B83334E3_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_3E974B84B83334E3_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_3E974B84B83334E3_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/3E974B84B83334E3_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_53B3E936B785E132_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_53B3E936B785E132_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_53B3E936B785E132_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_53B3E936B785E132_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/53B3E936B785E132_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_54530D5F8463B373_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_54530D5F8463B373_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_54530D5F8463B373_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_54530D5F8463B373_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/54530D5F8463B373_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_57B4FE83C5F7884A_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_57B4FE83C5F7884A_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_57B4FE83C5F7884A_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_57B4FE83C5F7884A_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/57B4FE83C5F7884A_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_61DEDD37FDA27EB1_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_61DEDD37FDA27EB1_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_61DEDD37FDA27EB1_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_61DEDD37FDA27EB1_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/61DEDD37FDA27EB1_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_77536A18C4DD9621_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_77536A18C4DD9621_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_77536A18C4DD9621_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_77536A18C4DD9621_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/77536A18C4DD9621_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_81B15FF089D4DD55_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_81B15FF089D4DD55_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_81B15FF089D4DD55_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_81B15FF089D4DD55_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/81B15FF089D4DD55_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_8B15E383E2AC21B2_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_8B15E383E2AC21B2_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_8B15E383E2AC21B2_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_8B15E383E2AC21B2_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/8B15E383E2AC21B2_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_909E3DA365A3972A_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_909E3DA365A3972A_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_909E3DA365A3972A_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_909E3DA365A3972A_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/909E3DA365A3972A_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_95AECD0D55E5BA8B_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_95AECD0D55E5BA8B_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_95AECD0D55E5BA8B_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_95AECD0D55E5BA8B_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/95AECD0D55E5BA8B_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_9CB23391568011BF_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_9CB23391568011BF_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_9CB23391568011BF_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_9CB23391568011BF_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/9CB23391568011BF_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_A1DFD3681343E3B8_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_A1DFD3681343E3B8_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_A1DFD3681343E3B8_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_A1DFD3681343E3B8_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/A1DFD3681343E3B8_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_A61E1B1A786EBA36_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_A61E1B1A786EBA36_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_A61E1B1A786EBA36_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_A61E1B1A786EBA36_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/A61E1B1A786EBA36_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_A874939BCD63C5AB_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_A874939BCD63C5AB_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_A874939BCD63C5AB_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_A874939BCD63C5AB_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/A874939BCD63C5AB_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_B64D5A477408F56C_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_B64D5A477408F56C_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_B64D5A477408F56C_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_B64D5A477408F56C_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/B64D5A477408F56C_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_CAA3CB825B3B7A58_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_CAA3CB825B3B7A58_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_CAA3CB825B3B7A58_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_CAA3CB825B3B7A58_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/CAA3CB825B3B7A58_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_D16EC44A9C482FE3_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_D16EC44A9C482FE3_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_D16EC44A9C482FE3_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_D16EC44A9C482FE3_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/D16EC44A9C482FE3_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_DBD615B35236E33E_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_DBD615B35236E33E_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_DBD615B35236E33E_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_DBD615B35236E33E_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/DBD615B35236E33E_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_E726A9DBED6AC42E_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_E726A9DBED6AC42E_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_E726A9DBED6AC42E_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_E726A9DBED6AC42E_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/E726A9DBED6AC42E_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_E967858202821939_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_E967858202821939_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_E967858202821939_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_E967858202821939_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/E967858202821939_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_F054FD26B8F000DB_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_F054FD26B8F000DB_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_F054FD26B8F000DB_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_F054FD26B8F000DB_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/F054FD26B8F000DB_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_F470AD3EBBBA1BD8_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_F470AD3EBBBA1BD8_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_F470AD3EBBBA1BD8_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_F470AD3EBBBA1BD8_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/F470AD3EBBBA1BD8_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_F68812E53493BEBE_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_F68812E53493BEBE_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_F68812E53493BEBE_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_F68812E53493BEBE_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/F68812E53493BEBE_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_FB703022A0E60D92_DIFFUSE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_FB703022A0E60D92_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_FB703022A0E60D92_DIFFUSE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_FB703022A0E60D92_DIFFUSE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/windows/FB703022A0E60D92_diffuse.dds@
+                asset inputs:info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                token outputs:output
+            }
+        }
+    }
+}
+
