@@ -9,7 +9,6 @@
         @./sidewalk.usda@,
         @./e-man.usda@,
         @./traffic.usda@,
-        @./world_sprites.usda@,
         @./emissive_lights.usda@,
         @./metal.usda@,
         @./stone.usda@,
@@ -30,6 +29,7 @@
         @./02_materials/01_environment/16_garages/01_garageLobby/02011601_garageLobby.usda@,
 		@./02_materials/01_environment/16_garages/02_garageCareer/02011602_garageCareer.usda@,
         @./02_materials/01_environment/16_garages/06_garageBody/02011606_garageBody.usda@,
+        @./02_materials/03_global/02_worldSprites/020302_worldSprites.usda@,
         @./tunnels.usda@,
         @./highways.usda@
     ]
