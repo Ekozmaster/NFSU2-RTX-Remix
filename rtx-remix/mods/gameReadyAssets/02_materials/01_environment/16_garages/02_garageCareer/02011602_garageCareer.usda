@@ -1,22 +1,16 @@
 #usda 1.0
 
-def "RootNode"
+over "RootNode"
 {
-    def Scope "Looks"
+    over Scope "Looks"
     {
-        def Material "mat_1FD9BE02B298125C" (
+        over Material "mat_1FD9BE02B298125C" (
             references = None
         )
         {
-            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_1FD9BE02B298125C/Shader.outputs:output>
-            token inputs:mdl:surface.connect = </RootNode/Looks/mat_1FD9BE02B298125C/Shader.outputs:output>
-            token inputs:mdl:volume.connect = </RootNode/Looks/mat_1FD9BE02B298125C/Shader.outputs:output>
 
-            def Shader "Shader"
+            over Shader "Shader"
             {
-                uniform token info:implementationSource = "sourceAsset"
-                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
-                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
                 asset inputs:diffuse_texture = @.\1FD9BE02B298125C.dds@
                 asset inputs:normal_texture = @.\1FD9BE02B298125C_normal.dds@
                 asset inputs:reflectionroughness_texture = @.\1FD9BE02B298125C_rough.dds@
