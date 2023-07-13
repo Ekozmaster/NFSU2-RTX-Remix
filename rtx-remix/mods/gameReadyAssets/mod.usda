@@ -29,6 +29,8 @@
         @./01_lights/05_global/0105_Global.usda@,
         @./02_materials\01_environment\16_garages\01_garageLobby\02011601_garageLobby.usda@,
         @./02_materials\01_environment\16_garages\06_garageBody\02011606_garageBody.usda@,
+		@./02_materials\01_environment\16_garages\01_garageLobby\02011601_garageLobby.usda@,
+		@./02_materials\01_environment\16_garages\01_garageLobby\02011602_garageCareer.usda@,
         @./tunnels.usda@,
         @./highways.usda@
     ]
