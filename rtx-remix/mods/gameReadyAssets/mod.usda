@@ -19,7 +19,7 @@
         @./wood.usda@,
         @./signs.usda@,
         @./walls.usda@,
-		@./windows.usda@,
+        @./windows.usda@,
         @./concrete.usda@,
         @./adamplayer.usda@,
         @./01_lights/01_buildings/01_buildings.usda@,
@@ -27,8 +27,9 @@
         @./01_lights/03_cars/03_cars.usda@,
         @./01_lights/04_unique/0104_unique.usda@,
         @./01_lights/05_global/0105_Global.usda@,
-		@./02_materials\01_environment\16_garages\01_garageLobby\02011601_garageLobby.usda@,
-		@./02_materials\01_environment\16_garages\06_garageBody\02011606_garageBody.usda@,
+        @./02_materials\01_environment\16_garages\01_garageLobby\02011601_garageLobby.usda@,
+        @./02_materials\01_environment\16_garages\06_garageBody\02011606_garageBody.usda@,
+        @./02_materials\01_environment\16_garages\06_garageBody\02011606_garageBody.usda@,
         @./tunnels.usda@,
         @./highways.usda@
     ]
