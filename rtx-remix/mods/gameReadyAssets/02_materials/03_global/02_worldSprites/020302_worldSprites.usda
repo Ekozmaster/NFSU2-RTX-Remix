@@ -1,0 +1,351 @@
+#usda 1.0
+
+def "RootNode"
+{
+    def Scope "Looks"
+    {
+        def Material "mat_0DF687DB4D3F12B0" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_0DF687DB4D3F12B0/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_0DF687DB4D3F12B0/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_0DF687DB4D3F12B0/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\0DF687DB4D3F12B0_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\0DF687DB4D3F12B0_emissive.dds@
+                bool inputs:enable_emission = 1
+                token outputs:output
+            }
+        }
+
+        def Material "mat_0F4E9BD910297CEA" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_0F4E9BD910297CEA/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_0F4E9BD910297CEA/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_0F4E9BD910297CEA/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\0F4E9BD910297CEA_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\0F4E9BD910297CEA_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\0F4E9BD910297CEA_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\0F4E9BD910297CEA_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_37D82C6E0BC04ADC" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_37D82C6E0BC04ADC/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_37D82C6E0BC04ADC/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_37D82C6E0BC04ADC/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\37D82C6E0BC04ADC_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\37D82C6E0BC04ADC_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\37D82C6E0BC04ADC_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\37D82C6E0BC04ADC_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_40BC4B9B5C1CED20" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_40BC4B9B5C1CED20/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_40BC4B9B5C1CED20/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_40BC4B9B5C1CED20/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\40BC4B9B5C1CED20_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\40BC4B9B5C1CED20_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\40BC4B9B5C1CED20_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\40BC4B9B5C1CED20_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_74C78C6BA8EAF944" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_74C78C6BA8EAF944/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_74C78C6BA8EAF944/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_74C78C6BA8EAF944/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\74C78C6BA8EAF944_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\74C78C6BA8EAF944_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\74C78C6BA8EAF944_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\74C78C6BA8EAF944_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_8D069EAEA0DB7FEC" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_8D069EAEA0DB7FEC/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_8D069EAEA0DB7FEC/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_8D069EAEA0DB7FEC/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\8D069EAEA0DB7FEC.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\8D069EAEA0DB7FEC_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\8D069EAEA0DB7FEC_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\8D069EAEA0DB7FEC_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_8FEAC91537BB1503" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_8FEAC91537BB1503/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_8FEAC91537BB1503/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_8FEAC91537BB1503/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\8FEAC91537BB1503_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\8FEAC91537BB1503_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\8FEAC91537BB1503_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\8FEAC91537BB1503_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_97D4F0B09DB0F70C" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_97D4F0B09DB0F70C/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_97D4F0B09DB0F70C/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_97D4F0B09DB0F70C/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\97D4F0B09DB0F70C_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\97D4F0B09DB0F70C_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\97D4F0B09DB0F70C_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\97D4F0B09DB0F70C_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_A4B743EEE334F2C0" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_A4B743EEE334F2C0/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_A4B743EEE334F2C0/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_A4B743EEE334F2C0/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\A4B743EEE334F2C0_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\A4B743EEE334F2C0_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\A4B743EEE334F2C0_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\A4B743EEE334F2C0_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_AF54C8B333D777D0" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_AF54C8B333D777D0/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_AF54C8B333D777D0/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_AF54C8B333D777D0/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\AF54C8B333D777D0_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\AF54C8B333D777D0_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\AF54C8B333D777D0_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\AF54C8B333D777D0_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_E214184A0B80F1D7" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_E214184A0B80F1D7/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_E214184A0B80F1D7/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_E214184A0B80F1D7/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\E214184A0B80F1D7_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\E214184A0B80F1D7_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\E214184A0B80F1D7_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\E214184A0B80F1D7_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_EBCA9AC555A19678" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_EBCA9AC555A19678/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_EBCA9AC555A19678/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_EBCA9AC555A19678/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\EBCA9AC555A19678_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\EBCA9AC555A19678_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\EBCA9AC555A19678_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\EBCA9AC555A19678_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_ED5691B6B27E00D5" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_ED5691B6B27E00D5/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_ED5691B6B27E00D5/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_ED5691B6B27E00D5/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\ED5691B6B27E00D5_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\ED5691B6B27E00D5_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\ED5691B6B27E00D5_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\ED5691B6B27E00D5_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_F281E2DC3EA576CE" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_F281E2DC3EA576CE/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_F281E2DC3EA576CE/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_F281E2DC3EA576CE/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\F281E2DC3EA576CE.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\F281E2DC3EA576CE_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\F281E2DC3EA576CE_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\F281E2DC3EA576CE_rough.dds@
+                token outputs:output
+            }
+        }
+
+        def Material "mat_FADCB33582B60A28" (
+            references = None
+        )
+        {
+            token inputs:mdl:displacement.connect = </RootNode/Looks/mat_FADCB33582B60A28/Shader.outputs:output>
+            token inputs:mdl:surface.connect = </RootNode/Looks/mat_FADCB33582B60A28/Shader.outputs:output>
+            token inputs:mdl:volume.connect = </RootNode/Looks/mat_FADCB33582B60A28/Shader.outputs:output>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                custom asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                custom token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @.\FADCB33582B60A28_diffuse.dds@
+                float inputs:emissive_intensity = 5
+                asset inputs:emissive_mask_texture = @.\FADCB33582B60A28_emissive.dds@
+                bool inputs:enable_emission = 1
+                asset inputs:normal_texture = @.\FADCB33582B60A28_normal.dds@
+                asset inputs:reflectionroughness_texture = @.\FADCB33582B60A28_rough.dds@
+                token outputs:output
+            }
+        }
+    }
+}
+
