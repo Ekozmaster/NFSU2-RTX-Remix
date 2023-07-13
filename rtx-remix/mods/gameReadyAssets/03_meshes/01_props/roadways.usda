@@ -16,7 +16,7 @@ over "RootNode"
             }
 
             def Xform "LightBollard" (
-                references = @../LightBolllard.usd@
+                references = @./LightBolllard.usd@
             )
             {
                 rel material:binding = </RootNode/Looks/mat_LightBollard> (
@@ -36,16 +36,6 @@ over "RootNode"
             )
             {
             }
-        }
-    }
-
-    over "instances"
-    {
-        over "inst_A7A17FBBF0E9AAF3_3" (
-            delete references = @../../../../captures/meshes/mesh_A7A17FBBF0E9AAF3.usd@
-            prepend references = @./meshes/mesh_A7A17FBBF0E9AAF3.usd@
-        )
-        {
         }
     }
 }

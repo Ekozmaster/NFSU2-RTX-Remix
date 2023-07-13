@@ -114,7 +114,7 @@ over "RootNode"
                     doc = "The base albedo color to use if no texture is specified"
                     hidden = false
                 )
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_yellow_left_albedo.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/205A40CF41D50A81_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -231,7 +231,7 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/asphalt/asphalt_yellow_left_n.dds@ (
+                asset inputs:normalmap_texture = @./textures/asphalt/205A40CF41D50A81_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -266,7 +266,7 @@ over "RootNode"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./textures/asphalt/asphalt_yellow_left_roughness.dds@ (
+                asset inputs:reflectionroughness_texture = @./textures/asphalt/205A40CF41D50A81_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -378,7 +378,7 @@ over "RootNode"
                     doc = "The base albedo color to use if no texture is specified"
                     hidden = false
                 )
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_White_left_albedo.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/C4B7B0DC7C284B03_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -495,7 +495,7 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/asphalt/asphalt_White_left_n.dds@ (
+                asset inputs:normalmap_texture = @./Textures/asphalt/C4B7B0DC7C284B03_n.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -530,7 +530,7 @@ over "RootNode"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/asphalt/asphalt_White_left_roughness.dds@ (
+                asset inputs:reflectionroughness_texture = @./Textures/asphalt/C4B7B0DC7C284B03_roughness.dds@ (
                     colorSpace = "raw"
                     customData = {
                         asset default = @@
@@ -642,7 +642,7 @@ over "RootNode"
                     doc = "The base albedo color to use if no texture is specified"
                     hidden = false
                 )
-                asset inputs:diffuse_texture = @./Textures/asphalt/clean road puddles/asphalt_puddles_c.dds@ (
+                asset inputs:diffuse_texture = @./textures/asphalt/clean road puddles/ECE9DBB2B08A8AD5_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -722,7 +722,7 @@ over "RootNode"
                     displayName = "Normal Map Encoding"
                     doc = "Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."
                     hidden = false
-                    renderType = "::Z73file_3A::Z19F_3A::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
+                    renderType = "::Z73file_3A::Z16C_3A::Users::Z41Emanuel_2520Kozerski::Jogos::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
                     sdrMetadata = {
                         string __SDR__enum_value = "octahedral"
                         string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
@@ -759,7 +759,7 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/asphalt/clean road puddles/asphalt_puddles_n.dds@ (
+                asset inputs:normalmap_texture = @./textures/asphalt/clean road puddles/ECE9DBB2B08A8AD5_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -794,7 +794,7 @@ over "RootNode"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/asphalt/clean road puddles/asphalt_puddles_r.dds@ (
+                asset inputs:reflectionroughness_texture = @./textures/asphalt/clean road puddles/ECE9DBB2B08A8AD5_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -906,7 +906,7 @@ over "RootNode"
                     doc = "The base albedo color to use if no texture is specified"
                     hidden = false
                 )
-                asset inputs:diffuse_texture = @./Textures/asphalt/crossroads/crossroads_c.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/crossroads/A53A4CE21C693849_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -1023,7 +1023,7 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/asphalt/crossroads/crossroads_n.dds@ (
+                asset inputs:normalmap_texture = @./Textures/asphalt/crossroads/A53A4CE21C693849_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1058,7 +1058,7 @@ over "RootNode"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/asphalt/crossroads/crossroads_r.dds@ (
+                asset inputs:reflectionroughness_texture = @./Textures/asphalt/crossroads/A53A4CE21C693849_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1170,7 +1170,7 @@ over "RootNode"
                     doc = "The base albedo color to use if no texture is specified"
                     hidden = false
                 )
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_no_mark_albedo.dds@ (
+                asset inputs:diffuse_texture = @./textures/asphalt/008B5071178E7812_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -1250,7 +1250,7 @@ over "RootNode"
                     displayName = "Normal Map Encoding"
                     doc = "Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."
                     hidden = false
-                    renderType = "::Z73file_3A::Z19F_3A::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
+                    renderType = "::Z73file_3A::Z16C_3A::Users::Z41Emanuel_2520Kozerski::Jogos::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
                     sdrMetadata = {
                         string __SDR__enum_value = "octahedral"
                         string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
@@ -1287,7 +1287,7 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/asphalt/asphalt_White_left_n.dds@ (
+                asset inputs:normalmap_texture = @./textures/asphalt/008B5071178E7812_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1322,7 +1322,7 @@ over "RootNode"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/asphalt/asphalt_White_left_r.dds@ (
+                asset inputs:reflectionroughness_texture = @./textures/asphalt/008B5071178E7812_r.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1399,7 +1399,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_yellow_lr_albedo.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/A82495883FD6B325_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -1408,7 +1408,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/asphalt/asphalt_yellow_lr_n.dds@ (
+                asset inputs:normalmap_texture = @./textures/asphalt/A82495883FD6B325_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1417,7 +1417,7 @@ over "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./textures/asphalt/asphalt_yellow_lr_roughness.dds@ (
+                asset inputs:reflectionroughness_texture = @./textures/asphalt/A82495883FD6B325_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1433,7 +1433,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_yellow_stripes_albedo.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/47AD97303EAB21FC_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -1442,7 +1442,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/asphalt/asphalt_yellow_stripes_n.dds@ (
+                asset inputs:normalmap_texture = @./textures/asphalt/47AD97303EAB21FC_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1451,7 +1451,7 @@ over "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./textures/asphalt/asphalt_yellow_stripes_roughness.dds@ (
+                asset inputs:reflectionroughness_texture = @./textures/asphalt/47AD97303EAB21FC_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1467,7 +1467,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_yellow_stripes_slant_albedo.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/15969FB25CA086CA_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -1476,7 +1476,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/asphalt/asphalt_yellow_stripes_slant_n.dds@ (
+                asset inputs:normalmap_texture = @./textures/asphalt/15969FB25CA086CA_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1485,7 +1485,7 @@ over "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./textures/asphalt/asphalt_yellow_stripes_slant_roughness.dds@ (
+                asset inputs:reflectionroughness_texture = @./textures/asphalt/15969FB25CA086CA_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1501,8 +1501,8 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_white_long_albedo.dds@
-                asset inputs:normalmap_texture = @./Textures/asphalt/asphalt_white_long_n.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/C186CB68CAF341B8_albedo.dds@
+                asset inputs:normalmap_texture = @./Textures/asphalt/C186CB68CAF341B8_n.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1511,7 +1511,7 @@ over "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/asphalt/asphalt_white_long_roughness.dds@ (
+                asset inputs:reflectionroughness_texture = @./Textures/asphalt/C186CB68CAF341B8_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1562,7 +1562,7 @@ over "RootNode"
                     doc = "The base albedo color to use if no texture is specified"
                     hidden = false
                 )
-                asset inputs:diffuse_texture = @./Textures/asphalt/asphalt_no_mark_albedo.dds@ (
+                asset inputs:diffuse_texture = @./Textures/asphalt/008B5071178E7812_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -1679,7 +1679,7 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/asphalt/asphalt_generic_n.dds@ (
+                asset inputs:normalmap_texture = @./Textures/asphalt/AA411DB3431B978D_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -1714,7 +1714,7 @@ over "RootNode"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/asphalt/asphalt_generic_r.dds@ (
+                asset inputs:reflectionroughness_texture = @./Textures/asphalt/AA411DB3431B978D_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@

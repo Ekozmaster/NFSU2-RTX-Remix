@@ -11,7 +11,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/sidewalk/02C488A7978DFB91_albedo.dds@ (
+                asset inputs:diffuse_texture = @./textures/sidewalk/6A976885455CBFF1_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -20,7 +20,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/sidewalk/02C488A7978DFB91_normal.dds@ (
+                asset inputs:normalmap_texture = @./textures/sidewalk/6A976885455CBFF1_normal.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -28,7 +28,7 @@ over "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/sidewalk/02C488A7978DFB91_rough.dds@ (
+                asset inputs:reflectionroughness_texture = @./textures/sidewalk/6A976885455CBFF1_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -61,7 +61,7 @@ over "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./Textures/sidewalk/6A976885455CBFF1_rough.dds@ (
+                asset inputs:reflectionroughness_texture = @./Textures/sidewalk/6A976885455CBFF1_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
