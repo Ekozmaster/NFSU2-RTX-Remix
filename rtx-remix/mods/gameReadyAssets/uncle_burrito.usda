@@ -1869,48 +1869,6 @@ over "RootNode"
             }
         }
 
-        over "mat_53881D411A998E60"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../captures/textures/53881D411A998E60.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.049999997 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_2AF4F4DC2477AB65"
         {
             over "Shader"
