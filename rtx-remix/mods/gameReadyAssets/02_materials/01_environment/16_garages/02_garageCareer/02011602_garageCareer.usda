@@ -386,7 +386,7 @@ over "RootNode"
         }
 
         over "mat_1FD9BE02B298125C"
-        {
+         {
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./1FD9BE02B298125C_albedo.dds@ (
@@ -398,15 +398,6 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                bool inputs:enable_emission = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./1FD9BE02B298125C_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -414,6 +405,15 @@ over "RootNode"
                     }
                     displayGroup = "Normal"
                     displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./1FD9BE02B298125C_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
                     hidden = false
                 )
             }
