@@ -16,12 +16,9 @@ over "RootNode"
             }
 
             def Xform "LightBollard" (
-                references = @./LightBolllard.usd@
+                references = @./mesh_26A6E5758911C4FE/LightBollards.usd@
             )
             {
-                rel material:binding = </RootNode/Looks/mat_LightBollard> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0.02)
