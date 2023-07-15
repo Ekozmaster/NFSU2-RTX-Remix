@@ -1,2 +1,360 @@
 #usda 1.0
+(
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_D7ABB05B418557D1"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "garGraph_ceiling01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -8.5
+                float height = 13.5
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.418658511930311, 3.696632889897405, 4.548011436300852)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -10
+                float height = 13.5
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.4319839900044893, 3.696632889897405, 4.517436726483391)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -8
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.418658511930311, 23.465373819360945, 4.548011436300852)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -8
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.357832183524316, 23.465373819360945, 4.548011436300852)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -8
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.357832183524316, 37.052115439736525, 4.548011436300852)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -8
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.4186585119303103, 37.052115439736525, 4.548011436300852)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -5.9
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (12.508748224695749, 50.40365549497588, 4.558543110546837)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_lamp01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -10.2
+                float height = 0.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 1
+                double3 xformOp:rotateXYZ = (120.20501564248048, -0.4436434133789646, -28.28244669340421)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.459643561677173, 16.184850769638224, 1.9362054622801281)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_lamp01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -10.2
+                float height = 0.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 1
+                double3 xformOp:rotateXYZ = (120.20501564248048, -0.4436434133789646, -28.28244669340421)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.431340808699492, 16.13167521090441, 2.499939131940382)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_carLig01_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -6
+                float height = 2.9
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.1
+                double3 xformOp:rotateXYZ = (-0.5100738433537799, -0.04901661754416864, 84.51104173626777)
+                double3 xformOp:scale = (1, 0.9999999999999992, 1)
+                double3 xformOp:translate = (-0.11112385693610179, 3.0571526880204893, 3.5326251397065738)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_carLig01_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -5.3
+                float height = 1.4
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0
+                float shaping:focus = 0
+                color3f shaping:focusTint
+                float shaping:ies:angleScale = 0
+                asset shaping:ies:file
+                float width = 0.1
+                double3 xformOp:rotateXYZ = (90, 0, -25.69349796146895)
+                double3 xformOp:scale = (1, 0.9999999999999992, 1)
+                double3 xformOp:translate = (-2.1951115663655534, 0.21895618367861902, 1.6667502839830048)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_carLig01_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -5.3
+                float height = 1.4
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0
+                float shaping:focus = 0
+                color3f shaping:focusTint
+                float shaping:ies:angleScale = 0
+                asset shaping:ies:file
+                float width = 0.1
+                double3 xformOp:rotateXYZ = (90, -2.842170943040401e-14, -60.554757899966745)
+                double3 xformOp:scale = (1, 0.9999999999999992, 1)
+                double3 xformOp:translate = (-3.388906091085898, 1.2628999677898132, 1.6667502839829587)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -11
+                float height = 13.5
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.4186585119302997, 3.696632889897405, 4.611116208703054)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -11
+                float height = 13.5
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.4319839900045004, 3.696632889897405, 4.580541498885592)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -11
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.4186585119302997, 23.465373819360945, 4.611116208703054)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -11
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.3578321835243274, 23.465373819360945, 4.611116208703052)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -11
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.3578321835243274, 37.052115439736525, 4.611116208703052)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garGraph_ceiling01_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -11
+                float height = 4.8
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.90000004
+                double3 xformOp:rotateXYZ = (0, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.418658511930299, 37.052115439736525, 4.611116208703054)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
 
