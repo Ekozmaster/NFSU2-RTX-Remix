@@ -1,13 +1,14 @@
 #usda 1.0
 (
     subLayers = [
+        @./e-man.usda@,
+        @./adamplayer.usda@,
+        @./01_lights/01_lights.usda@,
         @./uncle_burrito.usda@,
-        @./roads.usda@,
-        @./mod_lights.usda@,
+        @./02_materials/03_global/01_roads/020301_roads.usda@,
         @./player_car_lights.usda@,
         @./tiles.usda@,
         @./sidewalk.usda@,
-        @./e-man.usda@,
         @./traffic.usda@,
         @./emissive_lights.usda@,
         @./metal.usda@,
@@ -19,19 +20,15 @@
         @./signs.usda@,
         @./walls.usda@,
         @./windows.usda@,
-        @./textures\concrete\concrete.usda@,
-        @./adamplayer.usda@,
-        @./01_lights/01_buildings/01_buildings.usda@,
-        @./01_lights/02_roadways/02_roadways.usda@,
-        @./01_lights/03_cars/03_cars.usda@,
-        @./01_lights/04_unique/0104_unique.usda@,
-        @./01_lights/05_global/0105_Global.usda@,
+        @./textures/concrete/concrete.usda@,
         @./02_materials/01_environment/16_garages/01_garageLobby/02011601_garageLobby.usda@,
         @./02_materials/01_environment/16_garages/02_garageCareer/02011602_garageCareer.usda@,
         @./02_materials/01_environment/16_garages/06_garageBody/02011606_garageBody.usda@,
         @./02_materials/03_global/02_worldSprites/020302_worldSprites.usda@,
         @./tunnels.usda@,
-        @./highways.usda@
+        @./highways.usda@,
+        @./03_meshes/01_props/01_roadways/030101_roadways.usda@
     ]
     upAxis = "Z"
 )
+
