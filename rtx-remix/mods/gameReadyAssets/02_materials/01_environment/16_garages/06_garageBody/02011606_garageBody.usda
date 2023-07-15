@@ -1,21 +1,18 @@
 #usda 1.0
 (
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
     upAxis = "Y"
 )
-
-def Scope "Looks"
-{
-}
 
 over "RootNode"
 {
     over "Looks"
     {
-        over "mat_933E8F710FA183E4"
+        over "mat_893BD6AFA840CB02"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./933E8F710FA183E4_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./893BD6AFA840CB02_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -24,23 +21,46 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./933E8F710FA183E4_normal.dds@
-                asset inputs:reflectionroughness_texture = @./933E8F710FA183E4_rough.dds@ (
+                float inputs:emissive_intensity = 1 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./893BD6AFA840CB02_albedo.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
                     hidden = false
                 )
             }
         }
-        over "mat_43C100447BB13F8E"
+
+        over "mat_F95729DA46F996E8"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./43C100447BB13F8E_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./F95729DA46F996E8_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -49,57 +69,16 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./43C100447BB13F8E_normal.dds@
-                asset inputs:reflectionroughness_texture = @./43C100447BB13F8E_rough.dds@ (
-                    colorSpace = "auto"
+                bool inputs:enable_emission = 0 (
                     customData = {
-                        asset default = @@
+                        bool default = 0
                     }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-            }
-        }
-        over "mat_D32A8374CBD69E1E"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./D32A8374CBD69E1E_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./D32A8374CBD69E1E_normal.dds@
-                asset inputs:reflectionroughness_texture = @./D32A8374CBD69E1E_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-        over "mat_8185C42158319894"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./8185C42158319894_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:metallic_texture = @./8185C42158319894_metallic.dds@ (
+                asset inputs:metallic_texture = @./F95729DA46F996E8_metallic.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -108,8 +87,16 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./8185C42158319894_normal.dds@
-                asset inputs:reflectionroughness_texture = @./8185C42158319894_rough.dds@ (
+                asset inputs:normalmap_texture = @./F95729DA46F996E8_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./F95729DA46F996E8_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -120,11 +107,12 @@ over "RootNode"
                 )
             }
         }
-        over "mat_44E239959987F247"
+
+        over "mat_F317904A6E39DE04"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./44E239959987F247_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./F317904A6E39DE04_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -133,8 +121,29 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./44E239959987F247_normal.dds@
-                asset inputs:reflectionroughness_texture = @./44E239959987F247_rough.dds@ (
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.71 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./F317904A6E39DE04_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -145,5 +154,427 @@ over "RootNode"
                 )
             }
         }
+
+        over "mat_D9A5CF0FB6507ED8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./D9A5CF0FB6507ED8_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./D9A5CF0FB6507ED8_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./D9A5CF0FB6507ED8_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_D32A8374CBD69E1E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./D32A8374CBD69E1E_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./D32A8374CBD69E1E_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./D32A8374CBD69E1E_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_C7E43624DBE6A6E8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./C7E43624DBE6A6E8_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./C7E43624DBE6A6E8_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./C7E43624DBE6A6E8_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_A7A837154CF594C5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./A7A837154CF594C5_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./A7A837154CF594C5_metallic.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./A7A837154CF594C5_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_933E8F710FA183E4"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./933E8F710FA183E4_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./933E8F710FA183E4_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./933E8F710FA183E4_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_91D8953D0FCAB581"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./91D8953D0FCAB581_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./91D8953D0FCAB581_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./91D8953D0FCAB581_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_656B1D12E56C155B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./656B1D12E56C155B_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./656B1D12E56C155B_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./656B1D12E56C155B_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_5D75E5F5E82ABD11"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./5D75E5F5E82ABD11_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./5D75E5F5E82ABD11_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./5D75E5F5E82ABD11_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_0FDEEC287CCC4B2E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./0FDEEC287CCC4B2E_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./0FDEEC287CCC4B2E_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.5 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./0FDEEC287CCC4B2E_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_6D734DB871192FA2"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./6D734DB871192FA2_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 0.1 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./6D734DB871192FA2_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+            }
+        }
     }
 }
+
