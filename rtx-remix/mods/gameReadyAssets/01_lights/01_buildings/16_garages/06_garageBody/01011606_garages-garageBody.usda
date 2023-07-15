@@ -1,2 +1,322 @@
 #usda 1.0
+(
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_1C2A46A33BC25EFD"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "garBody_Ext01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -6.8
+                float intensity = 30000
+                bool normalize = 0
+                float radius = 1
+                float shaping:cone:angle = 32.4
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (-1.437792607930703, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.3732653824139485, 137.38044793671304, 4.057450160437088)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garBody_Ext01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = -7.5
+                float intensity = 30000
+                bool normalize = 0
+                float radius = 1
+                float shaping:cone:angle = 32.4
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (-1.437792607930703, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.2014098099350237, 137.34862418860013, 3.2449323137838917)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.925445467694172, 11.200364172807008, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.0226745755990905, 11.200364172807111, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.022674575599028, 17.78071873694701, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.925445467694173, 17.780718736946902, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.022674575598956, 27.417963883580324, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.925445467694173, 27.417963883580217, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.022674575598859, 37.62625760237, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.925445467694173, 37.626257602369904, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.06432993741611437, 43.54817352398171, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.06432993741611437, 50.3444376342169, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_UpLig01_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -7
+                float height = 2.2
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.3
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.06432993741611437, 57.07395391572615, 5.046968963258687)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_carLig01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -5.6
+                float height = 1.9
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.1
+                double3 xformOp:rotateXYZ = (68.55169372918499, 5.684341886080802e-14, 58.540661241830605)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.8652183579369623, 2.6496730518272247, 1.570259333284841)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_carLig01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -5.6
+                float height = 1.9
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.1
+                double3 xformOp:rotateXYZ = (69.84413830047814, 0, 37.0639292257961)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.646274080028849, 0.6180851826742602, 1.5702593332848338)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garageBody_ambLig01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -4.7000003
+                float height = 1
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 1
+                double3 xformOp:rotateXYZ = (90, 0, 173.0299714433856)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.2476515019269563e-16, -1.8273934758661379, 2.544859296635039)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
 

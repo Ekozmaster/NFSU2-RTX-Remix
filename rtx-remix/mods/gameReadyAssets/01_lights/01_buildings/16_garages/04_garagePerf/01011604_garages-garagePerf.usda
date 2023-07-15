@@ -1,2 +1,755 @@
 #usda 1.0
+(
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_84C71EC219BD3ABB"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "garPerf_ceiling01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, -0.3874706494110645, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, -0.3874706494110645, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, -0.3874706494110645, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 5.6579744272369865, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 5.6579744272369865, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 5.6579744272369865, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 11.671529480391797, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 11.671529480391797, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 11.671529480391797, 4.729722482633411)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 17.71865209865615, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 17.71865209865615, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 17.71865209865615, 4.783314634801064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 23.70627939092281, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 23.70627939092281, 4.814566509945238)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_14" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 23.70627939092281, 4.783314634801064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_15" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 29.746691557616188, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_16" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 29.746691557616188, 4.814566509945238)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_17" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 29.746691557616188, 4.783314634801064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_18" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 35.77011895395203, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_19" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 35.77011895395203, 4.814566509945238)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_20" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 35.77011895395203, 4.783314634801064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_21" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 41.80805885296885, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_22" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 41.80805885296885, 5.288381960621109)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_23" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 41.80805885296885, 4.783314634801064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_24" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 47.8340303875587, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_25" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 47.8340303875587, 5.288381960621109)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_26" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 47.8340303875587, 4.783314634801064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_27" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 53.86498939109357, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_28" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 53.86498939109357, 5.288381960621109)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_29" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.078287430430926, 53.86498939109357, 4.783314634801064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_30" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.915233527681083, 59.92739660194315, 5.273107410219374)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling01_31" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.6588453, 0.980695, 0.9620551)
+                float exposure = -1
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness = 1.1
+                float shaping:focus = 6
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.9051652620581843, 59.92739660194315, 4.8237713039672245)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -3.2
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 72.9
+                float shaping:cone:softness = 0.2
+                float shaping:focus = 0
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.569671420539532, 45.82781410070505, 2.989124921735064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling02_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -3.2
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 72.9
+                float shaping:cone:softness = 0.2
+                float shaping:focus = 0
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.569671420539532, 41.33402787947269, 2.989124921735064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling02_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -3.2
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 72.9
+                float shaping:cone:softness = 0.2
+                float shaping:focus = 0
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.569671420539532, 36.165488777741885, 2.989124921735064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garPerf_ceiling02_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -3.2
+                float intensity = 30000
+                float radius = 0.1
+                float shaping:cone:angle = 72.9
+                float shaping:cone:softness = 0.2
+                float shaping:focus = 0
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.569671420539532, 30.962293780764014, 2.989124921735064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garPerf_amb01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 0
+                float exposure = -2.7
+                float height = 1
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 1
+                double3 xformOp:rotateXYZ = (90, 0, 181.59539474884093)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.7418705941290886e-50, 1.1973985901213036e-48, 3.496913549414461)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garPerf_carLig01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -5
+                float height = 0.1
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 2.8
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.4456841312068685, 4.620216347977607, 3.6862425110421135)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "garPerf_carLig01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float exposure = -5
+                float height = 0.1
+                float intensity = 15000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 2.8
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.2720518361426305, 4.620216347977607, 3.6862425110421135)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
 
