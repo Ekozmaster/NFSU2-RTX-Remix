@@ -15,7 +15,8 @@ RTX Remix mod for Need for Speed Underground 2
 or reader's version:
 
 ## For Playing:
-- Automated installer coming soon! For now, you can use the same steps as the [Installation for contributors](#install-for-contributors). Skip the requirements and take the `.zip` path.
+- Automated installer coming soon! For now, install the dependencies as mentioned below and instead of using git, download the release file and unzip it into your game folder:<br>
+    https://github.com/Ekozmaster/NFSU2-RTX-Remix/releases
 
 
 ## <a name="install-for-contributors"></a>For Contributors:
@@ -30,19 +31,26 @@ or reader's version:
 - Download **Underground 2 Widescreenfix** and paste the contents in the game directory. [NFSUnderground2.WidescreenFix.zip](https://github.com/ThirteenAG/WidescreenFixesPack/releases/tag/nfsu2).
   - Modify the `scripts/NFSUnderground2.WidescreenFix.ini` with a text editor so `WindowedMode = 4` and `Skip Intro = 1`.
   - Rename the `dinput8.dll` file to `dsound.dll`.
-- Download **RTX-Remix 0.2.0** and paste the contents in the game directory so the `.trex` folder will be next to `speed.exe`. [Link](https://github.com/NVIDIAGameWorks/rtx-remix/releases/tag/remix-0.2.0) (GitHub Login required to see the links).
+- Download **RTX-Remix 0.2.0** and paste the contents in the game directory so the `.trex` folder will be next to `SPEED2.exe`. [Link](https://github.com/NVIDIAGameWorks/rtx-remix/releases/tag/remix-0.2.0) (GitHub Login required to see the links).
 - Do the same with **Bridge Remix** (Release version) [Link](https://github.com/NVIDIAGameWorks/bridge-remix/actions/runs/5095209923) (GitHub Login required to see the links).
 - And with **DXVK Remix** (Also release version), but paste the files inside the `.trex` folder. [Link](https://github.com/NVIDIAGameWorks/dxvk-remix/actions/runs/5150202285) (GitHub Login required to see the links).
 
 #### Installing the mod itself:
-- Either [download the repo as zip](https://github.com/Ekozmaster/NFSU2-RTX-Remix/archive/refs/heads/main.zip) and unzip it inside the game directory (replace everything it asks for) or
-- Initialize a git repo in the game installation directory, add this repository as it's remote origin, `fetch` the mod files from the origin and switch to the `main` branch, all using `git bash`:
+- Using a terminal (Ex: Git bash):
     ```
-    cd C:\Games\Need for Speed Underground 2\
+    cd "C:\Game-Install-location\"
+
+    # Initialize an empty repository in the game folder
     git init
-    git remote add origin https://github.com/Ekozmaster/NFSU2-RTX-Remix.git
+
+    # Add NFSU2-RTX-Remix.git repo as the remote origin of this local repo
+    git remote add origin git@github.com:Ekozmaster/NFSU2-RTX-Remix.git
+
+    # Fetch all the most up to date information about the repo
     git fetch
-    git checkout main
+
+    # Jump into the main branch with "-f" to ignore game files, so you get the latest stuff from the repo
+    git checkout main -f
     ```
-- At the end, just make sure this README.md file is right next to `speed.exe`.
+- Copy the `rtx-remix-defaults/rtx.conf` in the same folder as your `SPEED2.exe`.
 - Have fun!
