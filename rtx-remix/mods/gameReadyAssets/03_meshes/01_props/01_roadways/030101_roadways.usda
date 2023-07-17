@@ -7,34 +7,6 @@ over "RootNode"
 {
     over "meshes"
     {
-        def "mesh_26A6E5758911C4FE"
-        {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
-            def Xform "LightBollard" (
-                references = @./mesh_26A6E5758911C4FE/LightBollards.usd@
-            )
-            {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.02)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_A7A17FBBF0E9AAF3"
-        {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-        }
-
         over "mesh_C4BDD237A7107912"
         {
             over "mesh" (
@@ -74,6 +46,52 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+        
+        def "mesh_26A6E5758911C4FE"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "LightBollard" (
+                references = @./mesh_26A6E5758911C4FE/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.02)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A7A17FBBF0E9AAF3"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_5DDCDCDDAED53EA7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "CobbleWallArched" (
+                references = @./mesh_5DDCDCDDAED53EA7/CobbleWallArched.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
-
