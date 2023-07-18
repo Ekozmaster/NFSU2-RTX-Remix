@@ -8,7 +8,7 @@
         @./tiles.usda@,
         @./sidewalk.usda@,
         @./traffic.usda@,
-        @./emissive_lights.usda@,
+        @./textures/lights/lights.usda@,
         @./metal.usda@,
         @./stone.usda@,
         @./vegetation.usda@,
