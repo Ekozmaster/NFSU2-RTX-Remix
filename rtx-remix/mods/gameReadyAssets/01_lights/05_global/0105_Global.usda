@@ -558,33 +558,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_26A6E5758911C4FE"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "BollardLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 4000
-                bool enableColorTemperature = 1
-                float exposure = 11.3
-                float intensity = 44.7
-                bool normalize = 0
-                float radius = 0.01
-                float shaping:cone:angle = 102
-                float shaping:cone:softness = 4.4
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (-68.80000102519989, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -0.20000000298023224, 0.800000011920929)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_6039917B7217E177"
         {
             custom int preserveOriginalDrawCall = 1

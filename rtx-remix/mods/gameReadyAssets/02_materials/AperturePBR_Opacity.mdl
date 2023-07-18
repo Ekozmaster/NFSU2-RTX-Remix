@@ -1,0 +1,305 @@
+/*****************************************************************************
+*     Copyright 1986-2020 NVIDIA Corporation. All rights reserved.
+******************************************************************************
+
+ MDL MATERIALS ARE PROVIDED PURSUANT TO AN END USER LICENSE  AGREEMENT,
+ WHICH WAS ACCEPTED IN ORDER TO GAIN ACCESS TO THIS FILE.  IN PARTICULAR, 
+ THE MDL MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF 
+ COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL NVIDIA
+ CORPORATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING
+ ANY GENERAL, SPECIAL,  INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, 
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF 
+ THE USE OR INABILITY TO USE THE MDL MATERIALS OR FROM OTHER DEALINGS IN 
+ THE MDL MATERIALS.
+*/
+
+mdl 1.4;
+
+import ::base::*;
+import ::anno::*;
+import ::df::*;
+import ::state::*;
+import ::tex::*;
+import ::math::*;
+
+
+import ::nvidia::core_definitions::file_texture;
+import ::nvidia::core_definitions::normalmap_texture;
+
+using AperturePBR_Model import *;
+import AperturePBR_Normal::*;
+
+// IMPORTANT: When updating defaults or hard ranges, the defaults and ranges in the associated runtime should
+// be updated as well so that the defaults are properly selected even when the USD does not include them (as
+// sometimes tools will not write out the MDL defaults for values not modified by the user), and so the clamping
+// logic is consistent. Additionally, proper hard ranges should be included for any newly added values to ensure
+// that it is not easy for users to specify incorrect data.
+
+export material AperturePBR_Opacity(
+  // -------------------- DIFFUSE REFLECTION ----------------------
+  uniform color diffuse_color_constant = color(0.2f)
+  [[
+    anno::display_name("Albedo Base Color"),
+    anno::hard_range(color(0.0), color(1.0)),
+    anno::description("The base albedo color to use if no texture is specified"),
+    anno::in_group("Diffuse")
+  ]],
+  uniform texture_2d diffuse_texture = texture_2d()
+  [[
+    anno::display_name("Albedo Map"),
+    anno::description("The texture specifying the albedo value and the optional opacity value to use in the alpha channel"),
+    anno::in_group("Diffuse")
+  ]],
+  uniform bool enable_thin_film = false
+  [[
+    anno::display_name("Enable thin film"),
+    anno::description("Adds a thin film coating to the material"),
+    anno::in_group("Diffuse")
+  ]],
+  uniform bool thin_film_thickness_from_albedo_alpha = false
+  [[
+    anno::display_name("Thin film thickness from albedo alpha"),
+    anno::description("Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."),
+    anno::in_group("Diffuse")
+  ]],
+  uniform float thin_film_thickness_constant = 200.0f
+  [[
+    anno::display_name("Thin film constant thickness in nm"),
+    anno::hard_range(0.001, 1500.0),
+    anno::description("Thickness of the thin film if not specified in albedo texture"),
+    anno::in_group("Diffuse"),
+    anno::enable_if("enable_thin_film == true && thin_film_thickness_from_albedo_alpha == false")
+  ]],
+
+  // -------------------- SPECULAR REFLECTION ----------------------
+  uniform float reflection_roughness_constant = 0.5f
+  [[
+    anno::display_name("Roughness Amount"),
+    anno::hard_range(0.0, 1.0),
+    anno::description("Higher roughness values lead to more blurry reflections"),
+    anno::in_group("Specular")
+  ]],
+  uniform texture_2d reflectionroughness_texture = texture_2d()
+  [[
+    anno::display_name("Roughness Map"),
+    anno::in_group("Specular")
+  ]],
+
+  uniform float anisotropy_constant = 0.0f
+  [[
+    anno::display_name("Anisotropy Amount"),
+    anno::hard_range(-1.0, 1.0),
+    anno::description("0 for isotropic, extents of -1 to 1 for anisotropy"),
+    anno::in_group("Specular")
+  ]],
+  uniform texture_2d anisotropy_texture = texture_2d()
+  [[
+    anno::display_name("Anisotropy Map"),
+    anno::in_group("Specular")
+  ]],
+
+  uniform float metallic_constant = 0.f
+  [[
+    anno::display_name("Metallic Amount"),
+    anno::hard_range(0.0, 1.0),
+    anno::description("Metallic Material"),
+    anno::in_group("Specular")
+  ]],
+  uniform texture_2d metallic_texture = texture_2d()
+  [[
+    anno::display_name("Metallic Map"),
+    anno::in_group("Specular")
+  ]],
+
+  // -------------------- EMISSIVE ----------------------
+  uniform bool enable_emission = false
+  [[
+    anno::display_name("Enable Emission"),
+    anno::description("Enables the emission of light from the material"),
+    anno::in_group("Emissive")
+  ]],
+  uniform color emissive_color_constant = color(1.0, 0.1, 0.1)
+  [[
+    anno::enable_if("enable_emission == true"),
+    anno::display_name("Emissive Color"),
+    anno::hard_range(color(0.0), color(1.0)),
+    anno::description("The emissive color when no emissive color texture is specified."),
+    anno::in_group("Emissive")
+  ]],
+  uniform texture_2d emissive_mask_texture = texture_2d()
+  [[
+    anno::enable_if("enable_emission == true"),
+    anno::display_name("Emissive Mask Map"),
+    anno::description("The texture masking the emissive color"),
+    anno::in_group("Emissive")
+  ]],
+  uniform float emissive_intensity = 40.f
+  [[
+    anno::enable_if("enable_emission == true"),
+    anno::display_name("Emissive Intensity"),
+    anno::hard_range(0.0, 65504.0),
+    anno::description("Intensity of the emission"),
+    anno::in_group("Emissive")
+  ]],
+  uniform int sprite_sheet_fps = 0
+  [[
+    anno::enable_if("enable_emission == true"),
+    anno::display_name("Spritesheet FPS"),
+    anno::hard_range(0, 255),
+    anno::description("Frames Per Second if the emissive map is a spritesheet"),
+    anno::in_group("Emissive")
+  ]],
+  uniform int sprite_sheet_cols = 1
+  [[
+    anno::enable_if("enable_emission == true"),
+    anno::display_name("Spritesheet Columns"),
+    anno::hard_range(1, 255),
+    anno::description("Number of columns the emissive map is divided into"),
+    anno::in_group("Emissive")
+  ]],
+  uniform int sprite_sheet_rows = 1
+  [[
+    anno::enable_if("enable_emission == true"),
+    anno::display_name("Spritesheet Rows"),
+    anno::hard_range(1, 255),
+    anno::description("Number of row the emissive map is divided into"),
+    anno::in_group("Emissive")
+  ]],
+
+  // -------------------- ALPHA CUTOUT ----------------------
+  uniform bool enable_opacity = false
+  [[
+      anno::display_name("Enable Opacity"),
+      anno::description("Enables the use of cutout opacity"),
+      anno::in_group("Opacity")
+  ]],
+  uniform float opacity_constant = 1.f
+  [[
+      anno::enable_if("enable_opacity == true"),
+      anno::hard_range(0.0, 1.0),
+      anno::display_name("Opacity Amount"),
+      anno::description("Used when no albedo/opacity texture is specified. 0 for completely transparent, 1 for completly opaque."),
+      anno::in_group("Opacity")
+  ]],
+
+  // -------------------- MATERIAL FLAGS ----------------------
+  uniform bool ignore_material = false
+  [[
+    anno::display_name("Ignore Material"),
+    anno::description("Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard."),
+    anno::in_group("Material Flags")
+  ]],
+
+  // -------------------- NORMAL ----------------------
+  uniform texture_2d normalmap_texture = texture_2d()
+  [[
+    anno::display_name("Normal Map"),
+    anno::in_group("Normal")
+  ]],
+  uniform AperturePBR_Normal::normalmap_encoding encoding = AperturePBR_Normal::octahedral
+  [[
+    anno::display_name("Normal Map Encoding"),
+    anno::description("Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."),
+    anno::in_group("Normal")
+  ]]
+)
+[[
+  anno::display_name("Aperture PBR Opacity"),
+  anno::description("Supports the opaque/opacity material model of the Aperture Renderer"),
+  anno::version( 1, 0, 0),
+  anno::author("NVIDIA CORPORATION"),
+  anno::key_words(string[]("aperture", "PBR", "opaque", "opacity", "omniverse", "generic"))
+]]
+ = let {
+
+  base::texture_coordinate_info uvw = base::coordinate_source(
+                                            coordinate_system: base::texture_coordinate_uvw,
+                                            texture_space: 0);
+
+  int num_frames = sprite_sheet_rows * sprite_sheet_cols;
+  varying int frame_idx = int(state::animation_time() * sprite_sheet_fps) % num_frames;
+  varying float2 base_uv = float2(uvw.position.x, uvw.position.y);
+  varying float2 emissive_uv = ((base_uv + float2(frame_idx % sprite_sheet_cols, 1. - frame_idx / sprite_sheet_cols)) / float2(sprite_sheet_cols, sprite_sheet_rows));
+
+  color checker_color = base::checker_texture(
+    color1: color(0.0, 0.0, 0.0),
+    color2: color(1.0, 0.41, 0.71), // Hot Pink
+    blur: 0.,
+    uvw: base::transform_coordinate(
+      transform: base::rotation_translation_scale(scaling: float3(10.0)),
+      coordinate: base::coordinate_source(coordinate_system: base::texture_coordinate_uvw)
+    )
+  ).tint;
+
+  // Diffuse Color Lookup
+  base::texture_return base_lookup = base::file_texture(
+                    texture: diffuse_texture,
+                    color_offset: color(0.0, 0.0, 0.0),
+                    color_scale: color(1.0, 1.0, 1.0),
+                    mono_source: base::mono_alpha,
+                    uvw: uvw,
+                    clip: false);
+
+  color diffuse_color = ignore_material ?
+    checker_color :
+    (tex::texture_isvalid(diffuse_texture) ? base_lookup.tint : diffuse_color_constant);
+  float opacity = ignore_material ?
+    0.5f :
+    (tex::texture_isvalid(diffuse_texture) && !enable_thin_film ? base_lookup.mono : opacity_constant);
+  float thin_film_thickness = enable_thin_film ?
+                                (thin_film_thickness_from_albedo_alpha && tex::texture_isvalid(diffuse_texture) ?
+                                  base_lookup.mono * 1500.0 :
+                                  thin_film_thickness_constant)
+                              : 0.0;
+
+  float reflection_roughness = tex::texture_isvalid(reflectionroughness_texture) ?
+                base::file_texture(
+                texture: reflectionroughness_texture,
+                mono_source: base::mono_average,
+                uvw: uvw,
+                clip: false).mono : reflection_roughness_constant;
+  float anisotropy = tex::texture_isvalid(anisotropy_texture) ? 
+                (base::file_texture(
+                  texture: anisotropy_texture,
+                  mono_source: base::mono_average,
+                  uvw: uvw,
+                  clip: false).mono * 2.0f - 1.0f) : anisotropy_constant;
+  float metallic = tex::texture_isvalid(metallic_texture) ? base::file_texture(
+            texture: metallic_texture,
+            color_offset: color(0.0, 0.0, 0.0),
+            color_scale: color(1.0, 1.0, 1.0),
+            mono_source: base::mono_average,
+            uvw: uvw,
+            clip: false).mono : metallic_constant;
+
+  color emissive_lookup = tex::texture_isvalid(emissive_mask_texture)
+              ? tex::lookup_color(emissive_mask_texture, emissive_uv, tex::wrap_repeat, tex::wrap_repeat)
+              : emissive_color_constant;
+
+  // Normal calculations
+  float3 normal_lookup =  tex::texture_isvalid(normalmap_texture) ?
+              AperturePBR_Normal::enc_tangent_space_normal_texture(
+              texture:        normalmap_texture,  
+              factor:         1.0,
+              uvw:            uvw,
+              flip_tangent_u: false,
+              flip_tangent_v: true,
+              encoding:       encoding
+              ) : state::normal();
+} in AperturePBR_Model(
+  diffuse_color: diffuse_color,
+  reflection_roughness: reflection_roughness,
+  anisotropy: anisotropy,
+  metallic: metallic,
+  enable_emission: enable_emission,
+  emissive_color: emissive_lookup,
+  emissive_intensity: emissive_intensity,
+  // Note: Force opacity to be enabled when the material is ignored so the constant opacity it is given to be somewhat seethrough works.
+  enable_opacity: ignore_material ? true : enable_opacity,
+  opacity: opacity,
+  enable_thin_film: enable_thin_film,
+  thin_film_thickness: thin_film_thickness,
+  normal: normal_lookup
+);
