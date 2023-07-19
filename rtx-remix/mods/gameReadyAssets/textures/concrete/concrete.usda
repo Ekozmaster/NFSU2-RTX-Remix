@@ -11,31 +11,6 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_861091EEF7EF3E9C"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./861091EEF7EF3E9C.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./861091EEF7EF3E9C_normal.dds@
-                asset inputs:reflectionroughness_texture = @./861091EEF7EF3E9C_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
         over "mat_236A7097911559BA"
         {
             over "Shader"
@@ -61,31 +36,7 @@ over "RootNode"
                 )
             }
         }
-        over "mat_952E501EB3175B1C"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./952E501EB3175B1C.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./952E501EB3175B1C_normal.dds@
-                asset inputs:reflectionroughness_texture = @./952E501EB3175B1C_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
+
         over "mat_8CEBB55F8F63EC8E"
         {
             over "Shader"
@@ -113,3 +64,4 @@ over "RootNode"
         }
     }
 }
+

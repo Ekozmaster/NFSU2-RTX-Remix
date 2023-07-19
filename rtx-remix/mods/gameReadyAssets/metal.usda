@@ -11,40 +11,6 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_FDA84ADD9D36EF65"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./Textures/metal/FDA84ADD9D36EF65.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:metallic_texture = @./Textures/metal/FDA84ADD9D36EF65_metallic.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./Textures/metal/FDA84ADD9D36EF65_normal.dds@
-                asset inputs:reflectionroughness_texture = @./Textures/metal/FDA84ADD9D36EF65_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
         over "mat_6702AD2370D9130E"
         {
             over "Shader"
@@ -79,6 +45,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_570C7EF44091BC60"
         {
             over "Shader"
@@ -113,6 +80,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_0E81495377CF5F97"
         {
             over "Shader"
@@ -138,6 +106,7 @@ over "RootNode"
                 asset inputs:normalmap_texture = @./Textures/metal/0E81495377CF5F97_normal.dds@
             }
         }
+
         over "mat_8018F0C3045D2E72"
         {
             over "Shader"
@@ -172,6 +141,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_9DF697030FF35061"
         {
             over "Shader"
@@ -206,6 +176,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_C5DB6869DCCBCA0B"
         {
             over "Shader"
@@ -242,3 +213,4 @@ over "RootNode"
         }
     }
 }
+
