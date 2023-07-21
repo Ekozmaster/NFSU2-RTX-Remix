@@ -112,6 +112,134 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_F631D0CC76F95609"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Pillar" (
+                references = @./CobbleWalls/mesh_F631D0CC76F95609.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.6, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4858745B499E6984"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Base" (
+                references = @./CobbleWalls/mesh_5DDCDCDDAED53EA7.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.485, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4106A77B2E686452"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "TopSlab" (
+                references = @./CobbleWalls/mesh_920F8F6406A74B73.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.485, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8583AFF6FB7DA584"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Pillar" (
+                references = @./CobbleWalls/mesh_F631D0CC76F95609.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B059E0956CBB07D2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Pillar" (
+                references = @./CobbleWalls/mesh_F631D0CC76F95609.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F30C7036F469CB8E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_4858745B499E6984_2" (
+            delete references = @../../../../../captures/meshes/mesh_4858745B499E6984.usd@
+            prepend references = @./meshes//mesh_4858745B499E6984.usd@
+        )
+        {
+        }
+
+        over "inst_4106A77B2E686452_1" (
+            delete references = @../../../../../captures/meshes/mesh_4106A77B2E686452.usd@
+            prepend references = @./meshes//mesh_4106A77B2E686452.usd@
+        )
+        {
+        }
+
+        over "inst_B059E0956CBB07D2_0" (
+            delete references = @../../../../../captures/meshes/mesh_B059E0956CBB07D2.usd@
+            prepend references = @./meshes//mesh_B059E0956CBB07D2.usd@
+        )
+        {
+        }
     }
 }
 
