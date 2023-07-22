@@ -221,8 +221,8 @@ over "RootNode"
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
+                double3 xformOp:scale = (1.06, 1, 1)
+                double3 xformOp:translate = (-0.35, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -235,13 +235,23 @@ over "RootNode"
             {
             }
 
-            def Xform "Base" (
+            def Xform "TopSlab" (
                 references = @./CobbleWalls/CobbleWallTopSlab.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
+                double3 xformOp:scale = (1.06, 1, 1)
+                double3 xformOp:translate = (-0.35, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "TopFence" (
+                references = @./CobbleWalls/CobbleWallTopFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.06, 1, 1)
+                double3 xformOp:translate = (-0.35, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -252,6 +262,25 @@ over "RootNode"
                 active = false
             )
             {
+            }
+        }
+
+        over "mesh_F7FD417004418E50"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Pillar" (
+                references = @./CobbleWalls/CobbleWallPillar.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.39, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }
