@@ -217,29 +217,5 @@ over "RootNode"
             }
         }
     }
-
-    over "instances"
-    {
-        over "inst_4858745B499E6984_2" (
-            delete references = @../../../../../captures/meshes/mesh_4858745B499E6984.usd@
-            prepend references = @./meshes//mesh_4858745B499E6984.usd@
-        )
-        {
-        }
-
-        over "inst_4106A77B2E686452_1" (
-            delete references = @../../../../../captures/meshes/mesh_4106A77B2E686452.usd@
-            prepend references = @./meshes//mesh_4106A77B2E686452.usd@
-        )
-        {
-        }
-
-        over "inst_B059E0956CBB07D2_0" (
-            delete references = @../../../../../captures/meshes/mesh_B059E0956CBB07D2.usd@
-            prepend references = @./meshes//mesh_B059E0956CBB07D2.usd@
-        )
-        {
-        }
-    }
 }
 
