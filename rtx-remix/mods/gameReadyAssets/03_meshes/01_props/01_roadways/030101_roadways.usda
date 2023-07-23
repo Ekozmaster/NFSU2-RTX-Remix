@@ -793,6 +793,158 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_ACF2DFB8B7BA8DAB"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "RetroReflectors" (
+                references = @./GuardRails/GuardRailsRetroReflectors.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_0DE19A69C960091F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "RetroReflectors" (
+                references = @./GuardRails/GuardRailsRetroReflectors.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_53D9C5707405D7B2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "RetroReflectors" (
+                references = @./GuardRails/GuardRailsRetroReflectors.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B2BA2A18AE58FE27"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "RetroReflector" (
+                references = @./GuardRails/GuardRailsRetroReflectors.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B8211D1110021BF2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "RetroReflector" (
+                references = @./GuardRails/GuardRailsRetroReflectors.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B57B4FD05ADD93BC"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "RetroReflector" (
+                references = @./GuardRails/GuardRailsRetroReflectors.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, -0.045)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_0BF59634EA5AAA9C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_039C478B6539A838"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "RetroReflector" (
+                references = @./GuardRails/GuardRailsRetroReflectors.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 
