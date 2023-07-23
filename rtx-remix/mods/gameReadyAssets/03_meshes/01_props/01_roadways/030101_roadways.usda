@@ -641,6 +641,158 @@ over "RootNode"
                 double3 xformOp:translate = (0, 0, 0)
             }
         }
+
+        over "mesh_90DFFD08FEF0BF03"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 0.9000000134110451)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_52E4E6C3192F0301"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailsLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_85C4923BCD22CFAB"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailsLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8977505905818E0E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_47996783495A78A0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_3A1C2884678A23F3"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_72C82889087E2688"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C2A4A9C8DD824002"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailLong01" (
+                references = @./GuardRails/GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.5, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 
