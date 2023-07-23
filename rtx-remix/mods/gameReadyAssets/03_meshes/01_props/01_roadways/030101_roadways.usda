@@ -945,6 +945,25 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_71EAA3934FF6608A"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "GuardRailsTip" (
+                references = @./GuardRails/GuardRailsTip.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.84, 1, 0.9)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 
