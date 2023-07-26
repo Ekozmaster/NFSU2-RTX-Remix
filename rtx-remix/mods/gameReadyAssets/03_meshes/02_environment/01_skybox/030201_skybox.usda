@@ -1,0 +1,227 @@
+#usda 1.0
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_781BCFAC15B4358E"
+        {
+            over "Shader"
+            {
+                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 0.15
+            }
+        }
+
+        over "mat_6780FCAE6A903599"
+        {
+            over "Shader"
+            {
+                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 0.15
+            }
+        }
+
+        over "mat_5ED6853639C89306"
+        {
+            over "Shader"
+            {
+                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 0.15
+            }
+        }
+
+        over "mat_8793D5BF1DEADEE8"
+        {
+            over "Shader"
+            {
+                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 0.15
+            }
+        }
+
+        over "mat_4A99B3C9079B0534"
+        {
+            over "Shader"
+            {
+                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 0.15
+            }
+        }
+
+        over "mat_CD7D5B8568275F7E"
+        {
+            over "Shader"
+            {
+                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 0.15
+            }
+        }
+
+        over "mat_7A8514288EAB8441"
+        {
+            over "Shader"
+            {
+                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 0.15
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_2FAEB49E49A6C08E"
+        {
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "SkySphere" (
+                references = @./SkySphere.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def DistantLight "DistantLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float angle = 1
+                    bool normalize = 1
+                    float intensity = 300
+                    float exposure = 0
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateXYZ = (45, 0, 56.00000083446503)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, -1)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+
+        over "mesh_3035879C3682C099"
+        {
+            
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "SkySphere" (
+                references = @./SkySphere.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def DistantLight "DistantLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float angle = 1
+                    bool normalize = 1
+                    float intensity = 300
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateXYZ = (45, 0, 56.00000083446503)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, -1)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+
+        over "mesh_52FE475D310252F7"
+        {
+            
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_8BBB17D415201F19"
+        {
+            
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            
+        }
+
+        over "mesh_46B171A20F51C4C5"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_9AC820B73435AA7E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "SkySphere" (
+                references = @./SkySphere.usd@
+                
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def DistantLight "DistantLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float angle = 1
+                    bool normalize = 1
+                    float intensity = 300
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateXYZ = (45, 0, 56.00000083446503)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, -1)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+    }
+}
+
