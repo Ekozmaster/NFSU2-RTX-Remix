@@ -1750,33 +1750,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_C4BDD237A7107912"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "SphereLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 0.75
-                float radius = 1.7
-                float shaping:cone:angle = 200
-                float shaping:cone:softness = 0.5
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 1
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, -1.8000000268220901)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_125B8CA933E51E33"
         {
             custom int preserveOriginalDrawCall = 1
