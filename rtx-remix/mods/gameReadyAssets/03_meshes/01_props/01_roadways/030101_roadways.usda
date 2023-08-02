@@ -964,6 +964,392 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_3642F454F2C62C13"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_07B6188405272376"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D92C3C62EBAAD42E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_256068933E9910A2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C5EA677EE36A955C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8C7F09637CD26FCA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_1219055CF8B2551D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6DB4E3A178140A46"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A4F9567D44EFDCEA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform1" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C3CED2D3CC7DCEA6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform1" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6E2FAC9CF781B6AB"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform1" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_1AF67A0910885D77"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_156CA9D7D6F21B0E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8, -0.1, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F36AA5D9D0B1D457"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Xform_01" (
+                references = @./Fences/CastIronFencesConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8, -0.1, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_07B6188405272376_8" (
+            delete references = @../../../../../captures/meshes/mesh_07B6188405272376.usd@
+            prepend references = @./meshes/mesh_07B6188405272376.usd@
+        )
+        {
+        }
     }
 }
 
