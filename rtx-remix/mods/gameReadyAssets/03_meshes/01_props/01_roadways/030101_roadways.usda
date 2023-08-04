@@ -1454,6 +1454,137 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_DD993BAC5383B236"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E6BA1EFD8F240877"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D14E761474374133"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_628C8B3017BEFBDC"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_23BF2AC3D549A482"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_823094C244686917"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_19FECDB6C9764DC7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5BF7437C44DF03E4"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ChainLinkFenceWide.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F814B7D0C6AE3990"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 
     over "instances"
