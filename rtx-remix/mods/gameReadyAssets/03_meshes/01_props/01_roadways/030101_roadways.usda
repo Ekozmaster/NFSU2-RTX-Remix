@@ -1585,6 +1585,203 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_7567762C50E33A2C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_57D1879866202D12"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E3292A9784A9F290"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E618177807CB0829"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A5D874DB17BFC0A8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_745E9DD1EE385942"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ReinforcedConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_320EAC0BE609F0BF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ReinforcedConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_862240FED0951F93"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_50638E31E1FC58B7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_539543935FE25BF8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "ReinforcedChainLink" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.225, 1.225, 1.225)
+                double3 xformOp:translate = (7.7, 0, 1.0000000149011612)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_911A03C29B859CBA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "ReinforcedChainLinkFence" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.225, 1.225, 1.225)
+                double3 xformOp:translate = (7.7, 0, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F8BB67124CA28D3C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./ChainLinkFences/ReinforcedConcreteFoundation.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "ReinforcedChainLinkFence" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.225, 1.225, 1.225)
+                double3 xformOp:translate = (7.7, 0, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_08D36473384D8DF6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "ReinforcedChainLinkFence" (
+                references = @./ChainLinkFences/ChainLinkFence.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.225, 1.225, 1.225)
+                double3 xformOp:translate = (7.7, 0, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 
     over "instances"
