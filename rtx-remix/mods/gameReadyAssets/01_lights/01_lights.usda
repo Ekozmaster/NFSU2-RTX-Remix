@@ -1,6 +1,8 @@
 #usda 1.0
 (
     subLayers = [
+        @../player_car_lights.usda@,
+        @../mod_lights.usda@,
         @./01_buildings/0101_buildings.usda@,
         @./02_roadways/0102_roadways.usda@,
         @./03_cars/0103_cars.usda@,

@@ -1,0 +1,106 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+
+        over "mesh_A52583DD0D249738"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def DiskLight "MX5_HL" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 1.4
+                float intensity = 10
+                float radius = 5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (90.20000134408474, 15.000000223517418, 77.30000115185976)
+                double3 xformOp:scale = (0.01, 0.01, 0.01)
+                double3 xformOp:translate = (-1.97, 0.59, 0.5)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MX5_VL" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 10000
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float height = 100
+                float intensity = 400
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 46.4
+                float shaping:cone:softness = 0.1
+                float shaping:focus = 7.1
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 500000
+                float width = 100
+                double3 xformOp:rotateXYZ = (46.30000068992376, 0, 279.900004170835)
+                double3 xformOp:scale = (0.1, 0.1, 0.1)
+                double3 xformOp:translate = (2.6, 0.55, 0.4)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MX5_VR" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 10000
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float height = 100
+                float intensity = 400
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 36.4
+                float shaping:cone:softness = 0.1
+                float shaping:focus = 5.4
+                color3f shaping:focusTint
+                float shaping:ies:angleScale = 0
+                asset shaping:ies:file
+                float specular = 500000
+                bool visibleInPrimaryRay = 0
+                float width = 100
+                double3 xformOp:rotateXYZ = (65.30000097304583, 0, 251.50000374764204)
+                double3 xformOp:scale = (0.1, 0.1, 0.1)
+                double3 xformOp:translate = (2.5, -0.55, 0.4)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def DiskLight "MX5_HR" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 1.4
+                float intensity = 10
+                float radius = 5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file = @@
+                double3 xformOp:rotateXYZ = (90.20000134408474, 15.000000223517418, 77.30000115185976)
+                double3 xformOp:scale = (0.01, 0.01, 0.01)
+                double3 xformOp:translate = (-1.97, -0.59, 0.5)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}

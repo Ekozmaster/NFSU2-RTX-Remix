@@ -1,0 +1,106 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+
+        over "mesh_DC50D2818904DCE3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def DiskLight "Escalade_HL" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 1.4
+                float intensity = 10
+                float radius = 5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (90.20000134408474, 15.000000223517418, 77.30000115185976)
+                double3 xformOp:scale = (0.01, 0.01, 0.01)
+                double3 xformOp:translate = (-2.25, 0.85, 0.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Escalade_VL" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 10000
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float height = 100
+                float intensity = 400
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 46.4
+                float shaping:cone:softness = 0.1
+                float shaping:focus = 7.1
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 500000
+                float width = 100
+                double3 xformOp:rotateXYZ = (46.30000068992376, 0, 279.900004170835)
+                double3 xformOp:scale = (0.1, 0.1, 0.1)
+                double3 xformOp:translate = (2.8, 0.7, 0.4)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Escalade_VR" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 10000
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float height = 100
+                float intensity = 400
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 36.4
+                float shaping:cone:softness = 0.1
+                float shaping:focus = 5.4
+                color3f shaping:focusTint
+                float shaping:ies:angleScale = 0
+                asset shaping:ies:file
+                float specular = 500000
+                bool visibleInPrimaryRay = 0
+                float width = 100
+                double3 xformOp:rotateXYZ = (65.30000097304583, 0, 251.50000374764204)
+                double3 xformOp:scale = (0.1, 0.1, 0.1)
+                double3 xformOp:translate = (2.8, -0.7, 0.4)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def DiskLight "Escalade_HR" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 1.4
+                float intensity = 10
+                float radius = 5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file = @@
+                double3 xformOp:rotateXYZ = (90.20000134408474, 15.000000223517418, 102.10000152140856)
+                double3 xformOp:scale = (0.01, 0.01, 0.01)
+                double3 xformOp:translate = (-2.25, -0.85, 0.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
