@@ -1,0 +1,12 @@
+#usda 1.0
+(
+    subLayers = [
+        @../../tail_lights.usda@,
+        @../../headlights.usda@,
+        @../../textures/lights/lights.usda@,
+        @../../traffic.usda@,
+        @./02_worldSprites/020302_worldSprites.usda@,
+        @./01_roads/020301_roads.usda@
+    ]
+)
+

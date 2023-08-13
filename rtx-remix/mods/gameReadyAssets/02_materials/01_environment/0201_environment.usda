@@ -1,0 +1,21 @@
+#usda 1.0
+(
+    subLayers = [
+        @./16_garages/020116_garages.usda@,
+        @../../vegetation.usda@,
+        @../../tiles.usda@,
+        @../../sidewalk.usda@,
+        @../../metal.usda@,
+        @../../stone.usda@,
+        @../../wood.usda@,
+        @../../signs.usda@,
+        @../../walls.usda@,
+        @../../windows.usda@,
+        @../../textures/concrete/concrete.usda@,
+        @../../tunnels.usda@,
+        @../../highways.usda@,
+        @./01_props/01_roadways/030101_roadways.usda@,
+        @./02_environment/01_skybox/030201_skybox.usda@
+    ]
+)
+

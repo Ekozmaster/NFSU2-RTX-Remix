@@ -1,0 +1,22 @@
+#usda 1.0
+(
+    subLayers = [
+        @./01_jacksonHeights01/010101_jacksonHeights01.usda@,
+        @./02_jacksonHeights02/010102_jacksonHeights02.usda@,
+        @./03_jacksonHeights03/010103_jacksonHeights03.usda@,
+        @./04_beaconHillWest/010104_beaconHillWest.usda@,
+        @./05_beaconHillEast/010105_beaconHillEast.usda@,
+        @./06_pigeonPark/010106_pigeonPark.usda@,
+        @./07_hotelPlaza/010107_hotelPlaza.usda@,
+        @./08_cityCenter/010108_cityCenter.usda@,
+        @./09_stadium/010109_stadium.usda@,
+        @./10_southMarket/010110_southMarket.usda@,
+        @./11_fortUnion/010111_fortUnion.usda@,
+        @./12_elNorte/010112_elNorte.usda@,
+        @./13_airport/010113_airport.usda@,
+        @./14_coalHarborWest/010114_coalHarborWest.usda@,
+        @./15_coalHarborEast/010115_coalHarborEast.usda@,
+        @./16_garages/010116_garages.usda@
+    ]
+)
+

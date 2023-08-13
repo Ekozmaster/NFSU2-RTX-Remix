@@ -1,0 +1,9 @@
+#usda 1.0
+(
+    subLayers = [
+        @./02_cars/0202_cars.usda@,
+        @./01_environment/0201_environment.usda@,
+        @./03_global/0203_global.usda@
+    ]
+)
+

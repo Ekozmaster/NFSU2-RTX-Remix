@@ -1,0 +1,8 @@
+#usda 1.0
+(
+    subLayers = [
+        @./01_props/01_roadways/030101_roadways.usda@,
+        @./02_environment/01_skybox/030201_skybox.usda@
+    ]
+)
+

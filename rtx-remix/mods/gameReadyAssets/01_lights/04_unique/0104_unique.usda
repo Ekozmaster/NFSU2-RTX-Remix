@@ -2,46 +2,5 @@
 
 over "RootNode"
 {
-    over "meshes"
-    {
-        over "mesh_66107B68A68FF01F"
-        {
-            over "CobraHead_2"
-            {
-                color3f color = (2, 2, 2)
-                float colorTemperature = 5000
-            }
-        }
-
-        over "mesh_6EE1388ED9AEFD6E"
-        {
-            over "HighwayLightInterchange_01"
-            {
-                float colorTemperature = 6500
-                float exposure = 16
-                float radius = 0.01
-                float shaping:cone:angle = 50.100002
-                float shaping:cone:softness = 1.7
-                float shaping:focus = 0
-                color3f shaping:focusTint = (0, 0, 0)
-            }
-        }
-
-        over "mesh_EA1A049735D83EFD"
-        {
-            over "LongCobraHead"
-            {
-                float colorTemperature = 5000
-            }
-        }
-
-        over "mesh_C32C1465D7FFB123"
-        {
-            over "CobraHeadHighway"
-            {
-                float colorTemperature = 5000
-            }
-        }
-    }
 }
 
