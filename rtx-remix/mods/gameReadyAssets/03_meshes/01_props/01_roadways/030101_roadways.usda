@@ -56,7 +56,7 @@ over "RootNode"
             }
 
             def Xform "LightBollard" (
-                references = @./LightBollards/mesh_26A6E5758911C4FE.usd@
+                references = @./Bollards/LightBollards.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -1812,6 +1812,25 @@ over "RootNode"
 
             def Xform "Xform" (
                 references = @./HedgeFences/HedgeFenceCurvy.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2C9333FB229098BD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./Bollards/Bolllard.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
