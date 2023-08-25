@@ -404,7 +404,6 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                asset inputs:diffuse_texture = @@
                 float inputs:ior_constant = 1.48 (
                     customData = {
                         float default = 1.3
@@ -418,7 +417,9 @@ over "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/cars/BD4230EA2795207F_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/cars/BD4230EA2795207F_normal.dds@ (
+                    hidden = false
+                )
                 bool inputs:thin_walled = 1 (
                     customData = {
                         bool default = 0
@@ -521,7 +522,9 @@ over "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/cars/headlight_rect_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/cars/307689BAE89798CD_normal.dds@ (
+                    hidden = false
+                )
                 bool inputs:thin_walled = 1 (
                     customData = {
                         bool default = 0
@@ -769,7 +772,6 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                asset inputs:diffuse_texture = @@
                 color3f inputs:emissive_color = (1, 0.99999, 0.99999) (
                     customData = {
                         float3 default = (1, 0.1, 0.1)
@@ -1049,6 +1051,229 @@ over "RootNode"
                 )
             }
         }
+
+        def Material "interior" (
+            references = @../../captures/materials/mat_962D9AF91D2B4709.usd@</Looks/interior>
+        )
+        {
+            token outputs:mdl:displacement.connect = </RootNode/Looks/interior/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </RootNode/Looks/interior/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </RootNode/Looks/interior/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @./Textures/cars/interior_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/cars/interior_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/cars/interior_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+
+        over "mat_D00C2D2017E71506"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.48 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = "Index of Refraction of the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/cars/headlight_sqaure_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                bool inputs:thin_walled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = "Whether the material is thin-walled"
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./Textures/cars/D00C2D2017E71506_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance or Diffuse Albedo Texture"
+                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                    hidden = false
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = "When set, simulates a diffuse layer on top of the material"
+                    hidden = false
+                )
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_B49899829B08E3D9"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_5A3213E7A4BC3410"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_AD5FCB4809A1A915"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A7CCD4D9EA274ACE"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_1815896A9080AFD6"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_66863E7589710413"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B3DCFD8C94771F0F"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_E0B786183626965D"
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_08C83001DBE95039_0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "inst_418A7BD427164C28_0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "inst_1BE2321A2EBA0E60_0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "inst_0CE6F72977C323AD_0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
+over "Environment"
+{
+    over "ground"
+    {
+        float3[] extent = [(-5000, -5000, 0), (5000, 5000, 0)]
+        point3f[] points = [(-2500, -2500, 0), (-1250, -2500, 0), (0, -2500, 0), (1250, -2500, 0), (2500, -2500, 0), (-2500, -1250, 0), (-1250, -1250, 0), (0, -1250, 0), (1250, -1250, 0), (2500, -1250, 0), (-2500, 0, 0), (-1250, 0, 0), (0, 0, 0), (1250, 0, 0), (2500, 0, 0), (-2500, 1250, 0), (-1250, 1250, 0), (0, 1250, 0), (1250, 1250, 0), (2500, 1250, 0), (-2500, 2500, 0), (-1250, 2500, 0), (0, 2500, 0), (1250, 2500, 0), (2500, 2500, 0)]
+        bool primvars:isMatteObject = 1
+        float2[] primvars:st = [(-20.10899, -29.765083), (-7.6089993, -29.765093), (4.8910065, -29.765093), (17.391006, -29.765093), (29.891006, -29.765102), (-20.10899, -17.265083), (-7.6089897, -17.265093), (4.8910065, -17.265093), (17.39101, -17.265093), (29.89101, -17.265102), (-20.10899, -4.7650833), (-7.6089897, -4.765093), (4.8910103, -4.765093), (17.39101, -4.765093), (29.89101, -4.7651024), (-20.10899, 7.7349167), (-7.6089897, 7.734909), (4.891014, 7.734909), (17.39101, 7.734909), (29.89101, 7.7348976), (-20.10899, 20.234917), (-7.60898, 20.23491), (4.891014, 20.23491), (17.391014, 20.23491), (29.891014, 20.234898)]
+        token visibility = "inherited"
     }
 }
 
