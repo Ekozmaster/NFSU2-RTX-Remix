@@ -769,7 +769,8 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                color3f inputs:emissive_color = (1, 0.1, 0.1) (
+                asset inputs:diffuse_texture = @@
+                color3f inputs:emissive_color = (1, 0.99999, 0.99999) (
                     customData = {
                         float3 default = (1, 0.1, 0.1)
                         dictionary range = {
@@ -782,9 +783,18 @@ over "RootNode"
                     doc = "The emission color"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5
-                asset inputs:emissive_mask_texture = @./Textures/cars/B1A76FE75F3C1051_emissive.dds@
-                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 5 (
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./Textures/cars/B1A76FE75F3C1051_emissive.dds@ (
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
                 float inputs:ior_constant = 1.48 (
                     customData = {
                         float default = 1.3
@@ -798,7 +808,7 @@ over "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/cars/headlight_sqaure_normal.dds@ (
+                asset inputs:normalmap_texture = @./Textures/cars/B1A76FE75F3C1051_normal.dds@ (
                     hidden = false
                 )
                 bool inputs:thin_walled = 1 (
