@@ -308,18 +308,95 @@ over "RootNode"
                 )
             }
         }
-    }
-}
 
-over "Environment"
-{
-    over "ground"
-    {
-        float3[] extent = [(-5000, -5000, 0), (5000, 5000, 0)]
-        point3f[] points = [(-2500, -2500, 0), (-1250, -2500, 0), (0, -2500, 0), (1250, -2500, 0), (2500, -2500, 0), (-2500, -1250, 0), (-1250, -1250, 0), (0, -1250, 0), (1250, -1250, 0), (2500, -1250, 0), (-2500, 0, 0), (-1250, 0, 0), (0, 0, 0), (1250, 0, 0), (2500, 0, 0), (-2500, 1250, 0), (-1250, 1250, 0), (0, 1250, 0), (1250, 1250, 0), (2500, 1250, 0), (-2500, 2500, 0), (-1250, 2500, 0), (0, 2500, 0), (1250, 2500, 0), (2500, 2500, 0)]
-        bool primvars:isMatteObject = 1
-        float2[] primvars:st = [(-20.10899, -29.765083), (-7.6089993, -29.765093), (4.8910065, -29.765093), (17.391006, -29.765093), (29.891006, -29.765102), (-20.10899, -17.265083), (-7.6089897, -17.265093), (4.8910065, -17.265093), (17.39101, -17.265093), (29.89101, -17.265102), (-20.10899, -4.7650833), (-7.6089897, -4.765093), (4.8910103, -4.765093), (17.39101, -4.765093), (29.89101, -4.7651024), (-20.10899, 7.7349167), (-7.6089897, 7.734909), (4.891014, 7.734909), (17.39101, 7.734909), (29.89101, 7.7348976), (-20.10899, 20.234917), (-7.60898, 20.23491), (4.891014, 20.23491), (17.391014, 20.23491), (29.891014, 20.234898)]
-        token visibility = "inherited"
+        over "mat_D405FFA4A2507154"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.3299999 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = "Index of Refraction of the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/effect/D405FFA4A2507154_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                float inputs:thin_wall_thickness = 1 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0.001
+                        }
+                        dictionary soft_range = {
+                            float max = 1
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled material thickness"
+                    doc = "Simulated thickness for thin-walled materials (0 disables thin-walled mode)"
+                    hidden = false
+                )
+                bool inputs:thin_walled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = "Whether the material is thin-walled"
+                    hidden = false
+                )
+                float inputs:transmittance_measurement_distance = 1 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance Measurement Distance"
+                    doc = "Distance to match the transmittance through the volume at."
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./Textures/effect/D405FFA4A2507154_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance or Diffuse Albedo Texture"
+                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                    hidden = false
+                )
+                bool inputs:use_diffuse_layer = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = "When set, simulates a diffuse layer on top of the material"
+                    hidden = false
+                )
+            }
+        }
     }
 }
 
