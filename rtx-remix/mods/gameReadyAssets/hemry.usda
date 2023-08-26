@@ -216,7 +216,7 @@ over "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/cars/289CFCB898FA27B1_normal.dds@ (
+                asset inputs:normalmap_texture = @@ (
                     hidden = false
                 )
                 bool inputs:thin_walled = 1 (
@@ -417,7 +417,7 @@ over "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/cars/BD4230EA2795207F_normal.dds@ (
+                asset inputs:normalmap_texture = @./Textures/cars/headlight_sqaure_normal.dds@ (
                     hidden = false
                 )
                 bool inputs:thin_walled = 1 (
@@ -429,7 +429,7 @@ over "RootNode"
                     doc = "Whether the material is thin-walled"
                     hidden = false
                 )
-                asset inputs:transmittance_texture = @@ (
+                asset inputs:transmittance_texture = @./Textures/cars/BD4230EA2795207F_albedo.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -439,7 +439,7 @@ over "RootNode"
                     doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
                     hidden = false
                 )
-                bool inputs:use_diffuse_layer = 0 (
+                bool inputs:use_diffuse_layer = 1 (
                     customData = {
                         bool default = 0
                     }
@@ -772,7 +772,8 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                color3f inputs:emissive_color = (1, 0.99999, 0.99999) (
+                asset inputs:diffuse_texture = @@
+                color3f inputs:emissive_color = (1, 0.1, 0.1) (
                     customData = {
                         float3 default = (1, 0.1, 0.1)
                         dictionary range = {
@@ -785,15 +786,15 @@ over "RootNode"
                     doc = "The emission color"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
+                float inputs:emissive_intensity = 40 (
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./Textures/cars/B1A76FE75F3C1051_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @@ (
                     doc = "The texture masking the emissive color"
                     hidden = false
                 )
-                bool inputs:enable_emission = 1 (
+                bool inputs:enable_emission = 0 (
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
@@ -954,7 +955,6 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                asset inputs:diffuse_texture = @@
                 float inputs:ior_constant = 1.48 (
                     customData = {
                         float default = 1.3
@@ -968,7 +968,9 @@ over "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/cars/headlight_sqaure_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/cars/headlight_sqaure_normal.dds@ (
+                    hidden = false
+                )
                 bool inputs:thin_walled = 1 (
                     customData = {
                         bool default = 0
@@ -1052,53 +1054,6 @@ over "RootNode"
             }
         }
 
-        def Material "interior" (
-            references = @../../captures/materials/mat_962D9AF91D2B4709.usd@</Looks/interior>
-        )
-        {
-            token outputs:mdl:displacement.connect = </RootNode/Looks/interior/Shader.outputs:out>
-            token outputs:mdl:surface.connect = </RootNode/Looks/interior/Shader.outputs:out>
-            token outputs:mdl:volume.connect = </RootNode/Looks/interior/Shader.outputs:out>
-
-            def Shader "Shader"
-            {
-                uniform token info:implementationSource = "sourceAsset"
-                uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Opacity.mdl@
-                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                asset inputs:diffuse_texture = @./Textures/cars/interior_albedo.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./Textures/cars/interior_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./Textures/cars/interior_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-                token outputs:out (
-                    renderType = "material"
-                )
-            }
-        }
-
         over "mat_D00C2D2017E71506"
         {
             over "Shader"
@@ -1157,123 +1112,440 @@ over "RootNode"
                 )
             }
         }
+
+        over "mat_4BF3ECC9E70D9A54"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/cars/4BF3ECC9E70D9A54_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./Textures/cars/4BF3ECC9E70D9A54_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./Textures/cars/4BF3ECC9E70D9A54_metal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/cars/4BF3ECC9E70D9A54_normal.dds@ (
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/cars/4BF3ECC9E70D9A54_rough.dds@ (
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "interior" (
+            references = @./02_materials/interior.usda@</Looks/interior>
+        )
+        {
+            token outputs:mdl:displacement.connect = </RootNode/Looks/interior/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </RootNode/Looks/interior/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </RootNode/Looks/interior/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @./Textures/cars/interior_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/cars/interior_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/cars/interior_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+
+        over "mat_2AF4F4DC2477AB65"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/cars/2AF4F4DC2477AB65_albedo.dds@
+                asset inputs:metallic_texture = @./Textures/cars/2AF4F4DC2477AB65_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/cars/2AF4F4DC2477AB65_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/cars/2AF4F4DC2477AB65_rough.dds@
+            }
+        }
     }
 
     over "meshes"
     {
-        over "mesh_B49899829B08E3D9"
+        over "mesh_B49899829B08E3D9" (
+            delete references = [
+                </RootNode/meshes/mesh_B49899829B08E3D9>,
+                @../../captures/meshes/mesh_B49899829B08E3D9.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_B49899829B08E3D9.usd@
+        )
         {
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
             custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "mesh_5A3213E7A4BC3410"
+        over "mesh_5A3213E7A4BC3410" (
+            delete references = [
+                </RootNode/meshes/mesh_5A3213E7A4BC3410>,
+                @../../captures/meshes/mesh_5A3213E7A4BC3410.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_5A3213E7A4BC3410.usd@
+        )
         {
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
             custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "mesh_AD5FCB4809A1A915"
+        over "mesh_AD5FCB4809A1A915" (
+            delete references = [
+                </RootNode/meshes/mesh_AD5FCB4809A1A915>,
+                @../../captures/meshes/mesh_AD5FCB4809A1A915.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_AD5FCB4809A1A915.usd@
+        )
         {
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
             custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "mesh_A7CCD4D9EA274ACE"
+        over "mesh_A7CCD4D9EA274ACE" (
+            delete references = [
+                </RootNode/meshes/mesh_A7CCD4D9EA274ACE>,
+                @../../captures/meshes/mesh_A7CCD4D9EA274ACE.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_A7CCD4D9EA274ACE.usd@
+        )
         {
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
             custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "mesh_1815896A9080AFD6"
+        over "mesh_1815896A9080AFD6" (
+            delete references = [
+                </RootNode/meshes/mesh_1815896A9080AFD6>,
+                @../../captures/meshes/mesh_1815896A9080AFD6.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_1815896A9080AFD6.usd@
+        )
         {
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
             custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "mesh_66863E7589710413"
+        over "mesh_66863E7589710413" (
+            delete references = [
+                </RootNode/meshes/mesh_66863E7589710413>,
+                @../../captures/meshes/mesh_66863E7589710413.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_66863E7589710413.usd@
+        )
         {
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
             custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "mesh_B3DCFD8C94771F0F"
-        {
-            rel material:binding = </RootNode/Looks/interior> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-        }
-
-        over "mesh_E0B786183626965D"
+        over "mesh_B3DCFD8C94771F0F" (
+            delete references = [
+                </RootNode/meshes/mesh_B3DCFD8C94771F0F>,
+                @../../captures/meshes/mesh_B3DCFD8C94771F0F.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_B3DCFD8C94771F0F.usd@
+        )
         {
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
             custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
-    }
 
-    over "instances"
-    {
-        over "inst_08C83001DBE95039_0"
+        over "mesh_E0B786183626965D" (
+            delete references = [
+                </RootNode/meshes/mesh_E0B786183626965D>,
+                @../../captures/meshes/mesh_E0B786183626965D.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_E0B786183626965D.usd@
+        )
         {
-            over "mesh" (
-                active = false
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
             )
-            {
-            }
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "inst_418A7BD427164C28_0"
+        over "mesh_B37838D88146D701" (
+            delete references = [
+                </RootNode/meshes/mesh_B37838D88146D701>,
+                @../../captures/meshes/mesh_B37838D88146D701.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_B37838D88146D701.usd@
+        )
         {
-            over "mesh" (
-                active = false
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
             )
-            {
-            }
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "inst_1BE2321A2EBA0E60_0"
+        over "mesh_835091C61032AB54" (
+            delete references = [
+                </RootNode/meshes/mesh_835091C61032AB54>,
+                @../../captures/meshes/mesh_835091C61032AB54.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_835091C61032AB54.usd@
+        )
         {
-            over "mesh" (
-                active = false
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
             )
-            {
-            }
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
 
-        over "inst_0CE6F72977C323AD_0"
+        over "mesh_DBE40CA6535A0260" (
+            delete references = [
+                </RootNode/meshes/mesh_DBE40CA6535A0260>,
+                @../../captures/meshes/mesh_DBE40CA6535A0260.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_DBE40CA6535A0260.usd@
+        )
         {
-            over "mesh" (
-                active = false
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
             )
-            {
-            }
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
         }
-    }
-}
 
-over "Environment"
-{
-    over "ground"
-    {
-        float3[] extent = [(-5000, -5000, 0), (5000, 5000, 0)]
-        point3f[] points = [(-2500, -2500, 0), (-1250, -2500, 0), (0, -2500, 0), (1250, -2500, 0), (2500, -2500, 0), (-2500, -1250, 0), (-1250, -1250, 0), (0, -1250, 0), (1250, -1250, 0), (2500, -1250, 0), (-2500, 0, 0), (-1250, 0, 0), (0, 0, 0), (1250, 0, 0), (2500, 0, 0), (-2500, 1250, 0), (-1250, 1250, 0), (0, 1250, 0), (1250, 1250, 0), (2500, 1250, 0), (-2500, 2500, 0), (-1250, 2500, 0), (0, 2500, 0), (1250, 2500, 0), (2500, 2500, 0)]
-        bool primvars:isMatteObject = 1
-        float2[] primvars:st = [(-20.10899, -29.765083), (-7.6089993, -29.765093), (4.8910065, -29.765093), (17.391006, -29.765093), (29.891006, -29.765102), (-20.10899, -17.265083), (-7.6089897, -17.265093), (4.8910065, -17.265093), (17.39101, -17.265093), (29.89101, -17.265102), (-20.10899, -4.7650833), (-7.6089897, -4.765093), (4.8910103, -4.765093), (17.39101, -4.765093), (29.89101, -4.7651024), (-20.10899, 7.7349167), (-7.6089897, 7.734909), (4.891014, 7.734909), (17.39101, 7.734909), (29.89101, 7.7348976), (-20.10899, 20.234917), (-7.60898, 20.23491), (4.891014, 20.23491), (17.391014, 20.23491), (29.891014, 20.234898)]
-        token visibility = "inherited"
+        over "mesh_644999D5898AC03E" (
+            delete references = [
+                </RootNode/meshes/mesh_644999D5898AC03E>,
+                @../../captures/meshes/mesh_644999D5898AC03E.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_644999D5898AC03E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_4D0637C12C1CC1ED" (
+            delete references = [
+                </RootNode/meshes/mesh_4D0637C12C1CC1ED>,
+                @../../captures/meshes/mesh_4D0637C12C1CC1ED.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_4D0637C12C1CC1ED.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_B0C378648154F96C" (
+            delete references = [
+                </RootNode/meshes/mesh_B0C378648154F96C>,
+                @../../captures/meshes/mesh_B0C378648154F96C.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_B0C378648154F96C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_C187A98AB58579AA" (
+            delete references = [
+                </RootNode/meshes/mesh_C187A98AB58579AA>,
+                @../../captures/meshes/mesh_C187A98AB58579AA.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_C187A98AB58579AA.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_A6CCF43682A1E3DF" (
+            delete references = [
+                </RootNode/meshes/mesh_A6CCF43682A1E3DF>,
+                @../../captures/meshes/mesh_A6CCF43682A1E3DF.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_A6CCF43682A1E3DF.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_A5828B7B4048E32E" (
+            delete references = [
+                </RootNode/meshes/mesh_A5828B7B4048E32E>,
+                @../../captures/meshes/mesh_A5828B7B4048E32E.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_A5828B7B4048E32E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_4BE3FDC5A36A3728" (
+            delete references = [
+                </RootNode/meshes/mesh_4BE3FDC5A36A3728>,
+                @../../captures/meshes/mesh_4BE3FDC5A36A3728.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_4BE3FDC5A36A3728.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_2F0057D7432133CC" (
+            delete references = [
+                </RootNode/meshes/mesh_2F0057D7432133CC>,
+                @../../captures/meshes/mesh_2F0057D7432133CC.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_2F0057D7432133CC.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_B759636377520E3C" (
+            delete references = [
+                </RootNode/meshes/mesh_B759636377520E3C>,
+                @../../captures/meshes/mesh_B759636377520E3C.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_B759636377520E3C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_475741E0CA0F0091" (
+            delete references = [
+                </RootNode/meshes/mesh_475741E0CA0F0091>,
+                @../../captures/meshes/mesh_475741E0CA0F0091.usd@
+            ]
+            prepend references = @./03_meshes/03_cars/mesh_475741E0CA0F0091.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/interior> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
     }
 }
 
