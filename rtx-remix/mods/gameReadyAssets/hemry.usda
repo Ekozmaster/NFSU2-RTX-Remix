@@ -1233,298 +1233,193 @@ over "RootNode"
     over "meshes"
     {
         over "mesh_B49899829B08E3D9" (
-            delete references = [
-                </RootNode/meshes/mesh_B49899829B08E3D9>,
-                @../../captures/meshes/mesh_B49899829B08E3D9.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_B49899829B08E3D9.usd@
+            references = @./03_meshes/03_cars/mesh_B49899829B08E3D9.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_5A3213E7A4BC3410" (
-            delete references = [
-                </RootNode/meshes/mesh_5A3213E7A4BC3410>,
-                @../../captures/meshes/mesh_5A3213E7A4BC3410.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_5A3213E7A4BC3410.usd@
+            references = @./03_meshes/03_cars/mesh_5A3213E7A4BC3410.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_AD5FCB4809A1A915" (
-            delete references = [
-                </RootNode/meshes/mesh_AD5FCB4809A1A915>,
-                @../../captures/meshes/mesh_AD5FCB4809A1A915.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_AD5FCB4809A1A915.usd@
+            references = @./03_meshes/03_cars/mesh_AD5FCB4809A1A915.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_A7CCD4D9EA274ACE" (
-            delete references = [
-                </RootNode/meshes/mesh_A7CCD4D9EA274ACE>,
-                @../../captures/meshes/mesh_A7CCD4D9EA274ACE.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_A7CCD4D9EA274ACE.usd@
+            references = @./03_meshes/03_cars/mesh_A7CCD4D9EA274ACE.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_1815896A9080AFD6" (
-            delete references = [
-                </RootNode/meshes/mesh_1815896A9080AFD6>,
-                @../../captures/meshes/mesh_1815896A9080AFD6.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_1815896A9080AFD6.usd@
+            references = @./03_meshes/03_cars/mesh_1815896A9080AFD6.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_66863E7589710413" (
-            delete references = [
-                </RootNode/meshes/mesh_66863E7589710413>,
-                @../../captures/meshes/mesh_66863E7589710413.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_66863E7589710413.usd@
+            references = @./03_meshes/03_cars/mesh_66863E7589710413.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_B3DCFD8C94771F0F" (
-            delete references = [
-                </RootNode/meshes/mesh_B3DCFD8C94771F0F>,
-                @../../captures/meshes/mesh_B3DCFD8C94771F0F.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_B3DCFD8C94771F0F.usd@
+            references = @./03_meshes/03_cars/mesh_B3DCFD8C94771F0F.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_E0B786183626965D" (
-            delete references = [
-                </RootNode/meshes/mesh_E0B786183626965D>,
-                @../../captures/meshes/mesh_E0B786183626965D.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_E0B786183626965D.usd@
+            references = @./03_meshes/03_cars/mesh_E0B786183626965D.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_B37838D88146D701" (
-            delete references = [
-                </RootNode/meshes/mesh_B37838D88146D701>,
-                @../../captures/meshes/mesh_B37838D88146D701.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_B37838D88146D701.usd@
+            references = @./03_meshes/03_cars/mesh_B37838D88146D701.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_835091C61032AB54" (
-            delete references = [
-                </RootNode/meshes/mesh_835091C61032AB54>,
-                @../../captures/meshes/mesh_835091C61032AB54.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_835091C61032AB54.usd@
+            references = @./03_meshes/03_cars/mesh_835091C61032AB54.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_DBE40CA6535A0260" (
-            delete references = [
-                </RootNode/meshes/mesh_DBE40CA6535A0260>,
-                @../../captures/meshes/mesh_DBE40CA6535A0260.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_DBE40CA6535A0260.usd@
+            references = @./03_meshes/03_cars/mesh_DBE40CA6535A0260.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_644999D5898AC03E" (
-            delete references = [
-                </RootNode/meshes/mesh_644999D5898AC03E>,
-                @../../captures/meshes/mesh_644999D5898AC03E.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_644999D5898AC03E.usd@
+            references = @./03_meshes/03_cars/mesh_644999D5898AC03E.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_4D0637C12C1CC1ED" (
-            delete references = [
-                </RootNode/meshes/mesh_4D0637C12C1CC1ED>,
-                @../../captures/meshes/mesh_4D0637C12C1CC1ED.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_4D0637C12C1CC1ED.usd@
+            references = @./03_meshes/03_cars/mesh_4D0637C12C1CC1ED.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_B0C378648154F96C" (
-            delete references = [
-                </RootNode/meshes/mesh_B0C378648154F96C>,
-                @../../captures/meshes/mesh_B0C378648154F96C.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_B0C378648154F96C.usd@
+            references = @./03_meshes/03_cars/mesh_B0C378648154F96C.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_C187A98AB58579AA" (
-            delete references = [
-                </RootNode/meshes/mesh_C187A98AB58579AA>,
-                @../../captures/meshes/mesh_C187A98AB58579AA.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_C187A98AB58579AA.usd@
+            references = @./03_meshes/03_cars/mesh_C187A98AB58579AA.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_A6CCF43682A1E3DF" (
-            delete references = [
-                </RootNode/meshes/mesh_A6CCF43682A1E3DF>,
-                @../../captures/meshes/mesh_A6CCF43682A1E3DF.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_A6CCF43682A1E3DF.usd@
+            references = @./03_meshes/03_cars/mesh_A6CCF43682A1E3DF.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_A5828B7B4048E32E" (
-            delete references = [
-                </RootNode/meshes/mesh_A5828B7B4048E32E>,
-                @../../captures/meshes/mesh_A5828B7B4048E32E.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_A5828B7B4048E32E.usd@
+            references = @./03_meshes/03_cars/mesh_A5828B7B4048E32E.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_4BE3FDC5A36A3728" (
-            delete references = [
-                </RootNode/meshes/mesh_4BE3FDC5A36A3728>,
-                @../../captures/meshes/mesh_4BE3FDC5A36A3728.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_4BE3FDC5A36A3728.usd@
+            references = @./03_meshes/03_cars/mesh_4BE3FDC5A36A3728.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_2F0057D7432133CC" (
-            delete references = [
-                </RootNode/meshes/mesh_2F0057D7432133CC>,
-                @../../captures/meshes/mesh_2F0057D7432133CC.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_2F0057D7432133CC.usd@
+            references = @./03_meshes/03_cars/mesh_2F0057D7432133CC.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_B759636377520E3C" (
-            delete references = [
-                </RootNode/meshes/mesh_B759636377520E3C>,
-                @../../captures/meshes/mesh_B759636377520E3C.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_B759636377520E3C.usd@
+            references = @./03_meshes/03_cars/mesh_B759636377520E3C.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
-
         over "mesh_475741E0CA0F0091" (
-            delete references = [
-                </RootNode/meshes/mesh_475741E0CA0F0091>,
-                @../../captures/meshes/mesh_475741E0CA0F0091.usd@
-            ]
-            prepend references = @./03_meshes/03_cars/mesh_475741E0CA0F0091.usd@
+            references = @./03_meshes/03_cars/mesh_475741E0CA0F0091.usd@
         )
         {
+            token visibility = "invisible"
             rel material:binding = </RootNode/Looks/interior> (
                 bindMaterialAs = "weakerThanDescendants"
             )
-            token visibility = "invisible"
         }
     }
 }
-
