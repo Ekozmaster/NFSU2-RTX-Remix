@@ -20,16 +20,6 @@ def Scope "Looks"
             uniform token info:implementationSource = "sourceAsset"
             uniform asset info:mdl:sourceAsset = @./AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            asset inputs:diffuse_texture = @..\Textures\cars\interior_albedo.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Map"
-                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                hidden = false
-            )
             token outputs:out
         }
     }

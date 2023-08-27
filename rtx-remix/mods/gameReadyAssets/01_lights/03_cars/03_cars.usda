@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @../../02_materials/02_cars/21_PEUGOT/020221_PEUGOT.usda@,
         @../../02_materials/02_cars/07_COROLLA/020207_COROLLA.usda@
     ]
 )
