@@ -1,0 +1,27 @@
+#usda 1.0
+(
+    defaultPrim = "Looks"
+    metersPerUnit = 1
+    timeCodesPerSecond = 24
+    upAxis = "Z"
+)
+
+def Scope "Looks"
+{
+    def Material "interior"
+    {
+        append token outputs:mdl:surface.connect = </Looks/interior/Shader.outputs:out>
+
+        def Shader "Shader" (
+            kind = "Material"
+        )
+        {
+            uniform bool enable_opacity = 1
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            token outputs:out
+        }
+    }
+}
+

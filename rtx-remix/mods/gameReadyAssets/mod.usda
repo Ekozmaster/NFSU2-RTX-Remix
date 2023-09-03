@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./hemry.usda@,
         @./uncle_burrito.usda@,
         @./02_materials/03_global/01_roads/020301_roads.usda@,
         @./player_car_lights.usda@,
@@ -19,9 +20,9 @@
         @./windows.usda@,
         @./textures/concrete/concrete.usda@,
         @./adamplayer.usda@,
-		@./tunnels.usda@,
+        @./tunnels.usda@,
         @./highways.usda@,
-		@./02_materials/03_global/02_worldSprites/020302_worldSprites.usda@,
+        @./02_materials/03_global/02_worldSprites/020302_worldSprites.usda@,
         @./01_lights/01_buildings/01_buildings.usda@,
         @./01_lights/02_roadways/02_roadways.usda@,
         @./01_lights/03_cars/03_cars.usda@,
@@ -36,7 +37,9 @@
         @./02_materials/01_environment/16_garages/03_garageCar/02011603_garageCar.usda@,
         @./02_materials/01_environment/16_garages/02_garageCareer/02011602_garageCareer.usda@,
         @./02_materials/01_environment/16_garages/01_garageLobby/02011601_garageLobby.usda@,
-        @./03_meshes/02_environment/01_skybox/030201_skybox.usda@
+        @./03_meshes/02_environment/01_skybox/030201_skybox.usda@,
+	@./rough_only.usda@
     ]
     upAxis = "Z"
 )
+
