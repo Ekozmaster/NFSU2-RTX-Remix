@@ -30,7 +30,7 @@ color baseReflectivityToIoR(float incidentIoR, color baseReflectivity)
   // Note: Clamp the squared base reflectivity to 0.99 to prevent overflow issues or NaNs with near-1 physically implausible materials.
   color baseReflectivitySqrt = math::min(math::sqrt(baseReflectivity), 0.99f);
 
-  return incidentIoR / (2.0f / (baseReflectivitySqrt + float(1.0f)) - float(1.0f));
+  return color(incidentIoR) / (color(2.0f) / (baseReflectivitySqrt + 1.0) - 1.0);
 }
 
 export material AperturePBR_Model(
@@ -89,7 +89,7 @@ export material AperturePBR_Model(
   float adjusted_thin_film_thickness = math::max(thin_film_thickness, 0.001);
   bsdf final_bsdf = enable_thin_film ? 
                       df::thin_film(thickness: adjusted_thin_film_thickness,
-                                    ior: 1.5,
+                                    ior: color(1.5f),
                                     base: custom_fresnel_layer_bsdf)
                     : custom_fresnel_layer_bsdf;
 } in material(
