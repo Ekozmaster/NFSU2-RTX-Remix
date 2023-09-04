@@ -1,0 +1,71 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_FDDB2486BFA7C3D7"
+        {
+            def Xform "Xform_FDDB2486BFA7C3D7_0" (
+                delete references = @./03_meshes/04_buildingstest.usd@
+                prepend references = @./03_meshes/04_buildings/test.usd@
+            )
+            {
+                rel material:binding = </RootNode/meshes/mesh_FDDB2486BFA7C3D7/Xform_FDDB2486BFA7C3D7_0/Looks/building_01> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "building_01" (
+                        references = @./02_materials/building_01.usda@</meshes/mesh_FDDB2486BFA7C3D7/Xform_FDDB2486BFA7C3D7_0/Looks/building_01>
+                    )
+                    {
+                        over "Shader"
+                        {
+                            asset inputs:diffuse_texture = @./Textures/buildings/buildings_01_albedo.dds@ (
+                                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                                hidden = false
+                            )
+                            float inputs:emissive_intensity = 1 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emissive"
+                                displayName = "Emissive Intensity"
+                                doc = "Intensity of the emission"
+                                hidden = false
+                            )
+                            asset inputs:emissive_mask_texture = @./Textures/buildings/buildings_01_emissive.dds@ (
+                                doc = "The texture masking the emissive color"
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 0 (
+                                doc = "Enables the emission of light from the material"
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

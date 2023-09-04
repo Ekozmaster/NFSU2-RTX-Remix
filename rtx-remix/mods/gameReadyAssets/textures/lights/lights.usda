@@ -443,6 +443,55 @@ def "RootNode"
                 token outputs:output
             }
         }
+
+        over "mat_997464DCB1E40176"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./997464DCB1E40176_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 300 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./997464DCB1E40176_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./997464DCB1E40176_normal.dds@ (
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./997464DCB1E40176_rough.dds@ (
+                    hidden = false
+                )
+            }
+        }
     }
 }
 

@@ -2,6 +2,7 @@
 (
     subLayers = [
         @./hemry.usda@,
+        @./buildings_replace.usda@,
         @./uncle_burrito.usda@,
         @./02_materials/03_global/01_roads/020301_roads.usda@,
         @./player_car_lights.usda@,
