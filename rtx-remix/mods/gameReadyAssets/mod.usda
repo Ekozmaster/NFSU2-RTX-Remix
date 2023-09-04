@@ -2,6 +2,7 @@
 (
     subLayers = [
         @./hemry.usda@,
+        @./buildings_replace.usda@,
         @./uncle_burrito.usda@,
         @./02_materials/03_global/01_roads/020301_roads.usda@,
         @./player_car_lights.usda@,
@@ -38,7 +39,7 @@
         @./02_materials/01_environment/16_garages/02_garageCareer/02011602_garageCareer.usda@,
         @./02_materials/01_environment/16_garages/01_garageLobby/02011601_garageLobby.usda@,
         @./03_meshes/02_environment/01_skybox/030201_skybox.usda@,
-	@./rough_only.usda@
+        @./rough_only.usda@
     ]
     upAxis = "Z"
 )
