@@ -1,0 +1,165 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (50000, 0, 0)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (153.44215778687337, 214.48469087334408, 31.140084164286968)
+                double3 target = (-266.95051105662617, -505.8533720134682, 264.34188334070154)
+            }
+            dictionary Right = {
+                double3 position = (0, -50000, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary navmeshSettings = {
+            double agentHeight = 180
+            double agentRadius = 20
+            bool excludeRigidBodies = 1
+            int ver = 1
+            double voxelCeiling = 460
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./DoubleSideCityCenterLightPoles.usda"
+            dictionary muteness = {
+            }
+        }
+        dictionary renderSettings = {
+            bool "rtx:pathtracing:mgpu:autoLoadBalancing:enabled" = 0
+            double "rtx:post:lensFlares:flareScale" = 0.075
+            float3 "rtx:sceneDb:ambientLightColor" = (0, 0, 0)
+        }
+    }
+    defaultPrim = "DoubleSidedCityCenterLightPole"
+    endTimeCode = 100
+    metersPerUnit = 0.01
+    startTimeCode = 0
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+def Xform "DoubleSidedCityCenterLightPole" (
+    references = @./DoubleSideCityCenterLightPoles.usd@
+)
+{
+    double3 xformOp:rotateXYZ = (0, 0, 0)
+    double3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+    def Material "PoleMat" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </DoubleSidedCityCenterLightPole/LEDsMat> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        token outputs:mdl:displacement.connect = </DoubleSidedCityCenterLightPole/PoleMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </DoubleSidedCityCenterLightPole/PoleMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </DoubleSidedCityCenterLightPole/PoleMat/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./double_side_city_center_light_pole_albedo.dds@ (
+                colorSpace = "sRGB"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./double_side_city_center_light_pole_roughness.dds@ (
+                colorSpace = "raw"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    over "Pole"
+    {
+        over "Pole" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </DoubleSidedCityCenterLightPole/PoleMat> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+    }
+
+    def Material "LEDsMat"
+    {
+        token outputs:mdl:displacement.connect = </DoubleSidedCityCenterLightPole/LEDsMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </DoubleSidedCityCenterLightPole/LEDsMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </DoubleSidedCityCenterLightPole/LEDsMat/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:emissive_color_constant = (1, 1, 1) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emissive"
+                displayName = "Emissive Color"
+                doc = "The emissive color when no emissive color texture is specified."
+                hidden = false
+                renderType = "color"
+            )
+            bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emissive"
+                displayName = "Enable Emission"
+                doc = "Enables the emission of light from the material"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    over "LEDs"
+    {
+        over "LEDs" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </DoubleSidedCityCenterLightPole/LEDsMat> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+    }
+}
+
