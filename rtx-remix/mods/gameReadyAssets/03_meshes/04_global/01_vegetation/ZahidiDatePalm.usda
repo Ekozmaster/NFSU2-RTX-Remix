@@ -1,0 +1,124 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (50000, 0, 0)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (31.645979274667113, 29.55606548332604, 5.668112230596701)
+                double3 target = (-42.55555764167356, -41.79053045582212, 21.57567202673519)
+            }
+            dictionary Right = {
+                double3 position = (0, -50000, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary metricsAssembler = {
+            dictionary "file:/C:/Users/Emanuel%20Kozerski/Jogos/Need%20for%20Speed%20Underground%202/rtx-remix/mods/gameReadyAssets/03_meshes/04_global/01_vegetation/ZahidiDatePalm.usd" = {
+                dictionary "/ZahidiDataPalm" = {
+                    string path = "/ZahidiDataPalm"
+                }
+            }
+        }
+        dictionary navmeshSettings = {
+            double agentHeight = 180
+            double agentRadius = 20
+            bool excludeRigidBodies = 1
+            int ver = 1
+            double voxelCeiling = 460
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./ZahidiDatePalm.usda"
+            dictionary muteness = {
+            }
+        }
+        dictionary renderSettings = {
+            double "rtx:post:lensFlares:flareScale" = 0.075
+            float3 "rtx:sceneDb:ambientLightColor" = (0, 0, 0)
+        }
+    }
+    defaultPrim = "ZahidiDatePalm"
+    endTimeCode = 100
+    metersPerUnit = 0.01
+    startTimeCode = 0
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+def Xform "ZahidiDatePalm" (
+    prepend apiSchemas = ["MaterialBindingAPI"]
+    references = @./ZahidiDatePalm.usd@
+)
+{
+    rel material:binding = </ZahidiDatePalm/ZahidiDatePalm> (
+        bindMaterialAs = "weakerThanDescendants"
+    )
+    double3 xformOp:rotateXYZ = (0, 0, 0)
+    double3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+    def Material "ZahidiDatePalm"
+    {
+        token outputs:mdl:displacement.connect = </ZahidiDatePalm/ZahidiDatePalm/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </ZahidiDatePalm/ZahidiDatePalm/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </ZahidiDatePalm/ZahidiDatePalm/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./zahidi_date_palm_albedo.dds@ (
+                colorSpace = "sRGB"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./zahidi_date_palm_normal.dds@ (
+                colorSpace = "raw"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./zahidi_date_palm_roughness.dds@ (
+                colorSpace = "raw"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    over "Bark_Assembly"
+    {
+        over "Cylinder"
+        {
+            uniform bool doubleSided = 1
+        }
+    }
+}
+

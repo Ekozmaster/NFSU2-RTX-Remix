@@ -598,6 +598,258 @@ over "RootNode"
                     )
                 }
             }
+
+            def Xform "GrassTopCover" (
+                prepend references = @./CC_MainAvenue_Median02_01_GrassTopCover.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_GrassTop_001"
+                {
+                    over "mesh_135" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_8AAE6610E921E410/GrassTopCoverMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "GrassTopCoverMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_8AAE6610E921E410/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_8AAE6610E921E410/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_8AAE6610E921E410/GrassTopCoverMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = "Indicates if alpha state blending should be enabled."
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = "The alpha state blend type to use."
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./leaves_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./leaves_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./leaves_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Material "PhilodendronRenauxiiMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_8AAE6610E921E410/PhilodendronRenauxiiMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_8AAE6610E921E410/PhilodendronRenauxiiMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_8AAE6610E921E410/PhilodendronRenauxiiMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = "Indicates if alpha state blending should be enabled."
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = "The alpha state blend type to use."
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./philodendron_renauxii_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./philodendron_renauxii_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./philodendron_renauxii_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "PhilodendronRenauxiiBushes" (
+                prepend references = @./CC_MainAvenue_Median02_01_PhilodendronRenauxii.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_PhilodendronRenauxii"
+                {
+                    over "Cube_022" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_8AAE6610E921E410/PhilodendronRenauxiiMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "LightPole" (
+                prepend references = @../StreetLamps/DoubleSideCityCenterLightPoles.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 81.32333181814147)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-535.3388838610916, -302.5086628233571, 27.724611140401226)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-4.165122886841914, 0, 16.29601243957018)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "SphereLight_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (4.291610595471354, 0, 16.29601243957018)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
         }
 
         over "mesh_D5F1D765783EBC64"
@@ -1141,6 +1393,258 @@ over "RootNode"
                     token outputs:out (
                         renderType = "material"
                     )
+                }
+            }
+
+            def Xform "GrassTopCover" (
+                prepend references = @./CC_MainAvenue_Median02_02_GrassTopCover.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_GrassTop_001"
+                {
+                    over "mesh_154" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D5F1D765783EBC64/GrassTopCoverMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "GrassTopCoverMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D5F1D765783EBC64/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D5F1D765783EBC64/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D5F1D765783EBC64/GrassTopCoverMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = "Indicates if alpha state blending should be enabled."
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = "The alpha state blend type to use."
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./leaves_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./leaves_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./leaves_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Material "PhilodendronRenauxiiMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D5F1D765783EBC64/PhilodendronRenauxiiMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D5F1D765783EBC64/PhilodendronRenauxiiMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D5F1D765783EBC64/PhilodendronRenauxiiMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = "Indicates if alpha state blending should be enabled."
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = "The alpha state blend type to use."
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./philodendron_renauxii_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./philodendron_renauxii_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./philodendron_renauxii_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "PhilodendronRenauxiiBushes" (
+                prepend references = @./CC_MainAvenue_Median02_02_PhilodendronRenauxii.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_PhilodendronRenauxii"
+                {
+                    over "Cube_023" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D5F1D765783EBC64/PhilodendronRenauxiiMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "LightPole" (
+                prepend references = @../StreetLamps/DoubleSideCityCenterLightPoles.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 80.78061515942011)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-563.1641052263767, -298.95727799288323, 27.598710724110358)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (4.228326453312661, -0.009211101507503372, 16.336346099627196)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "SphereLight_03" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-4.205901147004738, -0.009211101483288076, 16.336346099627196)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
         }

@@ -934,5 +934,94 @@ over "RootNode"
             }
         }
     }
+
+    over "instances"
+    {
+        over "inst_7F10F3A0C84F0A1E_0"
+        {
+            over "Xform_mesh_0" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_F73A2C37B72E7FC7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E6E675141E189582"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A3FDBBFBEBC0AEC2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "ZahidiDatePalm" (
+                prepend references = @./03_meshes/04_global/01_vegetation/ZahidiDatePalm.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1.2)
+                double3 xformOp:translate = (-0.10000000149011612, -0.20000000298023224, 2.500000037252903)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_0D432DE4796E9D32"
+        {
+            def Xform "ZahidiDatePalm" (
+                prepend references = @./03_meshes/04_global/01_vegetation/ZahidiDatePalm.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.7, 1.7, 1.5000000223517418)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_70F9851443B94DBE"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2884A3E331FB7876"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
 }
 
