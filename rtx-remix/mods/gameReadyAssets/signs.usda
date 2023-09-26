@@ -4671,5 +4671,12 @@ over "RootNode"
                 )
             }
         }
+        over "mat_AED142EEC62BCF2B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/signs/AED142EEC62BCF2B_diffuse.dds@
+            }
+        }
     }
 }
