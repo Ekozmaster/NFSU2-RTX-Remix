@@ -24,6 +24,19 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
                 asset inputs:emissive_mask_texture = @./textures/headlights/EBCA70715B80E811_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -43,19 +56,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/EBCA70715B80E811_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/EBCA70715B80E811_rough.dds@ (
                     colorSpace = "auto"
@@ -68,6 +68,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_3AE7EBB76DD188A9"
         {
             over "Shader"
@@ -79,6 +80,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/3AE7EBB76DD188A9_emissive.dds@ (
@@ -100,19 +114,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/3AE7EBB76DD188A9_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/3AE7EBB76DD188A9_rough.dds@ (
                     colorSpace = "auto"
@@ -125,6 +126,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_64285E547C81EAE0"
         {
             over "Shader"
@@ -136,6 +138,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/64285E547C81EAE0_emissive.dds@ (
@@ -157,19 +172,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/64285E547C81EAE0_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/64285E547C81EAE0_rough.dds@ (
                     colorSpace = "auto"
@@ -182,6 +184,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_FA57BBDB86915998"
         {
             over "Shader"
@@ -193,6 +196,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/FA57BBDB86915998_emissive.dds@ (
@@ -214,19 +230,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/FA57BBDB86915998_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/FA57BBDB86915998_rough.dds@ (
                     colorSpace = "auto"
@@ -239,6 +242,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_D4EDABE46DA7A998"
         {
             over "Shader"
@@ -250,6 +254,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/D4EDABE46DA7A998_emissive.dds@ (
@@ -271,19 +288,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/D4EDABE46DA7A998_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/D4EDABE46DA7A998_rough.dds@ (
                     colorSpace = "auto"
@@ -296,6 +300,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_A644C5CC0D3CFE7F"
         {
             over "Shader"
@@ -307,6 +312,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/A644C5CC0D3CFE7F_emissive.dds@ (
@@ -328,19 +346,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/A644C5CC0D3CFE7F_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/A644C5CC0D3CFE7F_rough.dds@ (
                     colorSpace = "auto"
@@ -353,17 +358,22 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_B1A76FE75F3C1051"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/headlights/B1A76FE75F3C1051.dds@ (
+                float inputs:emissive_intensity = 5 (
                     customData = {
-                        asset default = @@
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/B1A76FE75F3C1051_emissive.dds@ (
@@ -385,31 +395,10 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/B1A76FE75F3C1051_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/headlights/B1A76FE75F3C1051_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
             }
         }
+
         over "mat_E9641BC6F36D1F49"
         {
             over "Shader"
@@ -421,6 +410,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/E9641BC6F36D1F49_emissive.dds@ (
@@ -442,20 +444,9 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                asset inputs:normalmap_texture = @./textures/headlights/E9641BC6F36D1F49_normal.dds@ (
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/headlights/E9641BC6F36D1F49_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/E9641BC6F36D1F49_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -467,6 +458,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_C261E6A1CDE7C919"
         {
             over "Shader"
@@ -478,6 +470,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/C261E6A1CDE7C919_emissive.dds@ (
@@ -499,19 +504,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/C261E6A1CDE7C919_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/C261E6A1CDE7C919_rough.dds@ (
                     colorSpace = "auto"
@@ -524,6 +516,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_EF0DDE47A6036854"
         {
             over "Shader"
@@ -535,6 +528,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/EF0DDE47A6036854_emissive.dds@ (
@@ -556,19 +562,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/EF0DDE47A6036854_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/EF0DDE47A6036854_rough.dds@ (
                     colorSpace = "auto"
@@ -581,6 +574,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_9F990D91AF49EDCA"
         {
             over "Shader"
@@ -592,6 +586,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/9F990D91AF49EDCA_emissive.dds@ (
@@ -613,19 +620,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/9F990D91AF49EDCA_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/9F990D91AF49EDCA_rough.dds@ (
                     colorSpace = "auto"
@@ -638,6 +632,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_0BC4C4F65B4CDE1C"
         {
             over "Shader"
@@ -649,6 +644,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/0BC4C4F65B4CDE1C_emissive.dds@ (
@@ -670,19 +678,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/0BC4C4F65B4CDE1C_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/0BC4C4F65B4CDE1C_rough.dds@ (
                     colorSpace = "auto"
@@ -695,6 +690,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_68651EF5418347A8"
         {
             over "Shader"
@@ -706,6 +702,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/68651EF5418347A8_emissive.dds@ (
@@ -727,19 +736,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/68651EF5418347A8_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/68651EF5418347A8_rough.dds@ (
                     colorSpace = "auto"
@@ -752,6 +748,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_BF5E5BB5534FA5F7"
         {
             over "Shader"
@@ -763,6 +760,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/BF5E5BB5534FA5F7_emissive.dds@ (
@@ -784,19 +794,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/BF5E5BB5534FA5F7_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/BF5E5BB5534FA5F7_rough.dds@ (
                     colorSpace = "auto"
@@ -809,6 +806,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_0491E36E2B604B66"
         {
             over "Shader"
@@ -820,6 +818,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/0491E36E2B604B66_emissive.dds@ (
@@ -841,19 +852,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/0491E36E2B604B66_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/0491E36E2B604B66_rough.dds@ (
                     colorSpace = "auto"
@@ -866,6 +864,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_E7ADBC178242E5F8"
         {
             over "Shader"
@@ -877,6 +876,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/E7ADBC178242E5F8_emissive.dds@ (
@@ -898,20 +910,9 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                asset inputs:normalmap_texture = @./textures/headlights/E7ADBC178242E5F8_normal.dds@ (
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/headlights/E7ADBC178242E5F8_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/E7ADBC178242E5F8_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -923,6 +924,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_36CC9571442C1E90"
         {
             over "Shader"
@@ -934,6 +936,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/36CC9571442C1E90_emissive.dds@ (
@@ -955,20 +970,14 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
+                asset inputs:normalmap_texture = @./textures/headlights/36CC9571442C1E90_normal.dds@ (
                     customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
+                        asset default = @@
                     }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/headlights/36CC9571442C1E90_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/36CC9571442C1E90_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -980,6 +989,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_489E969519A31FD5"
         {
             over "Shader"
@@ -991,6 +1001,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/489E969519A31FD5_emissive.dds@ (
@@ -1012,19 +1035,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/489E969519A31FD5_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/489E969519A31FD5_rough.dds@ (
                     colorSpace = "auto"
@@ -1037,6 +1047,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_4A1C5A6A35D5AE20"
         {
             over "Shader"
@@ -1048,6 +1059,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/4A1C5A6A35D5AE20_emissive.dds@ (
@@ -1069,20 +1093,9 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                asset inputs:normalmap_texture = @./textures/headlights/4A1C5A6A35D5AE20_normal.dds@ (
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/headlights/4A1C5A6A35D5AE20_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/4A1C5A6A35D5AE20_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -1094,6 +1107,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_194F658F0A1C0316"
         {
             over "Shader"
@@ -1105,6 +1119,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/194F658F0A1C0316_emissive.dds@ (
@@ -1126,19 +1153,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/194F658F0A1C0316_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/194F658F0A1C0316_rough.dds@ (
                     colorSpace = "auto"
@@ -1151,6 +1165,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_D31D3B665C15C8F6"
         {
             over "Shader"
@@ -1162,6 +1177,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/D31D3B665C15C8F6_emissive.dds@ (
@@ -1183,19 +1211,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/D31D3B665C15C8F6_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/D31D3B665C15C8F6_rough.dds@ (
                     colorSpace = "auto"
@@ -1208,6 +1223,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_55704AF14398948F"
         {
             over "Shader"
@@ -1219,6 +1235,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/55704AF14398948F_emissive.dds@ (
@@ -1240,20 +1269,9 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                asset inputs:normalmap_texture = @./textures/headlights/55704AF14398948F_normal.dds@ (
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./textures/headlights/55704AF14398948F_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/55704AF14398948F_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -1265,6 +1283,7 @@ over "RootNode"
                 )
             }
         }
+
         over "mat_C449A4C35B16D609"
         {
             over "Shader"
@@ -1276,6 +1295,19 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 5 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/headlights/C449A4C35B16D609_emissive.dds@ (
@@ -1297,19 +1329,6 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
                 asset inputs:normalmap_texture = @./textures/headlights/C449A4C35B16D609_normal.dds@
                 asset inputs:reflectionroughness_texture = @./textures/headlights/C449A4C35B16D609_rough.dds@ (
                     colorSpace = "auto"
@@ -1322,5 +1341,85 @@ over "RootNode"
                 )
             }
         }
+
+        over "mat_E795C6FF05BB2A68"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/headlights/E795C6FF05BB2A68_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                color3f inputs:emissive_color_constant = (1, 1, 1) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 3000 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./Textures/headlights/E795C6FF05BB2A68_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/headlights/E795C6FF05BB2A68_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/headlights/E795C6FF05BB2A68_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
     }
 }
+

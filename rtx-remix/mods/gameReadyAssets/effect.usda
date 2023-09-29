@@ -1,0 +1,174 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_E7FD964DC278287C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/effect/E7FD964DC278287C_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/effect/E7FD964DC278287C_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_98690EA4FE9162FE"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/effect/98690EA4FE9162FE_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 3000 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./Textures/effect/98690EA4FE9162FE_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @@ (
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_D405FFA4A2507154"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.3299999 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = "Index of Refraction of the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/effect/D405FFA4A2507154_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                float inputs:thin_wall_thickness = 1 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0.001
+                        }
+                        dictionary soft_range = {
+                            float max = 1
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled material thickness"
+                    doc = "Simulated thickness for thin-walled materials (0 disables thin-walled mode)"
+                    hidden = false
+                )
+                bool inputs:thin_walled = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = "Whether the material is thin-walled"
+                    hidden = false
+                )
+                float inputs:transmittance_measurement_distance = 100 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance Measurement Distance"
+                    doc = "Distance to match the transmittance through the volume at."
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./Textures/effect/D405FFA4A2507154_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance or Diffuse Albedo Texture"
+                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                    hidden = false
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = "When set, simulates a diffuse layer on top of the material"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+
