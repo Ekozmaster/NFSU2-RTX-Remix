@@ -16,13 +16,13 @@
         @./tail_lights.usda@,
         @./wood.usda@,
         @./signs.usda@,
-        @./walls.usda@,
         @./windows.usda@,
         @./textures/concrete/concrete.usda@,
         @./adamplayer.usda@,
         @./tunnels.usda@,
         @./highways.usda@,
         @./02_materials/03_global/02_worldSprites/020302_worldSprites.usda@,
+        @./02_materials/03_global/03_walls/020303_walls.usda@,
         @./01_lights/01_buildings/01_buildings.usda@,
         @./01_lights/02_roadways/02_roadways.usda@,
         @./01_lights/03_cars/03_cars.usda@,
@@ -38,7 +38,7 @@
         @./02_materials/01_environment/16_garages/02_garageCareer/02011602_garageCareer.usda@,
         @./02_materials/01_environment/16_garages/01_garageLobby/02011601_garageLobby.usda@,
         @./03_meshes/02_environment/01_skybox/030201_skybox.usda@,
-	    @./rough_only.usda@
+        @./rough_only.usda@
     ]
     upAxis = "Z"
 )
