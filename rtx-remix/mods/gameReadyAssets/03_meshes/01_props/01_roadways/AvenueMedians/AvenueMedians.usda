@@ -1666,6 +1666,148 @@ over "RootNode"
             {
             }
         }
+
+        over "mesh_27C0E50AE4759BC9"
+        {
+            def Xform "BannerAds" (
+                prepend references = @./MediansBannerAds.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "BannerAd"
+                {
+                    over "mesh_461" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 0
+                        rel material:binding = </RootNode/meshes/mesh_27C0E50AE4759BC9/BannerAdsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        bool singleSided = 1
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Material "BannerAdsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_27C0E50AE4759BC9/BannerAdsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_27C0E50AE4759BC9/BannerAdsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_27C0E50AE4759BC9/BannerAdsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./banner_ads_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./banner_ads_roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+        }
+
+        over "mesh_1D1FCA347382B032"
+        {
+            def Xform "BannerAds" (
+                prepend references = @./MediansBannerAds.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.462, 0.462, 0.462)
+                double3 xformOp:translate = (0, 0.10000000149011612, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "BannerAd"
+                {
+                    over "mesh_461" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 0
+                        rel material:binding = </RootNode/meshes/mesh_1D1FCA347382B032/BannerAdsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        bool singleSided = 1
+                    }
+                }
+            }
+
+            def Material "BannerAdsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_1D1FCA347382B032/BannerAdsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_1D1FCA347382B032/BannerAdsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_1D1FCA347382B032/BannerAdsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./banner_ads_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./banner_ads_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
     }
 }
 
