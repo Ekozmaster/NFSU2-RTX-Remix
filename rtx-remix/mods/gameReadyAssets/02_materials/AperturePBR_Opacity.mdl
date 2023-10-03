@@ -31,6 +31,105 @@ import ::nvidia::core_definitions::normalmap_texture;
 using AperturePBR_Model import *;
 import AperturePBR_Normal::*;
 
+// Note: Ensure this enum matches the enum on the runtime side of things so that the values match as expected.
+export enum BlendType
+[[
+    anno::description("Alpha state blend type.")
+]]
+{
+    Alpha = 0 [[
+        anno::display_name("Alpha"),
+        anno::description("Opacity directly set to albedo alpha, no emissive intensity override influence.")
+    ]],
+
+    AlphaEmissive = 1 [[
+        anno::display_name("Alpha Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to albedo alpha.")
+    ]],
+
+    ReverseAlphaEmissive = 2 [[
+        anno::display_name("Reverse Alpha Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to 1 - albedo alpha.")
+    ]],
+
+    Color = 3 [[
+        anno::display_name("Color"),
+        anno::description("Opacity directly set to albedo luminance, no emissive intensity override influence.")
+    ]],
+
+    ColorEmissive = 4 [[
+        anno::display_name("Color Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to albedo luminance.")
+    ]],
+
+    ReverseColorEmissive = 5 [[
+        anno::display_name("Reverse Color Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to 1 - albedo luminance.")
+    ]],
+
+    Emissive = 6 [[
+        anno::display_name("Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to 1.")
+    ]],
+
+    Multiplicative = 7 [[
+        anno::display_name("Multiplicative"),
+        anno::description("Opacity set to 1 - albedo luminance, no emissive intensity override influence.")
+    ]],
+
+    DoubleMultiplicative = 8 [[
+        anno::display_name("Double Multiplicative"),
+        anno::description("Opacity set to abs(1 - albedo luminance * 2), no emissive intensity override influence.")
+    ]]
+};
+
+// Note: Ensure this enum matches the enum on the runtime side of things so that the values match as expected.
+export enum AlphaTestType
+[[
+    anno::description("Alpha state alpha test type.")
+]]
+{
+    Always = 0 [[
+        anno::display_name("Always"),
+        anno::description("Always pass the alpha test.")
+    ]],
+
+    Never = 1 [[
+        anno::display_name("Never"),
+        anno::description("Never pass the alpha test.")
+    ]],
+
+    Less = 2 [[
+        anno::display_name("Less"),
+        anno::description("Pass the alpha test if the alpha value is less than the reference value.")
+    ]],
+
+    Equal = 3 [[
+        anno::display_name("Equal"),
+        anno::description("Pass the alpha test if the alpha value is equal to the reference value.")
+    ]],
+
+    LessOrEqual = 4 [[
+        anno::display_name("Less Or Equal"),
+        anno::description("Pass the alpha test if the alpha value is less or equal to the reference value.")
+    ]],
+
+    Greater = 5 [[
+        anno::display_name("Greater"),
+        anno::description("Pass the alpha test if the alpha value is greater to the reference value.")
+    ]],
+
+    NotEqual = 6 [[
+        anno::display_name("Not Equal"),
+        anno::description("Pass the alpha test if the alpha value is not equal to the reference value.")
+    ]],
+
+    GreaterOrEqual = 7 [[
+        anno::display_name("Greater Or Equal"),
+        anno::description("Pass the alpha test if the alpha value is greater or equal to the reference value.")
+    ]]
+};
+
 // IMPORTANT: When updating defaults or hard ranges, the defaults and ranges in the associated runtime should
 // be updated as well so that the defaults are properly selected even when the USD does not include them (as
 // sometimes tools will not write out the MDL defaults for values not modified by the user), and so the clamping
@@ -45,6 +144,13 @@ export material AperturePBR_Opacity(
     anno::hard_range(color(0.0), color(1.0)),
     anno::description("The base albedo color to use if no texture is specified"),
     anno::in_group("Diffuse")
+  ]],
+  uniform float opacity_constant = 1.f
+  [[
+      anno::hard_range(0.0, 1.0),
+      anno::display_name("Opacity Amount"),
+      anno::description("Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque."),
+      anno::in_group("Diffuse")
   ]],
   uniform texture_2d diffuse_texture = texture_2d()
   [[
@@ -168,28 +274,57 @@ export material AperturePBR_Opacity(
     anno::in_group("Emissive")
   ]],
 
-  // -------------------- ALPHA CUTOUT ----------------------
-  uniform bool enable_opacity = false
-  [[
-      anno::display_name("Enable Opacity"),
-      anno::description("Enables the use of cutout opacity"),
-      anno::in_group("Opacity")
-  ]],
-  uniform float opacity_constant = 1.f
-  [[
-      anno::enable_if("enable_opacity == true"),
-      anno::hard_range(0.0, 1.0),
-      anno::display_name("Opacity Amount"),
-      anno::description("Used when no albedo/opacity texture is specified. 0 for completely transparent, 1 for completly opaque."),
-      anno::in_group("Opacity")
-  ]],
-
   // -------------------- MATERIAL FLAGS ----------------------
   uniform bool ignore_material = false
   [[
     anno::display_name("Ignore Material"),
     anno::description("Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard."),
     anno::in_group("Material Flags")
+  ]],
+  uniform bool use_legacy_alpha_state = true
+  [[
+    anno::display_name("Use Legacy Alpha State"),
+    anno::description("Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."),
+    anno::in_group("Material Flags")
+  ]],
+  uniform bool blend_enabled = false
+  [[
+    anno::enable_if("use_legacy_alpha_state == false"),
+    anno::display_name("Blend Enabled"),
+    anno::description("Indicates if alpha state blending should be enabled."),
+    anno::in_group("Material Flags")
+  ]],
+  uniform BlendType blend_type = Alpha
+  [[
+    anno::enable_if("use_legacy_alpha_state == false && blend_enabled == true"),
+    anno::display_name("Blend Type"),
+    anno::description("The alpha state blend type to use."),
+    anno::in_group("Material Flags"),
+    anno::unused()
+  ]],
+  uniform bool inverted_blend = false
+  [[
+    anno::enable_if("use_legacy_alpha_state == false && blend_enabled == true"),
+    anno::display_name("Inverted Blend"),
+    anno::description("Indicates if an inverted blend type should be used."),
+    anno::in_group("Material Flags"),
+    anno::unused()
+  ]],
+  uniform AlphaTestType alpha_test_type = Always
+  [[
+    anno::enable_if("use_legacy_alpha_state == false"),
+    anno::display_name("Alpha Test Type"),
+    anno::description("The alpha state alpha test type to use."),
+    anno::in_group("Material Flags"),
+    anno::unused()
+  ]],
+  uniform float alpha_test_reference_value = 0.0f
+  [[
+    anno::enable_if("use_legacy_alpha_state == false"),
+    anno::display_name("Alpha Test Reference Value"),
+    anno::description("The value to use for alpha testing against."),
+    anno::in_group("Material Flags"),
+    anno::unused()
   ]],
 
   // -------------------- NORMAL ----------------------
@@ -203,6 +338,23 @@ export material AperturePBR_Opacity(
     anno::display_name("Normal Map Encoding"),
     anno::description("Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."),
     anno::in_group("Normal")
+  ]],
+
+  // -------------------- DISPLACEMENT ----------------------
+  uniform texture_2d height_texture = texture_2d()
+  [[
+    anno::display_name("Height Map"),
+    anno::in_group("Displacement"),
+    anno::description("A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."),
+    anno::unused()
+  ]],
+  uniform float displace_in = 1.0f
+  [[
+    anno::display_name("Inwards Displacement"),
+    anno::hard_range(0.0, 255.0),
+    anno::description("Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."),
+    anno::in_group("Displacement"),
+    anno::unused()
   ]]
 )
 [[
@@ -278,6 +430,13 @@ export material AperturePBR_Opacity(
               ? tex::lookup_color(emissive_mask_texture, emissive_uv, tex::wrap_repeat, tex::wrap_repeat)
               : emissive_color_constant;
 
+  // Todo (TREX-2166): Match runtime-side logic for opacity and emissive derivations such that when not using a legacy alpha state
+  // Omniverse can actually render more similarly to our engine (still will not solve the fact that while information about the
+  // legacy alpha state is exported now it can't actually be used to preview how it looks in Omniverse unless the use legacy alpha
+  // state checkbox is unchecked as there no way to know if that data was exported our set by a user, potentially in the future
+  // there can be some sort of immutable "source alpha state" parameters which go along with the ability to override it for proper
+  // visualization, though this does not solve dynamic alpha state issues either).
+
   // Normal calculations
   float3 normal_lookup =  tex::texture_isvalid(normalmap_texture) ?
               AperturePBR_Normal::enc_tangent_space_normal_texture(
@@ -297,7 +456,7 @@ export material AperturePBR_Opacity(
   emissive_color: emissive_lookup,
   emissive_intensity: emissive_intensity,
   // Note: Force opacity to be enabled when the material is ignored so the constant opacity it is given to be somewhat seethrough works.
-  enable_opacity: ignore_material ? true : enable_opacity,
+  enable_opacity: ignore_material ? true : false,
   opacity: opacity,
   enable_thin_film: enable_thin_film,
   thin_film_thickness: thin_film_thickness,
