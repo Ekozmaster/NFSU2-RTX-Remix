@@ -30,6 +30,10 @@ over "RootNode"
                 asset inputs:reflectionroughness_texture = @./DAE96F69F1569E50_rough.dds@ (
                     hidden = false
                 )
+                asset inputs:height_texture = @./DAE96F69F1569E50_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.05
             }
         }
     }
