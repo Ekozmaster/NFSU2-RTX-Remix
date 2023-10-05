@@ -1736,6 +1736,26 @@ over "RootNode"
                     )
                 }
             }
+
+            def Xform "FlagSupportRight" (
+                prepend references = @./MediansBannerAdsSupport.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1.342)
+                double3 xformOp:translate = (0, 0.05, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "FlagSupportLeft" (
+                prepend references = @./MediansBannerAdsSupport.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (1, 1, 1.339)
+                double3 xformOp:translate = (-0.175, -0.43, 0.03)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
         }
 
         over "mesh_1D1FCA347382B032"
@@ -1746,7 +1766,7 @@ over "RootNode"
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (0.462, 0.462, 0.462)
-                double3 xformOp:translate = (0, 0.10000000149011612, 0)
+                double3 xformOp:translate = (0.05, 0.10000000149011612, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 over "BannerAd"
@@ -1802,6 +1822,44 @@ over "RootNode"
                 }
             }
 
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "FlagSupportLeft" (
+                prepend references = @./MediansBannerAdsSupport.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.462, 0.462, 0.62)
+                double3 xformOp:translate = (0.05, 0.16, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "FlagSupportRight" (
+                prepend references = @./MediansBannerAdsSupport.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (0.462, 0.462, 0.619)
+                double3 xformOp:translate = (-0.033, -0.16, 0.013)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_88BD5145A8548A10"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_0A0313C3817410D5"
+        {
             over "mesh" (
                 active = false
             )
