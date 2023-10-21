@@ -1,0 +1,9 @@
+#usda 1.0
+(
+    subLayers = [
+        @./peugot/PEUGOT.usda@,
+        @./corolla/COROLLA.usda@
+    ]
+    upAxis = "Y"
+)
+

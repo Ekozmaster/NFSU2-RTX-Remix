@@ -1,0 +1,12 @@
+#usda 1.0
+(
+    subLayers = [
+        @./textures/cars/carTextures.usda@,
+        @./textures/arch/garages/garageTextures.usda@,
+        @./textures/world/worldSprites.usda@,
+        @./textures/roads/roads.usda@,
+        @./textures/arch/walls/walls.usda@
+    ]
+    upAxis = "Y"
+)
+

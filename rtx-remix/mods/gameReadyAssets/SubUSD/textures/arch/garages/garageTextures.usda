@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    subLayers = [
+        @./spec/Spec.usda@,
+        @./performance/Perf.usda@,
+        @./lobby/garageLobby.usda@,
+        @./graph/garageGraph.usda@,
+        @./dyno/garageDyno.usda@,
+        @./dealership/garageDealership.usda@,
+        @./career/garageCareer.usda@,
+        @./body/garageBody.usda@
+    ]
+    upAxis = "Y"
+)
+
