@@ -373,16 +373,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_B48D327374ECCE06"
-        {
-            over "LampPost"
-            {
-                float colorTemperature = 4500
-                float exposure = 0
-                float intensity = 10
-            }
-        }
-
         over "mesh_AD71EA092F00A53D"
         {
             custom int preserveOriginalDrawCall = 1
