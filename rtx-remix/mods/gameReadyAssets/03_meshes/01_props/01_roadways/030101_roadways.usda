@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./StreetLamps/StreetLamps.usda@,
         @./AvenueMedians/AvenueMedians.usda@
     ]
     upAxis = "Z"
