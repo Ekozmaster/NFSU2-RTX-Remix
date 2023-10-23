@@ -1,0 +1,61 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_36E4BE3BFBBFED51"
+        {
+            custom int preserveOriginalDrawCall = 0
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "SmallLampPole" (
+                prepend references = @./SmallLampPole.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "LampPost" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 30
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 4.6000000685453415)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B48D327374ECCE06"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

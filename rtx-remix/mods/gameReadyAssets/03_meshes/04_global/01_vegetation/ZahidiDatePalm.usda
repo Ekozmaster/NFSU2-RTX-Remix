@@ -107,6 +107,10 @@ def Xform "ZahidiDatePalm" (
                 hidden = false
                 renderType = "texture_2d"
             )
+            color3f inputs:subsurface_transmittance_color = (1.0, 0.4, 0.0)
+            color3f inputs:subsurface_single_scattering_albedo = (0.5, 1.0, 0.5)
+            float inputs:subsurface_measurement_distance = 1.0
+            float inputs:subsurface_volumetric_anisotropy = 0.8
             token outputs:out (
                 renderType = "material"
             )
