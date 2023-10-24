@@ -2850,6 +2850,17 @@ This parameter is unused.
                         hidden = false
                         renderType = "texture_2d"
                     )
+                    bool inputs:enable_emission = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Emissive"
+                        displayName = "Enable Emission"
+                        doc = """Enables the emission of light from the material
+
+"""
+                        hidden = false
+                    )
                     asset inputs:metallic_texture = @../GuardRails/Retrorefelctive_metallic.dds@ (
                         colorSpace = "raw"
                         customData = {
@@ -2934,6 +2945,82 @@ This parameter is unused.
                 double3 xformOp:scale = (0.6, 0.6, 1.2)
                 double3 xformOp:translate = (-667.4713253815082, -242.7314772082672, 28.1921)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Cobble" (
+                prepend references = @./CC_MainAvenue_Median01_01_Cobble.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "GutterCorner_004"
+                {
+                    over "Plane_065" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/CobbleMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "CobbleMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/CobbleMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/CobbleMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/CobbleMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./cobble_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:displace_in = 0.01
+                    asset inputs:height_texture = @./cobble_height.dds@ (
+                        colorSpace = "raw"
+                    )
+                    asset inputs:normalmap_texture = @./cobble_normal.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./cobble_roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
             }
         }
 
