@@ -2728,6 +2728,213 @@ This parameter is unused.
                     )
                 }
             }
+
+            def Xform "GuardRails" (
+                prepend references = @./CC_MainAvenue_Median01_01_GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "RetroReflectors_003"
+                {
+                    over "Cube_032" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsRetroreflectorsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+
+                over "RetroReflectors_002"
+                {
+                    over "Cube_030" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "GuardRailsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @../GuardRails/albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:metallic_texture = @../GuardRails/metallic.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @../GuardRails/roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Material "GuardRailsRetroreflectorsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsRetroreflectorsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsRetroreflectorsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GuardRailsRetroreflectorsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @../GuardRails/RetroReflective_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:emissive_mask_texture = @../GuardRails/RetroReflective_emissive.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Emissive"
+                        displayName = "Emissive Mask Map"
+                        doc = """The texture masking the emissive color
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:metallic_texture = @../GuardRails/Retrorefelctive_metallic.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @../GuardRails/RetroReflective_roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "LightBollard" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -59.636478941292495)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-668.6567656184368, -246.76496861841238, 28.192104102008923)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "LightBollard_01" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -59.636478941292495)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-669.4156726515447, -245.81073172650525, 28.192104102008923)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "LightBollard_02" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -59.636478941292495)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-670.1988596355183, -244.8220094308644, 28.192104102008923)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "LightBollard_03" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -230.90000344067812)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-665.9292313644263, -244.67443639581572, 28.1921)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "LightBollard_04" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -230.90000344067812)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-666.6881383975336, -243.7201995039083, 28.1921)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "LightBollard_05" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -230.90000344067812)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-667.4713253815082, -242.7314772082672, 28.1921)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
         }
 
         over "mesh_CAAEE38D85D12ACA"
@@ -3190,6 +3397,291 @@ This parameter is unused.
                         renderType = "material"
                     )
                 }
+            }
+
+            def Xform "GuardRails" (
+                prepend references = @./CC_MainAvenue_Median01_02_GuardRails.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "RetroReflectors"
+                {
+                    over "Cube" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+
+                over "RetroReflectors_001"
+                {
+                    over "Cube_022" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsRetroreflectorsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "GuardRailsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @../GuardRails/albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:metallic_texture = @../GuardRails/metallic.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @../GuardRails/roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Material "GuardRailsRetroreflectorsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsRetroreflectorsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsRetroreflectorsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/GuardRailsRetroreflectorsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @../GuardRails/RetroReflective_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:emissive_intensity = 40 (
+                        customData = {
+                            float default = 40
+                            dictionary range = {
+                                float max = 65504
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Emissive"
+                        displayName = "Emissive Intensity"
+                        doc = """Intensity of the emission
+
+"""
+                        hidden = false
+                    )
+                    asset inputs:emissive_mask_texture = @../GuardRails/RetroReflective_emissive.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Emissive"
+                        displayName = "Emissive Mask Map"
+                        doc = """The texture masking the emissive color
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:enable_emission = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Emissive"
+                        displayName = "Enable Emission"
+                        doc = """Enables the emission of light from the material
+
+"""
+                        hidden = false
+                    )
+                    asset inputs:metallic_texture = @../GuardRails/Retrorefelctive_metallic.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @../GuardRails/RetroReflective_roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "CastIronFences" (
+                prepend references = @./CC_MainAvenue_Median01_02_CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_CastIronFences_001"
+                {
+                    over "Cube_003" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/CastIronMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "CastIronMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/CastIronMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/CastIronMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/CastIronMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./cast_iron_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:metallic_constant = 1 (
+                        customData = {
+                            float default = 0
+                            dictionary range = {
+                                float max = 1
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Amount"
+                        doc = """Metallic Material
+
+"""
+                        hidden = false
+                    )
+                    asset inputs:normalmap_texture = @./cast_iron_fences_normals.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:reflection_roughness_constant = 0.17999999 (
+                        customData = {
+                            float default = 0.5
+                            dictionary range = {
+                                float max = 1
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Amount"
+                        doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "LightBollard_06" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -399.0851869576355)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-715.0795038307706, -199.3513241588699, 28.859413359012095)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "LightBollard_07" (
+                prepend references = @../Bollards/LightBollards.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -578.0801062047653)
+                double3 xformOp:scale = (0.6, 0.6, 1.2)
+                double3 xformOp:translate = (-713.0907323153139, -196.55203252447808, 28.859413359014525)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
