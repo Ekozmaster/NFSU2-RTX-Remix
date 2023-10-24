@@ -1866,6 +1866,1341 @@ over "RootNode"
             {
             }
         }
+
+        over "mesh_D0A161F47F632BEE"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Material "ConcreteWalls"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/ConcreteWalls/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/ConcreteWalls/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/ConcreteWalls/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./concrete_foundation_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./concrete_foundation_normals.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./concrete_foundation_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "Bushes" (
+                prepend references = @./CC_MainAvenue_Median01_01_Bushes.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_SmallHedgeFences"
+                {
+                    over "Cube_024" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/AvenueBushes> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+
+                over "SmallHedgeFenceInterior_001"
+                {
+                    over "Cube_021" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/AvenueBushes> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "Walls" (
+                prepend references = @./CC_MainAvenue_Median01_01_Walls.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_Walls"
+                {
+                    over "mesh_1608" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/ConcreteWalls> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "AvenueBushes"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/AvenueBushes/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/AvenueBushes/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/AvenueBushes/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./small_bushes_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./small_bushes_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./small_bushes_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
+
+"""
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Material "TopFencesMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/TopFencesMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/TopFencesMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/TopFencesMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./cast_iron_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:metallic_constant = 1 (
+                        customData = {
+                            float default = 0
+                            dictionary range = {
+                                float max = 1
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Amount"
+                        doc = "Metallic Material"
+                        hidden = false
+                    )
+                    asset inputs:normalmap_texture = @./cast_iron_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./cast_iron_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "TopFences" (
+                prepend references = @./CC_MainAvenue_Median01_01_TopFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_WallsTopFences"
+                {
+                    over "Cube_028" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/TopFencesMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "GrassTop" (
+                prepend references = @./CC_MainAvenue_Median01_01_GrassTop.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_GrassTop"
+                {
+                    over "mesh_1610" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/SidewalkMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "RaphisExcelsaPalms" (
+                prepend references = @./CC_MainAvenue_Median01_01_RaphisExcelsaPalms.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_RhapisExcelsaPalm"
+                {
+                    over "Cube_029" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/RaphisPalmsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "RaphisPalmsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/RaphisPalmsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/RaphisPalmsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/RaphisPalmsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 0 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = "Indicates if alpha state blending should be enabled."
+                        hidden = false
+                    )
+                    asset inputs:diffuse_texture = @./raphis_palm_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./raphis_palm_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./raphis_palm_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "CastIronFences" (
+                prepend references = @./CC_MainAvenue_Median01_01_CastIronFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_CastIronFences"
+                {
+                    over "Cube_031" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/CastIronFencesMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "CastIronFencesMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/CastIronFencesMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/CastIronFencesMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/CastIronFencesMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.25) (
+                        customData = {
+                            float3 default = (0.2, 0.2, 0.2)
+                            dictionary range = {
+                                float3 max = (1, 1, 1)
+                                float3 min = (0, 0, 0)
+                            }
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Base Color"
+                        doc = "The base albedo color to use if no texture is specified"
+                        hidden = false
+                        renderType = "color"
+                    )
+                    float inputs:metallic_constant = 1 (
+                        customData = {
+                            float default = 0
+                            dictionary range = {
+                                float max = 1
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Amount"
+                        doc = "Metallic Material"
+                        hidden = false
+                    )
+                    asset inputs:normalmap_texture = @./cast_iron_fences_normals.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:reflection_roughness_constant = 0.17999999 (
+                        customData = {
+                            float default = 0.5
+                            dictionary range = {
+                                float max = 1
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Amount"
+                        doc = "Higher roughness values lead to more blurry reflections"
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "GrassTopCover" (
+                prepend references = @./CC_MainAvenue_Median01_01_GrassTopCover.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_01_GrassTopCover"
+                {
+                    over "mesh_1609" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/GrassTopCoverMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "GrassTopCoverMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/GrassTopCoverMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./leaves_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./leaves_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./leaves_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
+
+"""
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Material "PhilodendronRenauxiiMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/PhilodendronRenauxiiMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/PhilodendronRenauxiiMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/PhilodendronRenauxiiMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = "Indicates if alpha state blending should be enabled."
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = "The alpha state blend type to use."
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./philodendron_renauxii_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./philodendron_renauxii_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./philodendron_renauxii_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "PhilodendronRenauxiiBushes" (
+                prepend references = @./CC_MainAvenue_Median01_01_PhilodendronRenauxii.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_PhilodendronRenauxii"
+                {
+                    over "Cube_026" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/PhilodendronRenauxiiMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "LightPole" (
+                prepend references = @../StreetLamps/DoubleSideCityCenterLightPoles.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 41.85570643599945)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-677.7671790002835, -232.87664755921256, 27.72461114040066)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-4.165122886841914, 0, 16.29601243957018)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "SphereLight_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (4.291610595471354, 0, 16.29601243957018)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def Xform "LightPole_01" (
+                prepend references = @../StreetLamps/DoubleSideCityCenterLightPoles.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 41.85570643599945)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-701.1288320771959, -208.5760279371864, 27.724611140401187)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-4.165122886841914, 0, 16.29601243957018)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "SphereLight_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 2000
+                    bool inputs:normalize = 1
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (4.291610595471354, 0, 16.29601243957018)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Sidewalk" (
+                prepend references = @./CC_MainAvenue_Median01_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "GutterCorner_002"
+                {
+                    over "Plane_006" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_D0A161F47F632BEE/SidewalkMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "SidewalkMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/SidewalkMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/SidewalkMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_D0A161F47F632BEE/SidewalkMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./sidewalk_grass_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./sidewalk_grass_normal.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./sidewalk_grass_roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+        }
+
+        over "mesh_CAAEE38D85D12ACA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_53506B17A7475104"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Material "ConcreteWalls"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/ConcreteWalls/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/ConcreteWalls/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/ConcreteWalls/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./concrete_foundation_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./concrete_foundation_normals.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./concrete_foundation_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "Walls" (
+                prepend references = @./CC_MainAvenue_Median01_02_Walls.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_Walls"
+                {
+                    over "mesh_1605" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/ConcreteWalls> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "TopFencesMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/TopFencesMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/TopFencesMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/TopFencesMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./cast_iron_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:metallic_constant = 1 (
+                        customData = {
+                            float default = 0
+                            dictionary range = {
+                                float max = 1
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Metallic Amount"
+                        doc = "Metallic Material"
+                        hidden = false
+                    )
+                    asset inputs:normalmap_texture = @./cast_iron_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./cast_iron_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "TopFences" (
+                prepend references = @./CC_MainAvenue_Median01_02_TopFences.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_WallsTopFences"
+                {
+                    over "Cube_023" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/TopFencesMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "GrassTop" (
+                prepend references = @./CC_MainAvenue_Median01_02_GrassTop.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_GrassTop"
+                {
+                    over "mesh_1607" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/SidewalkMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "RaphisExcelsaPalms" (
+                prepend references = @./CC_MainAvenue_Median01_02_RaphisExcelsaPalms.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_RhapisExcelsaPalm"
+                {
+                    over "Cube_025" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/RaphisPalmsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "RaphisPalmsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/RaphisPalmsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/RaphisPalmsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/RaphisPalmsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 0 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = "Indicates if alpha state blending should be enabled."
+                        hidden = false
+                    )
+                    asset inputs:diffuse_texture = @./raphis_palm_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./raphis_palm_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./raphis_palm_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "GrassTopCover" (
+                prepend references = @./CC_MainAvenue_Median01_02_GrassTopCover.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "CC_M02_02_GrassTopCover"
+                {
+                    over "mesh_1606" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/GrassTopCoverMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "GrassTopCoverMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/GrassTopCoverMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/GrassTopCoverMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    bool inputs:blend_enabled = 1 (
+                        customData = {
+                            bool default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Enabled"
+                        doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                        hidden = false
+                    )
+                    int inputs:blend_type = 0 (
+                        customData = {
+                            int default = 0
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Blend Type"
+                        doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                        hidden = false
+                        renderType = "BlendType"
+                        sdrMetadata = {
+                            string __SDR__enum_value = "Alpha"
+                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                        }
+                    )
+                    asset inputs:diffuse_texture = @./leaves_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./leaves_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./leaves_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    bool inputs:use_legacy_alpha_state = 0 (
+                        customData = {
+                            bool default = 1
+                        }
+                        displayGroup = "Material Flags"
+                        displayName = "Use Legacy Alpha State"
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
+
+"""
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "Sidewalk" (
+                prepend references = @./CC_MainAvenue_Median01_02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "GutterCorner_003"
+                {
+                    over "Plane_064" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_53506B17A7475104/SidewalkMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "SidewalkMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_53506B17A7475104/SidewalkMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_53506B17A7475104/SidewalkMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_53506B17A7475104/SidewalkMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./sidewalk_grass_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./sidewalk_grass_normal.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./sidewalk_grass_roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+        }
+
+        over "mesh_80CC6891722E6540"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
     }
 }
 
