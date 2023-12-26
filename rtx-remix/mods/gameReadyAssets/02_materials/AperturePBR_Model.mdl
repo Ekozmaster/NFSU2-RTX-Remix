@@ -25,6 +25,23 @@ import ::anno::*;
 
 import ::nvidia::baking::*;
 
+// Note: Ensure these enum values match VkFilter so that the runtime selects the expected setting.
+export enum FilterMode
+[[
+    anno::description("Texture filtering State.  See Vulkan's VkFilter docs for details.")
+]]
+{
+    Nearest = 0 [[
+        anno::display_name("Nearest"),
+        anno::description("Texture values will equal the nearest whole pixel.")
+    ]],
+
+    Linear = 1 [[
+        anno::display_name("Alpha Emissive"),
+        anno::description("Texture values will interpolate linear between the 4 nearest pixel values.")
+    ]]
+};
+
 color baseReflectivityToIoR(float incidentIoR, color baseReflectivity)
 {
   // Note: Clamp the squared base reflectivity to 0.99 to prevent overflow issues or NaNs with near-1 physically implausible materials.

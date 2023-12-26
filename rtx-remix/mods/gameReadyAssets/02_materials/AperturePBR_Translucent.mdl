@@ -1,5 +1,5 @@
 /*****************************************************************************
-*     Copyright 1986-2020 NVIDIA Corporation. All rights reserved.
+*     Copyright 1986-2023 NVIDIA Corporation. All rights reserved.
 ******************************************************************************
 
  MDL MATERIALS ARE PROVIDED PURSUANT TO AN END USER LICENSE  AGREEMENT,
@@ -16,6 +16,7 @@
 */
 
 mdl 1.4;
+
 import ::base::*;
 import ::anno::*;
 import ::df::*;
@@ -27,6 +28,7 @@ import ::nvidia::core_definitions::file_texture;
 import ::nvidia::core_definitions::normalmap_texture;
 
 import AperturePBR_Normal::*;
+import AperturePBR_SpriteSheet::*;
 
 // IMPORTANT: When updating defaults or hard ranges, the defaults and ranges in the associated runtime should
 // be updated as well so that the defaults are properly selected even when the USD does not include them (as
@@ -66,9 +68,10 @@ export material AperturePBR_Translucent(
     anno::description("When set, simulates a diffuse layer on top of the material"),
     anno::in_group("Volume")
   ]],
-  uniform texture_2d transmittance_texture = texture_2d()
+  // Note: The transmittance color/diffuse albedo texture should always be treated as sRGB.
+  uniform texture_2d transmittance_texture = texture_2d("", tex::gamma_srgb)
   [[
-    anno::display_name("Transmittance or Diffuse Albedo Texture"),
+    anno::display_name("Transmittance Color/Diffuse Albedo Texture"),
     anno::description("Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"),
     anno::in_group("Volume")
   ]],
@@ -103,10 +106,11 @@ export material AperturePBR_Translucent(
     anno::hard_range(color(0.0), color(1.0)),
     anno::in_group("Emissive")
   ]],
-  uniform texture_2d emissive_mask_texture = texture_2d()
+  // Note: The emissive color texture should always be treated as sRGB.
+  uniform texture_2d emissive_mask_texture = texture_2d("", tex::gamma_srgb)
   [[
     anno::enable_if("enable_emission == true"),
-    anno::display_name("Emissive Mask Map"),
+    anno::display_name("Emissive Color Texture"),
     anno::description("The texture masking the emissive color"),
     anno::in_group("Emissive")
   ]],
@@ -119,6 +123,29 @@ export material AperturePBR_Translucent(
     anno::in_group("Emissive")
   ]],
 
+  // -------------------- SPRITE SHEET ----------------------
+  uniform int sprite_sheet_fps = 0
+  [[
+    anno::display_name("Sprite Sheet FPS"),
+    anno::hard_range(0, 255),
+    anno::description("Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality."),
+    anno::in_group("Sprite Sheet")
+  ]],
+  uniform int sprite_sheet_cols = 1
+  [[
+    anno::display_name("Sprite Sheet Columns"),
+    anno::hard_range(1, 255),
+    anno::description("Number of columns the spritesheet across all textures is divided into."),
+    anno::in_group("Sprite Sheet")
+  ]],
+  uniform int sprite_sheet_rows = 1
+  [[
+    anno::display_name("Sprite Sheet Rows"),
+    anno::hard_range(1, 255),
+    anno::description("Number of row the spritesheet across all textures is divided into."),
+    anno::in_group("Sprite Sheet")
+  ]],
+
   // -------------------- MATERIAL FLAGS ----------------------
   uniform bool ignore_material = false
   [[
@@ -126,9 +153,31 @@ export material AperturePBR_Translucent(
     anno::description("Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard."),
     anno::in_group("Material Flags")
   ]],
+  uniform FilterMode filter_mode = Linear
+  [[
+    anno::display_name("Texture Filtering Mode"),
+    anno::description("How texture coordinates between pixels are handled"),
+    anno::in_group("Material Flags"),
+    anno::unused()
+  ]],
+  uniform tex::wrap_mode wrap_mode_u = tex::wrap_repeat
+  [[
+    anno::display_name("Wrap Mode U"),
+    anno::description("How horizontal texture coordinates outside of the 0-1 range are handled"),
+    anno::in_group("Material Flags"),
+    anno::unused()
+  ]],
+  uniform tex::wrap_mode wrap_mode_v = tex::wrap_repeat
+  [[
+    anno::display_name("Wrap Mode V"),
+    anno::description("How vertical texture coordinates outside of the 0-1 range are handled"),
+    anno::in_group("Material Flags"),
+    anno::unused()
+  ]],
 
   // -------------------- NORMAL ----------------------
-  uniform texture_2d normalmap_texture = texture_2d()
+  // Note: The normal map texture should always be treated as linear.
+  uniform texture_2d normalmap_texture = texture_2d("", tex::gamma_linear)
   [[
     anno::display_name("Normal Map"),
     anno::in_group("Normal")
@@ -152,14 +201,15 @@ export material AperturePBR_Translucent(
   base::texture_coordinate_info uvw = base::coordinate_source(
                                             coordinate_system: base::texture_coordinate_uvw,
                                             texture_space: 0);
+  varying float2 final_uv = AperturePBR_SpriteSheet::calculate_spritesheet_uv(
+    uvw:                 uvw,
+    sprite_sheet_fps:    sprite_sheet_fps,
+    sprite_sheet_cols:   sprite_sheet_cols,
+    sprite_sheet_rows:   sprite_sheet_rows,
+    enable_rotation:     false,
+    rotation_speed:      0.0);
 
-  base::texture_return transmittance_texture_return = base::file_texture(
-    texture: transmittance_texture,
-    color_offset: color(0.0, 0.0, 0.0),
-    color_scale: color(1.0, 1.0, 1.0),
-    mono_source: base::mono_alpha,
-    uvw: uvw,
-    clip: false);
+  float4 transmittance_or_diffuse_albedo = tex::lookup_float4(transmittance_texture, final_uv, wrap_mode_u, wrap_mode_v);
 
   color checker_color = base::checker_texture(
     color1: color(0.0, 0.0, 0.0),
@@ -173,10 +223,12 @@ export material AperturePBR_Translucent(
 
   color diffuse_lookup = ignore_material ?
     checker_color :
-    (use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ? transmittance_texture_return.tint : color(0);
+    (use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ?
+      color(transmittance_or_diffuse_albedo.x, transmittance_or_diffuse_albedo.y, transmittance_or_diffuse_albedo.z) :
+      color(0);
   float diffuse_opacity = ignore_material ?
     0.5f :
-    (use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ? transmittance_texture_return.mono : 0.f;
+    (use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ? transmittance_or_diffuse_albedo.w : 0.f;
   color diffuse_attenuation = math::lerp(color(1.0), diffuse_lookup, diffuse_opacity);
   // Note: This flag indicates if the diffuse layer is used either due to the use request or if the ignore material mode is set to true (since it uses the diffuse layer to
   // show its checkerboard effect).
@@ -187,8 +239,10 @@ export material AperturePBR_Translucent(
     roughness: 1.0
   );
   
-  color transmittance_lookup = (!use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ? transmittance_texture_return.tint : transmittance_color;
-  float transmittance_lookup_alpha = (!use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ? transmittance_texture_return.mono : 0.f;
+  color transmittance_lookup = (!use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ?
+    color(transmittance_or_diffuse_albedo.x, transmittance_or_diffuse_albedo.y, transmittance_or_diffuse_albedo.z) :
+    transmittance_color;
+  float transmittance_lookup_alpha = (!use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ? transmittance_or_diffuse_albedo.w : 0.f;
   color transmittance = tex::texture_isvalid(transmittance_texture) ? math::lerp(transmittance_color, transmittance_lookup, transmittance_lookup_alpha) : transmittance_color;
 
   color volume_absorption_coefficient = -math::log(transmittance) / transmittance_measurement_distance;
@@ -207,10 +261,8 @@ export material AperturePBR_Translucent(
       layer: diffuse_layer,
       base: specular_layer) : specular_layer;
 
-  varying float2 baseUV = float2(uvw.position.x, uvw.position.y);
-
   color emissive_mask = tex::texture_isvalid(emissive_mask_texture)
-              ? tex::lookup_color(emissive_mask_texture, baseUV, tex::wrap_repeat, tex::wrap_repeat)
+              ? tex::lookup_color(emissive_mask_texture, final_uv, wrap_mode_u, wrap_mode_v)
               : color(1.0);
 
   // Normal calculations
@@ -218,9 +270,13 @@ export material AperturePBR_Translucent(
               AperturePBR_Normal::enc_tangent_space_normal_texture(
               texture:        normalmap_texture,  
               factor:         1.0,
-              uvw:            uvw,
+              uv:             final_uv,
+              tangent_u:      uvw.tangent_u,
+              tangent_v:      uvw.tangent_v,
               flip_tangent_u: false,
               flip_tangent_v: true,
+              wrap_u: wrap_mode_u,
+              wrap_v: wrap_mode_v,
               encoding:       encoding
               ) : state::normal();
 
