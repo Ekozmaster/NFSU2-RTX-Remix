@@ -600,17 +600,29 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/vegetation/687727DC327F4A78.dds@ (
+                asset inputs:diffuse_texture = @./02_materials/03_global/03_vegetation/grass_soil_albedo.dds@ (
+                    colorSpace = "sRGB"
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                asset inputs:normalmap_texture = @./Textures/vegetation/687727DC327F4A78_normal.dds@
-                asset inputs:reflectionroughness_texture = @./Textures/vegetation/687727DC327F4A78_rough.dds@ (
+                asset inputs:normalmap_texture = @./02_materials/03_global/03_vegetation/grass_soil_normals.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./02_materials/03_global/03_vegetation/grass_soil_roughness.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -618,6 +630,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -933,16 +946,44 @@ over "RootNode"
                 )
             }
         }
-    }
 
-    over "instances"
-    {
-        over "inst_7F10F3A0C84F0A1E_0"
+        over "mat_0FB03F6BA7517E4A"
         {
-            over "Xform_mesh_0" (
-                active = false
-            )
+            over "Shader"
             {
+                asset inputs:diffuse_texture = @./02_materials/03_global/03_vegetation/grass_soil_albedo.dds@ (
+                    colorSpace = "sRGB"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./02_materials/03_global/03_vegetation/grass_soil_normals.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./02_materials/03_global/03_vegetation/grass_soil_roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
     }
@@ -993,7 +1034,7 @@ over "RootNode"
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1.7, 1.7, 1.5000000223517418)
+                double3 xformOp:scale = (1.7, 1.7, 1.7)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
@@ -1020,6 +1061,210 @@ over "RootNode"
                 active = false
             )
             {
+            }
+        }
+
+        over "mesh_8E68E4C0CF9B7675"
+        {
+            def Xform "TallMexicanFanPalm_0" (
+                prepend references = @./03_meshes/04_global/01_vegetation/TallMexicanFanPalm.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_9D7B004255813F62"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_CAF913258B51D67C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2835E357783AD6B2"
+        {
+            def Xform "TallMexicanFanPalm_0" (
+                prepend references = @./03_meshes/04_global/01_vegetation/TallMexicanFanPalm.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_3EA54770A3DFE8E1"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_1FBE1C193EB89976"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_EA2861269E1826C4"
+        {
+            def Xform "MediumMexicanFanPalm_0" (
+                prepend references = @./03_meshes/04_global/01_vegetation/MediumMexicanFanPalm.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_7F2FD83DE703EFF2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A43E9209167E6E75"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_09C3772DDE076872"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "BentMexicanFanPalm_0" (
+                prepend references = @./03_meshes/04_global/01_vegetation/BentMexicanFanPalm.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4FB545799025A1EF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_405AFDA72F335DFD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2CDFC9B6F08889E8"
+        {
+            def Xform "ChristmasPalmTall_0" (
+                prepend references = @./03_meshes/04_global/01_vegetation/ChristmasPalmTall.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_C6597444DF1B14DF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_54559F341223BB72"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_143F92AAF393E8B3"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "ConcreteFlowerVase_0" (
+                prepend references = @./03_meshes/04_global/01_vegetation/ConcreteFlowerVase.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }
