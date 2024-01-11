@@ -712,13 +712,15 @@ over "RootNode"
                     uniform token info:implementationSource = "sourceAsset"
                     uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
                     uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                    bool inputs:blend_enabled = 1 (
+                    bool inputs:blend_enabled = 0 (
                         customData = {
                             bool default = 0
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = "Indicates if alpha state blending should be enabled."
+                        doc = """Indicates if alpha state blending should be enabled.
+
+"""
                         hidden = false
                     )
                     int inputs:blend_type = 0 (
@@ -727,7 +729,9 @@ over "RootNode"
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = "The alpha state blend type to use."
+                        doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
                         hidden = false
                         renderType = "BlendType"
                         sdrMetadata = {
@@ -742,7 +746,9 @@ over "RootNode"
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                         hidden = false
                         renderType = "texture_2d"
                     )
@@ -766,13 +772,61 @@ over "RootNode"
                         hidden = false
                         renderType = "texture_2d"
                     )
+                    float inputs:subsurface_measurement_distance = 0.04 (
+                        customData = {
+                            float default = 0
+                            dictionary range = {
+                                float max = 16
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Subsurface"
+                        displayName = "Subsurface Measurement Distance"
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+This parameter is unused.
+"""
+                        hidden = false
+                    )
+                    color3f inputs:subsurface_transmittance_color = (1, 0, 0.48999998) (
+                        customData = {
+                            float3 default = (0.5, 0.5, 0.5)
+                            dictionary range = {
+                                float3 max = (1, 1, 1)
+                                float3 min = (0, 0, 0)
+                            }
+                        }
+                        displayGroup = "Subsurface"
+                        displayName = "Subsurface Transmittance Color"
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
+This parameter is unused.
+"""
+                        hidden = false
+                        renderType = "color"
+                    )
+                    float inputs:subsurface_volumetric_anisotropy = 0.5 (
+                        customData = {
+                            float default = 0
+                            dictionary range = {
+                                float max = 0.99
+                                float min = -0.99
+                            }
+                        }
+                        displayGroup = "Subsurface"
+                        displayName = "Subsurface Volumetric Anisotropy"
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
+This parameter is unused.
+"""
+                        hidden = false
+                    )
                     bool inputs:use_legacy_alpha_state = 0 (
                         customData = {
                             bool default = 1
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = "Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL."
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
+
+"""
                         hidden = false
                     )
                     token outputs:out (
@@ -1509,7 +1563,7 @@ over "RootNode"
                     uniform token info:implementationSource = "sourceAsset"
                     uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
                     uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                    bool inputs:blend_enabled = 1 (
+                    bool inputs:blend_enabled = 0 (
                         customData = {
                             bool default = 0
                         }
@@ -1996,8 +2050,8 @@ over "RootNode"
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -2007,8 +2061,8 @@ over "RootNode"
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -2024,8 +2078,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2056,8 +2110,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -2388,8 +2442,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -2399,8 +2453,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -2416,8 +2470,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2448,8 +2502,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -2470,7 +2524,7 @@ This parameter is unused.
                     uniform token info:implementationSource = "sourceAsset"
                     uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
                     uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                    bool inputs:blend_enabled = 1 (
+                    bool inputs:blend_enabled = 0 (
                         customData = {
                             bool default = 0
                         }
@@ -2697,8 +2751,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2781,8 +2835,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2831,8 +2885,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2844,8 +2898,8 @@ This parameter is unused.
                         }
                         displayGroup = "Emissive"
                         displayName = "Emissive Mask Map"
-                        doc = """The texture masking the emissive color
-
+                        doc = """The texture masking the emissive color\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2856,8 +2910,8 @@ This parameter is unused.
                         }
                         displayGroup = "Emissive"
                         displayName = "Enable Emission"
-                        doc = """Enables the emission of light from the material
-
+                        doc = """Enables the emission of light from the material\r
+\r
 """
                         hidden = false
                     )
@@ -2987,8 +3041,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3343,8 +3397,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -3354,8 +3408,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -3371,8 +3425,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3403,8 +3457,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -3454,8 +3508,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3538,8 +3592,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3588,8 +3642,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3604,8 +3658,8 @@ This parameter is unused.
                         }
                         displayGroup = "Emissive"
                         displayName = "Emissive Intensity"
-                        doc = """Intensity of the emission
-
+                        doc = """Intensity of the emission\r
+\r
 """
                         hidden = false
                     )
@@ -3616,8 +3670,8 @@ This parameter is unused.
                         }
                         displayGroup = "Emissive"
                         displayName = "Emissive Mask Map"
-                        doc = """The texture masking the emissive color
-
+                        doc = """The texture masking the emissive color\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3628,8 +3682,8 @@ This parameter is unused.
                         }
                         displayGroup = "Emissive"
                         displayName = "Enable Emission"
-                        doc = """Enables the emission of light from the material
-
+                        doc = """Enables the emission of light from the material\r
+\r
 """
                         hidden = false
                     )
@@ -3699,8 +3753,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3715,8 +3769,8 @@ This parameter is unused.
                         }
                         displayGroup = "Specular"
                         displayName = "Metallic Amount"
-                        doc = """Metallic Material
-
+                        doc = """Metallic Material\r
+\r
 """
                         hidden = false
                     )
@@ -3740,8 +3794,8 @@ This parameter is unused.
                         }
                         displayGroup = "Specular"
                         displayName = "Roughness Amount"
-                        doc = """Higher roughness values lead to more blurry reflections
-
+                        doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                         hidden = false
                     )
@@ -3773,6 +3827,277 @@ This parameter is unused.
         }
 
         over "mesh_80CC6891722E6540"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_700A1C5657227D7F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Material "SidewalkMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_700A1C5657227D7F/SidewalkMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_700A1C5657227D7F/SidewalkMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_700A1C5657227D7F/SidewalkMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./sidewalk_grass_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./sidewalk_grass_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./sidewalk_grass_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "Sidewalk" (
+                prepend references = @./CC_MainAvenue_Median03_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "SidewalkStraight_001"
+                {
+                    over "Plane_007" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_700A1C5657227D7F/SidewalkMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "Walls" (
+                prepend references = @./CC_MainAvenue_Median03_01_Walls.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Base_001"
+                {
+                    over "mesh_001" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_700A1C5657227D7F/WallsMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Material "WallsMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_700A1C5657227D7F/WallsMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_700A1C5657227D7F/WallsMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_700A1C5657227D7F/WallsMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./concrete_foundation_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @./concrete_foundation_normals.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @./concrete_foundation_roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Material "GrassTopMat"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_700A1C5657227D7F/GrassTopMat/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_700A1C5657227D7F/GrassTopMat/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_700A1C5657227D7F/GrassTopMat/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @../../../../02_materials/03_global/03_vegetation/grass_soil_albedo.dds@ (
+                        colorSpace = "sRGB"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    float inputs:displace_in = 0.015 (
+                        customData = {
+                            float default = 1
+                            dictionary range = {
+                                float max = 255
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Displacement"
+                        displayName = "Inwards Displacement"
+                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                        hidden = false
+                    )
+                    asset inputs:height_texture = @../../../../02_materials/03_global/03_vegetation/grass_soil_height.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Displacement"
+                        displayName = "Height Map"
+                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:normalmap_texture = @../../../../02_materials/03_global/03_vegetation/grass_soil_normals.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    asset inputs:reflectionroughness_texture = @../../../../02_materials/03_global/03_vegetation/grass_soil_roughness.dds@ (
+                        colorSpace = "raw"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                        renderType = "texture_2d"
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+
+            def Xform "GrassTop" (
+                prepend references = @./CC_MainAvenue_Median03_01_GrassTop.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Base_002"
+                {
+                    over "mesh_002" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/meshes/mesh_700A1C5657227D7F/GrassTopMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+        }
+
+        over "mesh_17A5F269BFF1EF13"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_4CF1FCC7A23905FE"
         {
             over "mesh" (
                 active = false
