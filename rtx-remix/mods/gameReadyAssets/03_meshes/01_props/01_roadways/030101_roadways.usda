@@ -2153,15 +2153,5 @@ over "RootNode"
             }
         }
     }
-
-    over "instances"
-    {
-        over "inst_07B6188405272376_8" (
-            delete references = @../../../../../captures/meshes/mesh_07B6188405272376.usd@
-            prepend references = @./meshes/mesh_07B6188405272376.usd@
-        )
-        {
-        }
-    }
 }
 

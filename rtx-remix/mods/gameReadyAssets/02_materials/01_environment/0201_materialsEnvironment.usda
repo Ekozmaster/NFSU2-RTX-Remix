@@ -1,0 +1,7 @@
+#usda 1.0
+(
+    subLayers = [
+        @./16_garages/020116_environmentGarages.usda@
+    ]
+    upAxis = "Z"
+)
