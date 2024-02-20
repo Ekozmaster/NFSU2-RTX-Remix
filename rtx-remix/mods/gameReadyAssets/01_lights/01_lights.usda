@@ -1,11 +1,11 @@
 #usda 1.0
 (
     subLayers = [
+        @./01_buildings/0101_buildings.usda@,
+        @./02_roadways/0102_roadways.usda@,
+        @./03_cars/0103_cars.usda@,
         @./04_unique/0104_unique.usda@,
-        @./05_global/0105_Global.usda@,
-        @./02_roadways/02_roadways.usda@,
-        @./01_buildings/01_buildings.usda@,
-        @./03_cars/03_cars.usda@
+        @./05_global/0105_Global.usda@
     ]
 )
 

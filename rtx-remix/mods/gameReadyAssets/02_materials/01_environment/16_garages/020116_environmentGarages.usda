@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    subLayers = [
+        @./08_garageDyno/02011608_garageDyno.usda@,
+        @./07_garageGraph/02011607_garageGraph.usda@,
+        @./06_garageBody/02011606_garageBody.usda@,
+        @./05_garageSpec/02011605_garageSpec.usda@,
+        @./04_garagePerf/02011604_garagePerf.usda@,
+        @./03_garageCar/02011603_garageCar.usda@,
+        @./02_garageCareer/02011602_garageCareer.usda@,
+        @./01_garageLobby/02011601_garageLobby.usda@
+    ]
+    upAxis = "Z"
+)
