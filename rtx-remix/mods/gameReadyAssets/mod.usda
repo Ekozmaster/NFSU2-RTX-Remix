@@ -26,6 +26,7 @@
         @./03_meshes/03_cars/0303_meshesCars.usda@,
         @./03_meshes/01_props/01_roadways/030101_roadways.usda@,
         @./02_materials/01_environment/0201_materialsEnvironment.usda@,
+        @./02_materials/02_cars/0202_materialsCars.usda@,
         @./03_meshes/02_environment/01_skybox/030201_skybox.usda@,
         @./03_meshes/02_environment/02_garages/01_garageCar/03020201_garageCar.usda@,
         @./rough_only.usda@
