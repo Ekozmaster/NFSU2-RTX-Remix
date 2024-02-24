@@ -293,10 +293,13 @@ def "Looks" (
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Base Material"
-                displayName = "Albedo Color"
-                doc = "The base albedo color.  (Used if no texture is specified)"
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             float inputs:metallic_constant = 0.95 (
                 customData = {
@@ -306,9 +309,11 @@ def "Looks" (
                         float min = 0
                     }
                 }
-                displayGroup = "Base Material"
+                displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = "How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified)."
+                doc = """Metallic Material
+
+"""
                 hidden = false
             )
             float inputs:reflection_roughness_constant = 0 (
@@ -319,9 +324,11 @@ def "Looks" (
                         float min = 0
                     }
                 }
-                displayGroup = "Base Material"
+                displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified)."
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (
@@ -349,10 +356,13 @@ def "Looks" (
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Base Material"
-                displayName = "Albedo Color"
-                doc = "The base albedo color.  (Used if no texture is specified)"
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             float inputs:metallic_constant = 0.95 (
                 customData = {
@@ -362,9 +372,11 @@ def "Looks" (
                         float min = 0
                     }
                 }
-                displayGroup = "Base Material"
+                displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = "How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified)."
+                doc = """Metallic Material
+
+"""
                 hidden = false
             )
             asset inputs:normalmap_texture = @./Reflector_Combined_normal.dds@ (
@@ -372,9 +384,10 @@ def "Looks" (
                 customData = {
                     asset default = @@
                 }
-                displayGroup = "Base Material"
+                displayGroup = "Normal"
                 displayName = "Normal Map"
                 hidden = false
+                renderType = "texture_2d"
             )
             float inputs:reflection_roughness_constant = 0 (
                 customData = {
@@ -384,9 +397,11 @@ def "Looks" (
                         float min = 0
                     }
                 }
-                displayGroup = "Base Material"
+                displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified)."
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (
@@ -894,8 +909,11 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = "The base albedo color to use if no texture is specified"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             float inputs:metallic_constant = 0.95 (
                 customData = {
@@ -907,7 +925,9 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = "Metallic Material"
+                doc = """Metallic Material
+
+"""
                 hidden = false
             )
             asset inputs:normalmap_texture = @./Reflector_type_07_normal.dds@ (
@@ -918,6 +938,7 @@ def "Looks" (
                 displayGroup = "Normal"
                 displayName = "Normal Map"
                 hidden = false
+                renderType = "texture_2d"
             )
             float inputs:reflection_roughness_constant = 0 (
                 customData = {
@@ -929,7 +950,9 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (
@@ -1089,8 +1112,11 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = "The base albedo color to use if no texture is specified"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             float inputs:metallic_constant = 0.95 (
                 customData = {
@@ -1102,7 +1128,9 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = "Metallic Material"
+                doc = """Metallic Material
+
+"""
                 hidden = false
             )
             asset inputs:normalmap_texture = @./Reflector_type_10_normal.dds@ (
@@ -1113,6 +1141,7 @@ def "Looks" (
                 displayGroup = "Normal"
                 displayName = "Normal Map"
                 hidden = false
+                renderType = "texture_2d"
             )
             float inputs:reflection_roughness_constant = 0 (
                 customData = {
@@ -1124,7 +1153,9 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (
@@ -1154,8 +1185,11 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = "The base albedo color to use if no texture is specified"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             float inputs:metallic_constant = 0.95 (
                 customData = {
@@ -1167,7 +1201,9 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = "Metallic Material"
+                doc = """Metallic Material
+
+"""
                 hidden = false
             )
             asset inputs:normalmap_texture = @./Reflector_type_11_normal.dds@ (
@@ -1178,6 +1214,7 @@ def "Looks" (
                 displayGroup = "Normal"
                 displayName = "Normal Map"
                 hidden = false
+                renderType = "texture_2d"
             )
             float inputs:reflection_roughness_constant = 0 (
                 customData = {
@@ -1189,7 +1226,9 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (
@@ -1217,10 +1256,13 @@ def "Looks" (
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Base Material"
-                displayName = "Albedo Color"
-                doc = "The base albedo color.  (Used if no texture is specified)"
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             float inputs:metallic_constant = 0.79999995 (
                 customData = {
@@ -1230,9 +1272,11 @@ def "Looks" (
                         float min = 0
                     }
                 }
-                displayGroup = "Base Material"
+                displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = "How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified)."
+                doc = """Metallic Material
+
+"""
                 hidden = false
             )
             float inputs:reflection_roughness_constant = 0.099999994 (
@@ -1243,9 +1287,11 @@ def "Looks" (
                         float min = 0
                     }
                 }
-                displayGroup = "Base Material"
+                displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified)."
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (
@@ -1375,7 +1421,7 @@ def "Looks" (
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
             color3f inputs:diffuse_color_constant = (0.000001, 9.9999e-7, 9.9999e-7) (
                 customData = {
@@ -1423,7 +1469,7 @@ def "Looks" (
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Translucent.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
             float inputs:ior_constant = 1.6 (
                 customData = {
@@ -1520,7 +1566,7 @@ def "Looks" (
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Translucent.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
             float inputs:ior_constant = 1.6 (
                 customData = {
@@ -1617,7 +1663,7 @@ def "Looks" (
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Translucent.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
             float inputs:ior_constant = 1.6 (
                 customData = {
@@ -1714,7 +1760,7 @@ def "Looks" (
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
             color3f inputs:diffuse_color_constant = (0.05, 0.0499995, 0.0499995) (
                 customData = {
@@ -1762,7 +1808,7 @@ def "Looks" (
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
             color3f inputs:diffuse_color_constant = (0.95366794, 0.9536584, 0.9536584) (
                 customData = {
@@ -1810,7 +1856,7 @@ def "Looks" (
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Translucent.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
             float inputs:ior_constant = 1.6 (
                 customData = {
