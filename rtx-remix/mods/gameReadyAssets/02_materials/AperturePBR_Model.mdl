@@ -25,6 +25,105 @@ import ::anno::*;
 
 import ::nvidia::baking::*;
 
+// Note: Ensure this enum matches the enum on the runtime side of things so that the values match as expected.
+export enum BlendType
+[[
+    anno::description("Alpha state blend type.")
+]]
+{
+    Alpha = 0 [[
+        anno::display_name("Alpha"),
+        anno::description("Opacity directly set to albedo alpha, no emissive intensity override influence.")
+    ]],
+
+    AlphaEmissive = 1 [[
+        anno::display_name("Alpha Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to albedo alpha.")
+    ]],
+
+    ReverseAlphaEmissive = 2 [[
+        anno::display_name("Reverse Alpha Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to 1 - albedo alpha.")
+    ]],
+
+    Color = 3 [[
+        anno::display_name("Color"),
+        anno::description("Opacity directly set to albedo luminance, no emissive intensity override influence.")
+    ]],
+
+    ColorEmissive = 4 [[
+        anno::display_name("Color Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to albedo luminance.")
+    ]],
+
+    ReverseColorEmissive = 5 [[
+        anno::display_name("Reverse Color Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to 1 - albedo luminance.")
+    ]],
+
+    Emissive = 6 [[
+        anno::display_name("Emissive"),
+        anno::description("Opacity set to 0, emissive intensity override influence set to 1.")
+    ]],
+
+    Multiplicative = 7 [[
+        anno::display_name("Multiplicative"),
+        anno::description("Opacity set to 1 - albedo luminance, no emissive intensity override influence.")
+    ]],
+
+    DoubleMultiplicative = 8 [[
+        anno::display_name("Double Multiplicative"),
+        anno::description("Opacity set to abs(1 - albedo luminance * 2), no emissive intensity override influence.")
+    ]]
+};
+
+// Note: Ensure this enum matches the enum on the runtime side of things so that the values match as expected.
+export enum AlphaTestType
+[[
+    anno::description("Alpha state alpha test type.")
+]]
+{
+    Always = 0 [[
+        anno::display_name("Always"),
+        anno::description("Always pass the alpha test.")
+    ]],
+
+    Never = 1 [[
+        anno::display_name("Never"),
+        anno::description("Never pass the alpha test.")
+    ]],
+
+    Less = 2 [[
+        anno::display_name("Less"),
+        anno::description("Pass the alpha test if the alpha value is less than the reference value.")
+    ]],
+
+    Equal = 3 [[
+        anno::display_name("Equal"),
+        anno::description("Pass the alpha test if the alpha value is equal to the reference value.")
+    ]],
+
+    LessOrEqual = 4 [[
+        anno::display_name("Less Or Equal"),
+        anno::description("Pass the alpha test if the alpha value is less or equal to the reference value.")
+    ]],
+
+    Greater = 5 [[
+        anno::display_name("Greater"),
+        anno::description("Pass the alpha test if the alpha value is greater to the reference value.")
+    ]],
+
+    NotEqual = 6 [[
+        anno::display_name("Not Equal"),
+        anno::description("Pass the alpha test if the alpha value is not equal to the reference value.")
+    ]],
+
+    GreaterOrEqual = 7 [[
+        anno::display_name("Greater Or Equal"),
+        anno::description("Pass the alpha test if the alpha value is greater or equal to the reference value.")
+    ]]
+};
+
 // Note: Ensure these enum values match VkFilter so that the runtime selects the expected setting.
 export enum FilterMode
 [[

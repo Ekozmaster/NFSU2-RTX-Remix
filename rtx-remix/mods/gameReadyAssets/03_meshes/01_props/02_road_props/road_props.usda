@@ -1,0 +1,244 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_74A9281A978C19F7" (
+            references = None
+        )
+        {
+            def Xform "ref_d45fab8673bd4b18b4879819be7df06b" (
+                prepend references = @./Water_barrels/Water_barrels_body.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "root"
+                    {
+                        float3 xformOp:scale = (1, 1, 1)
+
+                        over "Body_low_006"
+                        {
+                            float3 xformOp:rotateXYZ = (0, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                            over "Cylinder_007" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </RootNode/meshes/mesh_74A9281A978C19F7/ref_d45fab8673bd4b18b4879819be7df06b/XForms/root/Body_low_006/Cylinder_007/Looks> (
+                                    bindMaterialAs = "strongerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 0.8)
+                                double3 xformOp:translate = (0.0019824303478799266, 0.00009876381159301673, -0.02441228642366866)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                                def Material "Looks"
+                                {
+                                    token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_74A9281A978C19F7/ref_d45fab8673bd4b18b4879819be7df06b/XForms/root/Body_low_006/Cylinder_007/Looks/Shader.outputs:out>
+                                    token outputs:mdl:surface.connect = </RootNode/meshes/mesh_74A9281A978C19F7/ref_d45fab8673bd4b18b4879819be7df06b/XForms/root/Body_low_006/Cylinder_007/Looks/Shader.outputs:out>
+                                    token outputs:mdl:volume.connect = </RootNode/meshes/mesh_74A9281A978C19F7/ref_d45fab8673bd4b18b4879819be7df06b/XForms/root/Body_low_006/Cylinder_007/Looks/Shader.outputs:out>
+
+                                    def Shader "Shader"
+                                    {
+                                        uniform token info:implementationSource = "sourceAsset"
+                                        uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                                        uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                                        asset inputs:diffuse_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_BaseColor.1001.a.rtex.dds@ (
+                                            colorSpace = "auto"
+                                            customData = {
+                                                asset default = @@
+                                            }
+                                            displayGroup = "Base Material"
+                                            displayName = "Albedo/Opacity Map"
+                                            doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                            hidden = false
+                                            renderType = "texture_2d"
+                                        )
+                                        float inputs:displace_in = 0.001 (
+                                            customData = {
+                                                float default = 1
+                                                dictionary range = {
+                                                    float max = 255
+                                                    float min = 0
+                                                }
+                                            }
+                                            displayGroup = "Displacement"
+                                            displayName = "Inwards Displacement"
+                                            doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                            hidden = false
+                                        )
+                                        asset inputs:height_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_Height.1001.h.rtex.dds@ (
+                                            colorSpace = "auto"
+                                            customData = {
+                                                asset default = @@
+                                            }
+                                            displayGroup = "Displacement"
+                                            displayName = "Height Map"
+                                            doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                            hidden = false
+                                            renderType = "texture_2d"
+                                        )
+                                        asset inputs:normalmap_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_Normal.1001_OTH_Normal.n.rtex.dds@ (
+                                            colorSpace = "auto"
+                                            customData = {
+                                                asset default = @@
+                                            }
+                                            displayGroup = "Base Material"
+                                            displayName = "Normal Map"
+                                            hidden = false
+                                            renderType = "texture_2d"
+                                        )
+                                        asset inputs:reflectionroughness_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_Roughness.1001.r.rtex.dds@ (
+                                            colorSpace = "auto"
+                                            customData = {
+                                                asset default = @@
+                                            }
+                                            displayGroup = "Base Material"
+                                            displayName = "Roughness Map"
+                                            doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                            hidden = false
+                                            renderType = "texture_2d"
+                                        )
+                                        token outputs:out (
+                                            renderType = "material"
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_A72B8E3C282D8DC9" (
+            references = None
+        )
+        {
+            def Xform "ref_85e1d0c9b925456598c7f321730413bd" (
+                prepend references = @./Water_barrels/Water_barrels_cover.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 0.8)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "root"
+                    {
+                        float3 xformOp:scale = (1, 1, 1)
+                        uniform token[] xformOpOrder = ["xformOp:scale"]
+
+                        over "materials"
+                        {
+                            over "Material"
+                            {
+                                over "Shader"
+                                {
+                                    asset inputs:diffuse_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_BaseColor.1001.a.rtex.dds@ (
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.001 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_Height.1001.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_Normal.1001_OTH_Normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./Water_barrels/SubUSDs/textures/Water_barrels_soul_DefaultMaterial_Roughness.1001.r.rtex.dds@ (
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

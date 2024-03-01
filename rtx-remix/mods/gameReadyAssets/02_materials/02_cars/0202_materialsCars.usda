@@ -22,7 +22,7 @@
         @./18_MIATA/020218_MIATA.usda@,
         @./19_MUSTANGGT/020219_MUSTANGGT.usda@,
         @./20_NAVIGATOR/020220_NAVIGATOR.usda@,
-        @./21_PEUGOT/020221_PEUGOT.usda@,
+        @./21_PEUGEOT/020221_PEUGEOT.usda@,
         @./22_RSX/020222_RSX.usda@,
         @./23_RX7/020223_RX7.usda@,
         @./24_RX8/020224_RX8.usda@,
@@ -31,7 +31,10 @@
         @./27_SUPRA/020227_SUPRA.usda@,
         @./28_TIBURON/020228_TIBURON.usda@,
         @./29_TT/020229_TT.usda@,
-        @./30_traffic/020230_traffic.usda@
+        @./30_traffic/020230_traffic.usda@,
+        @./31_carpaint/020231_carpaint.usda@,
+        @./32_carWheel/020232_carWheel.usda@
     ]
     upAxis = "Z"
 )
+
