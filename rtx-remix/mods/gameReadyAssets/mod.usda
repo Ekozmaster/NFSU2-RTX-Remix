@@ -1,9 +1,10 @@
 #usda 1.0
 (
     subLayers = [
-        @./props.usda@,
+        @./hemry.usda@,
         @./uncle_burrito.usda@,
         @./02_materials/03_global/01_roads/020301_roads.usda@,
+        @./player_car_lights.usda@,
         @./tiles.usda@,
         @./traffic.usda@,
         @./textures/lights/lights.usda@,

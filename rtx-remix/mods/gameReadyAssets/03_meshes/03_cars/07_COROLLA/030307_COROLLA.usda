@@ -3,39 +3,3 @@
     upAxis = "Z"
 )
 
-over "RootNode"
-{
-    over "meshes"
-    {
-        over "mesh_8DDFEA3BCB433560"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def Xform "blub" (
-                references = @../00_Shared/bulb_type_01.usd@
-            )
-            {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (2, 2, 2)
-                double3 xformOp:translate = (2.03, -0.5, 0.7)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_2641BFEBD3EA31F2"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def Xform "blub" (
-                references = @../00_Shared/bulb_type_01.usd@
-            )
-            {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (2, 2, 2)
-                double3 xformOp:translate = (2.03, 0.5, 0.7)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-    }
-}
-

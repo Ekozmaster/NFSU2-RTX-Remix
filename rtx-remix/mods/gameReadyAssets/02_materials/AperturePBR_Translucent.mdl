@@ -3,15 +3,15 @@
 ******************************************************************************
 
  MDL MATERIALS ARE PROVIDED PURSUANT TO AN END USER LICENSE  AGREEMENT,
- WHICH WAS ACCEPTED IN ORDER TO GAIN ACCESS TO THIS FILE.  IN PARTICULAR,
+ WHICH WAS ACCEPTED IN ORDER TO GAIN ACCESS TO THIS FILE.  IN PARTICULAR, 
  THE MDL MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF 
  COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL NVIDIA
  CORPORATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING
- ANY GENERAL, SPECIAL,  INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
- WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
- THE USE OR INABILITY TO USE THE MDL MATERIALS OR FROM OTHER DEALINGS IN
+ ANY GENERAL, SPECIAL,  INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, 
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF 
+ THE USE OR INABILITY TO USE THE MDL MATERIALS OR FROM OTHER DEALINGS IN 
  THE MDL MATERIALS.
 */
 
@@ -27,7 +27,6 @@ import ::math::*;
 import ::nvidia::core_definitions::file_texture;
 import ::nvidia::core_definitions::normalmap_texture;
 
-using AperturePBR_Model import *;
 import AperturePBR_Normal::*;
 import AperturePBR_SpriteSheet::*;
 
@@ -49,7 +48,7 @@ export material AperturePBR_Translucent(
   uniform bool thin_walled = false
   [[
     anno::display_name("Thin-walled"),
-    anno::description("Whether the material is thin-walled, use when material is being applied to single triangle thick geometry."),
+    anno::description("Whether the material is thin-walled"),
     anno::in_group("Specular")
   ]],
   uniform float thin_wall_thickness = 1.0f
@@ -97,7 +96,7 @@ export material AperturePBR_Translucent(
   [[
     anno::display_name("Enable Emission"),
     anno::description("Enables the emission of light from the material"),
-    anno::in_group("Emission")
+    anno::in_group("Emissive")
   ]],
   uniform color emissive_color = color(1.0, 0.1, 0.1)
   [[
@@ -105,7 +104,7 @@ export material AperturePBR_Translucent(
     anno::display_name("Emissive Color"),
     anno::description("The emission color"),
     anno::hard_range(color(0.0), color(1.0)),
-    anno::in_group("Emission")
+    anno::in_group("Emissive")
   ]],
   // Note: The emissive color texture should always be treated as sRGB.
   uniform texture_2d emissive_mask_texture = texture_2d("", tex::gamma_srgb)
@@ -113,7 +112,7 @@ export material AperturePBR_Translucent(
     anno::enable_if("enable_emission == true"),
     anno::display_name("Emissive Color Texture"),
     anno::description("The texture masking the emissive color"),
-    anno::in_group("Emission")
+    anno::in_group("Emissive")
   ]],
   uniform float emissive_intensity = 40.f
   [[
@@ -121,63 +120,59 @@ export material AperturePBR_Translucent(
     anno::display_name("Emissive Intensity"),
     anno::hard_range(0.0, 65504.0),
     anno::description("Intensity of the emission"),
-    anno::in_group("Emission")
+    anno::in_group("Emissive")
   ]],
+
   // -------------------- SPRITE SHEET ----------------------
   uniform int sprite_sheet_fps = 0
   [[
     anno::display_name("Sprite Sheet FPS"),
     anno::hard_range(0, 255),
     anno::description("Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality."),
-    anno::in_group("Animation")
+    anno::in_group("Sprite Sheet")
   ]],
   uniform int sprite_sheet_cols = 1
   [[
     anno::display_name("Sprite Sheet Columns"),
     anno::hard_range(1, 255),
     anno::description("Number of columns the spritesheet across all textures is divided into."),
-    anno::in_group("Animation")
+    anno::in_group("Sprite Sheet")
   ]],
   uniform int sprite_sheet_rows = 1
   [[
     anno::display_name("Sprite Sheet Rows"),
     anno::hard_range(1, 255),
     anno::description("Number of row the spritesheet across all textures is divided into."),
-    anno::in_group("Animation")
+    anno::in_group("Sprite Sheet")
   ]],
-  // -------------------- REMIX FLAGS ----------------------
-  uniform bool preload_textures = false
-  [[
-    anno::display_name("Preload Textures"),
-    anno::description("Use this option sparingly, this will consume video memory!  RTX Remix will load the textures associated with this material into GPU memory immediately without streaming at the highest quality possible.  Use this in situations where a material is fundamental for game play and yet is very transient.  For instance, we used this for Portal RTX on the Portals themselves."),
-    anno::in_group("Remix Flags"),
-    anno::unused()
-  ]],
+
+  // -------------------- MATERIAL FLAGS ----------------------
   uniform bool ignore_material = false
   [[
     anno::display_name("Ignore Material"),
     anno::description("Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard."),
-    anno::in_group("Remix Flags")
+    anno::in_group("Material Flags")
   ]],
-  // -------------------- FILTERING ----------------------
   uniform FilterMode filter_mode = Linear
   [[
     anno::display_name("Texture Filtering Mode"),
     anno::description("How texture coordinates between pixels are handled"),
-    anno::in_group("Filtering"),
+    anno::in_group("Material Flags"),
     anno::unused()
   ]],
   uniform tex::wrap_mode wrap_mode_u = tex::wrap_repeat
   [[
     anno::display_name("Wrap Mode U"),
     anno::description("How horizontal texture coordinates outside of the 0-1 range are handled"),
-    anno::in_group("Filtering")
+    anno::in_group("Material Flags"),
+    anno::unused()
   ]],
   uniform tex::wrap_mode wrap_mode_v = tex::wrap_repeat
   [[
     anno::display_name("Wrap Mode V"),
     anno::description("How vertical texture coordinates outside of the 0-1 range are handled"),
-    anno::in_group("Filtering")
+    anno::in_group("Material Flags"),
+    anno::unused()
   ]],
 
   // -------------------- NORMAL ----------------------
@@ -191,15 +186,14 @@ export material AperturePBR_Translucent(
   [[
     anno::display_name("Normal Map Encoding"),
     anno::description("Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."),
-    anno::in_group("Normal"),
-    anno::hidden()
+    anno::in_group("Normal")
   ]]
 )
 [[
   anno::display_name("Aperture PBR Translucent"),
   anno::description("Supports the translucent material model of the Aperture Renderer"),
   anno::version( 1, 0, 0),
-  anno::author("NVIDIA CORPORATION"),
+  anno::author("NVIDIA CORPORATION"), 
   anno::key_words(string[]("aperture", "PBR", "translucent", "omniverse", "generic"))
 ]]
  = let {
@@ -244,7 +238,7 @@ export material AperturePBR_Translucent(
     tint: diffuse_lookup,
     roughness: 1.0
   );
-
+  
   color transmittance_lookup = (!use_diffuse_layer && tex::texture_isvalid(transmittance_texture)) ?
     color(transmittance_or_diffuse_albedo.x, transmittance_or_diffuse_albedo.y, transmittance_or_diffuse_albedo.z) :
     transmittance_color;
@@ -274,7 +268,7 @@ export material AperturePBR_Translucent(
   // Normal calculations
   float3 normal_lookup =  tex::texture_isvalid(normalmap_texture) ?
               AperturePBR_Normal::enc_tangent_space_normal_texture(
-              texture:        normalmap_texture,
+              texture:        normalmap_texture,  
               factor:         1.0,
               uv:             final_uv,
               tangent_u:      uvw.tangent_u,
