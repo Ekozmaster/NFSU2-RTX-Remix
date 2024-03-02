@@ -134,51 +134,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_4B4E1EB01E11891B"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "TaxiHeadlight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3000
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 2997.6
-                float radius = 0.3
-                float shaping:cone:angle = 54.4
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (-64.5000009611249, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.500000037252903, 0.6000000089406967, 0.5000000074505806)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "TaxiHeadlight_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3000
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 2997.6
-                float radius = 0.3
-                float shaping:cone:angle = 54.4
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (-64.5000009611249, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.500000037252903, -0.6000000089406967, 0.5000000074505806)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_15AE6549291B509F"
         {
             custom int preserveOriginalDrawCall = 1
