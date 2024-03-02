@@ -3,3 +3,59 @@
     upAxis = "Z"
 )
 
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_6E663E973A6C191D"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "bulb_01" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (3, 3, 3)
+                double3 xformOp:translate = (1.67987, -0.55348, 0.46192360504654734)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "bulb_02" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (3, 3, 3)
+                double3 xformOp:translate = (1.62803, -0.62257, 0.4889278768346326)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_DE95B0DA8AA680AE"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "bulb_01" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (3, 3, 3)
+                double3 xformOp:translate = (1.67987, 0.55348, 0.46192360504654734)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "bulb_02" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (3, 3, 3)
+                double3 xformOp:translate = (1.62803, 0.62257, 0.4889278768346326)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
+

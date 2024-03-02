@@ -1,0 +1,38 @@
+#usda 1.0
+(
+    subLayers = [
+        @./29_TT/030329_TT_lights01.usda@,
+        @./28_TIBURON/030328_TIBURON_lights01.usda@,
+        @./27_SUPRA/030327_SUPRA_lights01.usda@,
+        @./26_SKYLINE/030326_SKYLINE_lights01.usda@,
+        @./25_SENTRA/030325_SENTRA_lights01.usda@,
+        @./24_RX8/030324_RX8_lights01.usda@,
+        @./23_RX7/030323_RX7_lights01.usda@,
+        @./00_Shared/030300_carsShared.usda@,
+        @./22_RSX/030322_RSX_lights01.usda@,
+        @./21_PEUGEOT/030321_PEUGEOT_lights01.usda@,
+        @./20_NAVIGATOR/030320_NAVIGATOR_lights01.usda@,
+        @./19_MUSTANGGT/030319_MUSTANGGT_lights01.usda@,
+        @./18_MIATA/030318_MIATA_lights01.usda@,
+        @./17_LANCEREV08/030317_LANCEREV08_lights01.usda@,
+        @./16_IS3000/030316_IS3000_lights01.usda@,
+        @./15_IMPREZAWRX/030315_IMPREZAWRX_lights01.usda@,
+        @./14_HUMMER/030314_HUMMER_lights01.usda@,
+        @./13_GTO/030313_GTO_lights01.usda@,
+        @./12_GOLF/030312_GOLF_lights01.usda@,
+        @./11_G35/030311_G35_lights01.usda@,
+        @./10_FOCUS/030310_FOCUS_lights01.usda@,
+        @./09_ESCALADE/030309_ESCALADE_lights01.usda@,
+        @./08_ECLIPSE/030308_ECLIPSE_lights01.usda@,
+        @./07_COROLLA/030307_COROLLA_lights01.usda@,
+        @./06_CIVIC/030306_CIVIC_lights01.usda@,
+        @./05_CELICA/030305_CELICA_lights01.usda@,
+        @./04_A3/030304_A3_lights01.usda@,
+        @./03_3000GT/030303_3000GT_lights01.usda@,
+        @./02_350Z/030302_350Z_lights01.usda@,
+        @./01_240SX/030301_240SX_lights01.usda@,
+        @./30_traffic/030330_traffic_lights01.usda@
+    ]
+    upAxis = "Z"
+)
+
