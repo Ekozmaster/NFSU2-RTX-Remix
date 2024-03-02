@@ -12,7 +12,7 @@ def "RootNode"
 {
     def "Looks"
     {
-        over "mat_A4A58E27B2A751D7"
+        over "mat_B7BA994D1D61DFE8"
         {
             over "Shader"
             {
@@ -23,7 +23,18 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_BA24AB763525F1FF"
+        over "mat_3B5E126451866113"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_B14EBF2857C49D12"
         {
             over "Shader"
             {
@@ -45,7 +56,7 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_B49144D8FCAA9C37"
+        over "mat_461CA5BFB68F9F3A"
         {
             over "Shader"
             {
@@ -56,7 +67,18 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_947E9D2ACD38C803"
+        over "mat_EE10DE826901C5C8"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_3DA563D2CDDA37A2"
         {
             over "Shader"
             {
@@ -68,281 +90,6 @@ def "RootNode"
             }
         }
         over "mat_0045830BD0FCDFE1"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_8DE4585D75A76631"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_37D9ECA0C00AAAF1"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_48D266F43A529633"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_836ACF946E3B7F16"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_BC92860CF78B351E"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_162F61EFCB8B2EE4"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_9C47287ACA1D2C4D"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_D8C8C25985CF969D"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_D1A6ABE166B77ABB"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_E315A56DF4BADEF6"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_8D37E378CAF142DE"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_5E4D15C46CBC5EB6"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_84C2B14DB363A33F"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_281696A432A2E283"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_641533BC50831F0C"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_D2CE0B33E267718C"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_15EB650D3B21D319"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_C168FC6DB5399E87"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_326A2F0196FFBD32"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_EA411EB6AF8A04EC"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_DAE96F69F1569E50"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_6B360271352B3100"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_F121C173BB7930C2"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_BEA4C75D8A4B826C"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_6C068D50B4C65629"
         {
             over "Shader"
             {
@@ -375,18 +122,7 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_61AD3ABB0B3C65F5"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_87FBADE7ED5B0A5E"
+        over "mat_311B34C152CCE958"
         {
             over "Shader"
             {
@@ -408,7 +144,51 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_8F25CD2D41DA8654"
+        over "mat_C168FC6DB5399E87"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_B861EC016765B1E8"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_EB5C52BEEBDD01E6"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_4FAB09F25090B5A5"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_6C4D8AC6B49F9ACA"
         {
             over "Shader"
             {
@@ -430,7 +210,161 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
+        over "mat_E315A56DF4BADEF6"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_2D3B98058DD7D8A3"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_BA24AB763525F1FF"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_B05A1209FA9FDFC8"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_6DC7138D479CD297"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_C6DFA5D9A072AE86"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
         over "mat_563B642BE8F436D2"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_61AD3ABB0B3C65F5"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_D8C8C25985CF969D"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_8F25CD2D41DA8654"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_AB853AFEAFA160B3"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_CB92695BF94327B9"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_108683A933BA855A"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_8CBF4B28BABD6A82"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_836ACF946E3B7F16"
         {
             over "Shader"
             {
@@ -452,7 +386,205 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_50875B794995E7C8"
+        over "mat_294932DB265B93A1"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_0A5068DD418E2799"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_2AF98A637E67CEB0"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_6C27B32A3C853EA8"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_9C47287ACA1D2C4D"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_49FD3A1A416132DF"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_3129A8AD37F81A94"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_15434FFDBE0E24B1"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_C69EB681433FD19B"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_EA411EB6AF8A04EC"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_BC92860CF78B351E"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_326A2F0196FFBD32"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_87FBADE7ED5B0A5E"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_FEA4E33366A3624F"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_D4688393FB58EC2A"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_B85655146D30C384"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_AF19A25F4987DFA7"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_8DE4585D75A76631"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_84C2B14DB363A33F"
         {
             over "Shader"
             {
@@ -485,7 +617,7 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_F97F3DDA788267BB"
+        over "mat_E49C63F0F6FC8B9C"
         {
             over "Shader"
             {
@@ -496,7 +628,7 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_EE10DE826901C5C8"
+        over "mat_D1A6ABE166B77ABB"
         {
             over "Shader"
             {
@@ -507,282 +639,7 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_AB853AFEAFA160B3"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_190D85522DC77792"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_D4CB0C4A7945758E"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_DC9F0578AD26430B"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_8CBF4B28BABD6A82"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_6DC7138D479CD297"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_B05A1209FA9FDFC8"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_1D5C438EE6E37973"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_477B4B472A74DBDF"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_AF19A25F4987DFA7"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_ECF881C4860DAFAA"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_6F23EBAD54D94E8F"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_108683A933BA855A"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_FBD1DAD3183AEABD"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_294932DB265B93A1"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_6C27B32A3C853EA8"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_E850755B82A244A8"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_DEA37CDBE61529D7"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_38DF9241325BD233"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_0A5068DD418E2799"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_3DA563D2CDDA37A2"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_C330120B1805367A"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_C6DFA5D9A072AE86"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_1EDB422A6C3AC5A4"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_D4688393FB58EC2A"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_B6E4688AA4A0F3FE"
+        over "mat_DAE96F69F1569E50"
         {
             over "Shader"
             {
@@ -804,249 +661,7 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_B85655146D30C384"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_FA922E6CC3B5A98B"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_461CA5BFB68F9F3A"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_2AF98A637E67CEB0"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_6C4D8AC6B49F9ACA"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_CD8220E2CE4F2253"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_C69EB681433FD19B"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_311B34C152CCE958"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_8AB5A61808844597"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_2D3B98058DD7D8A3"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_EB5C52BEEBDD01E6"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_0EBC9A3FC2FAFD65"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_E306D954A7230A32"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_F4F5FA04AE0E9A28"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_FEA4E33366A3624F"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_B7BA994D1D61DFE8"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_15434FFDBE0E24B1"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_3B5E126451866113"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_39A3535312B6792C"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
         over "mat_0DED9A6010674588"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_4FAB09F25090B5A5"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_B14EBF2857C49D12"
-        {
-            over "Shader"
-            {
-                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
-                asset inputs:metallic_texture = @./carwheel_metal.dds@
-                asset inputs:normalmap_texture = @./carwheel_normal.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./carwheel_height.dds@
-            }
-        }
-        over "mat_E49C63F0F6FC8B9C"
         {
             over "Shader"
             {
@@ -1068,7 +683,29 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_49FD3A1A416132DF"
+        over "mat_E306D954A7230A32"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_BEA4C75D8A4B826C"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_190D85522DC77792"
         {
             over "Shader"
             {
@@ -1090,7 +727,62 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_3129A8AD37F81A94"
+        over "mat_CD8220E2CE4F2253"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_37D9ECA0C00AAAF1"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_6F23EBAD54D94E8F"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_D2CE0B33E267718C"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_FA922E6CC3B5A98B"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_DEA37CDBE61529D7"
         {
             over "Shader"
             {
@@ -1112,7 +804,7 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_B861EC016765B1E8"
+        over "mat_DC9F0578AD26430B"
         {
             over "Shader"
             {
@@ -1123,7 +815,183 @@ def "RootNode"
                 asset inputs:height_texture = @./carwheel_height.dds@
             }
         }
-        over "mat_CB92695BF94327B9"
+        over "mat_947E9D2ACD38C803"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_B6E4688AA4A0F3FE"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_1EDB422A6C3AC5A4"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_F4F5FA04AE0E9A28"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_ECF881C4860DAFAA"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_8D37E378CAF142DE"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_6C068D50B4C65629"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_477B4B472A74DBDF"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_50875B794995E7C8"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_C330120B1805367A"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_38DF9241325BD233"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_39A3535312B6792C"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_1D5C438EE6E37973"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_641533BC50831F0C"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_A4A58E27B2A751D7"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_281696A432A2E283"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_D4CB0C4A7945758E"
         {
             over "Shader"
             {
@@ -1135,6 +1003,138 @@ def "RootNode"
             }
         }
         over "mat_0AE3C53275A4F177"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_0EBC9A3FC2FAFD65"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_B49144D8FCAA9C37"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_15EB650D3B21D319"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_48D266F43A529633"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_E850755B82A244A8"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_8AB5A61808844597"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_162F61EFCB8B2EE4"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_F97F3DDA788267BB"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_FBD1DAD3183AEABD"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_5E4D15C46CBC5EB6"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_6B360271352B3100"
+        {
+            over "Shader"
+            {
+                asset inputs:reflectionroughness_texture = @./carwheel_rough.dds@
+                asset inputs:metallic_texture = @./carwheel_metal.dds@
+                asset inputs:normalmap_texture = @./carwheel_normal.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./carwheel_height.dds@
+            }
+        }
+        over "mat_F121C173BB7930C2"
         {
             over "Shader"
             {
