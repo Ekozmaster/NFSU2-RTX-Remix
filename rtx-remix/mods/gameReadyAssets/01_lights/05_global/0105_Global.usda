@@ -134,49 +134,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_15AE6549291B509F"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "MipTaxiHeadlight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3000
-                bool enableColorTemperature = 1
-                float intensity = 1500
-                float radius = 0.1
-                float shaping:cone:angle = 65
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, -74.10000110417604, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.2000000327825546, 0.5000000074505806, 0.5000000074505806)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "MipTaxiHeadlight_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3000
-                bool enableColorTemperature = 1
-                float intensity = 1500
-                float radius = 0.1
-                float shaping:cone:angle = 65
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, -74.10000110417604, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.2000000327825546, -0.5000000074505806, 0.5000000074505806)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_37826AD2A6E274F8"
         {
             custom int preserveOriginalDrawCall = 1
