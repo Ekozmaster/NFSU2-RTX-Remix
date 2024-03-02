@@ -4,53 +4,6 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_3FEFE8898D689011"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "PlateLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 4000
-                bool enableColorTemperature = 1
-                float exposure = 8.3
-                float intensity = 100
-                float radius = 0.001
-                float shaping:cone:angle = 90
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.03, 0.08, -0.01)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "PlateLight_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 4000
-                bool enableColorTemperature = 1
-                float exposure = 8.3
-                float intensity = 100
-                float radius = 0.001
-                float shaping:cone:angle = 90
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.03, -0.08, -0.01)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_BF251E8A9C6797F3"
         {
             custom int preserveOriginalDrawCall = 1
