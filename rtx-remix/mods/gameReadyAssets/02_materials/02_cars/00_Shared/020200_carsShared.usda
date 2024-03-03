@@ -295,8 +295,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -311,8 +311,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -326,8 +326,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -358,8 +358,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -374,8 +374,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -399,8 +399,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -909,8 +909,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -925,8 +925,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -950,8 +950,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -1112,8 +1112,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1128,8 +1128,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -1153,8 +1153,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -1185,8 +1185,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1201,8 +1201,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -1226,8 +1226,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -1258,8 +1258,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1274,8 +1274,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -1289,8 +1289,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -1433,8 +1433,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1449,8 +1449,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Opacity Amount"
-                doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.
-
+                doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.\r
+\r
 """
                 hidden = false
             )
@@ -1481,8 +1481,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
+                doc = """Index of Refraction of the material\r
+\r
 """
                 hidden = false
             )
@@ -1506,8 +1506,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.
-
+                doc = """Expected transmittance after the specified transmittance distance through the volume.\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1522,8 +1522,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.
-
+                doc = """Distance to match the transmittance through the volume at.\r
+\r
 """
                 hidden = false
             )
@@ -1534,8 +1534,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance or Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -1546,8 +1546,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material
-
+                doc = """When set, simulates a diffuse layer on top of the material\r
+\r
 """
                 hidden = false
             )
@@ -1578,8 +1578,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
+                doc = """Index of Refraction of the material\r
+\r
 """
                 hidden = false
             )
@@ -1603,8 +1603,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.
-
+                doc = """Expected transmittance after the specified transmittance distance through the volume.\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1619,8 +1619,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.
-
+                doc = """Distance to match the transmittance through the volume at.\r
+\r
 """
                 hidden = false
             )
@@ -1631,8 +1631,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance or Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -1643,8 +1643,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material
-
+                doc = """When set, simulates a diffuse layer on top of the material\r
+\r
 """
                 hidden = false
             )
@@ -1675,8 +1675,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
+                doc = """Index of Refraction of the material\r
+\r
 """
                 hidden = false
             )
@@ -1700,8 +1700,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.
-
+                doc = """Expected transmittance after the specified transmittance distance through the volume.\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1716,8 +1716,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.
-
+                doc = """Distance to match the transmittance through the volume at.\r
+\r
 """
                 hidden = false
             )
@@ -1728,8 +1728,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance or Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -1740,8 +1740,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material
-
+                doc = """When set, simulates a diffuse layer on top of the material\r
+\r
 """
                 hidden = false
             )
@@ -1772,8 +1772,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1788,8 +1788,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -1820,8 +1820,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
+                doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1836,8 +1836,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -1868,8 +1868,8 @@ def "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
+                doc = """Index of Refraction of the material\r
+\r
 """
                 hidden = false
             )
@@ -1893,8 +1893,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.
-
+                doc = """Expected transmittance after the specified transmittance distance through the volume.\r
+\r
 """
                 hidden = false
                 renderType = "color"
@@ -1909,8 +1909,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.
-
+                doc = """Distance to match the transmittance through the volume at.\r
+\r
 """
                 hidden = false
             )
@@ -1921,8 +1921,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Transmittance or Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -1933,8 +1933,8 @@ def "Looks" (
                 }
                 displayGroup = "Volume"
                 displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material
-
+                doc = """When set, simulates a diffuse layer on top of the material\r
+\r
 """
                 hidden = false
             )
@@ -2012,6 +2012,97 @@ def "Looks" (
                 displayName = "Use diffuse layer"
                 doc = "When set, simulates a diffuse layer on top of the material"
                 hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "License_Plate"
+    {
+        token outputs:mdl:displacement.connect = </Looks/License_Plate/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/License_Plate/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/License_Plate/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./License_Plate_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0.02 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./License_Plate_height.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:metallic_texture = @./License_Plate_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./License_Plate_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./License_Plate_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
+"""
+                hidden = false
+                renderType = "texture_2d"
             )
             token outputs:out (
                 renderType = "material"

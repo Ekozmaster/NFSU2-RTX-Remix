@@ -1,7 +1,6 @@
 #usda 1.0
 (
     subLayers = [
-        @./00_Shared/030300_carsShared_mesh.usda@,
         @./00_Shared/030300_carsShared.usda@,
         @./01_240SX/030301_240SX.usda@,
         @./02_350Z/030302_350Z.usda@,
