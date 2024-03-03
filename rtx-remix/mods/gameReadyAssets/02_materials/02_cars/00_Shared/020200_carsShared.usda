@@ -1,13 +1,12 @@
 #usda 1.0
 (
-    customLayerData = {
-        dictionary omni_layer = {
-            dictionary locked = {
-            }
-            dictionary muteness = {
-            }
-        }
-    }
+    subLayers = [
+        @./Glass/020200_carsSharedGlass.usda@,
+        @./Decals/020200_carsSharedDecals.usda@,
+        @./Metal/020200_carsSharedMetal.usda@,
+        @./Carpaint/020200_carsSharedCarpaint.usda@,
+        @./CarWheel/020200_carsSharedCarWheel.usda@
+    ]
     upAxis = "Z"
 )
 
@@ -1433,8 +1432,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified\r
-\r
+                doc = """The base albedo color to use if no texture is specified
+
 """
                 hidden = false
                 renderType = "color"
@@ -1449,8 +1448,8 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Opacity Amount"
-                doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.\r
-\r
+                doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.
+
 """
                 hidden = false
             )

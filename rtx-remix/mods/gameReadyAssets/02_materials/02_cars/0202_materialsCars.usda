@@ -1,9 +1,6 @@
 #usda 1.0
 (
     subLayers = [
-        @./00_Shared/Metal/020200_carsSharedMetal.usda@,
-        @./00_Shared/decals/020200_carsSharedDecals.usda@,
-        @./00_Shared/Glass/020200_carsSharedGlass.usda@,
         @./00_Shared/020200_carsShared.usda@,
         @./01_240SX/020201_240SX.usda@,
         @./02_350Z/020202_350Z.usda@,
@@ -34,9 +31,7 @@
         @./27_SUPRA/020227_SUPRA.usda@,
         @./28_TIBURON/020228_TIBURON.usda@,
         @./29_TT/020229_TT.usda@,
-        @./30_traffic/020230_traffic.usda@,
-        @./31_carpaint/020231_carpaint.usda@,
-        @./32_carWheel/020232_carWheel.usda@
+        @./30_traffic/020230_traffic.usda@
     ]
     upAxis = "Z"
 )
