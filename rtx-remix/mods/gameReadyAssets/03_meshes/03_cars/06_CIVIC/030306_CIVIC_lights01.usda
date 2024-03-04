@@ -1,5 +1,6 @@
 #usda 1.0
 (
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
     upAxis = "Z"
 )
 
@@ -7,36 +8,79 @@ over "RootNode"
 {
     over "meshes"
     {
+        over "mesh_52848EEB797DA910"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
         over "mesh_5C6E4766D377EA25"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Big_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 300
-                float inputs:radius = 0.03
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9371733126972481, -0.5342322703819993, 0.43616777611945584)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "Small_Light" (
+            def Xform "Xform" (
+                references = @./lights_CIVIC_frontGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_CIVIC_frontGroup01"
+                        {
+                            over "CIVIC_rearLight01_Reflector_normalCombined_CIVIC_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_frontGroup01_Geo_CIVIC_rearLight01_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_frontGroup01_Geo_CIVIC_rearLight01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_CIVIC_front_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.39382243, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.03
+                float inputs:exposure = 12
+                float inputs:intensity = 1
+                float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
@@ -44,41 +88,121 @@ over "RootNode"
                 asset inputs:shaping:ies:file
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.8128543268943869, -0.7037588522989828, 0.4549862644162151)
+                double3 xformOp:translate = (1.8949513607620423, -0.5180350180465929, 0.4369370443275667)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_450740CFA7B933C0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_F3D9887FBBCDBA4B"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E477A0623A82D572"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_EF782EFF2F1891FF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_783C37ECBF2F3BD3"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_59DD75A4252EE647"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Big_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "Xform_01" (
+                references = @./lights_CIVIC_frontGroup01.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 300
-                float inputs:radius = 0.03
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9371733126972481, 0.53423, 0.43616777611945584)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_CIVIC_frontGroup01"
+                        {
+                            over "CIVIC_rearLight01_Reflector_normalCombined_CIVIC_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_frontGroup01_Geo_CIVIC_rearLight01_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_frontGroup01_Geo_CIVIC_rearLight01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
             }
 
-            def SphereLight "Small_Light" (
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def SphereLight "lights_CIVIC_front_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.39382243, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.03
+                float inputs:exposure = 12
+                float inputs:intensity = 1
+                float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
@@ -86,108 +210,501 @@ over "RootNode"
                 asset inputs:shaping:ies:file
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.8128543268943869, 0.70376, 0.4549862644162151)
+                double3 xformOp:translate = (1.8949513607620423, 0.52, 0.4369370443275667)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_693C597EE7DFC96E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_393254B5C1187B3F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_1C38732FE575F222"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.0796856914915622, -0.6382581675413803, 0.6207598253382898)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
-        }
 
-        over "mesh_36F337261A9A6324"
-        {
-            custom int preserveOriginalDrawCall = 1
+            def Xform "Xform" (
+                references = @./lights_CIVIC_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-            def SphereLight "Light_01" (
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_CIVIC_rearGroup01"
+                        {
+                            over "CIVC_rearLight01_Glass_red_CIVIC_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup01_Geo_CIVC_rearLight01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup01_Geo_CIVC_rearLight01_Reflector_normalCombine" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup01_Geo_CIVC_rearLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_CIVIC_rearOut01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.02
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.017
                 float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.0796856914915622, 0.63826, 0.6207598253382898)
+                double3 xformOp:translate = (-1.9330189098382826, -0.6481082262437949, 0.6123971673024391)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
         over "mesh_9B6D196D5CC0E294"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
 
-            def SphereLight "Light_01" (
+            def Xform "Xform" (
+                references = @./lights_CIVIC_rearGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_CIVIC_rearGroup02"
+                        {
+                            over "CIVIC_rearGroup02_Geo_CIVCI_rearLight02_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVCI_rearLight02_Glass_colorless_CIVIC_rearGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup02_Geo_CIVCI_rearLight02_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup02_Geo_CIVCI_rearLight02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_CIVIC_rearInside_main01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 50
-                float inputs:radius = 0.02
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.018
                 float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.12, -0.47, 0.6207598253382898)
+                double3 xformOp:translate = (-2.0536026287306086, -0.42221825656499057, 0.6063946813071692)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "lights_CIVIC_rearInside_add01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:exposure = 5
+                float inputs:height = 0.07
+                float inputs:intensity = 1
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 0.05
+                double3 xformOp:rotateXYZ = (270, -8.526512829121202e-14, 90.00000000000006)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.0934682425606512, -0.5061169188100854, 0.6104115797488927)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_97C8C758EABFD28C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_116DAE62C231A221"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_DF038A16B8A104E5"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5C8CA50E4D4518A9"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_3E6ECB0CD1BD31A6"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
 
-            def SphereLight "Light_01" (
+            def Xform "Xform_01" (
+                references = @./lights_CIVIC_rearGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_CIVIC_rearGroup02"
+                        {
+                            over "CIVIC_rearGroup02_Geo_CIVCI_rearLight02_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVCI_rearLight02_Glass_colorless_CIVIC_rearGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup02_Geo_CIVCI_rearLight02_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup02_Geo_CIVCI_rearLight02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_CIVIC_rearInside_main01_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 50
-                float inputs:radius = 0.02
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.018
                 float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.12, 0.47, 0.6207598253382898)
+                double3 xformOp:translate = (-2.0536026287306086, 0.42, 0.6063946813071692)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "lights_CIVIC_rearInside_add01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:exposure = 5
+                float inputs:height = 0.07
+                float inputs:intensity = 1
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 0.05
+                double3 xformOp:rotateXYZ = (270, -8.526512829121202e-14, 90.00000000000006)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.0934682425606512, 0.51, 0.6104115797488927)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_36F337261A9A6324"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform_01" (
+                references = @./lights_CIVIC_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_CIVIC_rearGroup01"
+                        {
+                            over "CIVC_rearLight01_Glass_red_CIVIC_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup01_Geo_CIVC_rearLight01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup01_Geo_CIVC_rearLight01_Reflector_normalCombine" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup01_Geo_CIVC_rearLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_CIVIC_rearOut01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.017
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9330189098382826, 0.65, 0.6123971673024391)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_97AC514DA423A9E6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./lights_CIVIC_rearGroup03.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_CIVIC_rearGroup03"
+                        {
+                            over "CIVIC_rearLight03_Plastic_black_CIVIC_rearGroup03_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup03_Geo_CIVIC_rearLight03_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "CIVIC_rearGroup03_Geo_CIVIC_rearLight03_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
             }
         }
     }

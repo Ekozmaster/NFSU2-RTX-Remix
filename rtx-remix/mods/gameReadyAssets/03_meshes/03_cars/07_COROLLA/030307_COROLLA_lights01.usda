@@ -7,528 +7,1327 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_EB2D4BFACF1493D5"
+        over "mesh_66DFE205518818FC"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
 
-            def SphereLight "Light_R_01" (
+            def Xform "baseGr01" (
+                references = @./lights_COROLLA_baseGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_baseGroup01"
+                        {
+                            over "Geo_COROLLA_baseGroup02_Reflector_COROLLA_baseGroup02" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Glass_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "COROLLA_baseGroup01_Plastic_black_COROLLA_baseGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "signalGr01" (
+                references = @./lights_COROLLA_frontGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_frontGroup02"
+                        {
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Reflector_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Plastic_black_glossy_COROLLA_frontGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "fogGr01" (
+                references = @./lights_COROLLA_frontGroup03.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_frontGroup03"
+                        {
+                            over "COROLLA_frontGroup03_Plastic_black_COROLLA_frontGroup03_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "rearSignalGr001" (
+                references = @./lights_COROLLA_rearGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_rearGroup02"
+                        {
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Glass_colorless_COROLLA_rearGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_COROLLA_sign01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.03
+                float inputs:exposure = 6
+                float inputs:intensity = 1
+                float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8435069088204727, -0.5687847919274702, 0.7453720514476743)
+                double3 xformOp:translate = (-1.9159879562044804, -0.21460268336701072, 0.6657332458838549)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "Light_R_02" (
+            def SphereLight "lights_COROLLA_sign01_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.03
+                float inputs:exposure = 6
+                float inputs:intensity = 1
+                float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8557097255163626, -0.3684056626661061, 0.7514410073399347)
+                double3 xformOp:translate = (-1.9159879562044804, 0.2146, 0.6657332458838549)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "Light_L_01" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "rearSignalGr001_01" (
+                references = @./lights_COROLLA_rearGroup02.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.03
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8435069088204727, 0.56878, 0.7453720514476743)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_rearGroup02"
+                        {
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Glass_colorless_COROLLA_rearGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup02_Geo_COROLLA_rearGroup02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
             }
 
-            def SphereLight "Light_L_02" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "fogGr01_01" (
+                references = @./lights_COROLLA_frontGroup03.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.03
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8557097255163626, 0.36841, 0.7514410073399347)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
 
-        over "mesh_6736A96ADAD2219F"
-        {
-            custom int preserveOriginalDrawCall = 1
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
 
-            def SphereLight "Big_light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 50
-                float inputs:radius = 0.03
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9568001092150098, -0.5421129336012598, 0.6415119745104789)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
+                    over "World"
+                    {
+                        over "lights_COROLLA_frontGroup03"
+                        {
+                            over "COROLLA_frontGroup03_Plastic_black_COROLLA_frontGroup03_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
 
-            def SphereLight "Big_light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 50
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.029004562739601, -0.4287130796508336, 0.6349788057664512)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
 
-            def SphereLight "Small_light" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 50
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9722891603455537, -0.4711358494778608, 0.6863858686459139)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
 
-        over "mesh_BE5FFA410D56AB52"
-        {
-            custom int preserveOriginalDrawCall = 1
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
 
-            def SphereLight "Big_light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 50
-                float inputs:radius = 0.03
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9568001092150098, 0.54211, 0.6415119745104789)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            over "COROLLA_frontGroup03_Geo_COROLLA_frontGroup03_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
             }
 
-            def SphereLight "Big_light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "signalGr01_01" (
+                references = @./lights_COROLLA_frontGroup02.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 50
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.029004562739601, 0.42871, 0.6349788057664512)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_frontGroup02"
+                        {
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Geo_COROLLA_frontGroup02_Reflector_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup02_Plastic_black_glossy_COROLLA_frontGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
             }
 
-            def SphereLight "Small_light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "baseGr01_01" (
+                references = @./lights_COROLLA_baseGroup01.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 50
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9722891603455537, 0.47114, 0.6863858686459139)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
 
-        over "mesh_9FD5129AEDADE6BA"
-        {
-            custom int preserveOriginalDrawCall = 1
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
 
-            def SphereLight "Center_Light_R_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.41698837, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8921240839595157, -0.46640519296479965, 0.7293174615354303)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
+                    over "World"
+                    {
+                        over "lights_COROLLA_baseGroup01"
+                        {
+                            over "Geo_COROLLA_baseGroup02_Reflector_COROLLA_baseGroup02" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
 
-            def SphereLight "Light_R_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.62548256, 0)
-                float inputs:intensity = 5
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.873794478707623, -0.5779047909174153, 0.7339344076272809)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Glass_colorless" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
 
-            def SphereLight "Light_R_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.41698837, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8863885244434186, -0.36219924017186145, 0.72476698385681)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Metal" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
 
-            def SphereLight "Center_Light_L_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.41698837, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8921240839595157, 0.46641, 0.7293174615354303)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Glass_black" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
 
-            def SphereLight "Light_L_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.41698837, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8863885244434186, 0.3622, 0.72476698385681)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
+                            over "Geo_COROLLA_baseGroup02_COROLLA_baseGroup02_Plastic_black" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
 
-            def SphereLight "Light_L_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.62548256, 0)
-                float inputs:intensity = 5
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.873794478707623, 0.5779, 0.7339344076272809)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_62C54A4A60F521B8"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Big_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9179072738431842, -0.5603002527358001, 0.6787472922537674)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Big_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.0011009055792783, -0.42933723794791945, 0.6501664907734437)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Small_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9278062330836292, -0.4910246323350407, 0.692685136577623)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Small_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.0441100403497785, -0.5081868872354107, 0.6315879279736052)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            over "COROLLA_baseGroup01_Plastic_black_COROLLA_baseGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+                        }
+                    }
+                }
             }
         }
 
-        over "mesh_FCA56EA923258AA0"
+        over "mesh_E1E2E376D1232728"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Big_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9179072738431842, 0.5603, 0.6787472922537674)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Big_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.0011009055792783, 0.42934, 0.6501664907734437)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Small_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9278062330836292, 0.49102, 0.692685136577623)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Small_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 100
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.0441100403497785, 0.50819, 0.6315879279736052)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
         over "mesh_8DDFEA3BCB433560"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
 
-            def Xform "blub" (
-                references = @../00_Shared/bulb_type_01.usd@
+        over "mesh_8B3F2D1C3C9B15A6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "frontGr01" (
+                references = @./lights_COROLLA_frontGroup01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (2, 2, 2)
-                double3 xformOp:translate = (2.03, -0.5, 0.7)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_frontGroup01"
+                        {
+                            over "COROLLA_frontGroup01_Reflector_normalCombined_COROLLA_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Glass_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Plastic_black_glossy" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_COROLLA_front01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9738780052058877, -0.4922741574692253, 0.6936197769720671)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_E208942D68988072"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGrShell01" (
+                references = @./lights_COROLLA_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_rearGroup01"
+                        {
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Glass_colorless" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Reflector" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType04" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType11" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_white_normalType04" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Metal" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_orange_normalType04_COROLLA_rearGroup01_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_F959D843C14627DF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr01" (
+                references = @./lights_COROLLA_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_rearGroup01"
+                        {
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Plastic_black" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_orange_normalType04_COROLLA_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_white_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_COROLLA_rear01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.8540301494465066, -0.5321448069993155, 0.7180282767331811)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "lights_COROLLA_rear02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.8733654536473638, -0.36186572207810874, 0.7181003283728479)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_25870CB3D2CC903B"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_2641BFEBD3EA31F2"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
 
-            def Xform "blub" (
-                references = @../00_Shared/bulb_type_01.usd@
+        over "mesh_41D575D38EB2AF62"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "frontGr01_01" (
+                references = @./lights_COROLLA_frontGroup01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (2, 2, 2)
-                double3 xformOp:translate = (2.03, 0.5, 0.7)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_frontGroup01"
+                        {
+                            over "COROLLA_frontGroup01_Reflector_normalCombined_COROLLA_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Glass_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_frontGroup01_Geo_COROLLA_frontGroup01_Plastic_black_glossy" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_COROLLA_front01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9738780052058877, 0.49227, 0.6936197769720671)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8F0DDF12ACDFCB1A"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGrShell01_01" (
+                references = @./lights_COROLLA_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_rearGroup01"
+                        {
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Glass_colorless" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Reflector" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType04" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType11" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_white_normalType04" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Metal" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_orange_normalType04_COROLLA_rearGroup01_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_84D57A234C8ED8FD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr01_01" (
+                references = @./lights_COROLLA_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_COROLLA_rearGroup01"
+                        {
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Plastic_black" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "COROLLA_rearGroup01_orange_normalType04_COROLLA_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_white_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "COROLLA_rearGroup01_Geo_COROLLA_rearGroup01_red_normalType11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_COROLLA_rear01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.8540301494465066, 0.53214, 0.7180282767331811)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "lights_COROLLA_rear02_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.8733654536473638, 0.36187, 0.7181003283728479)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

@@ -1,5 +1,6 @@
 #usda 1.0
 (
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
     upAxis = "Z"
 )
 
@@ -7,53 +8,566 @@ over "RootNode"
 {
     over "meshes"
     {
+        over "mesh_97E29F9D0A2364F5"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_91E5132D42337B44"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_06BD44EC8F0BD369"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
         over "mesh_6E663E973A6C191D"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def Xform "bulb_01" (
-                references = @../00_Shared/bulb_type_01.usd@
+            over "mesh" (
+                active = false
             )
             {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (3, 3, 3)
-                double3 xformOp:translate = (1.67987, -0.55348, 0.46192360504654734)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def Xform "bulb_02" (
-                references = @../00_Shared/bulb_type_01.usd@
+            def Xform "frontGr01" (
+                references = @./lights_P206_frontGroup01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (3, 3, 3)
-                double3 xformOp:translate = (1.62803, -0.62257, 0.4889278768346326)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_P206_frontGroup01"
+                        {
+                            over "P206_frontGroup01_Geo_P206_frontLight01_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "P206_frontLight01_Glass_colorless_P206_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_PEUGEOT_front01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.6313512225715492, -0.5483974329086885, 0.4597531803246794)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_75FDC6863E56C054"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_99F42087D5032501"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "frontGr02" (
+                references = @./lights_P206_frontGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_P206_frontGroup02"
+                        {
+                            over "P206_frontLight02_Reflector_P206_frontGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_frontGroup02_Geo_P206_frontLight02_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "frontGr02_01" (
+                references = @./lights_P206_frontGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_P206_frontGroup02"
+                        {
+                            over "P206_frontLight02_Reflector_P206_frontGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_frontGroup02_Geo_P206_frontLight02_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_34E908CEA9BEF098"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_455C70086A4FF097"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr01" (
+                references = @./lights_P206_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_P206_rearGroup01"
+                        {
+                            over "P206_rearGroup01_Geo_P206_rearLight01_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_rearGroup01_Geo_P206_rearLight01_Glass_pale_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Pale> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_rearLight01_Reflector_normalCombined_P206_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_PEUGEOT_rear01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 13
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.6326684388004402, -0.6482063087688958, 0.593077303528593)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_3614BD03F14011E8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr02_centrUp" (
+                references = @./lights_P206_rearGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (-0.001, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_P206_rearGroup02"
+                        {
+                            over "P206_rearLight02_Glass_red_P206_rearGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_rearGroup02_Geo_P206_rearLight02_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_rearGroup02_Geo_P206_rearLight02_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_7E0DA941F47BEF1B"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr03_centrDown" (
+                references = @./lights_P206_rearGroup03.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (-0.01, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_P206_rearGroup03"
+                        {
+                            over "P206_rearLight03_Glass_red_P206_rearGroup03_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_rearGroup03_Geo_P206_rearLight03_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_ACAC779938BBF4EA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2D67A3CD93DA85C1"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr01_01" (
+                references = @./lights_P206_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_P206_rearGroup01"
+                        {
+                            over "P206_rearGroup01_Geo_P206_rearLight01_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_rearGroup01_Geo_P206_rearLight01_Glass_pale_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Pale> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "P206_rearLight01_Reflector_normalCombined_P206_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_PEUGEOT_rear01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 13
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.6326684388004402, 0.64821, 0.593077303528593)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_91B065DFA55E3D33"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_DF0CF80DC98A89D5"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_DE95B0DA8AA680AE"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def Xform "bulb_01" (
-                references = @../00_Shared/bulb_type_01.usd@
+            def Xform "frontGr01_01" (
+                references = @./lights_P206_frontGroup01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (3, 3, 3)
-                double3 xformOp:translate = (1.67987, 0.55348, 0.46192360504654734)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_P206_frontGroup01"
+                        {
+                            over "P206_frontGroup01_Geo_P206_frontLight01_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "P206_frontLight01_Glass_colorless_P206_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_PEUGEOT_front01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.6313512225715492, 0.5484, 0.4597531803246794)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def Xform "bulb_02" (
-                references = @../00_Shared/bulb_type_01.usd@
+            over "mesh" (
+                active = false
             )
             {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (3, 3, 3)
-                double3 xformOp:translate = (1.62803, 0.62257, 0.4889278768346326)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }

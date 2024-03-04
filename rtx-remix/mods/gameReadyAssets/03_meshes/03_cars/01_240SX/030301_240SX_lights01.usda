@@ -1,5 +1,6 @@
 #usda 1.0
 (
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
     upAxis = "Z"
 )
 
@@ -7,33 +8,1057 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_6DB22263A55DD2EF"
+        over "mesh_5B2A637E604F6C20"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
 
-            def Xform "bulb" (
-                references = @../00_Shared/bulb_type_01.usd@
+        over "mesh_5868731D39B9F6AC"
+        {
+            def Xform "Xform" (
+                references = @./lights_N240SX_rearGroup01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (3, 3, 3)
-                double3 xformOp:translate = (2.0705996619807507, -0.5021766200424995, 0.44115744081381864)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_rearGroup01"
+                        {
+                            over "N240SX_rearLight01_Reflector_N240SX_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Glass_orange_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Glass_red_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Glass_red_normalType11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def SphereLight "lights_240SX_rear01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.8034965599046622, -0.6055790688987681, 0.5634191072058026)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_09E63938CC97F1B7"
+        {
+            def Xform "Xform" (
+                references = @./lights_N240SX_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (90, 0, 0)
+                double3 xformOp:scale = (1, 1, -1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    over "World"
+                    {
+                        over "lights_N240SX_rearGroup01"
+                        {
+                            over "N240SX_rearLight01_Reflector_N240SX_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Glass_orange_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Glass_red_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Glass_red_normalType11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup01_Geo_N240SX_rearLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def SphereLight "lights_240SX_rear01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.8034965599046622, 0.602, 0.5634191072058026)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_97AEDFAF5F29B7DF"
+        {
+            def Xform "Xform" (
+                references = @./lights_N240SX_rearGroup02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-0.002, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "lights_N240SX_rearGroup02"
+                        {
+                            over "N240SX_rearLight02_Plastic_black_N240SX_rearGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup02_Geo_N240SX_rearLight02_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup02_Geo_N240SX_rearLight02_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform_01" (
+                references = @./lights_N240SX_rearGroup03.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (-0.001, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_rearGroup03"
+                        {
+                            over "N240SX_rearLight03_Plastic_black_N240SX_rearGroup03_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup03_Geo_N240SX_rearLight03_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup03_Geo_N240SX_rearLight03_Reflector_normalType04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup03_Geo_N240SX_rearLight03_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup03_Geo_N240SX_rearLight03_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def RectLight "lights_240SX_rearCentral02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                color3f inputs:color = (1, 0, 0)
+                float inputs:exposure = 8
+                float inputs:height = 0.005
+                float inputs:intensity = 1
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 0.2
+                double3 xformOp:rotateXYZ = (-65.12394305075321, -4.831690603168681e-13, 90.00000000000068)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9006455575722354, 3.9968028886505635e-14, 0.6934271292343465)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5E5FDCF5C2988CD6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A50F8F39FBD5D532"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_1673E36A41F535C2"
+        {
+            def Xform "Xform" (
+                references = @./lights_N240SX_rearGroup04.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (0, 0.005, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_rearGroup04"
+                        {
+                            over "N240SX_rearGroup04_Reflector_N240SX_rearGroup04_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup04_Geo_N240SX_rearGroup04_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Xform_01" (
+                references = @./lights_N240SX_rearGroup04.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, -1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (0, 0.005, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_rearGroup04"
+                        {
+                            over "N240SX_rearGroup04_Reflector_N240SX_rearGroup04_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_rearGroup04_Geo_N240SX_rearGroup04_Glass_red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform_02" (
+                references = @./lights_N240SX_frontGroup04.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (0, 0.005, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup04"
+                        {
+                            over "N240SX_frontGroup04_Glass_orange_N240SX_frontGroup04_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup04_Geo_N240SX_frontGroup04_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Xform_03" (
+                references = @./lights_N240SX_frontGroup04.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+                    double3 xformOp:translate = (0, -0.005, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup04"
+                        {
+                            over "N240SX_frontGroup04_Glass_orange_N240SX_frontGroup04_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup04_Geo_N240SX_frontGroup04_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_896D5DC4041D21D3"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform" (
+                references = @./lights_N240SX_frontGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup01"
+                        {
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Glass_colorless" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Metal" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Reflector_N240SX_frontGroup01_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_CB910C7032CF182F"
+        {
+            def Xform "Xform" (
+                references = @./lights_N240SX_frontGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup01"
+                        {
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Glass_colorless" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Metal" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Reflector_N240SX_frontGroup01_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_6B41B0FC9D6D2BBF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_71CB44DAF8AAFE4E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_6DB22263A55DD2EF"
+        {
+            token visibility = "inherited"
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+
+            def Xform "Xform" (
+                references = @./lights_N240SX_frontGroup01.usd@
+            )
+            {
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup01"
+                        {
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Plastic_black" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup01_Reflector_N240SX_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Xform_01" (
+                references = @./lights_N240SX_frontGroup02.usd@
+            )
+            {
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (0.003, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup02"
+                        {
+                            over "N240SX_frontGroup02_Reflector_N240SX_frontGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup02_Geo_N240SX_frontGroup02_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup02_Geo_N240SX_frontGroup02_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Xform_02" (
+                references = @./lights_N240SX_frontGroup03.usd@
+            )
+            {
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (0.01, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup03"
+                        {
+                            over "N240SX_frontGroup03_Metal_N240SX_frontGroup03_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup03_Geo_N240SX_frontGroup03_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup03_Geo_N240SX_frontGroup03_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_240SX_front01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.0591547544811726, -0.49661408446664224, 0.43879470291669354)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
         over "mesh_5E5D42E3BF16CFE4"
         {
-            custom int preserveOriginalDrawCall = 1
+            token visibility = "inherited"
 
-            def Xform "bulb" (
-                references = @../00_Shared/bulb_type_01.usd@
+            over "mesh" (
+                active = false
             )
             {
+                token visibility = "invisible"
+            }
+
+            def Xform "Xform_01" (
+                references = @./lights_N240SX_frontGroup01.usd@
+            )
+            {
+                token visibility = "invisible"
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (3, 3, 3)
-                double3 xformOp:translate = (2.0705996619807507, 0.50218, 0.44115744081381864)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup01"
+                        {
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Plastic_black" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup01_Geo_N240SX_frontGroup01_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup01_Reflector_N240SX_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Xform_03" (
+                references = @./lights_N240SX_frontGroup02.usd@
+            )
+            {
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+                    double3 xformOp:translate = (0.003, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup02"
+                        {
+                            over "N240SX_frontGroup02_Reflector_N240SX_frontGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup02_Geo_N240SX_frontGroup02_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup02_Geo_N240SX_frontGroup02_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Xform_04" (
+                references = @./lights_N240SX_frontGroup03.usd@
+            )
+            {
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+                    double3 xformOp:translate = (0.01, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_N240SX_frontGroup03"
+                        {
+                            over "N240SX_frontGroup03_Metal_N240SX_frontGroup03_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup03_Geo_N240SX_frontGroup03_Reflector" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N240SX_frontGroup03_Geo_N240SX_frontGroup03_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_240SX_front01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.0591547544811726, 0.5093033211457176, 0.43879470291668304)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_737E9257CFB3AAF4"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
     }
