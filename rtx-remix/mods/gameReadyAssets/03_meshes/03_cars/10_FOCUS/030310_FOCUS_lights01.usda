@@ -1,5 +1,6 @@
 #usda 1.0
 (
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
     upAxis = "Z"
 )
 
@@ -7,211 +8,602 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_922641874C8EA6CD"
+        over "mesh_E3620A59E0F04D83"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.723680883891575, -0.6239153043795795, 1.0637522952680314)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_B1070D69697D7F57"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Light" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.723680883891575, 0.62392, 1.0637522952680314)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
         over "mesh_D03EC6059C7CB16B"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
 
-            def Xform "bulb" (
-                references = @../00_Shared/bulb_type_01.usd@
+            def Xform "frontGr01" (
+                references = @./lights_FOCUS_frontGroup01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (5, 5, 5)
-                double3 xformOp:translate = (1.6662247346280008, -0.5920915530951989, 0.5124049566453012)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_FOCUS_frontGroup01"
+                        {
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight03_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0.01, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight03_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0.01, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontLight02_Reflector_normalCombined_FOCUS_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1.1, 1)
+                                double3 xformOp:translate = (0.003, -0.04, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight01_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight02_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1.1, 1)
+                                double3 xformOp:translate = (0.003, -0.04, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def RectLight "lights_FOCUS_frontAdd01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                color3f inputs:color = (1, 0.6011896, 0)
+                float inputs:exposure = 6
+                float inputs:height = 0.05
+                float inputs:intensity = 1
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 0.15
+                double3 xformOp:rotateXYZ = (80, -8.526512829121202e-14, 86.5)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9315628179133157, -0.2694440320684608, 0.4338225027392886)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "lights_FOCUS_frontMain01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 11
+                float inputs:intensity = 1
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.675327691636947, -0.5919693641784307, 0.49783994938467324)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6CC9245027D370B9"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_CF8E2CD4BCCFFC5C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_6C3DFFC179747F7D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_BDB1AB743097BC99"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh" (
+                active = false
+            )
+            {
+            }
 
-            def Xform "bulb" (
-                references = @../00_Shared/bulb_type_01.usd@
+            def Xform "frontGr01_01" (
+                references = @./lights_FOCUS_frontGroup01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (5, 5, 5)
-                double3 xformOp:translate = (1.6662247346280008, 0.59209, 0.5124049566453012)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_FOCUS_frontGroup01"
+                        {
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight03_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0.01, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight03_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0.01, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontLight02_Reflector_normalCombined_FOCUS_frontGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1.1, 1)
+                                double3 xformOp:translate = (0.003, -0.04, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight01_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight01_Glass_colorless" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight02_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1.1, 1)
+                                double3 xformOp:translate = (0.003, -0.04, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "FOCUS_frontGroup01_Geo_FOCUS_frontLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_FOCUS_frontMain01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:exposure = 11
+                float inputs:intensity = 1
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.6753276916368756, 0.592, 0.4978399493846829)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "lights_FOCUS_frontAdd01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                color3f inputs:color = (1, 0.6011896, 0)
+                float inputs:exposure = 6
+                float inputs:height = 0.05
+                float inputs:intensity = 1
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 0.15
+                double3 xformOp:rotateXYZ = (100, -8.526512829121202e-14, 94.5)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9315628179133157, 0.29, 0.4338225027392886)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
-        over "mesh_669A2153117DF8DA"
+        over "mesh_4240A9271FA4A501"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.3243243, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.6360672251868777, -0.5477283770201211, 1.0774717946447794)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "rearCenrtGr01" (
+                references = @./lights_FOCUS_rearGroup02.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.3243243, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.7273306810812414, -0.5596839847737556, 1.0139462861087623)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_FOCUS_rearGroup02"
+                        {
+                            over "FOCUS_rearGroup02_Geo_FOCUS_rearLight02_Plastic_black_noMirror" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearGroup02_Geo_FOCUS_rearLight02_Reflector_normalCombined_noMirror" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearGroup02_Geo_FOCUS_rearLight02_Glass_colorless_noMirror" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearLight02_Glass_red_noMirror_FOCUS_rearGroup02_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_BA69EF481E160FDF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_922641874C8EA6CD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
 
-            def SphereLight "Light_03" (
+            def Xform "rearGr01" (
+                references = @./lights_FOCUS_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_FOCUS_rearGroup01"
+                        {
+                            over "FOCUS_rearGroup01_Geo_FOCUS_rearLight01_Reflector_normalType2" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_02> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearGroup01_Geo_FOCUS_rearLight01_Glass_red1" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearGroup01_Geo_FOCUS_rearLight01_Glass_white" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearLight01_Reflector_normalCombined_FOCUS_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_FOCUS_rear01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.99999, 0.99999)
-                float inputs:intensity = 5
-                float inputs:radius = 0.01
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
                 float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8173720549080485, -0.5765349217363109, 0.947218547489534)
+                double3 xformOp:translate = (-1.5493210734328082, -0.5648808805666823, 1.0763455607283139)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
-        over "mesh_8947B26270E34CA0"
+        over "mesh_C4EC9A0B56549019"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.3243243, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.6360672251868777, 0.54773, 1.0774717946447794)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B1070D69697D7F57"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
 
-            def SphereLight "Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "rearGr01_01" (
+                references = @./lights_FOCUS_rearGroup01.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.3243243, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.01
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.7273306810812414, 0.55968, 1.0139462861087623)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_FOCUS_rearGroup01"
+                        {
+                            over "FOCUS_rearGroup01_Geo_FOCUS_rearLight01_Reflector_normalType2" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_02> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearGroup01_Geo_FOCUS_rearLight01_Glass_red1" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearGroup01_Geo_FOCUS_rearLight01_Glass_white" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "FOCUS_rearLight01_Reflector_normalCombined_FOCUS_rearGroup01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
             }
 
-            def SphereLight "Light_03" (
+            def SphereLight "lights_FOCUS_rear01_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.99999, 0.99999)
-                float inputs:intensity = 5
-                float inputs:radius = 0.01
+                float inputs:exposure = 10
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
                 float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8173720549080485, 0.57653, 0.947218547489534)
+                double3 xformOp:translate = (-1.5493210734328082, 0.565, 1.0763455607283139)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F3F1F6D0680EB7F6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
     }

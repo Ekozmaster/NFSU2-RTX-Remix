@@ -1,5 +1,6 @@
 #usda 1.0
 (
+    "Created by EAWorld: Discord: eaworld, github: nicklllmedia"
     upAxis = "Z"
 )
 
@@ -7,86 +8,115 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_DA2F87541B493940"
+        over "mesh_C7C43C99617B7685"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.9632525953597906, -0.5887713464383069, 0.5148774089197161)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
-        over "mesh_585D1623609C23A4"
+        over "mesh_EA4D0C2A58607EA2"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.9632525953597906, 0.58877, 0.5148774089197161)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_591DF81A05E88273"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_2574B44A7740FDEA"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "BigLight" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 300
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.4631082772427941, -0.5956516254316919, 0.4385532979967474)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "OrangeLight" (
+            def Xform "frontGr01" (
+                references = @./lights_MIATA_frontGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_MIATA_frontGroup01"
+                        {
+                            over "MIATA_frontLight01_Glass_colorless_MIATA_frontGroup_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Plastic_white" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_White> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_MIATA_frontGr01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.36904752, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.01
+                float inputs:exposure = 9
+                float inputs:intensity = 1
+                float inputs:radius = 0.025
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
@@ -94,41 +124,366 @@ over "RootNode"
                 asset inputs:shaping:ies:file
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.672302823786934, -0.43658560260374824, 0.4347239343513822)
+                double3 xformOp:translate = (1.438361801739065, -0.6091908971860227, 0.43925979255911074)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B49B2F1C8ADDC451"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_BA3E5C6416FCFEF7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5B713F481FCC02CA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr01" (
+                references = @./lights_MIATA_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "lights_MIATA_rearGroup01"
+                        {
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Glass_colorless" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Reflector_normalCombined" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "MIATA_rearLight01_Glass_red_normalType4_MIATA_rearGroup_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "MIATA_rearLight01_Reflector_normalCombined_MIATA_rearGroup_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Glass_orange_normalType4" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Glass_red_normalType4" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Glass_white_normalType4" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_MIATA_rearGr01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.844454238001334, -0.65684749728341, 0.5121353587542467)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F09EDD4B6F582640"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_BAE9099674D5A6CB"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_D903AE3F6419182E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearGr01_01" (
+                references = @./lights_MIATA_rearGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_MIATA_rearGroup01"
+                        {
+                            over "MIATA_rearLight01_Reflector_normalCombined_MIATA_rearGroup_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Glass_orange_normalType4" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Glass_red_normalType4" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_rearGroup_Geo_MIATA_rearLight01_Glass_white_normalType4" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_MIATA_rearGr01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:exposure = 8
+                float inputs:intensity = 1
+                float inputs:radius = 0.015
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.844454238001413, 0.67, 0.5121353587542748)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_CA5C0D17E5F921D8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A901242F7D8EBB9E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_F3FABF76B4A585EC"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_046EF7271BC44775"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "BigLight" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 300
-                float inputs:radius = 0.02
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.4631082772427941, 0.59565, 0.4385532979967474)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "OrangeLight" (
+            def Xform "frontGr01_01" (
+                references = @./lights_MIATA_frontGroup01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, -1)
+
+                    over "World"
+                    {
+                        over "lights_MIATA_frontGroup01"
+                        {
+                            over "MIATA_frontLight01_Glass_colorless_MIATA_frontGroup_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Reflector_normalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Glass_orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Plastic_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "MIATA_frontGroup_Geo_MIATA_frontLight01_Plastic_white" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_White> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def SphereLight "lights_MIATA_frontGr01_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.36904752, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.01
+                float inputs:exposure = 9
+                float inputs:intensity = 1
+                float inputs:radius = 0.025
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
@@ -136,7 +491,7 @@ over "RootNode"
                 asset inputs:shaping:ies:file
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.672302823786934, 0.43659, 0.4347239343513822)
+                double3 xformOp:translate = (1.438361801739065, 0.61, 0.43925979255911074)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
