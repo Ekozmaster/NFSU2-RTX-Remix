@@ -17,7 +17,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (1, 1, 1)
-                float inputs:intensity = 3000
+                float inputs:intensity = 2000
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 38
                 float inputs:shaping:cone:softness = 0.1
@@ -73,7 +73,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (0, 0.1776061, 1)
+                    color3f inputs:color = (0, 0.1764706, 1)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 40
@@ -94,7 +94,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (1, 1, 1)
-                float inputs:intensity = 3000
+                float inputs:intensity = 2000
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 38
                 float inputs:shaping:cone:softness = 0.1
@@ -104,7 +104,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 0
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.85, 0.6000000089406967, 0.48)
+                double3 xformOp:translate = (1.85, 0.6, 0.48)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -131,7 +131,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (1, 0.6718147, 0)
+                    color3f inputs:color = (1, 0.67058825, 0)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 39
@@ -150,7 +150,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (0, 0.1776061, 1)
+                    color3f inputs:color = (0, 0.1764706, 1)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 40
@@ -216,7 +216,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (1, 1, 1)
-                float inputs:intensity = 3000
+                float inputs:intensity = 2000
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 38
                 float inputs:shaping:cone:softness = 0.1
@@ -272,7 +272,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (0, 0.1776061, 1)
+                    color3f inputs:color = (0, 0.1764706, 1)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 40
@@ -293,7 +293,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (1, 1, 1)
-                float inputs:intensity = 3000
+                float inputs:intensity = 2000
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 38
                 float inputs:shaping:cone:softness = 0.1
@@ -303,7 +303,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 0
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.85, 0.6000000089406967, 0.48)
+                double3 xformOp:translate = (1.85, 0.6, 0.48)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -330,7 +330,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (1, 0.6718147, 0)
+                    color3f inputs:color = (1, 0.67058825, 0)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 39
@@ -349,7 +349,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (0, 0.1776061, 1)
+                    color3f inputs:color = (0, 0.1764706, 1)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 40
@@ -415,7 +415,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (1, 1, 1)
-                float inputs:intensity = 3000
+                float inputs:intensity = 2000
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 38
                 float inputs:shaping:cone:softness = 0.1
@@ -471,7 +471,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (0, 0.1776061, 1)
+                    color3f inputs:color = (0, 0.1764706, 1)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 40
@@ -492,7 +492,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (1, 1, 1)
-                float inputs:intensity = 3000
+                float inputs:intensity = 2000
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 38
                 float inputs:shaping:cone:softness = 0.1
@@ -502,7 +502,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 0
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.85, 0.6000000089406967, 0.48)
+                double3 xformOp:translate = (1.85, 0.6, 0.48)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -529,7 +529,7 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (1, 0.6718147, 0)
+                    color3f inputs:color = (1, 0.67058825, 0)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 39
@@ -548,7 +548,206 @@ over "RootNode"
                 )
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                    color3f inputs:color = (0, 0.1776061, 1)
+                    color3f inputs:color = (0, 0.1764706, 1)
+                    float inputs:intensity = 1500
+                    float inputs:radius = 0.1
+                    float inputs:shaping:cone:angle = 40
+                    float inputs:shaping:cone:softness = 0.02
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "TailLight_L" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0, 0)
+                float inputs:intensity = 10
+                float inputs:radius = 0.05
+                float inputs:shaping:cone:angle = 90
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.85, 0.65, 0.65)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "TailLight_R" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0, 0)
+                float inputs:intensity = 10
+                float inputs:radius = 0.05
+                float inputs:shaping:cone:angle = 90
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.85, -0.65, 0.65)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_25DD74C2B43D32AE"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Headlight_R_Main" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:intensity = 2000
+                float inputs:radius = 0.1
+                float inputs:shaping:cone:angle = 38
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, -90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.85, -0.6, 0.48)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Headlight_R" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 0.3529412, 0.043137256)
+                    float inputs:intensity = 1500
+                    float inputs:radius = 0.1
+                    float inputs:shaping:cone:angle = 39.5
+                    float inputs:shaping:cone:softness = 0.02
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Headlight_Y" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 0.67058825, 0)
+                    float inputs:intensity = 1500
+                    float inputs:radius = 0.1
+                    float inputs:shaping:cone:angle = 39
+                    float inputs:shaping:cone:softness = 0.02
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Headlight_B" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (0, 0.1764706, 1)
+                    float inputs:intensity = 1500
+                    float inputs:radius = 0.1
+                    float inputs:shaping:cone:angle = 40
+                    float inputs:shaping:cone:softness = 0.02
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Headlight_L_Main" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:intensity = 2000
+                float inputs:radius = 0.1
+                float inputs:shaping:cone:angle = 38
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, -90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.85, 0.6, 0.48)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Headlight_R" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 0.3529412, 0.043137256)
+                    float inputs:intensity = 1500
+                    float inputs:radius = 0.1
+                    float inputs:shaping:cone:angle = 39.5
+                    float inputs:shaping:cone:softness = 0.02
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Headlight_Y" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 0.67058825, 0)
+                    float inputs:intensity = 1500
+                    float inputs:radius = 0.1
+                    float inputs:shaping:cone:angle = 39
+                    float inputs:shaping:cone:softness = 0.02
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Headlight_B" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (0, 0.1764706, 1)
                     float inputs:intensity = 1500
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 40
