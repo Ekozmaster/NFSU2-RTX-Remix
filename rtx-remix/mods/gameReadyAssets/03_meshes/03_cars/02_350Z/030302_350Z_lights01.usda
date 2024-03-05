@@ -99,6 +99,16 @@ over "RootNode"
                         bindMaterialAs = "weakerThanDescendants"
                     )
                 }
+
+                over "Top_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.5563546257848797, -0.6776289271660256, 0.6294591087905534)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
 
@@ -115,6 +125,26 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                over "Light_Projector_Big_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.66933, -0.60345, 0.56879)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                over "Light_Projector_Small_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.59312, -0.69685, 0.57895)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
 
             over "mesh" (
@@ -238,6 +268,16 @@ over "RootNode"
                         bindMaterialAs = "weakerThanDescendants"
                     )
                 }
+
+                over "Top_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.5563546257848797, -0.6776289271660256, 0.6294591087905534)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
 
@@ -254,6 +294,26 @@ over "RootNode"
                 double3 xformOp:scale = (1, -1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                over "Light_Projector_Big_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.66933, -0.60345, 0.56879)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                over "Light_Projector_Small_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.59312, -0.69685, 0.57895)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
 
             over "mesh" (
@@ -327,11 +387,23 @@ over "RootNode"
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
 
-                over "Bottom_Reflector_Type_01"
+                over "Bottom_Reflector" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
                 {
                     rel material:binding = </Looks/Reflector_Normal> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
+                }
+
+                over "Bottom_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 215)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-1.9343456858400883, -0.5769976199260096, 0.588519790224185)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -372,18 +444,28 @@ over "RootNode"
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
 
-                over "Top_Reflector_T02"
+                over "Top_Reflector"
                 {
-                    rel material:binding = </Looks/Reflector_Normal_Type_02> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
-                }
+                    over "Plane_001"
+                    {
+                        over "Reflector_Red" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
 
-                over "Top_Reflector_Plain"
-                {
-                    rel material:binding = </Looks/Reflector_Chrome> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
+                        over "Reflector_Red_T02" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Normal_Type_02> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
                 }
             }
         }
@@ -416,6 +498,16 @@ over "RootNode"
                             bindMaterialAs = "weakerThanDescendants"
                         )
                     }
+
+                    over "Big_Projector_Light" (
+                        references = @../00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        float3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-1.75, -0.65184, 0.6635535955430099)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    }
                 }
 
                 def Xform "Small" (
@@ -436,6 +528,16 @@ over "RootNode"
                         rel material:binding = </Looks/Chrome_More_Rough> (
                             bindMaterialAs = "weakerThanDescendants"
                         )
+                    }
+
+                    over "Small_Projector_Light" (
+                        references = @../00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        float3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-1.91, -0.5914104767632558, 0.6605399999999999)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                     }
                 }
             }
@@ -463,6 +565,21 @@ over "RootNode"
                     rel material:binding = </Looks/Glass_Red> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
+
+                    over "Big_Projector_Glass"
+                    {
+                        over "Cylinder_007"
+                        {
+                            over "Glass_Red_T12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
                 }
 
                 def Xform "Small" (
@@ -472,6 +589,21 @@ over "RootNode"
                     rel material:binding = </Looks/Glass_Red> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
+
+                    over "Small_Projector_Glass"
+                    {
+                        over "Circle_003"
+                        {
+                            over "Glass_Red_T12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
                 }
             }
 
@@ -492,6 +624,30 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                over "Bottom_Reflector_Glass"
+                {
+                    over "mesh_017"
+                    {
+                        over "Glass_Red_T12" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "Glass_Red_T14" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red_Normal_Type_14> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
             }
         }
 
@@ -528,11 +684,23 @@ over "RootNode"
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
 
-                over "Bottom_Reflector_Type_01"
+                over "Bottom_Reflector" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
                 {
                     rel material:binding = </Looks/Reflector_Normal> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
+                }
+
+                over "Bottom_Light" (
+                    references = @../00_Shared/bulb_type_01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 215)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-1.9343456858400883, -0.5769976199260096, 0.588519790224185)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -573,18 +741,28 @@ over "RootNode"
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
 
-                over "Top_Reflector_T02"
+                over "Top_Reflector"
                 {
-                    rel material:binding = </Looks/Reflector_Normal_Type_02> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
-                }
+                    over "Plane_001"
+                    {
+                        over "Reflector_Red" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
 
-                over "Top_Reflector_Plain"
-                {
-                    rel material:binding = </Looks/Reflector_Chrome> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
+                        over "Reflector_Red_T02" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Normal_Type_02> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
                 }
             }
         }
@@ -617,6 +795,16 @@ over "RootNode"
                             bindMaterialAs = "weakerThanDescendants"
                         )
                     }
+
+                    over "Big_Projector_Light" (
+                        references = @../00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        float3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-1.75, -0.65184, 0.6635535955430099)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    }
                 }
 
                 def Xform "Small" (
@@ -638,6 +826,16 @@ over "RootNode"
                             bindMaterialAs = "weakerThanDescendants"
                         )
                     }
+
+                    over "Small_Projector_Light" (
+                        references = @../00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        float3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-1.91, -0.5914104767632558, 0.6605399999999999)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    }
                 }
             }
 
@@ -650,8 +848,13 @@ over "RootNode"
 
         over "mesh_139AFEF64957D596"
         {
-            def Xform "Project_Glass"
+            def Xform "Project_Glass" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
             {
+                rel material:binding = </Looks/Glass_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 double3 xformOp:rotateYZX = (0, 0, 0)
                 double3 xformOp:scale = (1, -1, 1)
                 double3 xformOp:translate = (0, 0, 0)
@@ -664,6 +867,21 @@ over "RootNode"
                     rel material:binding = </Looks/Glass_Red> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
+
+                    over "Big_Projector_Glass"
+                    {
+                        over "Cylinder_007"
+                        {
+                            over "Glass_Red_T12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
                 }
 
                 def Xform "Small" (
@@ -673,6 +891,21 @@ over "RootNode"
                     rel material:binding = </Looks/Glass_Red> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
+
+                    over "Small_Projector_Glass"
+                    {
+                        over "Circle_003"
+                        {
+                            over "Glass_Red_T12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
                 }
             }
 
@@ -693,6 +926,30 @@ over "RootNode"
                 double3 xformOp:scale = (1, -1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                over "Bottom_Reflector_Glass"
+                {
+                    over "mesh_017"
+                    {
+                        over "Glass_Red_T12" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "Glass_Red_T14" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red_Normal_Type_14> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
             }
         }
 

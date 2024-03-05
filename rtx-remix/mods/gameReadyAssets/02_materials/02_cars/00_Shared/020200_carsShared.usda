@@ -14,33 +14,45 @@ def "Looks" (
     prepend apiSchemas = ["MaterialBindingAPI"]
 )
 {
-    rel material:binding = </Looks/Plastic_Black> (
-        bindMaterialAs = "weakerThanDescendants"
-    )
-
-    def Material "Glass_Clear"
+    def Material "placeholder_Transparent"
     {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Clear/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Clear/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Clear/Shader.outputs:out>
+        token outputs:mdl:displacement.connect = </Looks/placeholder_Transparent/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/placeholder_Transparent/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/placeholder_Transparent/Shader.outputs:out>
 
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.5999999 (
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.000001, 9.9999e-7, 9.9999e-7) (
                 customData = {
-                    float default = 1.3
+                    float3 default = (0.2, 0.2, 0.2)
                     dictionary range = {
-                        float max = 3
-                        float min = 1
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified\r
+\r
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:opacity_constant = 0 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Opacity Amount"
+                doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.\r
+\r
 """
                 hidden = false
             )
@@ -225,18 +237,18 @@ def "Looks" (
         }
     }
 
-    def Material "placeholder_Transparent"
+    def Material "Plastic_White"
     {
-        token outputs:mdl:displacement.connect = </Looks/placeholder_Transparent/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/placeholder_Transparent/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/placeholder_Transparent/Shader.outputs:out>
+        token outputs:mdl:displacement.connect = </Looks/Plastic_White/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Plastic_White/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Plastic_White/Shader.outputs:out>
 
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
             uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            color3f inputs:diffuse_color_constant = (0.000001, 9.9999e-7, 9.9999e-7) (
+            color3f inputs:diffuse_color_constant = (0.95366794, 0.9536584, 0.9536584) (
                 customData = {
                     float3 default = (0.2, 0.2, 0.2)
                     dictionary range = {
@@ -246,552 +258,24 @@ def "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified\r
-\r
+                doc = """The base albedo color to use if no texture is specified\r\r
+\r\r
 """
                 hidden = false
                 renderType = "color"
             )
-            float inputs:opacity_constant = 0 (
+            float inputs:reflection_roughness_constant = 0.59999996 (
                 customData = {
-                    float default = 1
+                    float default = 0.5
                     dictionary range = {
                         float max = 1
                         float min = 0
                     }
                 }
-                displayGroup = "Diffuse"
-                displayName = "Opacity Amount"
-                doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.\r
-\r
-"""
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Orange_Normal_Type_04"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Orange_Normal_Type_04/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Orange_Normal_Type_04/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Orange_Normal_Type_04/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.6 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
                 displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material\r\r
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections\r\r
 \r\r
-"""
-                hidden = false
-            )
-            asset inputs:normalmap_texture = @./CarSharedNormals_type_04_normal.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Normal"
-                displayName = "Normal Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            color3f inputs:transmittance_color = (0.9498069, 0.60255444, 0.12468506) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.\r\r
-\r\r
-"""
-                hidden = false
-                renderType = "color"
-            )
-            float inputs:transmittance_measurement_distance = 0.006 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.\r\r
-\r\r
-"""
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance or Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r\r
-\r\r
-"""
-                hidden = false
-                renderType = "texture_2d"
-            )
-            bool inputs:use_diffuse_layer = 1 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material\r\r
-\r\r
-"""
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Orange"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Orange/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Orange/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Orange/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.5999999 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = "Index of Refraction of the material"
-                hidden = false
-            )
-            color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = "Expected transmittance after the specified transmittance distance through the volume."
-                hidden = false
-            )
-            float inputs:transmittance_measurement_distance = 0.006 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = "Distance to match the transmittance through the volume at."
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @./glass_orange_albedo.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color/Diffuse Albedo Texture"
-                doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
-                hidden = false
-            )
-            bool inputs:use_diffuse_layer = 1 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = "When set, simulates a diffuse layer on top of the material"
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Yellow"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Yellow/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Yellow/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Yellow/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.5999999 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = "Index of Refraction of the material"
-                hidden = false
-            )
-            color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = "Expected transmittance after the specified transmittance distance through the volume."
-                hidden = false
-            )
-            float inputs:transmittance_measurement_distance = 0.006 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = "Distance to match the transmittance through the volume at."
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @./glass_yellow_albedo.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color/Diffuse Albedo Texture"
-                doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
-                hidden = false
-            )
-            bool inputs:use_diffuse_layer = 1 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = "When set, simulates a diffuse layer on top of the material"
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Red"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Red/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Red/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Red/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.5999999 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
-"""
-                hidden = false
-            )
-            color3f inputs:transmittance_color = (1, 0, 0) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.
-
-"""
-                hidden = false
-                renderType = "color"
-            )
-            float inputs:transmittance_measurement_distance = 0.004 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.
-
-"""
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @./glass_red_albedo.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color/Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
-"""
-                hidden = false
-                renderType = "texture_2d"
-            )
-            bool inputs:use_diffuse_layer = 0 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material
-
-"""
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Red_Normal_Type_04"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Red_Normal_Type_04/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Red_Normal_Type_04/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Red_Normal_Type_04/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.6 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
-"""
-                hidden = false
-            )
-            asset inputs:normalmap_texture = @./CarSharedNormals_type_04_normal.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Normal"
-                displayName = "Normal Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            color3f inputs:transmittance_color = (0.96525097, 0.20317739, 0.029814692) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.
-
-"""
-                hidden = false
-                renderType = "color"
-            )
-            float inputs:transmittance_measurement_distance = 0.003 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.
-
-"""
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color/Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
-"""
-                hidden = false
-                renderType = "texture_2d"
-            )
-            bool inputs:use_diffuse_layer = 1 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material
-
-"""
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Red_Normal_Type_11"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Red_Normal_Type_11/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Red_Normal_Type_11/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Red_Normal_Type_11/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.6 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material
-
-"""
-                hidden = false
-            )
-            asset inputs:normalmap_texture = @./CarSharedNormals_type_11_normal.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Normal"
-                displayName = "Normal Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            color3f inputs:transmittance_color = (0.9647059, 0.20392157, 0.03137255) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.
-
-"""
-                hidden = false
-                renderType = "color"
-            )
-            float inputs:transmittance_measurement_distance = 0.003 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.
-
-"""
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color/Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
-"""
-                hidden = false
-                renderType = "texture_2d"
-            )
-            bool inputs:use_diffuse_layer = 1 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material
-
 """
                 hidden = false
             )
@@ -841,226 +325,6 @@ def "Looks" (
                 doc = """Higher roughness values lead to more blurry reflections\r\r
 \r\r
 """
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Plastic_White"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Plastic_White/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Plastic_White/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Plastic_White/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            color3f inputs:diffuse_color_constant = (0.95366794, 0.9536584, 0.9536584) (
-                customData = {
-                    float3 default = (0.2, 0.2, 0.2)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified\r\r
-\r\r
-"""
-                hidden = false
-                renderType = "color"
-            )
-            float inputs:reflection_roughness_constant = 0.59999996 (
-                customData = {
-                    float default = 0.5
-                    dictionary range = {
-                        float max = 1
-                        float min = 0
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections\r\r
-\r\r
-"""
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Clear_Normal_Type_04"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Clear_Normal_Type_04/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Clear_Normal_Type_04/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Clear_Normal_Type_04/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.6 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = """Index of Refraction of the material\r\r
-\r\r
-"""
-                hidden = false
-            )
-            asset inputs:normalmap_texture = @./CarSharedNormals_type_04_normal.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Normal"
-                displayName = "Normal Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = """Expected transmittance after the specified transmittance distance through the volume.\r\r
-\r\r
-"""
-                hidden = false
-                renderType = "color"
-            )
-            float inputs:transmittance_measurement_distance = 1 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = """Distance to match the transmittance through the volume at.\r\r
-\r\r
-"""
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance or Diffuse Albedo Texture"
-                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r\r
-\r\r
-"""
-                hidden = false
-                renderType = "texture_2d"
-            )
-            bool inputs:use_diffuse_layer = 0 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = """When set, simulates a diffuse layer on top of the material\r\r
-\r\r
-"""
-                hidden = false
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Glass_Red_Pale"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Glass_Red_Pale/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Glass_Red_Pale/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Glass_Red_Pale/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-            float inputs:ior_constant = 1.5999999 (
-                customData = {
-                    float default = 1.3
-                    dictionary range = {
-                        float max = 3
-                        float min = 1
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Index of Refraction"
-                doc = "Index of Refraction of the material"
-                hidden = false
-            )
-            color3f inputs:transmittance_color = (0.9189189, 0.3796306, 0.3796306) (
-                customData = {
-                    float3 default = (0.97, 0.97, 0.97)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color"
-                doc = "Expected transmittance after the specified transmittance distance through the volume."
-                hidden = false
-            )
-            float inputs:transmittance_measurement_distance = 0.004 (
-                customData = {
-                    float default = 1
-                    dictionary range = {
-                        float max = 65504
-                        float min = 0.001
-                    }
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Measurement Distance"
-                doc = "Distance to match the transmittance through the volume at."
-                hidden = false
-            )
-            asset inputs:transmittance_texture = @./glass_red_albedo.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Volume"
-                displayName = "Transmittance Color/Diffuse Albedo Texture"
-                doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
-                hidden = false
-            )
-            bool inputs:use_diffuse_layer = 0 (
-                customData = {
-                    bool default = 0
-                }
-                displayGroup = "Volume"
-                displayName = "Use diffuse layer"
-                doc = "When set, simulates a diffuse layer on top of the material"
                 hidden = false
             )
             token outputs:out (
@@ -2200,6 +1464,491 @@ This parameter is unused.
         }
     }
 
+    def Material "Glass_Clear"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Clear/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Clear/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Clear/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5999999 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Clear_Normal_Type_04"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Clear_Normal_Type_04/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Clear_Normal_Type_04/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Clear_Normal_Type_04/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.6 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material\r\r
+\r\r
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_type_04_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = """Expected transmittance after the specified transmittance distance through the volume.\r\r
+\r\r
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:transmittance_measurement_distance = 1 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = """Distance to match the transmittance through the volume at.\r\r
+\r\r
+"""
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance or Diffuse Albedo Texture"
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r\r
+\r\r
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_diffuse_layer = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = """When set, simulates a diffuse layer on top of the material\r\r
+\r\r
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Red"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Red/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Red/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Red/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5999999 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            color3f inputs:transmittance_color = (1, 0, 0) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = """Expected transmittance after the specified transmittance distance through the volume.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:transmittance_measurement_distance = 0.004 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = """Distance to match the transmittance through the volume at.
+
+"""
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @./glass_red_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_diffuse_layer = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Red_Pale"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Red_Pale/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Red_Pale/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Red_Pale/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5999999 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = "Index of Refraction of the material"
+                hidden = false
+            )
+            color3f inputs:transmittance_color = (0.9189189, 0.3796306, 0.3796306) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = "Expected transmittance after the specified transmittance distance through the volume."
+                hidden = false
+            )
+            float inputs:transmittance_measurement_distance = 0.004 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = "Distance to match the transmittance through the volume at."
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @./glass_red_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                hidden = false
+            )
+            bool inputs:use_diffuse_layer = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = "When set, simulates a diffuse layer on top of the material"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Red_Normal_Type_04"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Red_Normal_Type_04/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Red_Normal_Type_04/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Red_Normal_Type_04/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.6 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_type_04_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:transmittance_color = (0.96525097, 0.20317739, 0.029814692) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = """Expected transmittance after the specified transmittance distance through the volume.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:transmittance_measurement_distance = 0.003 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = """Distance to match the transmittance through the volume at.
+
+"""
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_diffuse_layer = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Red_Normal_Type_11"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Red_Normal_Type_11/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Red_Normal_Type_11/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Red_Normal_Type_11/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.6 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_type_11_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:transmittance_color = (0.9647059, 0.20392157, 0.03137255) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = """Expected transmittance after the specified transmittance distance through the volume.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:transmittance_measurement_distance = 0.003 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = """Distance to match the transmittance through the volume at.
+
+"""
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_diffuse_layer = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
     def Material "Glass_Red_Normal_Type_12"
     {
         token outputs:mdl:displacement.connect = </Looks/Glass_Red_Normal_Type_12/Shader.outputs:out>
@@ -2774,6 +2523,350 @@ This parameter is unused.
                 doc = """When set, simulates a diffuse layer on top of the material
 
 """
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Red_Normal_Type_18"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Red_Normal_Type_18/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Red_Normal_Type_18/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Red_Normal_Type_18/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.6 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_type_18_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:transmittance_color = (0.96525097, 0.20317739, 0.029814692) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = """Expected transmittance after the specified transmittance distance through the volume.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:transmittance_measurement_distance = 0.003 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = """Distance to match the transmittance through the volume at.
+
+"""
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_diffuse_layer = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Orange"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Orange/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Orange/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Orange/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5999999 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = "Index of Refraction of the material"
+                hidden = false
+            )
+            color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = "Expected transmittance after the specified transmittance distance through the volume."
+                hidden = false
+            )
+            float inputs:transmittance_measurement_distance = 0.006 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = "Distance to match the transmittance through the volume at."
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @./glass_orange_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                hidden = false
+            )
+            bool inputs:use_diffuse_layer = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = "When set, simulates a diffuse layer on top of the material"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Orange_Normal_Type_04"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Orange_Normal_Type_04/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Orange_Normal_Type_04/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Orange_Normal_Type_04/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.6 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material\r\r
+\r\r
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_type_04_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:transmittance_color = (0.9498069, 0.60255444, 0.12468506) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = """Expected transmittance after the specified transmittance distance through the volume.\r\r
+\r\r
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:transmittance_measurement_distance = 0.006 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = """Distance to match the transmittance through the volume at.\r\r
+\r\r
+"""
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance or Diffuse Albedo Texture"
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r\r
+\r\r
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_diffuse_layer = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = """When set, simulates a diffuse layer on top of the material\r\r
+\r\r
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass_Yellow"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass_Yellow/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass_Yellow/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass_Yellow/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5999999 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = "Index of Refraction of the material"
+                hidden = false
+            )
+            color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
+                customData = {
+                    float3 default = (0.97, 0.97, 0.97)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color"
+                doc = "Expected transmittance after the specified transmittance distance through the volume."
+                hidden = false
+            )
+            float inputs:transmittance_measurement_distance = 0.006 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Measurement Distance"
+                doc = "Distance to match the transmittance through the volume at."
+                hidden = false
+            )
+            asset inputs:transmittance_texture = @./glass_yellow_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                hidden = false
+            )
+            bool inputs:use_diffuse_layer = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Volume"
+                displayName = "Use diffuse layer"
+                doc = "When set, simulates a diffuse layer on top of the material"
                 hidden = false
             )
             token outputs:out (
