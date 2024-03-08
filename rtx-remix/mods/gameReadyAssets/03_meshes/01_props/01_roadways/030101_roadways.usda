@@ -2152,6 +2152,61 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_17522EF0A9AD1B35"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "IronBrickFences_01" (
+                references = @./IronBrickFences/IronBrickFences_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Metal_EndPoint_Metal028" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Looks/Metal028> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
+
+                over "Metal_Main_Metal028" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Looks/Metal028> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
+
+                over "Stone_Plaster006" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Looks/Plaster006> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
+
+                over "Wall_PavingStones090" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </Looks/PavingStones090> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
+            }
+        }
     }
 }
 

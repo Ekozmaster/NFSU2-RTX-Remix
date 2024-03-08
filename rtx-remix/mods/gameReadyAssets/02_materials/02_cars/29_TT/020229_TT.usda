@@ -17,8 +17,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -33,8 +33,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Intensity"
-                    doc = """Intensity of the emission
-
+                    doc = """Intensity of the emission\r
+\r
 """
                     hidden = false
                 )
@@ -45,8 +45,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
-                    doc = """The texture masking the emissive color
-
+                    doc = """The texture masking the emissive color\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -57,8 +57,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Enable Emission"
-                    doc = """Enables the emission of light from the material
-
+                    doc = """Enables the emission of light from the material\r
+\r
 """
                     hidden = false
                 )
@@ -72,8 +72,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -96,8 +96,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -108,8 +108,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -127,8 +127,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -143,8 +143,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Intensity"
-                    doc = """Intensity of the emission
-
+                    doc = """Intensity of the emission\r
+\r
 """
                     hidden = false
                 )
@@ -155,8 +155,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
-                    doc = """The texture masking the emissive color
-
+                    doc = """The texture masking the emissive color\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -167,8 +167,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Enable Emission"
-                    doc = """Enables the emission of light from the material
-
+                    doc = """Enables the emission of light from the material\r
+\r
 """
                     hidden = false
                 )
@@ -182,8 +182,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -206,8 +206,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -218,8 +218,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -241,8 +241,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -256,22 +256,11 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
-            }
-        }
-    }
-
-    over "instances"
-    {
-        over "inst_E23FA211F5F4D861_0"
-        {
-            over "mesh"
-            {
-                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0.07537801937769473, -0.0006077264181385544, 0.6674459421052035, 1) )
             }
         }
     }
