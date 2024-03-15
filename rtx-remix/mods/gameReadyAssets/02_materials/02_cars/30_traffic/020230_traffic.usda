@@ -11,55 +11,14 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_diffuse.dds@ (
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:emissive_intensity = 40 (
-                    doc = """Intensity of the emission
-
-"""
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @@ (
-                    doc = """The texture masking the emissive color
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_emission = 0 (
-                    doc = """Enables the emission of light from the material
-
-"""
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.19999999 (
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_normal.dds@ (
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:reflection_roughness_constant = 0.5 (
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_rough.dds@ (
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_diffuse.dds@
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_emissive.dds@
+                bool inputs:enable_emission = 1
+                float inputs:metallic_constant = 0.19999999
+                asset inputs:normalmap_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_normal.dds@
+                float inputs:reflection_roughness_constant = 0.5
+                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_rough.dds@
             }
         }
 
@@ -67,27 +26,47 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/0D71F8FC3592B542_diffuse.dds@ (
+                asset inputs:diffuse_texture = @../../../Textures/traffic/0D71F8FC3592B542_diffuse.dds@
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/0D71F8FC3592B542_emissive.dds@
+                bool inputs:enable_emission = 1
+                float inputs:metallic_constant = 0.19999999
+                asset inputs:normalmap_texture = @../../../Textures/traffic/0D71F8FC3592B542_normal.dds@
+                float inputs:reflection_roughness_constant = 0.5
+                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/0D71F8FC3592B542_rough.dds@
+            }
+        }
+
+        over "mat_65F8890EC78909F2"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @../../../Textures/traffic/65F8890EC78909F2_diffuse.dds@ (
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 40 (
+                float inputs:emissive_intensity = 2 (
+                    displayGroup = "Emission"
                     doc = """Intensity of the emission
 
 """
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @@ (
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/65F8890EC78909F2_emissive.dds@ (
+                    displayGroup = "Emission"
                     doc = """The texture masking the emissive color
 
 """
                     hidden = false
                     renderType = "texture_2d"
                 )
-                bool inputs:enable_emission = 0 (
+                bool inputs:enable_emission = 1 (
+                    displayGroup = "Emission"
                     doc = """Enables the emission of light from the material
 
 """
@@ -108,52 +87,38 @@ over "RootNode"
 """
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/0D71F8FC3592B542_normal.dds@ (
+                asset inputs:normalmap_texture = @../../../Textures/traffic/65F8890EC78909F2_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
                 )
                 float inputs:reflection_roughness_constant = 0.5 (
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/0D71F8FC3592B542_rough.dds@ (
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
-        over "mat_65F8890EC78909F2"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/65F8890EC78909F2_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
-                float inputs:metallic_constant = 0.19999999 (
                     customData = {
-                        float default = 0
+                        float default = 0.5
                         dictionary range = {
                             float max = 1
                             float min = 0
                         }
                     }
                     displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/65F8890EC78909F2_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/65F8890EC78909F2_rough.dds@
+                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/65F8890EC78909F2_rough.dds@ (
+                    displayGroup = "Base Material"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
 
@@ -162,9 +127,9 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @../../../Textures/traffic/30BE152A3F95EEC1_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/30BE152A3F95EEC1_emissive.dds@
+                bool inputs:enable_emission = 1
                 float inputs:metallic_constant = 0.19999999
                 asset inputs:normalmap_texture = @../../../Textures/traffic/30BE152A3F95EEC1_normal.dds@
                 float inputs:reflection_roughness_constant = 0.5
@@ -177,24 +142,10 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @../../../Textures/traffic/55140B973C31AA93_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/55140B973C31AA93_emissive.dds@
+                bool inputs:enable_emission = 1
+                float inputs:metallic_constant = 0.19999999
                 asset inputs:normalmap_texture = @../../../Textures/traffic/55140B973C31AA93_normal.dds@
                 float inputs:reflection_roughness_constant = 0.5
                 asset inputs:reflectionroughness_texture = @../../../Textures/traffic/55140B973C31AA93_rough.dds@
@@ -206,24 +157,10 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @../../../Textures/traffic/324555C8E8E0AE5B_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/324555C8E8E0AE5B_emissive.dds@
+                bool inputs:enable_emission = 1
+                float inputs:metallic_constant = 0.19999999
                 asset inputs:normalmap_texture = @../../../Textures/traffic/324555C8E8E0AE5B_normal.dds@
                 float inputs:reflection_roughness_constant = 0.5
                 asset inputs:reflectionroughness_texture = @../../../Textures/traffic/324555C8E8E0AE5B_rough.dds@
@@ -234,10 +171,37 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/6954EAF94B26B539_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
+                asset inputs:diffuse_texture = @../../../Textures/traffic/6954EAF94B26B539_diffuse.dds@ (
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 2 (
+                    displayGroup = "Emission"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/6954EAF94B26B539_emissive.dds@ (
+                    displayGroup = "Emission"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    displayGroup = "Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
                 float inputs:metallic_constant = 0.19999999 (
                     customData = {
                         float default = 0
@@ -253,9 +217,38 @@ over "RootNode"
 """
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/6954EAF94B26B539_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/6954EAF94B26B539_rough.dds@
+                asset inputs:normalmap_texture = @../../../Textures/traffic/6954EAF94B26B539_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0.5 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/6954EAF94B26B539_rough.dds@ (
+                    displayGroup = "Base Material"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
 
@@ -264,24 +257,10 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @../../../Textures/traffic/BD199C7718CD8DC8_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/BD199C7718CD8DC8_emissive.dds@
+                bool inputs:enable_emission = 1
+                float inputs:metallic_constant = 0.19999999
                 asset inputs:normalmap_texture = @../../../Textures/traffic/BD199C7718CD8DC8_normal.dds@
                 float inputs:reflection_roughness_constant = 0.5
                 asset inputs:reflectionroughness_texture = @../../../Textures/traffic/BD199C7718CD8DC8_rough.dds@
@@ -293,9 +272,9 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @../../../Textures/traffic/1968358E59872413_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/1968358E59872413_emissive.dds@
+                bool inputs:enable_emission = 1
                 float inputs:metallic_constant = 0.19999999
                 asset inputs:normalmap_texture = @../../../Textures/traffic/1968358E59872413_normal.dds@
                 float inputs:reflection_roughness_constant = 0.5
@@ -308,9 +287,9 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @../../../Textures/traffic/6DF21418F6030E9A_diffuse.dds@
-                float inputs:emissive_intensity = 40
-                asset inputs:emissive_mask_texture = @@
-                bool inputs:enable_emission = 0
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/6DF21418F6030E9A_emissive.dds@
+                bool inputs:enable_emission = 1
                 float inputs:metallic_constant = 0.19999999
                 asset inputs:normalmap_texture = @../../../Textures/traffic/6DF21418F6030E9A_normal.dds@
                 float inputs:reflection_roughness_constant = 0.5
@@ -322,64 +301,13 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/9B418E14D86A3AA4_diffuse.dds@ (
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:emissive_intensity = 40 (
-                    doc = """Intensity of the emission
-
-"""
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @@ (
-                    doc = """The texture masking the emissive color
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_emission = 0 (
-                    doc = """Enables the emission of light from the material
-
-"""
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/9B418E14D86A3AA4_normal.dds@ (
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:reflection_roughness_constant = 0.5 (
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/9B418E14D86A3AA4_rough.dds@ (
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @../../../Textures/traffic/9B418E14D86A3AA4_diffuse.dds@
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/9B418E14D86A3AA4_emissive.dds@
+                bool inputs:enable_emission = 1
+                float inputs:metallic_constant = 0.19999999
+                asset inputs:normalmap_texture = @../../../Textures/traffic/9B418E14D86A3AA4_normal.dds@
+                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/9B418E14D86A3AA4_rough.dds@
             }
         }
 
@@ -387,64 +315,13 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/5D2F33EE28E6A494_diffuse.dds@ (
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:emissive_intensity = 40 (
-                    doc = """Intensity of the emission
-
-"""
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @@ (
-                    doc = """The texture masking the emissive color
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_emission = 0 (
-                    doc = """Enables the emission of light from the material
-
-"""
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/5D2F33EE28E6A494_normal.dds@ (
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:reflection_roughness_constant = 0.5 (
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/5D2F33EE28E6A494_rough.dds@ (
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @../../../Textures/traffic/5D2F33EE28E6A494_diffuse.dds@
+                float inputs:emissive_intensity = 2
+                asset inputs:emissive_mask_texture = @../../../Textures/traffic/5D2F33EE28E6A494_emissive.dds@
+                bool inputs:enable_emission = 1
+                float inputs:metallic_constant = 0.19999999
+                asset inputs:normalmap_texture = @../../../Textures/traffic/5D2F33EE28E6A494_normal.dds@
+                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/5D2F33EE28E6A494_rough.dds@
             }
         }
 
@@ -452,21 +329,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:metallic_constant = 0.59999996
                 float inputs:reflection_roughness_constant = 0.099999994
             }
         }
@@ -475,21 +338,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:metallic_constant = 0.59999996
                 float inputs:reflection_roughness_constant = 0.099999994
             }
         }
@@ -498,21 +347,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:metallic_constant = 0.59999996
                 float inputs:reflection_roughness_constant = 0.099999994
             }
         }
@@ -521,21 +356,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:metallic_constant = 0.19999999
                 float inputs:reflection_roughness_constant = 0.099999994
             }
         }
@@ -544,21 +365,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:metallic_constant = 0.19999999
                 float inputs:reflection_roughness_constant = 0.099999994
             }
         }

@@ -21,8 +21,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -46,8 +46,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material
-
+                    doc = """Index of Refraction of the material\r
+\r
 """
                     hidden = false
                 )
@@ -67,8 +67,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Thin-walled"
-                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
-
+                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.\r
+\r
 """
                     hidden = false
                 )
@@ -79,8 +79,8 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -91,8 +91,8 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material
-
+                    doc = """When set, simulates a diffuse layer on top of the material\r
+\r
 """
                     hidden = false
                 )
@@ -113,8 +113,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )

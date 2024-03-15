@@ -21,8 +21,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -46,8 +46,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material
-
+                    doc = """Index of Refraction of the material\r
+\r
 """
                     hidden = false
                 )
@@ -71,8 +71,8 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Transmittance Color"
-                    doc = """Expected transmittance after the specified transmittance distance through the volume.
-
+                    doc = """Expected transmittance after the specified transmittance distance through the volume.\r
+\r
 """
                     hidden = false
                     renderType = "color"
@@ -94,8 +94,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -104,6 +104,43 @@ over "RootNode"
         }
 
         over "mat_7E2FD39AACFB0C3C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.59999996 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_5E1CC6944219D46D"
         {
             over "Shader"
             {

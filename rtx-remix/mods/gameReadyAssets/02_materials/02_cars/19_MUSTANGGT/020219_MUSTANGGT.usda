@@ -21,8 +21,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -36,8 +36,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -99,7 +99,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.79999995 (
                     customData = {
                         float default = 0
                         dictionary range = {

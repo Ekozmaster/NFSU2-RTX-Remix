@@ -390,6 +390,502 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_DA937B3D75E2F366"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "Small_bulb_01" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-2.031153821278849, -0.5161924697573568, 0.5543523850459877)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Small_bulb_02" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 195)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-2.014358968667011, -0.5815061476906749, 0.5417876002564626)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Small_bulb_03" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 195)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9846364862979158, -0.6428173821665268, 0.5434081477823227)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Small_bulb_04" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 195)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9612444563829285, -0.6951116289612855, 0.5499171488551937)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Big_bulb_01" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 215)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9144592425122369, -0.7082642919760929, 0.6291562611837804)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        color3f inputs:color = (1, 0.46332043, 0)
+                        float inputs:intensity = 50
+                    }
+                }
+            }
+
+            def Xform "Big_bulb_02" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 200)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9845857812721874, -0.5973070291523754, 0.6452005423681371)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        color3f inputs:color = (1, 0.7181467, 0)
+                        float inputs:intensity = 300
+                    }
+                }
+            }
+        }
+
+        over "mesh_64DEBC096B9BE157"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "Small_bulb_01" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-2.031153821278849, 0.51619, 0.5543523850459877)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Small_bulb_02" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 195)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-2.014358968667011, 0.58151, 0.5417876002564626)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Small_bulb_03" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 195)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9846364862979158, 0.64282, 0.5434081477823227)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Small_bulb_04" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 195)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9612444563829285, 0.69511, 0.5499171488551937)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 5
+                    }
+                }
+            }
+
+            def Xform "Big_bulb_01" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 215)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9144592425122369, 0.70826, 0.6291562611837804)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        color3f inputs:color = (1, 0.46332043, 0)
+                        float inputs:intensity = 50
+                    }
+                }
+            }
+
+            def Xform "Big_bulb_02" (
+                references = @../00_Shared/bulb_type_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 200)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
+                double3 xformOp:translate = (-1.9845857812721874, 0.59731, 0.6452005423681371)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light"
+                {
+                    over "SphereLight"
+                    {
+                        color3f inputs:color = (1, 0.7181467, 0)
+                        float inputs:intensity = 300
+                    }
+                }
+            }
+        }
+
+        over "mesh_A7EBE200B1552601"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Rear_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.60231656, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.03
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9845965882542487, -0.6100536712052644, 0.6321045378607906)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Rear_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.60231656, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.03
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9533825010736336, -0.6797418760819482, 0.5914955456670761)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_A2830DC6D6E38AFA"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Rear_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.60231656, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.03
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9845965882542487, 0.61005, 0.6321045378607906)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Rear_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.60231656, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.03
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9533825010736336, 0.67974, 0.5914955456670761)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_418605377431EE9F"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.41698837, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9875287688205958, -0.6474255547317398, 0.594744887628587)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_58400CE6D578FC83"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.41698837, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9875287688205958, 0.64743, 0.594744887628587)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C055C8A06D11EBEF"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 300
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9643397849038138, -0.46626015410026866, 0.5153561733667731)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 300
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9120149894591236, -0.5880174407144523, 0.510513053992157)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.44015443, 0)
+                float inputs:intensity = 100
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.8284178924872663, -0.7017765574560144, 0.5172313280076404)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_BE347F128A9C2040"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 300
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9643397849038138, 0.46626, 0.5153561733667731)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 300
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9120149894591236, 0.58802, 0.510513053992157)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.44015443, 0)
+                float inputs:intensity = 100
+                float inputs:radius = 0.02
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.8284178924872663, 0.70178, 0.5172313280076404)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 
