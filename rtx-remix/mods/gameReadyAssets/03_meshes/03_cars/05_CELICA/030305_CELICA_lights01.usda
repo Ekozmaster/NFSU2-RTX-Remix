@@ -320,6 +320,56 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_1A8EC81D971B4E3C"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.27799225, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.03
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9521033101589467, -0.644988283474504, 0.6496764461020419)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D52DF622F81A911F"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.27799225, 0)
+                float inputs:intensity = 20
+                float inputs:radius = 0.03
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9521033101589467, 0.64499, 0.6496764461020419)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 

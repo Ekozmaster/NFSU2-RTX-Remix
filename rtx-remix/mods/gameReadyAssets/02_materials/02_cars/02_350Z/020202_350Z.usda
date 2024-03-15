@@ -38,6 +38,33 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
+                    customData = {
+                        float3 default = (0.97, 0.97, 0.97)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance Color"
+                    doc = """Expected transmittance after the specified transmittance distance through the volume.
+
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                    hidden = false
+                )
             }
         }
 
@@ -49,31 +76,18 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                float inputs:metallic_constant = 0.79999995
-                asset inputs:normalmap_texture = @../../../textures/tail_lights/EA4058BA64C650E9_normal.dds@
-                float inputs:reflection_roughness_constant = 0.1
-            }
-        }
-
-        over "mat_C6CECF9CB63239F9"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.79999995
-                float inputs:reflection_roughness_constant = 0.1
-            }
-        }
-
-        over "mat_34A45597A832DF9A"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:emissive_intensity = 40
+                asset inputs:emissive_mask_texture = @@
+                bool inputs:enable_emission = 0
+                float inputs:metallic_constant = 0.79999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -88,11 +102,71 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:reflection_roughness_constant = 0.099999994
+                asset inputs:normalmap_texture = @../../../textures/tail_lights/EA4058BA64C650E9_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0.1 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
             }
         }
 
-        over "mat_E6C61A845F7A0505"
+        over "mat_C6CECF9CB63239F9"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.1 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_34A45597A832DF9A"
         {
             over "Shader"
             {
@@ -123,6 +197,43 @@ over "RootNode"
                     displayName = "Roughness Amount"
                     doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_E6C61A845F7A0505"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.59999996 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )

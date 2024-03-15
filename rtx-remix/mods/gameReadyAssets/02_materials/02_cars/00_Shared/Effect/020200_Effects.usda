@@ -1,0 +1,271 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_C44F7404EB76886C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./car_neon_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 1 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./car_neon_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 1
+            }
+        }
+
+        over "mat_87B5B3A38D0372FD"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./87B5B3A38D0372FD_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 100 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./87B5B3A38D0372FD_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 1 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_EFE242BC3FCA24B1"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Enabled"
+                    doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                    hidden = false
+                )
+                int inputs:blend_type = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Type"
+                    doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "BlendType"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "Alpha"
+                        string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                    }
+                )
+                asset inputs:diffuse_texture = @./car_neon_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 1 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./car_neon_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:inverted_blend = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Inverted Blend"
+                    doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                bool inputs:use_legacy_alpha_state = 1 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+

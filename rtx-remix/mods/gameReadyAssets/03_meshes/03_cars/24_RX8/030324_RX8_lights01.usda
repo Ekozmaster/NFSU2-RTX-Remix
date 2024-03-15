@@ -370,11 +370,11 @@ over "RootNode"
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
+                color3f inputs:color = (1, 0.5328185, 0)
                 float inputs:intensity = 50
-                float inputs:radius = 0.04
+                float inputs:radius = 0.03
                 float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:shaping:cone:softness = 0.2
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
@@ -390,7 +390,7 @@ over "RootNode"
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
+                color3f inputs:color = (1, 0.48648643, 0)
                 float inputs:intensity = 50
                 float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
@@ -410,7 +410,7 @@ over "RootNode"
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
+                color3f inputs:color = (1, 0.48648643, 0)
                 float inputs:intensity = 50
                 float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
@@ -435,11 +435,11 @@ over "RootNode"
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
+                color3f inputs:color = (1, 0.5328185, 0)
                 float inputs:intensity = 50
-                float inputs:radius = 0.04
+                float inputs:radius = 0.03
                 float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:shaping:cone:softness = 0.2
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
@@ -455,7 +455,7 @@ over "RootNode"
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
+                color3f inputs:color = (1, 0.48648643, 0)
                 float inputs:intensity = 50
                 float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
@@ -475,7 +475,7 @@ over "RootNode"
             )
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
+                color3f inputs:color = (1, 0.48648643, 0)
                 float inputs:intensity = 50
                 float inputs:radius = 0.01
                 float inputs:shaping:cone:angle = 180
