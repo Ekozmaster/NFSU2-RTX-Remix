@@ -1229,64 +1229,6 @@ over "RootNode"
             }
         }
 
-        over "mat_3BF2D4EB21AD45A3"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/tail_lights/3BF2D4EB21AD45A3_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 5 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./textures/tail_lights/3BF2D4EB21AD45A3_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tail_lights/3BF2D4EB21AD45A3_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/tail_lights/3BF2D4EB21AD45A3_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_11331937CD98CD4A"
         {
             over "Shader"

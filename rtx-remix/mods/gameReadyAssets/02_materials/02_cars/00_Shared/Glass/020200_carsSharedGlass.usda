@@ -862,7 +862,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                bool inputs:use_diffuse_layer = 0 (
+                bool inputs:use_diffuse_layer = 1 (
                     customData = {
                         bool default = 0
                     }
@@ -892,8 +892,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material\r
-\r
+                    doc = """Index of Refraction of the material
+
 """
                     hidden = false
                 )
@@ -912,8 +912,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Thin-walled"
-                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.\r
-\r
+                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
+
 """
                     hidden = false
                 )
@@ -924,20 +924,20 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
-\r
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
 """
                     hidden = false
                     renderType = "texture_2d"
                 )
-                bool inputs:use_diffuse_layer = 0 (
+                bool inputs:use_diffuse_layer = 1 (
                     customData = {
                         bool default = 0
                     }
                     displayGroup = "Volume"
                     displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material\r
-\r
+                    doc = """When set, simulates a diffuse layer on top of the material
+
 """
                     hidden = false
                 )
@@ -1317,7 +1317,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @@ (
+                asset inputs:normalmap_texture = @./headlight_sqaure_normal.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -1326,7 +1326,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                bool inputs:thin_walled = 1 (
+                bool inputs:thin_walled = 0 (
                     customData = {
                         bool default = 0
                     }
@@ -1810,6 +1810,57 @@ over "RootNode"
                     displayName = "Use diffuse layer"
                     doc = """When set, simulates a diffuse layer on top of the material\r
 \r
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_FB9B603BAD9CE354"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.5999999 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = """Index of Refraction of the material
+
+"""
+                    hidden = false
+                )
+                color3f inputs:transmittance_color = (0.87058824, 0, 0) (
+                    customData = {
+                        float3 default = (0.97, 0.97, 0.97)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance Color"
+                    doc = """Expected transmittance after the specified transmittance distance through the volume.
+
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = """When set, simulates a diffuse layer on top of the material
+
 """
                     hidden = false
                 )

@@ -4,29 +4,6 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_3BF2D4EB21AD45A3"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.59999996 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.099999994
-                asset inputs:reflectionroughness_texture = @@
-            }
-        }
     }
 }
 
