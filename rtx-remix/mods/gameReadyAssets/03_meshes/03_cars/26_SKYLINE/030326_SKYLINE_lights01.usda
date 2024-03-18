@@ -133,91 +133,556 @@ over "RootNode"
 
         over "mesh_296D38A805AC880C"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Big_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "opague" (
+                references = @./taillight/type_01/taillight_type_01_opaque.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.17329845919624, -0.6597513614934234, 0.6527270728013947)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Big_Light_xForm"
+                {
+                    over "Big_Reflector"
+                    {
+                        over "Circle_004"
+                        {
+                            over "Reflector_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Red_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Red_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Big_Light" (
+                        references = @../00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        double3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.035, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate", "xformOp:rotateXYZ"]
+
+                        over "Point_001" (
+                            active = false
+                        )
+                        {
+                        }
+                    }
+                }
+
+                over "Small_Light_xForm"
+                {
+                    over "Small_Reflector"
+                    {
+                        over "Circle_003"
+                        {
+                            over "Reflector_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Orange_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Orange_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Small_Light" (
+                        references = @../00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        double3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.032, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:rotateXYZ", "xformOp:translate"]
+
+                        over "Point" (
+                            active = false
+                        )
+                        {
+                        }
+                    }
+                }
             }
 
-            def SphereLight "Small_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "glass" (
+                references = @./taillight/type_01/taillight_type_01_glass.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.5096525, 0)
-                float inputs:intensity = 5
-                float inputs:radius = 0.04
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.210917052876251, -0.4638535168667064, 0.6251663333069639)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Big_Light_xForm"
+                {
+                    over "Big_Glass"
+                    {
+                        over "Circle"
+                        {
+                            over "Glass_Red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_19" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_19> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+
+                over "Small_Light_xForm"
+                {
+                    over "Small_Glass"
+                    {
+                        over "Circle_002"
+                        {
+                            over "Glass_Red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_type_12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_type_24" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_24> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
         over "mesh_FFB74679F0BF851C"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Big_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "glass" (
+                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/26_SKYLINE/taillight/type_01/taillight_type_01_glass.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0, 0)
-                float inputs:intensity = 20
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.17329845919624, 0.65975, 0.6527270728013947)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, -1, 1)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Big_Light_xForm"
+                {
+                    over "Big_Glass"
+                    {
+                        over "Circle"
+                        {
+                            over "Glass_Red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_19" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_19> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+
+                over "Small_Light_xForm"
+                {
+                    over "Small_Glass"
+                    {
+                        over "Circle_002"
+                        {
+                            over "Glass_Red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_type_12" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_12> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_type_24" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_24> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
             }
 
-            def SphereLight "Small_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
+            def Xform "opague" (
+                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/26_SKYLINE/taillight/type_01/taillight_type_01_opaque.usd@
             )
             {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (1, 0.5096525, 0)
-                float inputs:intensity = 5
-                float inputs:radius = 0.04
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness = 0.2
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.210917052876251, 0.46385, 0.6251663333069639)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, -1, 1)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Big_Light_xForm"
+                {
+                    over "Big_Reflector"
+                    {
+                        over "Circle_004"
+                        {
+                            over "Reflector_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Red_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Red_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Big_Light" (
+                        references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        double3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.035, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate", "xformOp:rotateXYZ"]
+
+                        over "Point_001" (
+                            active = false
+                        )
+                        {
+                        }
+                    }
+                }
+
+                over "Small_Light_xForm"
+                {
+                    over "Small_Reflector"
+                    {
+                        over "Circle_003"
+                        {
+                            over "Reflector_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Orange_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Orange_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Small_Light" (
+                        references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
+                    )
+                    {
+                        double3 xformOp:rotateXYZ = (0, 0, 180)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.032, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:rotateXYZ", "xformOp:translate"]
+
+                        over "Point" (
+                            active = false
+                        )
+                        {
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_8A1DEF8F4D616679"
+        {
+            def Xform "top_opaque" (
+                references = @./taillight/shared/middle_top_light_bar_opaque.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Middle_Top_Light_Reflector"
+                {
+                    over "Plane_001"
+                    {
+                        over "Reflector_Chrome" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "Reflector_type_02" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Normal_Type_02> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "top_glass" (
+                references = @./taillight/shared/middle_top_light_bar_glass.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Middle_Top_Light_Glass"
+                {
+                    over "Plane_002"
+                    {
+                        over "Glass_Red" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "Glass_Red_type_04" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red_Normal_Type_04> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "bottom_opaque" (
+                references = @./taillight/shared/middle_bottom_light_bar_opaque.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Middle_Bottom_Light_Reflector"
+                {
+                    over "Plane_003" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/Reflector_Normal> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            def Xform "bottom_glass" (
+                references = @./taillight/shared/middle_bottom_light_bar_glass.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Middle_Bottom_Light_Glass"
+                {
+                    over "Plane_004"
+                    {
+                        over "Glass_Clear" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "Glass_Clear_type_3" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear_Normal_Type_03> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "Glass_Red" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "Glass_Red_type_3" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Red_Normal_Type_03> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
             }
         }
     }
