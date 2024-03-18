@@ -516,15 +516,6 @@ over "RootNode"
                     )
                 }
 
-                over "Big_Projector_Reflector_Gross" (
-                    prepend apiSchemas = ["MaterialBindingAPI"]
-                )
-                {
-                    rel material:binding = </Looks/Reflector_Chrome> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
-                }
-
                 over "Small_Projector_Reflector_Gross" (
                     prepend apiSchemas = ["MaterialBindingAPI"]
                 )
@@ -739,15 +730,6 @@ over "RootNode"
                 )
                 {
                     rel material:binding = </Looks/Reflector_Chrome_Red> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
-                }
-
-                over "Big_Projector_Reflector_Gross" (
-                    prepend apiSchemas = ["MaterialBindingAPI"]
-                )
-                {
-                    rel material:binding = </Looks/Reflector_Chrome> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                 }

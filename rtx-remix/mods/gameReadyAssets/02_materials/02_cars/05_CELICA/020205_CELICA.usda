@@ -188,7 +188,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:metallic_constant = 0.6 (
+                float inputs:metallic_constant = 0.79999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -212,7 +212,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:reflection_roughness_constant = 0.1 (
+                float inputs:reflection_roughness_constant = 0.099999994 (
                     customData = {
                         float default = 0.5
                         dictionary range = {
@@ -227,7 +227,13 @@ over "RootNode"
 """
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @@
+                asset inputs:reflectionroughness_texture = @@ (
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
 
@@ -247,8 +253,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material\r
-\r
+                    doc = """Index of Refraction of the material
+
 """
                     hidden = false
                 )
@@ -269,8 +275,8 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
-\r
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -281,8 +287,8 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material\r
-\r
+                    doc = """When set, simulates a diffuse layer on top of the material
+
 """
                     hidden = false
                 )
@@ -293,7 +299,19 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
+                asset inputs:diffuse_texture = @./CDCB536CDDED07F4_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:metallic_constant = 0.79999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -303,10 +321,20 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
-\r
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
 """
                     hidden = false
+                )
+                asset inputs:normalmap_texture = @./BDA7A8022AB5F26D_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:reflection_roughness_constant = 0.099999994 (
                     customData = {
@@ -318,8 +346,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
-\r
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
 """
                     hidden = false
                 )
@@ -696,6 +724,70 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_96ED5BA354BC39E0"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0
+            }
+        }
+
+        over "mat_AFAD5E81A144BA25"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./AFAD5E81A144BA25_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:metallic_constant = 0.59999996 (
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./AFAD5E81A144BA25_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0.099999994 (
                     doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
