@@ -8,6 +8,7 @@
         @./02_materials/03_global/01_roads/020301_roads.usda@,
         @./02_materials/03_global/02_worldSprites/020302_worldSprites.usda@,
         @./02_materials/03_global/03_walls/020303_walls.usda@,
+	@./02_materials/03_global/020300_sharedMaterials.usda@,
         @./02_materials/03_global/04_props/020304_props.usda@,
         @./03_meshes/01_props/01_roadways/030101_roadways.usda@,
 		@./03_meshes/02_environment/0301_meshesEnvironment.usda@,

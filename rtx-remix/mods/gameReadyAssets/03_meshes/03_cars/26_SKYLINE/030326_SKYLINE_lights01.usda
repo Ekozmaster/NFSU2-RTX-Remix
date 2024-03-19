@@ -146,41 +146,13 @@ over "RootNode"
                 {
                     over "Big_Reflector"
                     {
-                        over "Circle_004"
-                        {
-                            over "Reflector_type_23" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-
-                            over "Reflector_Red_Chrome" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Red_Chrome> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-                        }
-                    }
-
-                    over "Big_Light" (
-                        references = @../00_Shared/bulb_type_01.usd@
-                    )
-                    {
-                        double3 xformOp:rotateXYZ = (0, 0, 180)
-                        float3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (0.035, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate", "xformOp:rotateXYZ"]
-
-                        over "Point_001" (
-                            active = false
+                        over "Circle_005" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
                         )
                         {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
                         }
                     }
                 }
@@ -189,41 +161,13 @@ over "RootNode"
                 {
                     over "Small_Reflector"
                     {
-                        over "Circle_003"
-                        {
-                            over "Reflector_type_23" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-
-                            over "Reflector_Orange_Chrome" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Orange_Chrome> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-                        }
-                    }
-
-                    over "Small_Light" (
-                        references = @../00_Shared/bulb_type_01.usd@
-                    )
-                    {
-                        double3 xformOp:rotateXYZ = (0, 0, 180)
-                        float3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (-0.032, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:rotateXYZ", "xformOp:translate"]
-
-                        over "Point" (
-                            active = false
+                        over "Circle_001" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
                         )
                         {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
                         }
                     }
                 }
@@ -242,7 +186,7 @@ over "RootNode"
                 {
                     over "Big_Glass"
                     {
-                        over "Circle"
+                        over "Circle_003"
                         {
                             over "Glass_Red" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
@@ -267,6 +211,15 @@ over "RootNode"
                             )
                             {
                                 rel material:binding = </Looks/Glass_Red_Normal_Type_19> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_23> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -321,6 +274,15 @@ over "RootNode"
                             )
                             {
                                 rel material:binding = </Looks/Glass_Orange_Normal_Type_24> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_23> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -338,6 +300,12 @@ over "RootNode"
 
         over "mesh_FFB74679F0BF851C"
         {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
             def Xform "glass" (
                 references = @D:/Games/remix/NFSU2/03_meshes/03_cars/26_SKYLINE/taillight/type_01/taillight_type_01_glass.usd@
             )
@@ -351,7 +319,7 @@ over "RootNode"
                 {
                     over "Big_Glass"
                     {
-                        over "Circle"
+                        over "Circle_003"
                         {
                             over "Glass_Red" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
@@ -376,6 +344,15 @@ over "RootNode"
                             )
                             {
                                 rel material:binding = </Looks/Glass_Red_Normal_Type_19> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_23> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -430,6 +407,15 @@ over "RootNode"
                             )
                             {
                                 rel material:binding = </Looks/Glass_Orange_Normal_Type_24> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_type_23" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_23> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -451,41 +437,13 @@ over "RootNode"
                 {
                     over "Big_Reflector"
                     {
-                        over "Circle_004"
-                        {
-                            over "Reflector_type_23" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-
-                            over "Reflector_Red_Chrome" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Red_Chrome> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-                        }
-                    }
-
-                    over "Big_Light" (
-                        references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
-                    )
-                    {
-                        double3 xformOp:rotateXYZ = (0, 0, 180)
-                        float3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (0.035, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate", "xformOp:rotateXYZ"]
-
-                        over "Point_001" (
-                            active = false
+                        over "Circle_005" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
                         )
                         {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
                         }
                     }
                 }
@@ -494,50 +452,16 @@ over "RootNode"
                 {
                     over "Small_Reflector"
                     {
-                        over "Circle_003"
-                        {
-                            over "Reflector_type_23" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Normal_Type_23> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-
-                            over "Reflector_Orange_Chrome" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Orange_Chrome> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-                        }
-                    }
-
-                    over "Small_Light" (
-                        references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
-                    )
-                    {
-                        double3 xformOp:rotateXYZ = (0, 0, 180)
-                        float3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (-0.032, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:rotateXYZ", "xformOp:translate"]
-
-                        over "Point" (
-                            active = false
+                        over "Circle_001" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
                         )
                         {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
                         }
                     }
                 }
-            }
-
-            over "mesh" (
-                active = false
-            )
-            {
             }
         }
 
@@ -611,28 +535,6 @@ over "RootNode"
                 }
             }
 
-            def Xform "bottom_opaque" (
-                references = @./taillight/shared/middle_bottom_light_bar_opaque.usd@
-            )
-            {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                over "Middle_Bottom_Light_Reflector"
-                {
-                    over "Plane_003" (
-                        prepend apiSchemas = ["MaterialBindingAPI"]
-                    )
-                    {
-                        rel material:binding = </Looks/Reflector_Normal> (
-                            bindMaterialAs = "weakerThanDescendants"
-                        )
-                    }
-                }
-            }
-
             def Xform "bottom_glass" (
                 references = @./taillight/shared/middle_bottom_light_bar_glass.usd@
             )
@@ -681,6 +583,40 @@ over "RootNode"
                                 bindMaterialAs = "weakerThanDescendants"
                             )
                         }
+                    }
+                }
+            }
+
+            def Xform "bottom_opaque" (
+                references = @./taillight/shared/middle_bottom_light_bar_opaque.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Middle_Bottom_Light_Border"
+                {
+                    over "Plane_003" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/Plastic_Black> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+
+                over "Middle_Bottom_Light_Reflector"
+                {
+                    over "Plane_005" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/Reflector_Normal> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
                     }
                 }
             }
