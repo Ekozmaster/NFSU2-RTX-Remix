@@ -1,8 +1,9 @@
 #usda 1.0
 (
     subLayers = [
-        @./05_bricks/020305_bricks.usda@,
-        @./06_stone/020306_stone.usda@,
+        @./05_effect/020305_effect.usda@,
+        @./06_bricks/020306_bricks.usda@,
+        @./08_stone/020308_stone.usda@,
         @./07_metal/020307_metal.usda@
     ]
     upAxis = "Z"
