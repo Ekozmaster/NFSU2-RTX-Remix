@@ -404,9 +404,103 @@ def "Looks" (
 
         def Shader "Shader"
         {
-            color3f inputs:diffuse_color_constant = (0.050980393, 0.050980393, 0.050980393)
-            float inputs:metallic_constant = 0.95
-            float inputs:reflection_roughness_constant = 0
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.05, 0.0499995, 0.0499995) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:reflection_roughness_constant = 0.13 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Plastic_Grey_Glossy"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Plastic_Grey_Glossy/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Plastic_Grey_Glossy/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Plastic_Grey_Glossy/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.16216218, 0.16216056, 0.16216056) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.17999999 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.17 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
             token outputs:out (
                 renderType = "material"
             )

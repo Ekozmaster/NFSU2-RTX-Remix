@@ -331,7 +331,7 @@ over "RootNode"
             }
 
             def Xform "glass" (
-                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/26_SKYLINE/taillight/type_01/taillight_type_01_glass.usd@
+                references = @./taillight/type_01/taillight_type_01_glass.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -449,7 +449,7 @@ over "RootNode"
             }
 
             def Xform "opague" (
-                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/26_SKYLINE/taillight/type_01/taillight_type_01_opaque.usd@
+                references = @./taillight/type_01/taillight_type_01_opaque.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
