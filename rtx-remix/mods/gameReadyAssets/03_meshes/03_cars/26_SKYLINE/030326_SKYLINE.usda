@@ -7,10 +7,10 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_716E65979622A533"
+        over "mesh_5135FE95EBC0B1CD"
         {
-            def Xform "Vspec_Decal" (
-                references = @./Shared/VSpec_Decal.usd@
+            def Xform "rearLabel01" (
+                references = @../00_Shared/nissanLabelExp01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -18,28 +18,30 @@ over "RootNode"
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                over "Vspec_Position" (
-                    references = @../00_Shared/Vspec_Logo.usd@
-                )
+                over "XForms"
                 {
-                    over "Vspec_Logo"
-                    {
-                        over "Plane_006"
-                        {
-                            over "Plastic_Black" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Plastic_Black> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
+                    float3 xformOp:rotateXYZ = (-6.5, 180, 90)
+                    float3 xformOp:scale = (0.00076, 0.00076, 0.00076)
+                    double3 xformOp:translate = (-2.24, 0, 0.62)
 
-                            over "Reflector_Chrome" (
+                    over "World"
+                    {
+                        over "nissanLabelExp01"
+                        {
+                            over "nissanLabel_reflector_nissanLabel01_Geo" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
                             )
                             {
                                 rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "nissanLabel01_Geo_nissanLabel_metal_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -48,15 +50,6 @@ over "RootNode"
                 }
             }
 
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-        }
-
-        over "mesh_5135FE95EBC0B1CD"
-        {
             def Xform "Rear_Logo" (
                 references = @./Shared/Rear_Logo_01.usd@
             )
@@ -122,6 +115,54 @@ over "RootNode"
                             )
                             {
                                 rel material:binding = </Looks/Chrome_More_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_716E65979622A533"
+        {
+            def Xform "Vspec_Decal" (
+                references = @./Shared/VSpec_Decal.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Vspec_Position" (
+                    references = @../00_Shared/Vspec_Logo.usd@
+                )
+                {
+                    over "Vspec_Logo"
+                    {
+                        over "Plane_006"
+                        {
+                            over "Plastic_Black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }

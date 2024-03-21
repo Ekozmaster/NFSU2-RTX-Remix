@@ -6,3 +6,372 @@
     upAxis = "Z"
 )
 
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_82CFAA7846E93652"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "frontLabel01" (
+                references = @../00_Shared/nissanLabelExp01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (-50.8, 180, -90)
+                    float3 xformOp:scale = (0.0008, 0.0008, 0.0008)
+                    double3 xformOp:translate = (2.1, 0, 0.485)
+
+                    over "World"
+                    {
+                        over "nissanLabelExp01"
+                        {
+                            over "nissanLabel_reflector_nissanLabel01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "nissanLabel01_Geo_nissanLabel_metal_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "frontGrill01" (
+                references = @./misc_350Z_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "misc_350Z_01"
+                        {
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_black_glossy" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector10" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_reflector_N350Z_misc01_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "defaultHideFaceDataSet_quadPatcher3497_pDiscShape1HiddenFacesSet_N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_grey_glossy" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Grey_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_82AA76C529357108"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "sideLabel01" (
+                references = @./misc_350Z_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    double3 xformOp:translate = (0, -0.006, 0)
+
+                    over "World"
+                    {
+                        over "misc_350Z_01"
+                        {
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_grey_glossy" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "defaultHideFaceDataSet_quadPatcher3497_pDiscShape1HiddenFacesSet_N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_reflector_N350Z_misc01_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector10" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_black_glossy" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "sideLabel01_01" (
+                references = @./misc_350Z_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 184)
+                    double3 xformOp:translate = (1.5, 0.06, 0)
+
+                    over "World"
+                    {
+                        over "misc_350Z_01"
+                        {
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_grey_glossy" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "defaultHideFaceDataSet_quadPatcher3497_pDiscShape1HiddenFacesSet_N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_reflector_N350Z_misc01_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector10" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_black_glossy" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_D73D9F85F5F7D2DE"
+        {
+            def Xform "rearLabel01" (
+                references = @./misc_350Z_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+
+                    over "World"
+                    {
+                        over "misc_350Z_01"
+                        {
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_black_glossy" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_plastic_grey_glossy" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_Geo_N350Z_misc01_reflector10" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "defaultHideFaceDataSet_quadPatcher3497_pDiscShape1HiddenFacesSet_N350Z_misc01_Geo_N350Z_misc01_reflector1" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "N350Z_misc01_reflector_N350Z_misc01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "rearLabel02" (
+                references = @../00_Shared/nissanLabelExp01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (-38.2, 180, 90)
+                    float3 xformOp:scale = (0.0008, 0.0008, 0.0008)
+                    double3 xformOp:translate = (-2, 0, 0.75)
+
+                    over "World"
+                    {
+                        over "nissanLabelExp01"
+                        {
+                            over "nissanLabel_reflector_nissanLabel01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "nissanLabel01_Geo_nissanLabel_metal_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

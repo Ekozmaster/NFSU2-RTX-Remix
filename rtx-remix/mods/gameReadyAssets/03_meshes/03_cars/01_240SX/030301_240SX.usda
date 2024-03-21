@@ -88,6 +88,62 @@ over "RootNode"
                 }
             }
         }
+
+        over "mesh_9C1913EFB5E0DFCB"
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "nissanLabel" (
+                references = @../00_Shared/nissanLabelExp01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (121.5, 0, 90)
+                    float3 xformOp:scale = (0.0007, 0.0007, 0.0007)
+                    double3 xformOp:translate = (2.217, -3.0565598711847256e-15, 0.382)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "nissanLabelExp01"
+                        {
+                            over "nissanLabel_reflector_nissanLabel01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "nissanLabel01_Geo_nissanLabel_metal_black" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
     }
 }
 
