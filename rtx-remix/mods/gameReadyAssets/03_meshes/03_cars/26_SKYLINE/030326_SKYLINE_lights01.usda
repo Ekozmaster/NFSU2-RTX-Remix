@@ -146,13 +146,34 @@ over "RootNode"
                 {
                     over "Big_Reflector"
                     {
-                        over "Circle_005" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
+                        over "Circle_005"
                         {
-                            rel material:binding = </Looks/Reflector_Chrome> (
-                                bindMaterialAs = "weakerThanDescendants"
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
                             )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Rough_Combined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Rough_Normal> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Plastic_Grey" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Grey> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
                         }
                     }
                 }
@@ -161,13 +182,16 @@ over "RootNode"
                 {
                     over "Small_Reflector"
                     {
-                        over "Circle_001" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
+                        over "Circle_001"
                         {
-                            rel material:binding = </Looks/Reflector_Chrome> (
-                                bindMaterialAs = "weakerThanDescendants"
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
                             )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
                         }
                     }
                 }
@@ -437,13 +461,34 @@ over "RootNode"
                 {
                     over "Big_Reflector"
                     {
-                        over "Circle_005" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
+                        over "Circle_005"
                         {
-                            rel material:binding = </Looks/Reflector_Chrome> (
-                                bindMaterialAs = "weakerThanDescendants"
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
                             )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Rough_Combined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Rough_Normal> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Plastic_Grey" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Grey> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
                         }
                     }
                 }
@@ -452,13 +497,16 @@ over "RootNode"
                 {
                     over "Small_Reflector"
                     {
-                        over "Circle_001" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
+                        over "Circle_001"
                         {
-                            rel material:binding = </Looks/Reflector_Chrome> (
-                                bindMaterialAs = "weakerThanDescendants"
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
                             )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
                         }
                     }
                 }
