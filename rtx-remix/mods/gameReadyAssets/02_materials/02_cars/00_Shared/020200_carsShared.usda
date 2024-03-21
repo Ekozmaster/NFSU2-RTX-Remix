@@ -300,6 +300,54 @@ def "Looks" (
         }
     }
 
+    def Material "Plastic_Grey"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Plastic_Grey/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Plastic_Grey/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Plastic_Grey/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.8, 0.8, 0.8) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:reflection_roughness_constant = 0.59999996 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
     def Material "Plastic_Black"
     {
         token outputs:mdl:displacement.connect = </Looks/Plastic_Black/Shader.outputs:out>
@@ -358,7 +406,6 @@ def "Looks" (
         {
             color3f inputs:diffuse_color_constant = (0.050980393, 0.050980393, 0.050980393)
             float inputs:metallic_constant = 0.95
-            asset inputs:normalmap_texture = @./CarSharedNormals_type_10_normal.dds@
             float inputs:reflection_roughness_constant = 0
             token outputs:out (
                 renderType = "material"
@@ -5272,6 +5319,75 @@ This parameter is unused.
         }
     }
 
+    def Material "Reflector_Red_Normal_Type_27"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Reflector_Red_Normal_Type_27/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Reflector_Red_Normal_Type_27/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Reflector_Red_Normal_Type_27/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.9, 0, 0) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.95 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_type_27_normal.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+        }
+    }
+
     def Material "Reflector_Orange_Chrome"
     {
         token outputs:mdl:displacement.connect = </Looks/Reflector_Orange_Chrome/Shader.outputs:out>
@@ -6252,6 +6368,150 @@ This parameter is unused.
 
 """
                 hidden = false
+            )
+        }
+    }
+
+    def Material "Reflector_Rough_Normal"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Reflector_Rough_Normal/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Reflector_Rough_Normal/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Reflector_Rough_Normal/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.6, 0.6, 0.6) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.79999995 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_Combined_normal.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0.19999999 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Reflector_More_Rough_Normal"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Reflector_More_Rough_Normal/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Reflector_More_Rough_Normal/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Reflector_More_Rough_Normal/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.6, 0.6, 0.6) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.79999995 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./CarSharedNormals_Combined_normal.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
             )
         }
     }
