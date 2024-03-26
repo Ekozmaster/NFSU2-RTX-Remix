@@ -11,7 +11,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -26,7 +26,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:reflection_roughness_constant = 0 (
+                float inputs:reflection_roughness_constant = 0.099999994 (
                     customData = {
                         float default = 0.5
                         dictionary range = {
@@ -99,7 +99,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -124,7 +124,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:reflection_roughness_constant = 0 (
+                float inputs:reflection_roughness_constant = 0.099999994 (
                     customData = {
                         float default = 0.5
                         dictionary range = {

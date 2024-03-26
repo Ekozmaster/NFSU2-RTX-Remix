@@ -11,7 +11,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.6 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -21,102 +21,14 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
                 float inputs:reflection_roughness_constant = 0.1 (
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_43FA3D67BEDF9219"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../textures/tail_lights/43FA3D67BEDF9219.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.6
-                asset inputs:normalmap_texture = @../../../textures/tail_lights/43FA3D67BEDF9219_normal.dds@
-                float inputs:reflection_roughness_constant = 0.1
-            }
-        }
-
-        over "mat_6C021BDB2F93CDED"
-        {
-            over "Shader"
-            {
-                uniform asset info:mdl:sourceAsset = @../../AperturePBR_Translucent.mdl@
-                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                float inputs:ior_constant = 1.5999999 (
-                    customData = {
-                        float default = 1.3
-                        dictionary range = {
-                            float max = 3
-                            float min = 1
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material
-
-"""
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @../../../01_lights/03_cars/6C021BDB2F93CDED_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:thin_walled = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Thin-walled"
-                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
-
-"""
-                    hidden = false
-                )
-                asset inputs:transmittance_texture = @../../../01_lights/03_cars/6C021BDB2F93CDED_albedo.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:use_diffuse_layer = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material
-
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -127,7 +39,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -137,8 +49,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -152,8 +64,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )

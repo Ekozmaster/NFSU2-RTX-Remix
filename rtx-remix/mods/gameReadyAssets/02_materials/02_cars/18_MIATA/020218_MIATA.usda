@@ -20,9 +20,10 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996
+                float inputs:metallic_constant = 0.99
                 asset inputs:normalmap_texture = @../../../textures/headlights/4A1C5A6A35D5AE20_normal.dds@
                 float inputs:reflection_roughness_constant = 0.099999994
+                asset inputs:reflectionroughness_texture = @@
             }
         }
 
@@ -30,7 +31,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -84,7 +85,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {

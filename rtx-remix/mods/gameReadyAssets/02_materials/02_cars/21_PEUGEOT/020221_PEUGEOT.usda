@@ -9,7 +9,7 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./0D9D8D4B5D31C283_albedo.dds@
-                float inputs:metallic_constant = 0.6
+                float inputs:metallic_constant = 0.99
                 asset inputs:normalmap_texture = @./0D9D8D4B5D31C283_normal.dds@
                 float inputs:reflection_roughness_constant = 0.099999994
             }

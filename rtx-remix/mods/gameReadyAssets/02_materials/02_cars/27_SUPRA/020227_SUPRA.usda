@@ -23,8 +23,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material\r
-\r
+                    doc = """Index of Refraction of the material
+
 """
                     hidden = false
                 )
@@ -43,8 +43,8 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Thin-walled"
-                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.\r
-\r
+                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
+
 """
                     hidden = false
                 )
@@ -55,8 +55,8 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
-\r
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -67,8 +67,8 @@ over "RootNode"
                     }
                     displayGroup = "Volume"
                     displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material\r
-\r
+                    doc = """When set, simulates a diffuse layer on top of the material
+
 """
                     hidden = false
                 )
@@ -80,20 +80,22 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./0BC4C4F65B4CDE1C_albedo.dds@ (
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
-\r
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
 """
                     hidden = false
                     renderType = "texture_2d"
                 )
                 bool inputs:enable_emission = 0 (
                     displayGroup = "Emission"
-                    doc = """Enables the emission of light from the material\r
-\r
+                    doc = """Enables the emission of light from the material
+
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -103,19 +105,26 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
-\r
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
 """
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./0BC4C4F65B4CDE1C_normal.dds@ (
+                    displayGroup = "Base Material"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
                 asset inputs:reflectionroughness_texture = @./0BC4C4F65B4CDE1C_rough.dds@ (
                     displayGroup = "Base Material"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
-\r
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -189,12 +198,14 @@ This parameter is unused.
                     hidden = false
                 )
                 float inputs:emissive_intensity = 1 (
+                    displayGroup = "Emission"
                     doc = """Intensity of the emission
 
 """
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./542FFB7021A410B4_emissive.dds@ (
+                    displayGroup = "Emission"
                     doc = """The texture masking the emissive color
 
 """
@@ -225,7 +236,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -362,7 +373,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -387,7 +398,21 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:reflection_roughness_constant = 0.099999994
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
             }
         }
     }

@@ -23,7 +23,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:metallic_constant = 0.59999996
+                float inputs:metallic_constant = 0.99
                 asset inputs:normalmap_texture = @../../../textures/tail_lights/D1EF865EE23C63A1_normal.dds@ (
                     customData = {
                         asset default = @@
@@ -53,7 +53,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {

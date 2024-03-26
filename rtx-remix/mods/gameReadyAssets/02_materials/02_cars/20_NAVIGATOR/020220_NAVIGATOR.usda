@@ -20,9 +20,10 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996
+                float inputs:metallic_constant = 0.99
                 asset inputs:normalmap_texture = @../../../textures/headlights/0491E36E2B604B66_normal.dds@
                 float inputs:reflection_roughness_constant = 0.099999994
+                asset inputs:reflectionroughness_texture = @@
             }
         }
 
@@ -36,8 +37,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -52,8 +53,8 @@ over "RootNode"
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.\r
+This parameter is unused.\r
 """
                     hidden = false
                 )
@@ -64,8 +65,8 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.\r
+This parameter is unused.\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -80,8 +81,8 @@ This parameter is unused.
                     }
                     displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).\r
+\r
 """
                     hidden = false
                 )
@@ -105,6 +106,7 @@ This parameter is unused.
                     renderType = "texture_2d"
                 )
                 float inputs:reflection_roughness_constant = 0.099999994
+                asset inputs:reflectionroughness_texture = @@
             }
         }
 
@@ -124,8 +126,8 @@ This parameter is unused.
                     }
                     displayGroup = "Specular"
                     displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material
-
+                    doc = """Index of Refraction of the material\r
+\r
 """
                     hidden = false
                 )
@@ -146,8 +148,8 @@ This parameter is unused.
                     }
                     displayGroup = "Volume"
                     displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -158,8 +160,8 @@ This parameter is unused.
                     }
                     displayGroup = "Volume"
                     displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material
-
+                    doc = """When set, simulates a diffuse layer on top of the material\r
+\r
 """
                     hidden = false
                 )
