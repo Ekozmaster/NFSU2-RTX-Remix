@@ -69,7 +69,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -84,7 +84,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:reflection_roughness_constant = 0 (
+                float inputs:reflection_roughness_constant = 0.099999994 (
                     customData = {
                         float default = 0.5
                         dictionary range = {
@@ -157,7 +157,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -204,7 +204,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../00_Shared/Glass/2129CCB15B545406_albedo.dds@ (
+                asset inputs:diffuse_texture = @./2129CCB15B545406_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -231,7 +231,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @../00_Shared/Glass/2129CCB15B545406_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -244,7 +244,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -259,7 +259,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                asset inputs:metallic_texture = @../00_Shared/Glass/2129CCB15B545406_normal.dds@ (
+                asset inputs:metallic_texture = @./2129CCB15B545406_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -277,7 +277,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {

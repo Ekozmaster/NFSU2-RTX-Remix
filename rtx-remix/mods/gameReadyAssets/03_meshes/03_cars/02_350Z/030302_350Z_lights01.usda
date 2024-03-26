@@ -502,7 +502,7 @@ over "RootNode"
                     prepend apiSchemas = ["MaterialBindingAPI"]
                 )
                 {
-                    rel material:binding = </Looks/Reflector_Normal_Red_Type_02> (
+                    rel material:binding = </Looks/Reflector_Red_Normal_Type_02> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                 }
@@ -511,7 +511,7 @@ over "RootNode"
                     prepend apiSchemas = ["MaterialBindingAPI"]
                 )
                 {
-                    rel material:binding = </Looks/Reflector_Chrome_Red> (
+                    rel material:binding = </Looks/Reflector_Red_Normal> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                 }
@@ -720,7 +720,7 @@ over "RootNode"
                     prepend apiSchemas = ["MaterialBindingAPI"]
                 )
                 {
-                    rel material:binding = </Looks/Reflector_Normal_Red_Type_02> (
+                    rel material:binding = </Looks/Reflector_Red_Normal_Type_02> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                 }
@@ -729,7 +729,7 @@ over "RootNode"
                     prepend apiSchemas = ["MaterialBindingAPI"]
                 )
                 {
-                    rel material:binding = </Looks/Reflector_Chrome_Red> (
+                    rel material:binding = </Looks/Reflector_Red_Chrome> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                 }

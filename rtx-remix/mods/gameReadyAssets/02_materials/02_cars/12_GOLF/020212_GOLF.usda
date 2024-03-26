@@ -20,7 +20,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -37,6 +37,7 @@ over "RootNode"
                 )
                 asset inputs:normalmap_texture = @../../../textures/headlights/A644C5CC0D3CFE7F_normal.dds@
                 float inputs:reflection_roughness_constant = 0.099999994
+                asset inputs:reflectionroughness_texture = @@
             }
         }
 
@@ -58,7 +59,7 @@ over "RootNode"
                 )
                 float inputs:emissive_intensity = 1
                 asset inputs:emissive_mask_texture = @./087F09D98A2DF0D2_emissive.dds@
-                float inputs:metallic_constant = 0.59999996 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -196,6 +197,29 @@ over "RootNode"
 """
                     hidden = false
                 )
+            }
+        }
+
+        over "mat_552EF0B9C6BEB677"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.98999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.099999994
             }
         }
     }

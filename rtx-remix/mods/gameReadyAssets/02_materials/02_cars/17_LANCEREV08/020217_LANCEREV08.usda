@@ -88,7 +88,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996
+                float inputs:metallic_constant = 0.99
                 asset inputs:normalmap_texture = @../../../textures/headlights/BF5E5BB5534FA5F7_normal.dds@
                 float inputs:reflection_roughness_constant = 0.099999994
             }
@@ -107,9 +107,10 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.59999996
+                float inputs:metallic_constant = 0.99
                 asset inputs:normalmap_texture = @../../../textures/tail_lights/F4C717EAFD14945B_normal.dds@
                 float inputs:reflection_roughness_constant = 0.099999994
+                asset inputs:reflectionroughness_texture = @@
             }
         }
     }

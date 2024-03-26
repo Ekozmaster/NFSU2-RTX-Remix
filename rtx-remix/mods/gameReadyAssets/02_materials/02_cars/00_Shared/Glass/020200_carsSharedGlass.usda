@@ -1149,7 +1149,9 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Index of Refraction"
-                    doc = "Index of Refraction of the material"
+                    doc = """Index of Refraction of the material
+
+"""
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./headlight_sqaure_normal.dds@ (

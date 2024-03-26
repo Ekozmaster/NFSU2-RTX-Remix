@@ -460,6 +460,11 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_85E58115F3848B20"
+        {
+            custom int preserveOriginalDrawCall = 1
+        }
     }
 }
 
