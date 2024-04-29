@@ -1,0 +1,7 @@
+#usda 1.0
+(
+    subLayers = [
+        @./uv_fixes_01.usda@
+    ]
+)
+

@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./03_meshes/uv_fixes/main_uv_fixes.usda@,
         @./01_lights/01_lights.usda@,
         @./02_materials/01_environment/0201_materialsEnvironment.usda@,
         @./02_materials/02_cars/0202_materialsCars.usda@,
