@@ -1,0 +1,170 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (-0.1871958403744635, 0.6378497806760209, 1.5961406896104267)
+                double3 target = (0.11004705266756579, 0.08552861021181402, 0.35125039270104264)
+            }
+            dictionary Right = {
+                double3 position = (-50000, 0, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 50000, 0)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary navmeshSettings = {
+            double agentHeight = 180
+            double agentRadius = 20
+            bool excludeRigidBodies = 1
+            int ver = 1
+            double voxelCeiling = 460
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./RacingHartCP_FTuner_R_20_Decals.usda"
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            float3 "rtx:index:regionOfInterestMax" = (0, 0, 0)
+            float3 "rtx:index:regionOfInterestMin" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_position" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_reflectivity" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_rotation_axis" = (3.4028235e38, 3.4028235e38, 3.4028235e38)
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            float3 "rtx:sceneDb:ambientLightColor" = (0.1, 0.1, 0.1)
+        }
+    }
+    defaultPrim = "Decals"
+    endTimeCode = 1
+    startTimeCode = 0
+)
+
+def Xform "Decals"
+{
+    double3 xformOp:rotateXYZ = (0, 0, 0)
+    double3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+    def Xform "RacingHartCP_FTuner_R_20_Decals_0" (
+        prepend references = @./RacingHartCP_FTuner_R_20_Decals.usd@
+    )
+    {
+        double3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        over "RacingHartCPFTunerR20Decals"
+        {
+            over "RacingHartCPFTunerR20DecalsMesh" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Decals/RacingHartCP_FTuner_R_20_Decals_0/RacingHartCPFTunerR20Mat> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                custom bool remix_category:decal_dynamic = 1
+            }
+        }
+
+        def Material "RacingHartCPFTunerR20Mat"
+        {
+            token outputs:mdl:displacement.connect = </Decals/RacingHartCP_FTuner_R_20_Decals_0/RacingHartCPFTunerR20Mat/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </Decals/RacingHartCP_FTuner_R_20_Decals_0/RacingHartCPFTunerR20Mat/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </Decals/RacingHartCP_FTuner_R_20_Decals_0/RacingHartCPFTunerR20Mat/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../../../../02_materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                bool inputs:blend_enabled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Material Flags"
+                    displayName = "Blend Enabled"
+                    doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                    hidden = false
+                )
+                asset inputs:diffuse_texture = @./CPFTunerLogo.dds@ (
+                    colorSpace = "sRGB"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0.59 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                    hidden = false
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Material Flags"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
+
+"""
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+}
+
