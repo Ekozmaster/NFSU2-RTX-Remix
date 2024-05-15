@@ -443,6 +443,29 @@ def "RootNode"
                 token outputs:output
             }
         }
+
+        over "mat_39AC59F85FD4D7B4"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @@
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_6EE1388ED9AEFD6E"
+        {
+            over "ThinPoleLight"
+            {
+                color3f inputs:color = (1, 0.9009897, 0.63036305)
+                double3 xformOp:rotateXYZ = (0, 33.00000049173832, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.03540560771568835, -6.124864287843707, 12.200000181795541)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 

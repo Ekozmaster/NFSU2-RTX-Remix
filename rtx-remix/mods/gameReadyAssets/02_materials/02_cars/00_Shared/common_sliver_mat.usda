@@ -1,0 +1,267 @@
+#usda 1.0
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_F93A7407AF328FCE" (
+            references = @./03_meshes/03_cars/mesh_F93A7407AF328FCE.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_ED1E3AF4FAFD00FA" (
+            references = @./03_meshes/03_cars/mesh_ED1E3AF4FAFD00FA.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_021DB0FD035CB7D7" (
+            references = @./03_meshes/03_cars/mesh_021DB0FD035CB7D7.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_D48C35C9486BFEB2" (
+            references = @./03_meshes/03_cars/mesh_D48C35C9486BFEB2.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_0531FC652B93323C" (
+            references = @./03_meshes/03_cars/mesh_0531FC652B93323C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_96B6DC71FACBC0F6" (
+            references = @./03_meshes/03_cars/mesh_96B6DC71FACBC0F6.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_CE512B9F1573D180" (
+            references = @./03_meshes/03_cars/mesh_CE512B9F1573D180.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_565FC0E15954755E" (
+            references = @./03_meshes/03_cars/mesh_565FC0E15954755E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_8E3C120045A21E19" (
+            references = @./03_meshes/03_cars/mesh_8E3C120045A21E19.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_1C88BC24971169E7" (
+            references = @./03_meshes/03_cars/mesh_1C88BC24971169E7.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_BC9E16BABBFEA8E4" (
+            references = @./03_meshes/03_cars/mesh_BC9E16BABBFEA8E4.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_02C2F85E2ED9CAA9" (
+            references = @./03_meshes/03_cars/mesh_02C2F85E2ED9CAA9.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_1D463E6212CBA51D" (
+            references = @./03_meshes/03_cars/mesh_1D463E6212CBA51D.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_C3EE347AFA5EBFB9" (
+            references = @./03_meshes/03_cars/mesh_C3EE347AFA5EBFB9.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_0C34CCA793D322E5" (
+            references = @./03_meshes/03_cars/mesh_0C34CCA793D322E5.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_59F597A5BE5C80FE" (
+            references = @./03_meshes/03_cars/mesh_59F597A5BE5C80FE.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_012408DA0E6D97DF" (
+            references = @./03_meshes/03_cars/mesh_012408DA0E6D97DF.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_515A9A5E28EDC847" (
+            references = @./03_meshes/03_cars/mesh_515A9A5E28EDC847.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_9CF1054388453A36" (
+            references = @./03_meshes/03_cars/mesh_9CF1054388453A36.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_9216422BFCF3AD91" (
+            references = @./03_meshes/03_cars/mesh_9216422BFCF3AD91.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_C14FE1EB9DAFD0C0" (
+            references = @./03_meshes/03_cars/mesh_C14FE1EB9DAFD0C0.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_F3570AF208427591" (
+            references = @./03_meshes/03_cars/mesh_F3570AF208427591.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_D786C8713E32B899" (
+            references = @./03_meshes/03_cars/mesh_D786C8713E32B899.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_81025799CCF3010F" (
+            references = @./03_meshes/03_cars/mesh_81025799CCF3010F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_B46F83DEB3291754" (
+            references = @./03_meshes/03_cars/mesh_B46F83DEB3291754.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_7AF5DD1FEF038995" (
+            references = @./03_meshes/03_cars/mesh_7AF5DD1FEF038995.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/rubber> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }  
+    }
+}

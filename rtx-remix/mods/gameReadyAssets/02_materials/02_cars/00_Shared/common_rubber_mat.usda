@@ -1,0 +1,27 @@
+#usda 1.0
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_76B21E0E4C299625" (
+            references = @./03_meshes/03_cars/mesh_76B21E0E4C299625.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+
+        over "mesh_A9BE430F71525B53" (
+            references = @./03_meshes/03_cars/mesh_A9BE430F71525B53.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "invisible"
+        }
+    }
+}

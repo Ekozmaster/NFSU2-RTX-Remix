@@ -141,9 +141,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -155,9 +157,11 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/traffic/65F8890EC78909F2_emissive.dds@ (
@@ -165,9 +169,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -175,12 +181,19 @@ over "RootNode"
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./textures/traffic/65F8890EC78909F2_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -189,8 +202,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -212,6 +228,11 @@ over "RootNode"
                     renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./textures/traffic/B8C3DE638E2F2539_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -220,8 +241,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -819,9 +843,11 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/traffic/39AC59F85FD4D7B4_emissive.dds@ (
@@ -829,9 +855,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -839,12 +867,19 @@ over "RootNode"
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./textures/traffic/39AC59F85FD4D7B4_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -853,8 +888,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -883,9 +921,11 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./textures/traffic/1968358E59872413_emissive.dds@ (
@@ -893,9 +933,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -903,12 +945,19 @@ over "RootNode"
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./textures/traffic/1968358E59872413_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -917,8 +966,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
