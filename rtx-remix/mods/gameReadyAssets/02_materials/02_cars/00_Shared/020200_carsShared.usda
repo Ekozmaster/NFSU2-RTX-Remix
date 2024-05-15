@@ -5,7 +5,10 @@
         @./Decals/020200_carsSharedDecals.usda@,
         @./Metal/020200_carsSharedMetal.usda@,
         @./Carpaint/020200_carsSharedCarpaint.usda@,
-        @./CarWheel/020200_carsSharedCarWheel.usda@
+        @./CarWheel/020200_carsSharedCarWheel.usda@,
+        @./common_rubber_mat.usda@,
+        @./common_sliver_mat.usda@,
+        @./common_interiors_mat.usda@
     ]
     upAxis = "Z"
 )
