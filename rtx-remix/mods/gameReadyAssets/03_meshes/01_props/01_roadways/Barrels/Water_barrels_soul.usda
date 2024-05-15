@@ -4,23 +4,13 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_6EE1388ED9AEFD6E"
-        {
-            over "ThinPoleLight"
-            {
-                double3 xformOp:rotateXYZ = (0, 33.00000049173832, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.03540560771568835, -6.124864287843707, 12.200000181795541)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_8C349488F281AD1E" (
             references = None
         )
         {
             def Xform "ref_b4db17bdec05453b98c92f4f1065ef5c" (
-                prepend references = @./Barrels/Water_barrels_soul.usd@
+                delete references = @./Barrels/Water_barrels_soul.usd@
+                prepend references = @./Water_barrels_soul.usd@
             )
             {
                 custom bool IsRemixRef = 1
@@ -51,8 +41,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Albedo/Opacity Map"
-                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -74,8 +64,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Roughness Map"
-                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -94,8 +84,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Albedo/Opacity Map"
-                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -117,8 +107,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Roughness Map"
-                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -129,12 +119,12 @@ over "RootNode"
                     }
                 }
             }
-        }
 
-        over "mesh_7AD5D61AD4850A59" (
-            references = None
-        )
-        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
         }
 
         over "mesh_74A9281A978C19F7" (
@@ -173,8 +163,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Albedo/Opacity Map"
-                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -196,8 +186,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Roughness Map"
-                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -216,8 +206,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Albedo/Opacity Map"
-                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -239,8 +229,8 @@ over "RootNode"
                                         }
                                         displayGroup = "Base Material"
                                         displayName = "Roughness Map"
-                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                                         hidden = false
                                         renderType = "texture_2d"
@@ -251,38 +241,29 @@ over "RootNode"
                     }
                 }
             }
-        }
 
-        over "mesh_A72B8E3C282D8DC9" (
-            references = None
-        )
-        {
-        }
-
-        over "mesh_11DC2B18D6329ABA"
-        {
-            over "LargeStructureAccentBase"
+            over "mesh" (
+                active = false
+            )
             {
-                double3 xformOp:rotateXYZ = (180, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 3.200000047683716)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
-    }
 
-    over "Looks"
-    {
-        over "mat_65F8890EC78909F2"
+        over "mesh_A72B8E3C282D8DC9"
         {
-            over "Shader"
+            over "mesh" (
+                active = false
+            )
             {
-                float inputs:emissive_intensity = 1 (
-                    doc = """Intensity of the emission
+            }
+        }
 
-"""
-                    hidden = false
-                )
+        over "mesh_7AD5D61AD4850A59"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
     }
