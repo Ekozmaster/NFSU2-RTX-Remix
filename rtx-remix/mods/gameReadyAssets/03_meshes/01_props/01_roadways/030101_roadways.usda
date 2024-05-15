@@ -2,7 +2,8 @@
 (
     subLayers = [
         @./StreetLamps/StreetLamps.usda@,
-        @./AvenueMedians/AvenueMedians.usda@
+        @./AvenueMedians/AvenueMedians.usda@,
+        @./Barrels/Water_barrels_soul.usda@
     ]
     upAxis = "Z"
 )
