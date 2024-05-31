@@ -9618,6 +9618,3486 @@ def "RootNode"
             {
             }
         }
+
+        def "mesh_2637AD13C4498F8C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_2637AD13C4498F8C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A2986EFBB8C4C7FD"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A2986EFBB8C4C7FD/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_77AE4BDF8A7B0671"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_77AE4BDF8A7B0671/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_92A331FFB97033B1"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_92A331FFB97033B1/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_2F4D2D86B999585E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_2F4D2D86B999585E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_3B01E165AA71D900"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_3B01E165AA71D900/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_07B04140887AA59F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_07B04140887AA59F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A4CC11CA2A903F99"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A4CC11CA2A903F99/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_97FC3ED69D32FEFC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_97FC3ED69D32FEFC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CEF0E241BDE6AB42"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CEF0E241BDE6AB42/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C6D174D9855AFF33"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C6D174D9855AFF33/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_E8C142B53406E3F6"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_E8C142B53406E3F6/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_F9D9A277C76B9A60"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_F9D9A277C76B9A60/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_B90613F334E82E10"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_B90613F334E82E10/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_F1C0ECCA968ABA83"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_F1C0ECCA968ABA83/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_354FD38693B69368"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_354FD38693B69368/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_3247F339EF882344"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_3247F339EF882344/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_62B1361E56736CF8"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_62B1361E56736CF8/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_BEA1AFA3C89CA923"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_BEA1AFA3C89CA923/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7F8E4F815C54BC7D"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7F8E4F815C54BC7D/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_AD9141DA9B374E0F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_AD9141DA9B374E0F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_078C66D426D25254"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_078C66D426D25254/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A05F75B12E3B8046"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A05F75B12E3B8046/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_DFB65112DD57E531"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_DFB65112DD57E531/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_72D84F3D8CAD8CFC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_72D84F3D8CAD8CFC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4535C716CE393180"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4535C716CE393180/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_6C884B05701A8ECD"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_6C884B05701A8ECD/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D1BE331033F5DB6D"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D1BE331033F5DB6D/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_53647FB97522EE38"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_53647FB97522EE38/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_B87991C183B8036C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_B87991C183B8036C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_2AA6C6E76547C5F2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_2AA6C6E76547C5F2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_8F2FC01490043B13"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_8F2FC01490043B13/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_416F158EBA060D15"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_416F158EBA060D15/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_273557A5B47679DE"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_273557A5B47679DE/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D7941C08215D3AFB"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D7941C08215D3AFB/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_DFA7E6DDE5D72CF5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_DFA7E6DDE5D72CF5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_FD27A05066F92882"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_FD27A05066F92882/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_2A735EA483F07856"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_2A735EA483F07856/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C29DD77F58B5B718"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C29DD77F58B5B718/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CCC69C6CA4E6E432"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CCC69C6CA4E6E432/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_523D81A6F4A6628D"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_523D81A6F4A6628D/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7CABFEFF140E07BA"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7CABFEFF140E07BA/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C4D7CCC4ECF825B7"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C4D7CCC4ECF825B7/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_17F756BFECD5BC97"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_17F756BFECD5BC97/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_139B91D6585DAE2E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_139B91D6585DAE2E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_65EE2A382E1A4597"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_65EE2A382E1A4597/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_3ABAEFCAFF4FF74F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_3ABAEFCAFF4FF74F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_F5CB70DB234D2607"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_F5CB70DB234D2607/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1A78A584B55987C5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1A78A584B55987C5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_83B8D922C64E095A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_83B8D922C64E095A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_3DC97F3A2FD78D48"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_3DC97F3A2FD78D48/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CA2F1A14A6C24B52"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CA2F1A14A6C24B52/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9C92E5A64DD698E6"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9C92E5A64DD698E6/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_425E51724E73FAE7"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_425E51724E73FAE7/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_8C1A775BE02772DA"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_8C1A775BE02772DA/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_900D1272812DDDAD"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_900D1272812DDDAD/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1F5384D96F107BB5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1F5384D96F107BB5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_10B9AF8C132E1C11"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_10B9AF8C132E1C11/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_362F8E88A8D9C9BC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_362F8E88A8D9C9BC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1DFEABB930CACE2F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1DFEABB930CACE2F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A55BA78DC4A7A43A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A55BA78DC4A7A43A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1705DBD36B887A7E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1705DBD36B887A7E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_5C0744A304692748"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_5C0744A304692748/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_871BD798E94A8DAB"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_871BD798E94A8DAB/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_EA0636F3C67AB331"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_EA0636F3C67AB331/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_6A6DEA95CF2E1702"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_6A6DEA95CF2E1702/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_AB9DF05FEC831DFA"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_AB9DF05FEC831DFA/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_632B3937DA6B44BE"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_632B3937DA6B44BE/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_BEBBCA230CE6A990"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_BEBBCA230CE6A990/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_3D9ECF11D89D713C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_3D9ECF11D89D713C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_3BBDB5BD925C3F2A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_3BBDB5BD925C3F2A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_42AB3F98CCA61F8C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_42AB3F98CCA61F8C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7012B5C00C3C3DE7"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7012B5C00C3C3DE7/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D92E9AFE7566DE0C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D92E9AFE7566DE0C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_5BB3F4D617EC3F0E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_5BB3F4D617EC3F0E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_153286D847550E37"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_153286D847550E37/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_369356F5954436F0"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_369356F5954436F0/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4260D68E98E39320"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4260D68E98E39320/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_954743BC7730FA04"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_954743BC7730FA04/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_07BC547227F768EF"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_07BC547227F768EF/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D46F5C1C0C6CD3DB"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D46F5C1C0C6CD3DB/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_E81A9EB6AD14CC4B"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_E81A9EB6AD14CC4B/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_F661BCD514AB5D4E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_F661BCD514AB5D4E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C0C20C9553A58C25"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C0C20C9553A58C25/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D63189E15D0C47EF"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D63189E15D0C47EF/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D95D2B0F41E103D4"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D95D2B0F41E103D4/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_68656783F8A0757C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_68656783F8A0757C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7D764BE55C323AB5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7D764BE55C323AB5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_218D9EBB707AC171"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_218D9EBB707AC171/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_6893903794943A41"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_6893903794943A41/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9094EF324E8C531D"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9094EF324E8C531D/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_00FDC10176E914AE"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_00FDC10176E914AE/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9E7BC8F44B703AA7"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9E7BC8F44B703AA7/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D45E3B93E87CDA0E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D45E3B93E87CDA0E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_FC3C66FCDFC4FA42"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_FC3C66FCDFC4FA42/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_6401C1F15AD219BD"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_6401C1F15AD219BD/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CE452FA450B7DFA3"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CE452FA450B7DFA3/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7DB136BB3B8202D8"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7DB136BB3B8202D8/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_494468C8AE4CF9C2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_494468C8AE4CF9C2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_F036DB3219E1BCAC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_F036DB3219E1BCAC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D8332BABA183ADD9"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D8332BABA183ADD9/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_73D9F5B759215A22"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_73D9F5B759215A22/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C848208DFA8BA195"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C848208DFA8BA195/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_E6059CC74CA1A74C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_E6059CC74CA1A74C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_58B37A0764940135"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_58B37A0764940135/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9837786E64DB1113"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9837786E64DB1113/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_E93EA1D25EF0B04B"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_E93EA1D25EF0B04B/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_819C127A90495AA8"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_819C127A90495AA8/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9AF82DE8665CE425"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9AF82DE8665CE425/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9FF4A8C069DCD194"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9FF4A8C069DCD194/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_39E82BCF9A373062"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_39E82BCF9A373062/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4106B077AEF15C03"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4106B077AEF15C03/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1E9434198D4FD97F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1E9434198D4FD97F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_294569743BA3D03B"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_294569743BA3D03B/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4F219CA9963553A0"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4F219CA9963553A0/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_75D9F24BCDC0BD78"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_75D9F24BCDC0BD78/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0C2E0C0013B370DE"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0C2E0C0013B370DE/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D98F5447C336FF1A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D98F5447C336FF1A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_666E4DCBB62542D9"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_666E4DCBB62542D9/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CE44AE2CA2085D96"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CE44AE2CA2085D96/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D00DB350EFA4E57A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D00DB350EFA4E57A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CC7D3A7618EA6730"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CC7D3A7618EA6730/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7E1F9BAFAFE8A044"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7E1F9BAFAFE8A044/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_12AE48FBDB647357"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_12AE48FBDB647357/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_41F4CE1E09F359B2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_41F4CE1E09F359B2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_004E2CCFF7998BF1"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_004E2CCFF7998BF1/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_BACB0DFAA7BE3D05"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_BACB0DFAA7BE3D05/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4E8C0B02F500D6C8"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4E8C0B02F500D6C8/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_8B385E4A93933A87"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_8B385E4A93933A87/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9401E496E5565534"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9401E496E5565534/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_910B27AC527268B5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_910B27AC527268B5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_B2138E2A260F20FC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_B2138E2A260F20FC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_6FCF6548B0AD8A6D"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_6FCF6548B0AD8A6D/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_619DF8C152B4DD6C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_619DF8C152B4DD6C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_B2AF91FC40F6A954"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_B2AF91FC40F6A954/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_494F3D0DC85B3924"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_494F3D0DC85B3924/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_46C34F278F3792A1"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_46C34F278F3792A1/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CC638B6A5DF966EA"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CC638B6A5DF966EA/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_5110C651C914D0F0"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_5110C651C914D0F0/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_6DDFF3C7BBBCC314"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_6DDFF3C7BBBCC314/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0BECC70D2D277BFC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0BECC70D2D277BFC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_76C7862DC237E07E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_76C7862DC237E07E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9A71F9D1ED117A46"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9A71F9D1ED117A46/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_64DE26479D7FAF98"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_64DE26479D7FAF98/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A13EF78DEE626523"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A13EF78DEE626523/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_25B094E8B0FC0AC1"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_25B094E8B0FC0AC1/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7989DBCB2920825E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7989DBCB2920825E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_ADB4D06EA03CAF96"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_ADB4D06EA03CAF96/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_62482929BE009E1A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_62482929BE009E1A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_331F1C388DB248FC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_331F1C388DB248FC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_93D65A4E99864EC5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_93D65A4E99864EC5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_2D86D3FD7F566841"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_2D86D3FD7F566841/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D2DDDD514275F0D3"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D2DDDD514275F0D3/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_886E3650CC1C82B9"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_886E3650CC1C82B9/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_2A1E1CC617728530"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_2A1E1CC617728530/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4AEB6C14E1F02D96"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4AEB6C14E1F02D96/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_517BA3ECD1FBF16E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_517BA3ECD1FBF16E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CDDD0134FCD922C5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CDDD0134FCD922C5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9D07182DCC298000"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9D07182DCC298000/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_187227EC22678471"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_187227EC22678471/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_EC7F4151EA0EAF3A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_EC7F4151EA0EAF3A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_000EF1BA373880F2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_000EF1BA373880F2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_AAF2618F2EF2CD9B"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_AAF2618F2EF2CD9B/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4BEA394853931C3F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4BEA394853931C3F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A31116E9528408F1"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A31116E9528408F1/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4D246DE9C3EE2042"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4D246DE9C3EE2042/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0EABE1BEAA7FBA71"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0EABE1BEAA7FBA71/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1BA6F2E2C42E2D22"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1BA6F2E2C42E2D22/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4B7B4D9C4D56636A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4B7B4D9C4D56636A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A6F187AA304C5C11"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A6F187AA304C5C11/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_20A40E38F0E3DFFC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_20A40E38F0E3DFFC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0C2F7E278EF2E0C6"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0C2F7E278EF2E0C6/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_6FE8127A7DD5BCE8"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_6FE8127A7DD5BCE8/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D7A5CAF5302B586A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D7A5CAF5302B586A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4E677BD75BAC6EA3"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4E677BD75BAC6EA3/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1474E4DAEDD523E2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1474E4DAEDD523E2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0A5EE3BC6E386245"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0A5EE3BC6E386245/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A9440EDDF236F135"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A9440EDDF236F135/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1507C606DB8B6397"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1507C606DB8B6397/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A1C7533C2B7E4C15"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A1C7533C2B7E4C15/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A696B6A93EB2D2C9"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A696B6A93EB2D2C9/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9DF6F7816F10C5CF"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9DF6F7816F10C5CF/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7A9294E0D9793F9F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7A9294E0D9793F9F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_F38BC1656FD05C25"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_F38BC1656FD05C25/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_9F2261CB8F94171D"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_9F2261CB8F94171D/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_180E837EE9964C56"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_180E837EE9964C56/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_72BDCE99F399405B"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_72BDCE99F399405B/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_36C489B5CF8052D9"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_36C489B5CF8052D9/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C1485920A109F2A2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C1485920A109F2A2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_29FFBDA8D9E41321"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_29FFBDA8D9E41321/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_19A348CA7E2DCA19"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_19A348CA7E2DCA19/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_DCCA243704E84DAA"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_DCCA243704E84DAA/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C8DA1E1D14A77539"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C8DA1E1D14A77539/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_2B97EF721F098C90"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_2B97EF721F098C90/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_33248EA3A98ABA17"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_33248EA3A98ABA17/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_D17DDAA0FBB1DD2A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_D17DDAA0FBB1DD2A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_FD470A01797CE6B8"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_FD470A01797CE6B8/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0A379084C9AB6A90"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0A379084C9AB6A90/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_8BF6594383B0081B"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_8BF6594383B0081B/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_5CF1D5108AB8C3D3"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_5CF1D5108AB8C3D3/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1DCC24644A09E56D"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1DCC24644A09E56D/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_FA04B7588D3373C2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_FA04B7588D3373C2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_3AAA25FDE544220E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_3AAA25FDE544220E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_35E7CA97129647B5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_35E7CA97129647B5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_C86C7D4D519D4FDC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_C86C7D4D519D4FDC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4ED093F686924B95"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4ED093F686924B95/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_870F3F1F3A0DFFBF"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_870F3F1F3A0DFFBF/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_06F6A2CA98E484EC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_06F6A2CA98E484EC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_82380C17AD740637"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_82380C17AD740637/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1BF6E77923E0FF47"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1BF6E77923E0FF47/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_67BFDBF0B2724D2E"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_67BFDBF0B2724D2E/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_B8232CE16768F1D2"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_B8232CE16768F1D2/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_91AD2722703FD78F"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_91AD2722703FD78F/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0D4C090CC9504FE5"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0D4C090CC9504FE5/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_35FB215CFF0CD1FB"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_35FB215CFF0CD1FB/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_AFB2A668E556F820"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_AFB2A668E556F820/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_07C15489A45F5585"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_07C15489A45F5585/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_911E23557A4B6602"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_911E23557A4B6602/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_5521F790C0AB25BC"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_5521F790C0AB25BC/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CA0B03F49FED36F4"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CA0B03F49FED36F4/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_4DAA7DC216EF146B"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_4DAA7DC216EF146B/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_B5F3E5E3A57485B7"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_B5F3E5E3A57485B7/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_F601A212074186EA"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_F601A212074186EA/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_38FA09FFFC5D55C9"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_38FA09FFFC5D55C9/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_AC0F03EDA64FBC1C"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_AC0F03EDA64FBC1C/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_A6B3F6D05A596CDB"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_A6B3F6D05A596CDB/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_CE5F18C843C62D77"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_CE5F18C843C62D77/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_01440DD1F1D14BA1"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_01440DD1F1D14BA1/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_1CE87910E0B7BAF7"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_1CE87910E0B7BAF7/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_0E0828D4CBBBC41A"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_0E0828D4CBBBC41A/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_7B4A81BB9A38B430"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_7B4A81BB9A38B430/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        def "mesh_08C8B188EFA11918"
+        {
+            def Xform "UVFix" (
+                prepend references = @./uv_fixes_01_meshes.usd@</RootNode/meshes/mesh_08C8B188EFA11918/NewMesh>
+            )
+            {
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
     }
 }
 
