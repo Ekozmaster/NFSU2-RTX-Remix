@@ -1,0 +1,379 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "World"
+{
+    def Xform "decalsSet01" (
+        references = @./garageLobby_decalSet01_out01.usd@
+    )
+    {
+        double3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        over "XForms"
+        {
+            over "World"
+            {
+                over "garageLobby_decalSet01_out01"
+                {
+                    over "decalScene01_Geo_decalStreet_plane09" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423401826, 0, -1.7763568394002505e-15)
+                        double3 xformOp:translate:pivot = (1.395546972751617, 0, -7.894880533218384)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane08" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423401826, -3.941291737419306e-15, -1.7763568394002505e-15)
+                        double3 xformOp:translate:pivot = (1.7647950053215022, 0, -7.888021945953369)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane07" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423402514, -3.941291737419306e-15, -1.7763568394002505e-15)
+                        double3 xformOp:translate:pivot = (0.15184849873185113, 0, -7.764808893203735)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane06" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423401826, 0, -1.7763568394002505e-15)
+                        double3 xformOp:translate:pivot = (0.5825839936733241, 0, -7.754053592681885)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane05" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423402514, -3.941291737419306e-15, -2.5224267119483557e-13)
+                        double3 xformOp:translate:pivot = (0.32008050754666284, 0, -7.291789531707764)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane04" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423399095, 0, -1.7763568394002505e-15)
+                        double3 xformOp:translate:pivot = (3.6701669692993164, 0, -8.743642807006836)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423399228, 0, -1.7763568394002505e-15)
+                        double3 xformOp:translate:pivot = (2.5879139900207515, 0, -8.743642807006836)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.10446387423401826, 0, -1.7763568394002505e-15)
+                        double3 xformOp:translate:pivot = (1.4737139940261836, 0, -8.743642807006836)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalStreet_plane01_decalScene01_Geo" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (0.3200799897313116, 0, -8.743642807006836)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane10" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (1.498770475387573, 0, -7.358039617538452)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane11" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (2.497033476829529, 0.30332151055336, -7.3335559368133545)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane13" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (4.228938937187195, 0.30332151055336, -7.276064395904541)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane12" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (3.3345744609832764, 0.30332151055336, -7.26752233505249)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane14" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (4.228938937187195, 0.30332151055336, -6.152059078216553)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane15" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (3.3345744609832764, 0.30332151055336, -6.143516540527344)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane16" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.02291138612391075, 0, 0)
+                        double3 xformOp:translate:pivot = (2.497033476829529, 0.30332151055336, -6.209549903869629)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane18" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.030246998649678503, 0, 0)
+                        double3 xformOp:translate:pivot = (5.4128265380859375, 0.3033215068280697, -7.3335559368133545)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane19" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.030246998649678503, 0, 0)
+                        double3 xformOp:translate:pivot = (6.2503674030303955, 0.3033214993774891, -7.26752233505249)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane21" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.030246998649678503, 0, 0)
+                        double3 xformOp:translate:pivot = (7.144731521606445, 0.30332148633897305, -7.276064395904541)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane23" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.030246998649678503, 0, 0)
+                        double3 xformOp:translate:pivot = (7.144731521606445, 0.30332148633897305, -6.12715744972229)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane22" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.030246998649678503, 0, 0)
+                        double3 xformOp:translate:pivot = (6.2503674030303955, 0.3033214993774891, -6.118615627288818)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "decalScene01_Geo_decalStreet_plane24" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        rel material:binding = </Looks/decalsSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        custom uniform bool remix_category:decal_Static = 1
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0.030246998649678503, 0, 0)
+                        double3 xformOp:translate:pivot = (5.4128265380859375, 0.3033215068280697, -6.184648513793945)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+                }
+            }
+        }
+    }
+}
+

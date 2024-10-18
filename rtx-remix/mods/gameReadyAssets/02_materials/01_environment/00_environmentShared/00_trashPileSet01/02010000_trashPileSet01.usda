@@ -1,0 +1,215 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "Looks"
+{
+    def Material "trashPileSet01_opaqueMat" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </Looks/trashPileSet01_translMat> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        token outputs:mdl:displacement.connect = </Looks/trashPileSet01_opaqueMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/trashPileSet01_opaqueMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/trashPileSet01_opaqueMat/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            int inputs:alpha_test_type = 5 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Material Flags"
+                displayName = "Alpha Test Type"
+                doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "AlphaTestType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Always"
+                    string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                }
+            )
+            bool inputs:blend_enabled = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Material Flags"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            int inputs:blend_type = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Material Flags"
+                displayName = "Blend Type"
+                doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "BlendType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Alpha"
+                    string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                }
+            )
+            asset inputs:diffuse_texture = @./trashPile01_trim_diffuse.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:enable_emission = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emissive"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            float inputs:metallic_constant = 1 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @./trashPile01_trim_metallic.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./trashPile01_trim_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:opacity_constant = 0 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Opacity Amount"
+                doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 1 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./trashPile01_trim_roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_legacy_alpha_state = 0 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Material Flags"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "trashPileSet01_translMat"
+    {
+        token outputs:mdl:displacement.connect = </Looks/trashPileSet01_translMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/trashPileSet01_translMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/trashPileSet01_translMat/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../../AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+
