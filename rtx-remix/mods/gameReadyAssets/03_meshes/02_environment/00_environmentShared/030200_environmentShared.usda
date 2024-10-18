@@ -1,0 +1,8 @@
+#usda 1.0
+(
+    subLayers = [
+        @./00_trashPileSet01/trashPileSet_01.usda@,
+        @./01_decalsSet01/decalsSet_01.usda@
+    ]
+    upAxis = "Z"
+)

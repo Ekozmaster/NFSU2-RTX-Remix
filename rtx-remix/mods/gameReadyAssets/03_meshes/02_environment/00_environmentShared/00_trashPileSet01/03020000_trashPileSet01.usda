@@ -1,0 +1,1006 @@
+#usda 1.0
+
+over "World"
+{
+    def Xform "trashSet01" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @./garageLobby_trashSet01_out02.usd@
+    )
+    {
+        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        double3 xformOp:rotateXYZ = (90, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        over "XForms"
+        {
+            over "World"
+            {
+                over "garageLobby_trashSet01_out01" (
+                    active = false
+                )
+                {
+                }
+
+                over "garageLobby_trashSet01_out02"
+                {
+                    over "box_flatOpen01_boxTypes_Geo" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.21122800558805466, 0.18048400385305285, -16.111331939697266)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_tallOpen02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.931735038757324, 0.2566200098954141, -16.09568214416504)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_tallOpen04" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.0918180346488953, 0.17426999285817146, -15.215693950653076)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_flatOpen02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.6307114958763123, 0.16876699589192867, -16.088106155395508)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_flatOpen05" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.6648194938898087, 0.118176001124084, -15.22547721862793)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_tallOpen01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.10351300239563, 0.25071150436997414, -16.076499938964844)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_flatOpen03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.3182690143585205, 0.1859009973704815, -16.116554260253906)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_flatOpen04" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.13413749635219574, 0.11960000265389681, -15.281740188598633)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_flatOpen06" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.364697515964508, 0.13233549986034632, -15.199140071868896)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_tallOpen03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.6012954711914062, 0.20812500035390258, -16.083423614501953)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_tallOpen06" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.6403794288635254, 0.13845899840816855, -15.235975742340088)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_tallOpen05" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.8800535202026367, 0.17304800543934107, -15.303368091583252)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_damagedOpen02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.845255494117737, 0.05336499959230423, -14.435300350189209)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_damagedOpen03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.4798654317855835, 0.19910499663092196, -14.4853196144104)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_damagedClosed01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.2129409909248352, 0.26773249125108123, -14.475162982940674)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperBag_open01_paperTypes" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.3822440057992935, 0.1542530027218163, -13.801246166229248)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_damagedClosed03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.3964719772338867, 0.16404900420457125, -14.481663227081299)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_damagedOpen01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.128025531768799, 0.14566849824041128, -14.44251823425293)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "boxTypes_Geo_box_damagedClosed02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.7214439958333969, 0.17619449994526803, -14.509582996368408)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paperBag_open02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.009352002292871503, 0.14213899592868984, -13.793031692504883)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper05" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.9678474962711334, 0.03835349949076772, -13.162848949432373)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.3525034934282303, 0.03538200072944164, -13.178531646728516)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper08" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.9181775450706482, 0.032777500338852406, -13.243351936340332)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper04" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.6807304918766022, 0.027421499602496624, -13.149574279785156)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.35491450875997543, 0.030397498980164528, -13.194263458251953)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paperBag_open03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.35986199975013733, 0.16967250290326774, -13.796961784362793)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.0025804936885834018, 0.030571500305086374, -13.191020011901855)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper06" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.2782739996910095, 0.0297559997998178, -13.247411727905273)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_newspaper07" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.6017339825630188, 0.0391499986872077, -13.206515789031982)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_sheet01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.469949960708618, 0.011439500143751502, -13.263009071350098)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_sheet05" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.1858750581741333, 0.017578000202775, -13.264176845550537)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.01658000051975253, 0.10800150223076344, -12.791951656341553)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_sheet02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.6550179719924927, 0.03243049932643771, -13.264937400817871)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_sheet03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.829237937927246, 0.012081000488251448, -13.264631748199463)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_sheet06" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.3651814460754395, 0.0326359998434782, -13.22338581085205)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_sheet04" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.0126250982284546, 0.022733499761670828, -13.225453853607178)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.3687940090894699, 0.06570249982178211, -12.764848232269287)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard08" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.940167486667633, 0.03651000093668699, -12.67152738571167)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard04" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.6624740064144135, 0.03189950017258525, -12.724026203155518)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard05" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.9765699803829193, 0.03248499892652035, -12.65972900390625)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.28742100298404694, 0.027096500620245934, -12.755924224853516)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard07" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.5953505039215088, 0.04239050066098571, -12.76005506515503)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticBag_2_plasticTypes" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.1726149916648865, 0.18884900491684675, -11.336776733398438)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticTypes_plasticBag_7" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.3643035050481558, 0.15024800295941532, -12.03515625)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperTypes_paper_cardboard06" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.267221987247467, 0.02372299926355481, -12.755725383758545)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticTypes_plasticBag_4" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.3768004924058914, 0.1901984967989847, -11.36294937133789)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticTypes_plasticBag_3" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.8847045302391052, 0.17377700214274228, -11.353433609008789)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticTypes_plasticBag_6" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.1769179999828339, 0.0972424988867715, -11.970733642578125)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticTypes_plasticBag_1" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.925680935382843, 0.0804140034597367, -12.004375457763672)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticTypes_plasticBag_5" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.393546998500824, 0.1837589992210269, -11.333245754241943)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_wood_crate02_woodTypes" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (1.421837031841278, 0.21944600390270352, -10.492087364196777)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_woodTypes_wood_crate04" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.512616038322449, 0.07802949985489249, -10.47965669631958)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_plasticTypes_plasticBag_8" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (-0.3606109991669655, 0.1326399982208386, -12.062793731689453)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_woodTypes_wood_crate03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (2.802915096282959, 0.037718499545007944, -10.591267585754395)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_woodTypes_wood_crate01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0.01641249656677246, 0.22288050467614084, -10.495941638946533)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_steel_trashcan01_steelTypes" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.0265084505081177, 0.5033940142020583, -11.781652450561523)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_polySurface7_tvType" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0, 0.4942434876866173, -9.028102397918701)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_steelTypes_steel_trashcan03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.938260555267334, 0.5033940142020583, -11.781688213348389)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_steelTypes_steel_trashcan02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (3.9734463691711426, 0.5265729874372482, -11.781651973724365)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_paperCup_open01_smallTypes" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.508835077285767, 0.038920500432141125, -13.629111766815186)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_paperCup_open02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.50563383102417, 0.025892000528983772, -13.344214916229248)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_paperHold_open01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.349492073059082, 0.013183999748434871, -13.620943546295166)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_metalCan_bent03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.6428985595703125, 0.0333555000834167, -13.05446481704712)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_metalCan_bent01" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.643234491348267, 0.04710300103761256, -13.636633396148682)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_paperCup_open03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.500561952590942, 0.022720000706613064, -13.042736053466797)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_paperHold_open02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.353800535202026, 0.014289000333519652, -13.343400955200195)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_paperHold_open03" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.354278564453125, 0.018904499971540645, -13.042061805725098)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_smallTypes_metalCan_bent02" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_opaqueMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (4.6394429206848145, 0.02235200093127787, -13.354132175445557)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+
+                    over "Geo_tvType_pPlane3" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/trashPileSet01_translMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.1843720384999479, 0, 0)
+                        double3 xformOp:translate:pivot = (0, 0.7034984976053238, -8.827121257781982)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:translate:pivot", "xformOp:rotateXYZ", "xformOp:scale", "!invert!xformOp:translate:pivot"]
+                    }
+                }
+            }
+        }
+    }
+
+    over "Xform" (
+        active = false
+    )
+    {
+    }
+}
+
