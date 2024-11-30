@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (4767.127036546707, 3299.33462640034, 2246.3737453545136)
-                double3 target = (4095.0083506290493, 2760.504803008286, 2157.3855806155498)
+                double3 position = (7.7345508790791575, 6.615110614395977, 3.758223938429812)
+                double3 target = (-174.44906788852873, -135.85098546245987, -24.69599403922996)
             }
             dictionary Right = {
                 double3 position = (0, -50000, 0)
@@ -143,7 +143,7 @@ def Xform "ChristmasPalmTall"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:subsurface_measurement_distance = 1.1 (
+                float inputs:subsurface_measurement_distance = 0.75 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -158,7 +158,7 @@ This parameter is unused.
 """
                     hidden = false
                 )
-                color3f inputs:subsurface_single_scattering_albedo = (0.84, 1, 0.16) (
+                color3f inputs:subsurface_single_scattering_albedo = (1, 0.93, 0) (
                     customData = {
                         float3 default = (0.5, 0.5, 0.5)
                         dictionary range = {
@@ -174,7 +174,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "color"
                 )
-                color3f inputs:subsurface_transmittance_color = (0.71999997, 1, 0.19999999) (
+                color3f inputs:subsurface_transmittance_color = (0.11, 0.11, 0.96) (
                     customData = {
                         float3 default = (0.5, 0.5, 0.5)
                         dictionary range = {
@@ -190,7 +190,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "color"
                 )
-                float inputs:subsurface_volumetric_anisotropy = 0.51 (
+                float inputs:subsurface_volumetric_anisotropy = 0.19999999 (
                     customData = {
                         float default = 0
                         dictionary range = {
