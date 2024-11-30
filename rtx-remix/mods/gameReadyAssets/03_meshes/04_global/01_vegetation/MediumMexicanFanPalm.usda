@@ -143,6 +143,68 @@ def Xform "MediumMexicanFanPalm"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:subsurface_measurement_distance = 0.75 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 16
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Measurement Distance"
+                    doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                color3f inputs:subsurface_single_scattering_albedo = (1, 0.9, 0) (
+                    customData = {
+                        float3 default = (0.5, 0.5, 0.5)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Single Scattering Albedo"
+                    doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                color3f inputs:subsurface_transmittance_color = (0.11, 0.11, 0.95) (
+                    customData = {
+                        float3 default = (0.5, 0.5, 0.5)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Transmittance Color"
+                    doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                float inputs:subsurface_volumetric_anisotropy = 0.2 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 0.99
+                            float min = -0.99
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Volumetric Anisotropy"
+                    doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
+This parameter is unused.
+"""
+                    hidden = false
+                )
                 token outputs:out (
                     renderType = "material"
                 )
