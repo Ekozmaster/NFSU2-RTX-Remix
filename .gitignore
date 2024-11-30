@@ -4,12 +4,14 @@
 !/docs/
 !/dxvk.conf
 !/.gitattributes
+/rtx-remix/logs/
 
 !/.trex
 /.trex/*
 !/.trex/bridge.conf
 
 captures/
+capturesSPEED2.EXE_icon.bmp
 .thumbs/
 .vscode/
 rtx-remix/mods/gameReadyAssets/rough_only.usda
