@@ -28,6 +28,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, -0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -46,7 +47,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -65,7 +67,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -84,7 +87,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -105,6 +109,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, 0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -123,7 +128,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -142,7 +148,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -161,7 +168,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -182,6 +190,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, 0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -202,6 +211,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, -0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -227,6 +237,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, -0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -245,7 +256,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -264,7 +276,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -283,7 +296,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -304,6 +318,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, 0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -322,7 +337,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -341,7 +357,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -360,7 +377,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -381,6 +399,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, 0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -401,6 +420,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, -0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -426,6 +446,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, -0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -444,7 +465,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -463,7 +485,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -482,7 +505,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -503,6 +527,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, 0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -521,7 +546,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -540,7 +566,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -559,7 +586,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -580,6 +608,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, 0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -600,6 +629,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, -0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -625,6 +655,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, -0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -643,7 +674,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -662,7 +694,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -681,7 +714,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -702,6 +736,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, 0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -720,7 +755,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -739,7 +775,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -758,7 +795,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -779,6 +817,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, 0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -799,6 +838,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, -0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -824,6 +864,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, -0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -842,7 +883,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -861,7 +903,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -880,7 +923,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -901,6 +945,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, 0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -919,7 +964,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -938,7 +984,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -957,7 +1004,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -978,6 +1026,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, 0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -998,6 +1047,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, -0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -1023,6 +1073,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, -0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -1041,7 +1092,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -1060,7 +1112,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -1079,7 +1132,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -1100,6 +1154,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, -90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.75, 0.55, 0.45)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def SphereLight "Headlight_R" (
@@ -1118,7 +1173,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_Y" (
@@ -1137,7 +1193,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
 
                 def SphereLight "Headlight_B" (
@@ -1156,7 +1213,8 @@ over "RootNode"
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    custom float inputs:volumetric_radiance_scale = 0
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
 
@@ -1177,6 +1235,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, 0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -1197,6 +1256,7 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.05, -0.6, 0.5000000074505806)
+                custom float inputs:volumetric_radiance_scale = 0
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

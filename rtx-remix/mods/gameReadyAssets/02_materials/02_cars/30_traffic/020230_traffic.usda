@@ -3,371 +3,1030 @@
     upAxis = "Z"
 )
 
-over "RootNode"
+over "Looks" (
+    prepend apiSchemas = ["MaterialBindingAPI"]
+)
 {
-    over "Looks"
+    rel material:binding = </Looks/traffic_alfaRomeoZ33_bodyWork> (
+        bindMaterialAs = "weakerThanDescendants"
+    )
+
+    def Material "traffic_chevroletCapricePoliceCar94_bodyWorkTYPE01"
     {
-        over "mat_39AC59F85FD4D7B4"
+        token outputs:mdl:displacement.connect = </Looks/traffic_chevroletCapricePoliceCar94_bodyWorkTYPE01/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_chevroletCapricePoliceCar94_bodyWorkTYPE01/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_chevroletCapricePoliceCar94_bodyWorkTYPE01/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/39AC59F85FD4D7B4_rough.dds@
-            }
-        }
-
-        over "mat_0D71F8FC3592B542"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/0D71F8FC3592B542_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/0D71F8FC3592B542_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/0D71F8FC3592B542_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/0D71F8FC3592B542_rough.dds@
-            }
-        }
-
-        over "mat_65F8890EC78909F2"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/65F8890EC78909F2_diffuse.dds@ (
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./chevroletCapricePoliceCar94_bodyWorkMatTYPE01_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:emissive_intensity = 2 (
-                    displayGroup = "Emission"
-                    doc = """Intensity of the emission
-
-"""
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/65F8890EC78909F2_emissive.dds@ (
-                    displayGroup = "Emission"
-                    doc = """The texture masking the emissive color
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_emission = 1 (
-                    displayGroup = "Emission"
-                    doc = """Enables the emission of light from the material
-
-"""
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
                     }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
 
 """
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/65F8890EC78909F2_normal.dds@ (
-                    customData = {
-                        asset default = @@
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
                     }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:reflection_roughness_constant = 0.5 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./chevroletCapricePoliceCar94_bodyWorkMatTYPE01_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "traffic_chevroletCapricePoliceCar94_bodyWorkTYPE02"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_chevroletCapricePoliceCar94_bodyWorkTYPE02/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_chevroletCapricePoliceCar94_bodyWorkTYPE02/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_chevroletCapricePoliceCar94_bodyWorkTYPE02/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./chevroletCapricePoliceCar94_bodyWorkMatTYPE02_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
                     }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
 
 """
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/65F8890EC78909F2_rough.dds@ (
-                    displayGroup = "Base Material"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
-        over "mat_30BE152A3F95EEC1"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/30BE152A3F95EEC1_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/30BE152A3F95EEC1_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/30BE152A3F95EEC1_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/30BE152A3F95EEC1_rough.dds@
-            }
-        }
-
-        over "mat_55140B973C31AA93"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/55140B973C31AA93_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/55140B973C31AA93_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/55140B973C31AA93_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/55140B973C31AA93_rough.dds@
-            }
-        }
-
-        over "mat_324555C8E8E0AE5B"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/324555C8E8E0AE5B_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/324555C8E8E0AE5B_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/324555C8E8E0AE5B_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/324555C8E8E0AE5B_rough.dds@
-            }
-        }
-
-        over "mat_6954EAF94B26B539"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/6954EAF94B26B539_diffuse.dds@ (
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:emissive_intensity = 2 (
-                    displayGroup = "Emission"
-                    doc = """Intensity of the emission
-
-"""
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/6954EAF94B26B539_emissive.dds@ (
-                    displayGroup = "Emission"
-                    doc = """The texture masking the emissive color
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_emission = 1 (
-                    displayGroup = "Emission"
-                    doc = """Enables the emission of light from the material
-
-"""
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
                     }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
 
 """
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @../../../Textures/traffic/6954EAF94B26B539_normal.dds@ (
-                    customData = {
-                        asset default = @@
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./chevroletCapricePoliceCar94_bodyWorkMatTYPE02_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "traffic_alfaRomeoZ33_bodyWork"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_alfaRomeoZ33_bodyWork/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_alfaRomeoZ33_bodyWork/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_alfaRomeoZ33_bodyWork/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./alfaRomeoZ33_bodyWorkMat_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
                     }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:reflection_roughness_constant = 0.5 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
                     }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
 
 """
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/6954EAF94B26B539_rough.dds@ (
-                    displayGroup = "Base Material"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./alfaRomeoZ33_bodyWorkMat_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "traffic_dodgeRamMK1_bodyWork"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_dodgeRamMK1_bodyWork/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_dodgeRamMK1_bodyWork/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_dodgeRamMK1_bodyWork/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./dodge_Ram_MK1_bodyWorkMat_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
 
-        over "mat_BD199C7718CD8DC8"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/BD199C7718CD8DC8_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/BD199C7718CD8DC8_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/BD199C7718CD8DC8_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/BD199C7718CD8DC8_rough.dds@
-            }
-        }
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
 
-        over "mat_1968358E59872413"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/1968358E59872413_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/1968358E59872413_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/1968358E59872413_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/1968358E59872413_rough.dds@
-            }
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./dodge_Ram_MK1_bodyWorkMat_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_6DF21418F6030E9A"
+    def Material "traffic_dodgeMiniRamVan_bodyWork"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_dodgeMiniRamVan_bodyWork/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_dodgeMiniRamVan_bodyWork/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_dodgeMiniRamVan_bodyWork/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/6DF21418F6030E9A_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/6DF21418F6030E9A_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/6DF21418F6030E9A_normal.dds@
-                float inputs:reflection_roughness_constant = 0.5
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/6DF21418F6030E9A_rough.dds@
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./dodgeMiniRamVan_bodyWorkMat_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./dodgeMiniRamVan_bodyWorkMat_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_9B418E14D86A3AA4"
+    def Material "traffic_nissanLayrelClubS_bodyWorkMat"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_nissanLayrelClubS_bodyWorkMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_nissanLayrelClubS_bodyWorkMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_nissanLayrelClubS_bodyWorkMat/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/9B418E14D86A3AA4_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/9B418E14D86A3AA4_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/9B418E14D86A3AA4_normal.dds@
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/9B418E14D86A3AA4_rough.dds@
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./nissanLayrelClubS_bodyWorkMat_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./nissanLayrelClubS_bodyWorkMat_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_5D2F33EE28E6A494"
+    def Material "traffic_oldsmobileBravada_bodyWorkMat"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_oldsmobileBravada_bodyWorkMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_oldsmobileBravada_bodyWorkMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_oldsmobileBravada_bodyWorkMat/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../../Textures/traffic/5D2F33EE28E6A494_diffuse.dds@
-                float inputs:emissive_intensity = 2
-                asset inputs:emissive_mask_texture = @../../../Textures/traffic/5D2F33EE28E6A494_emissive.dds@
-                bool inputs:enable_emission = 1
-                float inputs:metallic_constant = 0.19999999
-                asset inputs:normalmap_texture = @../../../Textures/traffic/5D2F33EE28E6A494_normal.dds@
-                asset inputs:reflectionroughness_texture = @../../../Textures/traffic/5D2F33EE28E6A494_rough.dds@
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./oldsmobileBravada_bodyWorkMat_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./oldsmobileBravada_bodyWorkMat_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_67BE7180978C8210"
+    def Material "traffic_saabHatchback2001_bodyWorkMat"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_saabHatchback2001_bodyWorkMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_saabHatchback2001_bodyWorkMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_saabHatchback2001_bodyWorkMat/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.59999996
-                float inputs:reflection_roughness_constant = 0.099999994
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./saabHatchback2001_bodyWorkMat_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./saabHatchback2001_bodyWorkMat_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_7DBCE2F35C866400"
+    def Material "traffic_suzukiEsteem1998_bodyWorkTYPE01"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_suzukiEsteem1998_bodyWorkTYPE01/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_suzukiEsteem1998_bodyWorkTYPE01/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_suzukiEsteem1998_bodyWorkTYPE01/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.59999996
-                float inputs:reflection_roughness_constant = 0.099999994
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./suzukiEsteem1998_bodyWorkMatTYPE01_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./suzukiEsteem1998_bodyWorkMatTYPE01_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_EF91500790AD52C3"
+    def Material "traffic_suzukiEsteem1998_bodyWorkTYPE02"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_suzukiEsteem1998_bodyWorkTYPE02/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_suzukiEsteem1998_bodyWorkTYPE02/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_suzukiEsteem1998_bodyWorkTYPE02/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.59999996
-                float inputs:reflection_roughness_constant = 0.099999994
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./suzukiEsteem1998_bodyWorkMatTYPE02_Base_color.dds@ (
+                colorSpace = "raw"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./suzukiEsteem1998_bodyWorkMatTYPE02_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_measurement_distance = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Subsurface Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_7B0F0EE517275D38"
+    def Material "traffic_toyotaCorollaLevin_bodyWork"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_toyotaCorollaLevin_bodyWork/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_toyotaCorollaLevin_bodyWork/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_toyotaCorollaLevin_bodyWork/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.19999999
-                float inputs:reflection_roughness_constant = 0.099999994
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./toyotaCorollaLevin_bodyWorkMat_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0.13 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./toyotaCorollaLevin_bodyWorkMat_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
+    }
 
-        over "mat_740FCD42E114E7DA"
+    def Material "traffic_suzukiEsteem1998_taxiSignMat"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_suzukiEsteem1998_taxiSignMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_suzukiEsteem1998_taxiSignMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_suzukiEsteem1998_taxiSignMat/Shader.outputs:out>
+
+        def Shader "Shader"
         {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.19999999
-                float inputs:reflection_roughness_constant = 0.099999994
-            }
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./suzukiEsteem1998_bodyWorkMatTYPE02_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./suzukiEsteem1998_bodyWorkMatTYPE02_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_measurement_distance = 2 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Subsurface Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            color3f inputs:subsurface_single_scattering_albedo = (1, 0.8648646, 0.1891892) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Subsurface Single Scattering Albedo"
+                doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            color3f inputs:subsurface_transmittance_color = (0.93436295, 0.9343614, 0.9343536) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Subsurface Transmittance Color"
+                doc = """The transmittance color of subsurface material. This property can be easily considered as the light color after passing through volume.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "traffic_chevroletCapricePoliceCar94_taxiSignMat"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_chevroletCapricePoliceCar94_taxiSignMat/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_chevroletCapricePoliceCar94_taxiSignMat/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_chevroletCapricePoliceCar94_taxiSignMat/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./chevroletCapricePoliceCar94_bodyWorkMatTYPE02_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./chevroletCapricePoliceCar94_bodyWorkMatTYPE02_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_measurement_distance = 2 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Subsurface Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            color3f inputs:subsurface_single_scattering_albedo = (1, 0.8648646, 0.1891892) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Subsurface Single Scattering Albedo"
+                doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            color3f inputs:subsurface_transmittance_color = (0.93436295, 0.9343614, 0.9343536) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Subsurface Transmittance Color"
+                doc = """The transmittance color of subsurface material. This property can be easily considered as the light color after passing through volume.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
     }
 }

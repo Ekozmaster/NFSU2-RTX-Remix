@@ -1,5 +1,18 @@
 #usda 1.0
 (
+    subLayers = [
+        @./030330_universal01.usda@,
+        @./030330_sedan02.usda@,
+        @./030330_hatchback02.usda@,
+        @./030330_minivan01.usda@,
+        @./030330_hatchback01.usda@,
+        @./030330_suv01.usda@,
+        @./030330_sedan01.usda@,
+        @./030330_coupe01.usda@,
+        @./030330_truck01.usda@,
+        @./030330_taxi02.usda@,
+        @./030330_taxi01.usda@
+    ]
     upAxis = "Z"
 )
 
