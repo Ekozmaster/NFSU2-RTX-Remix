@@ -28,10 +28,10 @@ over "RootNode"
                 color3f color = (0.99999654, 0.99999, 1)
                 float colorTemperature = 6000
                 bool enableColorTemperature = 0
-                float exposure = -8
-                float intensity = 30000
+                float exposure = 0
+                float intensity = 1000
                 bool normalize = 0
-                float radius = 0.12
+                float radius = 0.5
                 float shaping:cone:angle = 60
                 float shaping:cone:softness = 0
                 float shaping:focus
@@ -40,8 +40,8 @@ over "RootNode"
                 asset shaping:ies:file
                 bool treatAsPoint = 0
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.6189215860654325, 12.508738477336157, 3.308431479203308)
+                double3 xformOp:scale = (0.10217855630459534, 0.10217855630459534, 0.10217855630459534)
+                double3 xformOp:translate = (-3.608538608905991, 12.499402523158217, 3.4017676097940184)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -51,10 +51,11 @@ over "RootNode"
             {
                 float colorTemperature = 6000
                 bool enableColorTemperature = 0
-                float exposure = -7.5
-                float intensity = 30000
+                float exposure = 0
+                color3f inputs:color = (1, 0.8863524, 0.55598456)
+                float intensity = 3000
                 bool normalize = 1
-                float radius = 0.1
+                float radius = 0.5
                 float shaping:cone:angle = 90
                 float shaping:cone:softness = 0.2
                 float shaping:focus
@@ -62,8 +63,8 @@ over "RootNode"
                 asset shaping:ies:file
                 bool treatAsPoint = 1
                 double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.55, 32.62, 4.47)
+                double3 xformOp:scale = (0.11111720488576833, 0.11111720488576833, 0.11111720488576832)
+                double3 xformOp:translate = (2.4694097661695253, 32.549455418592, 4.563319401361903)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -249,7 +250,7 @@ over "RootNode"
                 float colorTemperature = 8000
                 bool enableColorTemperature = 1
                 float exposure = -5.5
-                float intensity = 10000
+                float intensity = 5000
                 bool normalize = 1
                 float radius = 2
                 float shaping:cone:angle = 180
@@ -285,7 +286,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 0
                 double3 xformOp:rotateXYZ = (0, -33.00000049173832, 127.50000189989805)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.5499089209879486, 3.5101416750328895, 1.8630294288474603)
+                double3 xformOp:translate = (2.374325020113441, 2.452607585043908, 1.8630294288474294)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -324,24 +325,6 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (-169.60000252723694, -100.60000149905682, 140.50000209361315)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.796666496825308, 6.900970852231593, 1.402349225656941)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "SphereLight_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float exposure = -7.5
-                float intensity = 0
-                float radius = 0.4
-                float shaping:cone:angle = 42.5
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (-3.0000000447034836, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.010302227013026743, 5.291213770409633, 3.367486381219568)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -391,6 +374,29 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (70.00000104308128, 0, 180)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 7.800000116229057, 1.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "garLobby_lampTop01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 6000
+                bool enableColorTemperature = 0
+                float exposure = -7.5
+                color3f inputs:color = (0.98573315, 0.992278, 0.83519924)
+                float intensity = 30000
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 1
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (0.7246709646412361, 0.7246709646412361, 0.7246709646412363)
+                double3 xformOp:translate = (-0.018922040629514456, 6.28728315602659, 4.202391921294212)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

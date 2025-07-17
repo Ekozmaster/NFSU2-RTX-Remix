@@ -1,77 +1,20 @@
 #usda 1.0
 (
-    subLayers = [
-	    @./00_trashPileSet01/02010000_trashPileSet01.usda@,
-		@./01_decalsSet01/02010001_decalsSet01.usda@,
-        @./02_vegetationSet01/02010002_vegetationSet01.usda@,
-        @./03_vegetation01/02010003_vegetation01.usda@,
-        @./04_streetProps01/02010004_streetProps01.usda@
-    ]
     upAxis = "Z"
 )
 
 over "Looks"
 {
-    def Material "Reflector_RoadSign_opaqueMat"
+    def Material "signalRoadLight_material01"
     {
-        token outputs:mdl:displacement.connect = </Looks/Reflector_RoadSign_opaqueMat/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Reflector_RoadSign_opaqueMat/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Reflector_RoadSign_opaqueMat/Shader.outputs:out>
+        token outputs:mdl:displacement.connect = </Looks/signalRoadLight_material01/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/signalRoadLight_material01/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/signalRoadLight_material01/Shader.outputs:out>
 
         def Shader "Shader"
         {
             uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            asset inputs:diffuse_texture = @./04_streetProps01/roadSign_signReflector01_Base_color.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                hidden = false
-                renderType = "texture_2d"
-            )
-            asset inputs:normalmap_texture = @./04_streetProps01/roadSign_signReflector01_Normal.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Normal"
-                displayName = "Normal Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            asset inputs:reflectionroughness_texture = @./04_streetProps01/roadSign_signReflector01_Roughness.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Specular"
-                displayName = "Roughness Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "Steel_Weathered01"
-    {
-        token outputs:mdl:displacement.connect = </Looks/Steel_Weathered01/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/Steel_Weathered01/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/Steel_Weathered01/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
+            uniform asset info:mdl:sourceAsset = @../../../../AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
             color3f inputs:diffuse_color_constant = (0.47876447, 0.47875968, 0.47875968) (
                 customData = {
@@ -89,88 +32,7 @@ over "Looks"
                 hidden = false
                 renderType = "color"
             )
-            asset inputs:diffuse_texture = @@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                hidden = false
-                renderType = "texture_2d"
-            )
-            float inputs:metallic_constant = 1 (
-                customData = {
-                    float default = 0
-                    dictionary range = {
-                        float max = 1
-                        float min = 0
-                    }
-                }
-                displayGroup = "Specular"
-                displayName = "Metallic Amount"
-                doc = """Metallic Material
-
-"""
-                hidden = false
-            )
-            asset inputs:normalmap_texture = @@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Normal"
-                displayName = "Normal Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            asset inputs:reflectionroughness_texture = @./04_streetProps01/roadSign_steelWeathered01_Roughness.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Specular"
-                displayName = "Roughness Map"
-                hidden = false
-                renderType = "texture_2d"
-            )
-            token outputs:out (
-                renderType = "material"
-            )
-        }
-    }
-
-    def Material "signsShared01_opaqueMat"
-    {
-        token outputs:mdl:displacement.connect = </Looks/signsShared01_opaqueMat/Shader.outputs:out>
-        token outputs:mdl:surface.connect = </Looks/signsShared01_opaqueMat/Shader.outputs:out>
-        token outputs:mdl:volume.connect = </Looks/signsShared01_opaqueMat/Shader.outputs:out>
-
-        def Shader "Shader"
-        {
-            uniform token info:implementationSource = "sourceAsset"
-            uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
-            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            color3f inputs:diffuse_color_constant = (0.47876447, 0.47875968, 0.47875968) (
-                customData = {
-                    float3 default = (0.2, 0.2, 0.2)
-                    dictionary range = {
-                        float3 max = (1, 1, 1)
-                        float3 min = (0, 0, 0)
-                    }
-                }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
-
-"""
-                hidden = false
-                renderType = "color"
-            )
-            asset inputs:diffuse_texture = @./04_streetProps01/signsSharedFile01_albedo.dds@ (
+            asset inputs:diffuse_texture = @./signalRoadLight_material01_Base_color.dds@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@
@@ -208,22 +70,88 @@ over "Looks"
                 hidden = false
                 renderType = "texture_2d"
             )
-            float inputs:reflection_roughness_constant = 0.14999999 (
+            asset inputs:reflectionroughness_texture = @./signalRoadLight_material01_Roughness.dds@ (
+                colorSpace = "auto"
                 customData = {
-                    float default = 0.5
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "materialShared_metalPaintedOld01_material01"
+    {
+        token outputs:mdl:displacement.connect = </Looks/materialShared_metalPaintedOld01_material01/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/materialShared_metalPaintedOld01_material01/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/materialShared_metalPaintedOld01_material01/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.47876447, 0.47875968, 0.47875968) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @./materialShared_metalPaintedOld01_Base_color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
                     dictionary range = {
                         float max = 1
                         float min = 0
                     }
                 }
                 displayGroup = "Specular"
-                displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
+                displayName = "Metallic Amount"
+                doc = """Metallic Material
 
 """
                 hidden = false
             )
-            asset inputs:reflectionroughness_texture = @@ (
+            asset inputs:normalmap_texture = @./materialShared_metalPaintedOld01_Normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./materialShared_metalPaintedOld01_Roughness.dds@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@

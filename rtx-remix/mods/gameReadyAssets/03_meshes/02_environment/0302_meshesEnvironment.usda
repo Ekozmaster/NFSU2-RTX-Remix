@@ -3,7 +3,7 @@
     subLayers = [
         @./00_environmentShared/030200_environmentShared.usda@,
 		@./01_skybox/030201_skybox.usda@,
-		@./02_garages/01_garageCar/03020201_garageCar.usda@
+		@./02_garages/030202_garages.usda@
     ]
     upAxis = "Z"
 )

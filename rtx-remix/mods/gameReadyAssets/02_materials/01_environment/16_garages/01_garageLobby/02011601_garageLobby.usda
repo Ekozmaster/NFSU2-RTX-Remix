@@ -1222,7 +1222,7 @@ This parameter is unused.
             over "mesh_5E6ADAA99AC974C5" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
                 instanceable = false
-                references = @../../../../03_meshes/02_environment/02_garages/02_garageLobby/mesh_5E6ADAA99AC974C5.usd@
+                references = @../../../../03_meshes/02_environment/02_garages/01_garageLobby/mesh_5E6ADAA99AC974C5.usd@
             )
             {
                 rel material:binding = None (

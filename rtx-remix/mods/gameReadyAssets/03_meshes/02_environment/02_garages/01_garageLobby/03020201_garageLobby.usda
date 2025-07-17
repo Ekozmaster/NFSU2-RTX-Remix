@@ -1,0 +1,360 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_48152EF33C7505C1"
+        {
+            def Xform "Xform_48152EF33C7505C1_0" (
+                delete references = @./TurnTableEdge.usd@
+                prepend references = @./TurnTableEdge.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_7F10F3A0C84F0A1E" (
+            delete references = [
+                @../../../../../../captures/meshes/mesh_7F10F3A0C84F0A1E.usd@,
+                @./meshes//mesh_7F10F3A0C84F0A1E.usda@
+            ]
+        )
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform_7F10F3A0C84F0A1E_0" (
+                delete references = @./TurnTablePlatform.usd@
+                prepend references = @./TurnTablePlatform.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B2F1ECB1CF509A23"
+        {
+            def Xform "Xform_mesh_0" (
+                prepend references = @./TurnTablePlatform.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_068203548E636F71"
+        {
+            def Xform "Xform_mesh_0" (
+                prepend references = @./TurnTableEdge.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_BCE3AD1818335B35"
+        {
+            def Xform "Xform_mesh_0" (
+                prepend references = @./TurnTablePlatform.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_0AA603085D2368D3"
+        {
+            def Xform "Xform_mesh_0" (
+                prepend references = @./TurnTableEdge.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_B3BE5C134A533293"
+        {
+            def Xform "garageLobby_customLampSet_out01_0" (
+                prepend references = @./garageLobby_customLampSet_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 90)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.1332906746364018, 12.880951945215298, 3.6240522863882276)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "garageLobby_customLampSet_out01"
+                        {
+                            over "lobbyCustomLamp03_GRP01_Geo_lobbyCustomLamp03_metal01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/materialShared_metalPaintedOld01_material01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (-5.684342e-14, 90, -5.684342e-14)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-0.3849198438118826, -0.12073805996696185, -5.425196355898455)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "lobbyCustomLamp03_GRP01_Geo_lobbyCustomLamp03_plasticBlack" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (-5.684342e-14, 90, -5.684342e-14)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-0.3849198438118826, -0.12073805996696185, -5.425196355898455)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "lobbyCustomLamp03_GRP01_Geo_lobbyCustomLamp03_steelRough" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (-5.684342e-14, 90, -5.684342e-14)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-0.3849198438118826, -0.12073805996696185, -5.425196355898455)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "lobbyCustomLamp03_glass01_lobbyCustomLamp03_GRP01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (-5.684342e-14, 90, -5.684342e-14)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-0.3849198438118826, -0.12073805996696185, -5.425196355898455)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomLamp02_GRP01_lobbyCustomLamp02_metal01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/materialShared_metalPaintedOld01_material01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, -66.27452, 2.842171e-14)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (19.713131245660612, 1.059442967813108, 1.4247609788421918)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomLamp02_GRP01_lobbyCustomLamp02_steelRough" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, -66.27452, 2.842171e-14)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (19.713131245660612, 1.059442967813108, 1.4247609788421918)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomLamp02_glass01_lobbyCustomLamp02_GRP01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, -66.27452, 2.842171e-14)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (19.713131245660612, 1.059442967813108, 1.4247609788421918)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomLamp01_GRP01_lobbyCustomLamp01_metal01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/materialShared_metalPaintedOld01_material01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 9.095095, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-6.59303236460873, 0.7944754636753086, -1.153143137900882)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomLamp01_GRP01_lobbyCustomLamp01_reflect01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_White> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 9.095095, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-6.59303236460873, 0.7944754636753086, -1.153143137900882)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomLamp01_glass01_lobbyCustomLamp01_GRP01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, 9.095095, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-6.59303236460873, 0.7944754636753086, -1.153143137900882)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomCables01_cable1_lobbyCustomCables01_GRP01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, -56.407894, 2.842171e-14)
+                                float3 xformOp:scale = (2.3496227, 1, 1)
+                                double3 xformOp:translate = (-6.17711016911744, 1.2932799615051196, -0.7974520747433969)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomCables01_GRP01_lobbyCustomCables01_cable2" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (-8.526513e-14, -83.445694, 1.1368684e-13)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (-5.952548424602266, 1.2225950803041603, 2.2700870778377205)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomCables01_GRP01_lobbyCustomCables01_cable3" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (-113.376884, -104.41967, 114.61874)
+                                float3 xformOp:scale = (2.4182627, 1, 1)
+                                double3 xformOp:translate = (0.5379160422103642, 1.1551238934010803, 1.9494923621940365)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomCables01_GRP01_lobbyCustomCables01_cable4" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (0, -110.57522, 0)
+                                float3 xformOp:scale = (1.616097, 1, 1)
+                                double3 xformOp:translate = (-4.687588152137202, 0.8149858165866397, -2.3234319208623124)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+
+                            over "Geo_lobbyCustomCables01_GRP01_lobbyCustomCables01_cable5" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                float3 xformOp:rotateXYZ = (87.484344, 74.40579, 89.19555)
+                                float3 xformOp:scale = (1.2924534, 1.0133785, 1)
+                                double3 xformOp:translate = (-0.3569015598973859, 0.6162692904523426, 1.111197037286466)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
