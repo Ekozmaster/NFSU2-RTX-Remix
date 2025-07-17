@@ -1263,7 +1263,7 @@ over "RootNode"
 
         over "mesh_E68829495634B425"
         {
-            custom int preserveOriginalDrawCall = 0
+            custom int preserveOriginalDrawCall = 1
 
             def SphereLight "Headlight_R_Main" (
                 prepend apiSchemas = ["ShapingAPI"]
@@ -1472,7 +1472,7 @@ over "RootNode"
 
         over "mesh_1727E17057847219"
         {
-            custom int preserveOriginalDrawCall = 0
+            custom int preserveOriginalDrawCall = 1
 
             def SphereLight "Headlight_R_Main" (
                 prepend apiSchemas = ["ShapingAPI"]
@@ -1681,7 +1681,7 @@ over "RootNode"
 
         over "mesh_19168B976C637A5D"
         {
-            custom int preserveOriginalDrawCall = 0
+            custom int preserveOriginalDrawCall = 1
 
             def SphereLight "Headlight_R_Main" (
                 prepend apiSchemas = ["ShapingAPI"]

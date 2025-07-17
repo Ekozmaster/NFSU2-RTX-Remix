@@ -2,7 +2,8 @@
 (
     subLayers = [
         @./00_trashPileSet01/trashPileSet_01.usda@,
-        @./01_decalsSet01/decalsSet_01.usda@
+        @./01_decalsSet01/decalsSet_01.usda@,
+		@./03_streetProps01/03020003_streetProps01.usda@
     ]
     upAxis = "Z"
 )

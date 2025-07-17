@@ -154,6 +154,17 @@ over "Looks"
             uniform token info:implementationSource = "sourceAsset"
             uniform asset info:mdl:sourceAsset = @../../../AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            bool inputs:blend_enabled = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Material Flags"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
             color3f inputs:diffuse_color_constant = (0.47876447, 0.47875968, 0.47875968) (
                 customData = {
                     float3 default = (0.2, 0.2, 0.2)
@@ -232,6 +243,17 @@ over "Looks"
                 displayName = "Roughness Map"
                 hidden = false
                 renderType = "texture_2d"
+            )
+            bool inputs:use_legacy_alpha_state = 0 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Material Flags"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
+
+"""
+                hidden = false
             )
             token outputs:out (
                 renderType = "material"

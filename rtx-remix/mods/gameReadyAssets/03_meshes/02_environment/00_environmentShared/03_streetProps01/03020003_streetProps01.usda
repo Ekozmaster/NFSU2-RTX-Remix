@@ -1,0 +1,1287 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_BDC3FBD8400A172D"
+        {
+            custom int preserveOriginalDrawCall = 0
+            token visibility = "inherited"
+
+            def SphereLight "signalRoadLight_source01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (0.96138996, 0.5608024, 0.10393404)
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.0003986292419426718, -0.1388485403726918, 1.770203844049142)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "signalRoadLight_out04_0" (
+                prepend references = @./signalRoadLight_out04.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    token visibility = "inherited"
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (0.5, 0.5, 0.5)
+                    double3 xformOp:translate = (0, -0.15, 0.78)
+
+                    over "World"
+                    {
+                        token visibility = "inherited"
+
+                        over "Looks"
+                        {
+                            token visibility = "inherited"
+                        }
+
+                        over "signalRoadLight_out04"
+                        {
+                            token visibility = "inherited"
+
+                            over "glassOrange_Normaltype11_reflectorPart01_roadSignalLight01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "reflectorPart01_roadSignalLight01_Geo_glassOrange_Normaltype04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "reflectorPart01_roadSignalLight01_Geo_glassOrange_NormalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_glassOrange_Normaltype11_reflectorPart02" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_reflectorPart02_glassOrange_Normaltype04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_reflectorPart02_glassOrange_NormalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_glass_clear01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_metal_rough01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_plastic_yellow01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/signalRoadLight_material01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+
+        over "mesh_CCAE93A8F8DF6B15"
+        {
+            def Xform "roadSignPole_out01_0" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "roadSignPole_out01_01" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, -0.9000000134110451)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_out01_02" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 0.21)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_out01_03" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 1.3000000193715096)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_out01_04" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 1.700000025331974)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_0A3389B88C166147"
+        {
+            def Xform "roadSignPole_signType01_out01_0" (
+                prepend references = @./roadSignPole_signType01_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.186, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.018, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType01_out01"
+                        {
+                            over "roadSignPole_signType01_steelWeathered01_signType01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signReflector01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_RoadSign_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signShared01" (
+                                active = false
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_signType02_out01_0" (
+                prepend references = @./roadSignPole_signType02_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.186, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.018, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType02_out01"
+                        {
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signShared01" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signReflector01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_RoadSign_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_signType02_steelWeathered01_signType02_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_FCB1F1AE6905D9AD"
+        {
+            def Xform "roadSignPole_signType01_out01_0" (
+                prepend references = @./roadSignPole_signType01_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.169, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType01_out01"
+                        {
+                            over "roadSignPole_signType01_steelWeathered01_signType01_roadSignPole_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signReflector01" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signShared01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/signsShared01_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                custom uniform bool remix_category:decal_Static = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_661C5891F5545DEB"
+        {
+            def Xform "roadSignPole_signType02_out01_0" (
+                prepend references = @./roadSignPole_signType02_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.169, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType02_out01"
+                        {
+                            over "roadSignPole_signType02_steelWeathered01_signType02_roadSignPole_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signReflector01" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signShared01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/signsShared01_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                custom uniform bool remix_category:decal_Static = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_BFC22A548BB51DEE"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_863725D045D16A4E"
+        {
+            def SphereLight "signalRoadLight_source01_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (0.96138996, 0.5608024, 0.10393404)
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.0003986292419426718, -0.1388485403726918, 1.770203844049142)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "signalRoadLight_out04_01" (
+                prepend references = @./signalRoadLight_out04.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    token visibility = "inherited"
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (0.5, 0.5, 0.5)
+                    double3 xformOp:translate = (0, -0.15, 0.78)
+
+                    over "World"
+                    {
+                        token visibility = "inherited"
+
+                        over "Looks"
+                        {
+                            token visibility = "inherited"
+                        }
+
+                        over "signalRoadLight_out04"
+                        {
+                            token visibility = "inherited"
+
+                            over "glassOrange_Normaltype11_reflectorPart01_roadSignalLight01_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "reflectorPart01_roadSignalLight01_Geo_glassOrange_Normaltype04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "reflectorPart01_roadSignalLight01_Geo_glassOrange_NormalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_glassOrange_Normaltype11_reflectorPart02" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_reflectorPart02_glassOrange_Normaltype04" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_04> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_reflectorPart02_glassOrange_NormalCombined" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_and_Height> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_glass_clear01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_metal_rough01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Rough> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+
+                            over "roadSignalLight01_Geo_plastic_yellow01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/signalRoadLight_material01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                token visibility = "inherited"
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_0BCA1A9AD2BEEF08"
+        {
+            def Xform "roadSignPole_out01_05" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_out01_06" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, -0.9000000134110451)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_out01_07" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 0.21)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_out01_08" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 1.3000000193715096)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_out01_09" (
+                prepend references = @./roadSignPole_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.17, 1.700000025331974)
+
+                    over "World"
+                    {
+                        over "roadSignPole_out01"
+                        {
+                            over "roadSignPole_Geo_roadSignPole_polePart01_steelWeathered01" (
+                                active = false
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_mountingPart01_steelWeathered01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_Geo_roadSignPole_mountingPart01_chromeGlossy01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_6261638D48C10F71"
+        {
+            def Xform "roadSignPole_signType01_out01_01" (
+                prepend references = @./roadSignPole_signType01_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.186, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.018, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType01_out01"
+                        {
+                            over "roadSignPole_signType01_steelWeathered01_signType01_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signReflector01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_RoadSign_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signShared01" (
+                                active = false
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "roadSignPole_signType02_out01_01" (
+                prepend references = @./roadSignPole_signType02_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -0.186, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.018, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType02_out01"
+                        {
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signShared01" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signReflector01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_RoadSign_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "roadSignPole_signType02_steelWeathered01_signType02_roadSignPole_Geo" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Steel_Weathered01> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_74A2941CEBB12B2F"
+        {
+            def Xform "roadSignPole_signType01_out01_01" (
+                prepend references = @./roadSignPole_signType01_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.169, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType01_out01"
+                        {
+                            over "roadSignPole_signType01_steelWeathered01_signType01_roadSignPole_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signReflector01" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType01_roadSignPole_Geo_roadSignPole_signType01_signShared01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/signsShared01_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                custom uniform bool remix_category:decal_Static = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A99AFBB1297168C2"
+        {
+            def Xform "roadSignPole_signType02_out01_01" (
+                prepend references = @./roadSignPole_signType02_out01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 180)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -0.169, 0)
+
+                    over "World"
+                    {
+                        over "roadSignPole_signType02_out01"
+                        {
+                            over "roadSignPole_signType02_steelWeathered01_signType02_roadSignPole_Geo" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signReflector01" (
+                                active = false
+                            )
+                            {
+                            }
+
+                            over "signType02_roadSignPole_Geo_roadSignPole_signType02_signShared01" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/signsShared01_opaqueMat> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                                custom uniform bool remix_category:decal_Static = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E24AEAD52CC1F8AD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
