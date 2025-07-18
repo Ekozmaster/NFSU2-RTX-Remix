@@ -254,8 +254,8 @@ over "RootNode"
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -265,8 +265,8 @@ over "RootNode"
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -282,8 +282,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -318,8 +318,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -333,8 +333,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -349,8 +349,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -365,8 +365,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -376,8 +376,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -531,8 +531,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -546,8 +546,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Base Color"
-                        doc = """The base albedo color to use if no texture is specified
-
+                        doc = """The base albedo color to use if no texture is specified\r
+\r
 """
                         hidden = false
                         renderType = "color"
@@ -559,8 +559,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -595,8 +595,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -610,8 +610,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -626,8 +626,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -642,8 +642,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -653,8 +653,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -872,8 +872,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -883,8 +883,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -900,8 +900,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -936,8 +936,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -951,8 +951,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -967,8 +967,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -983,8 +983,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -994,8 +994,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -1275,8 +1275,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -1286,8 +1286,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -1303,8 +1303,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -1339,8 +1339,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -1354,8 +1354,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -1370,8 +1370,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -1386,8 +1386,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -1397,8 +1397,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -1530,8 +1530,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -1542,8 +1542,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -1578,8 +1578,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -1593,8 +1593,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -1609,8 +1609,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -1625,8 +1625,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -1636,8 +1636,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -1877,8 +1877,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -1888,8 +1888,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -1905,8 +1905,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -1941,8 +1941,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -1956,8 +1956,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -1972,8 +1972,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -1988,8 +1988,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -1999,8 +1999,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -2149,8 +2149,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2175,8 +2175,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2187,8 +2187,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Map"
-                        doc = """The texture specifying the scattering albedo of subsurface materials.
-This parameter is unused.
+                        doc = """The texture specifying the scattering albedo of subsurface materials.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2203,8 +2203,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -2219,8 +2219,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2295,8 +2295,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2321,8 +2321,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2333,8 +2333,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Map"
-                        doc = """The texture specifying the scattering albedo of subsurface materials.
-This parameter is unused.
+                        doc = """The texture specifying the scattering albedo of subsurface materials.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2349,8 +2349,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -2365,8 +2365,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2550,8 +2550,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -2561,8 +2561,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -2578,8 +2578,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2614,8 +2614,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2629,8 +2629,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -2645,8 +2645,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -2661,8 +2661,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2672,8 +2672,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -2827,8 +2827,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -2839,8 +2839,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -2875,8 +2875,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2890,8 +2890,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -2906,8 +2906,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -2922,8 +2922,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -2933,8 +2933,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -3072,8 +3072,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.\r\r
-\r\r
+                        doc = """Indicates if alpha state blending should be enabled.\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -3083,8 +3083,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.\r\r
-This parameter is unused.\r\r
+                        doc = """The alpha state blend type to use.\r\r\r
+This parameter is unused.\r\r\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -3100,8 +3100,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3132,8 +3132,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r\r
-\r\r
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -3160,8 +3160,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -3171,8 +3171,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.
-This parameter is unused.
+                        doc = """The alpha state blend type to use.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -3188,8 +3188,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3224,8 +3224,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -3239,8 +3239,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -3255,8 +3255,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -3271,8 +3271,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -3282,8 +3282,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -3451,8 +3451,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3535,8 +3535,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3585,8 +3585,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3598,8 +3598,8 @@ This parameter is unused.
                         }
                         displayGroup = "Emissive"
                         displayName = "Emissive Mask Map"
-                        doc = """The texture masking the emissive color\r\r
-\r\r
+                        doc = """The texture masking the emissive color\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -3610,8 +3610,8 @@ This parameter is unused.
                         }
                         displayGroup = "Emissive"
                         displayName = "Enable Emission"
-                        doc = """Enables the emission of light from the material\r\r
-\r\r
+                        doc = """Enables the emission of light from the material\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -3741,8 +3741,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4009,8 +4009,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.
-
+                        doc = """Indicates if alpha state blending should be enabled.\r
+\r
 """
                         hidden = false
                     )
@@ -4021,8 +4021,8 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4057,8 +4057,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Measurement Distance"
-                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
-This parameter is unused.
+                        doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -4072,8 +4072,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Single Scattering Albedo"
-                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                        doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -4088,8 +4088,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Transmittance Color"
-                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                        doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                         hidden = false
                         renderType = "color"
@@ -4104,8 +4104,8 @@ This parameter is unused.
                         }
                         displayGroup = "Subsurface"
                         displayName = "Subsurface Volumetric Anisotropy"
-                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
-This parameter is unused.
+                        doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).\r
+This parameter is unused.\r
 """
                         hidden = false
                     )
@@ -4115,8 +4115,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.
-
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r
+\r
 """
                         hidden = false
                     )
@@ -4165,8 +4165,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Enabled"
-                        doc = """Indicates if alpha state blending should be enabled.\r\r
-\r\r
+                        doc = """Indicates if alpha state blending should be enabled.\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -4176,8 +4176,8 @@ This parameter is unused.
                         }
                         displayGroup = "Material Flags"
                         displayName = "Blend Type"
-                        doc = """The alpha state blend type to use.\r\r
-This parameter is unused.\r\r
+                        doc = """The alpha state blend type to use.\r\r\r
+This parameter is unused.\r\r\r
 """
                         hidden = false
                         renderType = "BlendType"
@@ -4193,8 +4193,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4225,8 +4225,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Material Flags"
                         displayName = "Use Legacy Alpha State"
-                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r\r
-\r\r
+                        doc = """Indicates if the alpha state should be derived from legacy information (the drawcall), or specified in the MDL.\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -4276,8 +4276,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4360,8 +4360,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4410,13 +4410,13 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
                     )
-                    float inputs:emissive_intensity = 40 (
+                    float inputs:emissive_intensity = 3 (
                         customData = {
                             float default = 40
                             dictionary range = {
@@ -4426,8 +4426,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Emissive"
                         displayName = "Emissive Intensity"
-                        doc = """Intensity of the emission\r\r
-\r\r
+                        doc = """Intensity of the emission\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -4438,8 +4438,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Emissive"
                         displayName = "Emissive Mask Map"
-                        doc = """The texture masking the emissive color\r\r
-\r\r
+                        doc = """The texture masking the emissive color\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4450,8 +4450,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Emissive"
                         displayName = "Enable Emission"
-                        doc = """Enables the emission of light from the material\r\r
-\r\r
+                        doc = """Enables the emission of light from the material\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -4521,8 +4521,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
-\r\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r\r
+\r\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4537,8 +4537,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Specular"
                         displayName = "Metallic Amount"
-                        doc = """Metallic Material\r\r
-\r\r
+                        doc = """Metallic Material\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -4562,8 +4562,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Specular"
                         displayName = "Roughness Amount"
-                        doc = """Higher roughness values lead to more blurry reflections\r\r
-\r\r
+                        doc = """Higher roughness values lead to more blurry reflections\r\r\r
+\r\r\r
 """
                         hidden = false
                     )
@@ -4629,8 +4629,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
-\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
+\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4723,8 +4723,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
-\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
+\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4773,8 +4773,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
-\r
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r\r
+\r\r
 """
                         hidden = false
                         renderType = "texture_2d"
@@ -4789,8 +4789,8 @@ This parameter is unused.\r\r
                         }
                         displayGroup = "Displacement"
                         displayName = "Inwards Displacement"
-                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.\r
-This parameter is unused.\r
+                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.\r\r
+This parameter is unused.\r\r
 """
                         hidden = false
                     )
@@ -4801,8 +4801,8 @@ This parameter is unused.\r
                         }
                         displayGroup = "Displacement"
                         displayName = "Height Map"
-                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.\r
-This parameter is unused.\r
+                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.\r\r
+This parameter is unused.\r\r
 """
                         hidden = false
                         renderType = "texture_2d"

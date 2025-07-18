@@ -815,6 +815,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube"
+                {
+                    over "Cube_001"
+                    {
+                        over "materials"
+                        {
+                            over "Shader"
+                            {
+                                uniform asset info:mdl:sourceAsset = @@
+                                uniform token info:mdl:sourceAsset:subIdentifier = ""
+                                asset inputs:diffuse_texture = @./GuardRails/RetroReflective_albedo.dds@
+                                asset inputs:emissive_mask_texture = @./GuardRails/RetroReflective_emissive.dds@
+                                asset inputs:metallic_texture = @./GuardRails/Retrorefelctive_metallic.dds@
+                                asset inputs:reflectionroughness_texture = @./GuardRails/RetroReflective_roughness.dds@
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -834,6 +853,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube"
+                {
+                    over "Cube_001"
+                    {
+                        over "materials"
+                        {
+                            over "Shader"
+                            {
+                                uniform asset info:mdl:sourceAsset = @@
+                                uniform token info:mdl:sourceAsset:subIdentifier = ""
+                                asset inputs:diffuse_texture = @./GuardRails/RetroReflective_albedo.dds@
+                                asset inputs:emissive_mask_texture = @./GuardRails/RetroReflective_emissive.dds@
+                                asset inputs:metallic_texture = @./GuardRails/Retrorefelctive_metallic.dds@
+                                asset inputs:reflectionroughness_texture = @./GuardRails/RetroReflective_roughness.dds@
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -853,6 +891,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube"
+                {
+                    over "Cube_001"
+                    {
+                        over "materials"
+                        {
+                            over "Shader"
+                            {
+                                uniform asset info:mdl:sourceAsset = @@
+                                uniform token info:mdl:sourceAsset:subIdentifier = ""
+                                asset inputs:diffuse_texture = @./GuardRails/RetroReflective_albedo.dds@
+                                asset inputs:emissive_mask_texture = @./GuardRails/RetroReflective_emissive.dds@
+                                asset inputs:metallic_texture = @./GuardRails/Retrorefelctive_metallic.dds@
+                                asset inputs:reflectionroughness_texture = @./GuardRails/RetroReflective_roughness.dds@
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -872,6 +929,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube"
+                {
+                    over "Cube_001"
+                    {
+                        over "materials"
+                        {
+                            over "Shader"
+                            {
+                                uniform asset info:mdl:sourceAsset = @@
+                                uniform token info:mdl:sourceAsset:subIdentifier = ""
+                                asset inputs:diffuse_texture = @./GuardRails/RetroReflective_albedo.dds@
+                                asset inputs:emissive_mask_texture = @./GuardRails/RetroReflective_emissive.dds@
+                                asset inputs:metallic_texture = @./GuardRails/Retrorefelctive_metallic.dds@
+                                asset inputs:reflectionroughness_texture = @./GuardRails/RetroReflective_roughness.dds@
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -891,6 +967,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube"
+                {
+                    over "Cube_001"
+                    {
+                        over "materials"
+                        {
+                            over "Shader"
+                            {
+                                uniform asset info:mdl:sourceAsset = @@
+                                uniform token info:mdl:sourceAsset:subIdentifier = ""
+                                asset inputs:diffuse_texture = @./GuardRails/RetroReflective_albedo.dds@
+                                asset inputs:emissive_mask_texture = @./GuardRails/RetroReflective_emissive.dds@
+                                asset inputs:metallic_texture = @./GuardRails/Retrorefelctive_metallic.dds@
+                                asset inputs:reflectionroughness_texture = @./GuardRails/RetroReflective_roughness.dds@
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -910,6 +1005,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, -0.045)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube"
+                {
+                    over "Cube_001"
+                    {
+                        over "materials"
+                        {
+                            over "Shader"
+                            {
+                                uniform asset info:mdl:sourceAsset = @@
+                                uniform token info:mdl:sourceAsset:subIdentifier = ""
+                                asset inputs:diffuse_texture = @./GuardRails/RetroReflective_albedo.dds@
+                                asset inputs:emissive_mask_texture = @./GuardRails/RetroReflective_emissive.dds@
+                                asset inputs:metallic_texture = @./GuardRails/Retrorefelctive_metallic.dds@
+                                asset inputs:reflectionroughness_texture = @./GuardRails/RetroReflective_roughness.dds@
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -948,6 +1062,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube"
+                {
+                    over "Cube_001"
+                    {
+                        over "materials"
+                        {
+                            over "Shader"
+                            {
+                                uniform asset info:mdl:sourceAsset = @@
+                                uniform token info:mdl:sourceAsset:subIdentifier = ""
+                                asset inputs:diffuse_texture = @./GuardRails/RetroReflective_albedo.dds@
+                                asset inputs:emissive_mask_texture = @./GuardRails/RetroReflective_emissive.dds@
+                                asset inputs:metallic_texture = @./GuardRails/Retrorefelctive_metallic.dds@
+                                asset inputs:reflectionroughness_texture = @./GuardRails/RetroReflective_roughness.dds@
+                            }
+                        }
+                    }
+                }
             }
         }
 

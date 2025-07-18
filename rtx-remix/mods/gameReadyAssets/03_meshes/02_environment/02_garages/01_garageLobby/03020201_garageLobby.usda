@@ -355,6 +355,41 @@ over "RootNode"
             {
             }
         }
+
+        over "mesh_F8001DD1DE573160"
+        {
+            def Xform "garageLobby_Background_0" (
+                prepend references = @./garageLobby_Background.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube_001"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 37.3)
+                    float3 xformOp:scale = (3, 3, 3)
+                    double3 xformOp:translate = (-12.400000184774399, 203.60000303387642, 0)
+
+                    over "Cube_001" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/garageLobby_BackgroundMat> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
     }
 }
 
