@@ -8,9 +8,9 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                asset inputs:emissive_mask_texture = @./night.dds@
                 bool inputs:enable_emission = 1
-                float inputs:emissive_intensity = 1.0
+                float inputs:emissive_intensity = 0.025
             }
         }
 
@@ -20,7 +20,7 @@ over "RootNode"
             {
                 asset inputs:emissive_mask_texture = @./sky_night.dds@
                 bool inputs:enable_emission = 1
-                float inputs:emissive_intensity = 1.0
+                float inputs:emissive_intensity = 0.025
             }
         }
 
@@ -30,7 +30,7 @@ over "RootNode"
             {
                 asset inputs:emissive_mask_texture = @./sky_night.dds@
                 bool inputs:enable_emission = 1
-                float inputs:emissive_intensity = 1.0
+                float inputs:emissive_intensity = 0.025
             }
         }
 
@@ -40,7 +40,7 @@ over "RootNode"
             {
                 asset inputs:emissive_mask_texture = @./sky_night.dds@
                 bool inputs:enable_emission = 1
-                float inputs:emissive_intensity = 1.0
+                float inputs:emissive_intensity = 0.025
             }
         }
 
@@ -50,7 +50,7 @@ over "RootNode"
             {
                 asset inputs:emissive_mask_texture = @./sky_night.dds@
                 bool inputs:enable_emission = 1
-                float inputs:emissive_intensity = 1.0
+                float inputs:emissive_intensity = 0.025
             }
         }
 
@@ -58,9 +58,9 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                asset inputs:emissive_mask_texture = @./night.dds@
                 bool inputs:enable_emission = 1
-                float inputs:emissive_intensity = 1.0
+                float inputs:emissive_intensity = 0.025
             }
         }
 
@@ -68,9 +68,9 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:emissive_mask_texture = @./sky_night.dds@
+                asset inputs:emissive_mask_texture = @./night.dds@
                 bool inputs:enable_emission = 1
-                float inputs:emissive_intensity = 1.0
+                float inputs:emissive_intensity = 0.025
             }
         }
     }
