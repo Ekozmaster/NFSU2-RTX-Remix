@@ -23,12 +23,6 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
             def Xform "Bolt" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
                 references = @./Bolt.usd@
@@ -51,6 +45,94 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Rear_Light_Top_004"
+                {
+                    over "Point_007"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Top_Light_Left"
+                {
+                    over "Point_001"
+                    {
+                        float inputs:intensity = 600
+                    }
+                }
+
+                over "Rear_Light_Bottom_001"
+                {
+                    over "Point_009"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Bottom_Main_Light_Left"
+                {
+                    over "Point"
+                    {
+                        float inputs:intensity = 800
+                    }
+                }
+
+                over "Front_Bottom_Main_Light_Right"
+                {
+                    over "Point_003"
+                    {
+                        float inputs:intensity = 800
+                    }
+                }
+
+                over "Rear_Light_Top_001"
+                {
+                    over "Point_004"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Top_Light_Right"
+                {
+                    over "Point_002"
+                    {
+                        float inputs:intensity = 600
+                    }
+                }
+
+                over "Rear_Light_Top_002"
+                {
+                    over "Point_005"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Bottom_002"
+                {
+                    over "Point_010"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Top_003"
+                {
+                    over "Point_006"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Top_005"
+                {
+                    over "Point_008"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
             }
 
             def Xform "Body_with_Materials" (
@@ -299,6 +381,12 @@ over "RootNode"
                     }
                 }
             }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
         }
 
         over "mesh_6D7C76431B8CB3AC"
@@ -349,20 +437,20 @@ over "RootNode"
                                 )
                             }
 
-                            over "Glass_Clear_Normal_Type_02" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Glass_Clear_Normal_Type_02> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-
                             over "Glass_Clear" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
                             )
                             {
                                 rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_03> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -371,8 +459,14 @@ over "RootNode"
 
                     over "Rear_Light_Bottom_Glass"
                     {
-                        over "Mesh"
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
                         {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+
                             over "Glass_Clear" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
                             )
@@ -382,11 +476,11 @@ over "RootNode"
                                 )
                             }
 
-                            over "Glass_Clear_Normal_Type_02" (
+                            over "Glass_Clear_Normal_Type_03" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
                             )
                             {
-                                rel material:binding = </Looks/Glass_Clear_Normal_Type_02> (
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_03> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -440,6 +534,18 @@ over "RootNode"
                             )
                         }
                     }
+
+                    over "Window_Glass"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
                 }
             }
 
@@ -452,14 +558,38 @@ over "RootNode"
 
         over "mesh_667CB09DEE9A83E7"
         {
-            def Xform "Wheel" (
-                prepend references = @./Wheel.usd@
+            def Xform "Xform"
+            {
+                double3 xformOp:rotateXYZ = (0, -180, -90)
+                double3 xformOp:scale = (1.5, 1.5, 1.5)
+                double3 xformOp:translate = (0, 0.10000000149011612, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def Xform "Tire" (
+                    references = @../../00_Shared/trafficShared_wheelTire_medium01.usd@
+                )
+                {
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (0.01, 0.01, 0.01)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "Wheel" (
+                    references = @../trafficTire_van01.usd@
+                )
+                {
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (0.01, 0.01, 0.01)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            over "mesh" (
+                active = false
             )
             {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
@@ -469,6 +599,79 @@ over "RootNode"
                 active = false
             )
             {
+            }
+        }
+
+        over "mesh_34450ED3F0102CA1"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_802BDDDB4528A2AB"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A5003B2D9DA1E0D5"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5AFC9A2C39CEC38E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_37E9CDDAF074166B"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Xform"
+            {
+                double3 xformOp:rotateXYZ = (0, -180, -90)
+                double3 xformOp:scale = (1.5, 1.5, 1.5)
+                double3 xformOp:translate = (0, 0.10000000149011612, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def Xform "Tire" (
+                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_wheelTire_medium01.usd@
+                )
+                {
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (0.01, 0.01, 0.01)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "Wheel" (
+                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/trafficTire_van01.usd@
+                )
+                {
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (0.01, 0.01, 0.01)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
     }

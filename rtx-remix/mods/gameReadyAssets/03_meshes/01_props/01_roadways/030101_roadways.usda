@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./FlagLamps/FlagLamps.usda@,
         @./StreetLamps/StreetLamps.usda@,
         @./AvenueMedians/AvenueMedians.usda@,
         @./Barrels/Water_barrels_soul.usda@
