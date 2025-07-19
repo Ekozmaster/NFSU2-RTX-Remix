@@ -1,0 +1,476 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_E68829495634B425"
+        {
+            def Xform "Body" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                prepend references = @./Body.usd@
+            )
+            {
+                rel material:binding = </Looks/traffic_chevroletVan> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Bolt" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Bolt.usd@
+            )
+            {
+                rel material:binding = </Looks/Chrome_Rough> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Light" (
+                references = @./Light.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Body_with_Materials" (
+                references = @./Body_with_mat.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Van"
+                {
+                    over "Interior"
+                    {
+                        over "Mesh"
+                        {
+                            over "Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Plastic" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Plastic_Rough" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Metal_Share_Material_01_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "White_Plastic" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_White> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Diamond_Plate_Dark" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Diamond_Plate_Dark> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Diamond_Plate_Light" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Diamond_Plate_Light> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Seat_Left_Belt_Buckle"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Door_Plastic"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Seat_Right_Belt_Buckle"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Grey> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Mirror"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Rear_Reflector"
+                    {
+                        over "Mesh"
+                        {
+                            over "Reflector_Chrome_Normal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Van_Inside_Dark_Metal"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Metal_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Main_VAN_Bottom"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Metal_Share_Material_01_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Wiper"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Main_VAN_Front_Panel"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Chrome_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Front_Reflector"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+
+                over "Door_Front_BlackPlastic"
+                {
+                    over "Mesh" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/Plastic_Black_Glossy> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+
+                over "Door_Front_Lock"
+                {
+                    over "Mesh" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/Chrome_More_Rough> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+        }
+
+        over "mesh_6D7C76431B8CB3AC"
+        {
+            def Xform "Window" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                prepend references = @./Window.usd@
+            )
+            {
+                rel material:binding = None (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Van"
+                {
+                    over "Front_Headlight_Glass"
+                    {
+                        over "Mesh"
+                        {
+                            over "Glass_Orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_Normal_Type_11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_03> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear_Normal_Type_02" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_02> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Rear_Light_Bottom_Glass"
+                    {
+                        over "Mesh"
+                        {
+                            over "Glass_Clear" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear_Normal_Type_02" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_02> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Rear_Top_Light_Glass"
+                    {
+                        over "Mesh"
+                        {
+                            over "Glass_Clear_Red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_Normal_Type_11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Interior_Panel_Glass"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Interior_Glass"
+                    {
+                        over "Mesh" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_667CB09DEE9A83E7"
+        {
+            def Xform "Wheel" (
+                prepend references = @./Wheel.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_40708F775061BB5F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

@@ -1,0 +1,390 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_13BB9780DD8CB91D"
+        {
+            def Xform "Pole" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./FlagLamps_Pole.usd@
+            )
+            {
+                rel material:binding = </Looks/FlagLamp_01> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Bulb" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./FlagLamps_Bulb.usd@
+            )
+            {
+                rel material:binding = </Looks/Bulb_Warm> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_B3669B7C671B24C9"
+        {
+            def Xform "Glass" (
+                references = @./FlagLamps_Glass.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Light_03_Light_Glass"
+                {
+                    over "Circle_006"
+                    {
+                        over "ClearGlass" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "ClearGlass_Normal_T05" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear_Normal_Type_05> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "ClearGlass_Normal_T12" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear_Normal_Type_12> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+
+                        over "ClearGlass_Normal_T13" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear_Normal_Type_13> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_566FF75672F6AB62"
+        {
+            def Xform "Flag" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./FlagLamps_Flag.usd@
+            )
+            {
+                rel material:binding = </Looks/FlagLamp_01> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
+over "Looks"
+{
+    def Material "FlagLamp_01"
+    {
+        token outputs:mdl:displacement.connect = </Looks/FlagLamp_01/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/FlagLamp_01/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/FlagLamp_01/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            bool inputs:blend_enabled = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            asset inputs:diffuse_texture = @./FlagLamps_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @./FlagLamps_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./FlagLamps_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./FlagLamps_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_legacy_alpha_state = 1 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Bulb_Warm"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Bulb_Warm/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Bulb_Warm/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Bulb_Warm/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../../02_materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            bool inputs:blend_enabled = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            color3f inputs:diffuse_color_constant = (0.87258685, 0.8725847, 0.8725781) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:emissive_color_constant = (0.8378378, 0.79407305, 0.6825628) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Color"
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:emissive_intensity = 500 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Intensity"
+                doc = """Intensity of the emission
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emission"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            float inputs:metallic_constant = 1 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.049999997 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            bool inputs:use_legacy_alpha_state = 1 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+

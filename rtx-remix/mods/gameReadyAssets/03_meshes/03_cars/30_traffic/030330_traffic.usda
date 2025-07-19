@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./Van_01/030330_Van_01.usda@,
         @./030330_universal01.usda@,
         @./030330_sedan02.usda@,
         @./030330_hatchback02.usda@,

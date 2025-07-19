@@ -1,0 +1,538 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "Looks"
+{
+    def Material "Metal028"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal028/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal028/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal028/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./Metal028_albedo.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0.001 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./Metal028_height.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 1 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./Metal028_normal.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./Metal028_rough.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+        }
+    }
+
+    def Material "Metal_Share_Material_01_Black"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal_Share_Material_01_Black/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal_Share_Material_01_Black/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal_Share_Material_01_Black/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.9, 0, 0) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @./Metal_Share_Material_01_Black_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0 (
+                customData = {
+                    float default = 0.05
+                    dictionary range = {
+                        float max = 0.2
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            float inputs:displace_out = 0.01 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 0.2
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Outwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter high.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters high.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./Metal_Share_Material_01_height.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.  A pixel of value displace_in / (displace_in + displace_out) will be the original height of the triangle.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @./Metal_Share_Material_01_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Metal_Share_Material_01_normal.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./Metal_Share_Material_01_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+        }
+    }
+
+    def Material "Metal_Share_Material_01_Grey"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal_Share_Material_01_Grey/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal_Share_Material_01_Grey/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal_Share_Material_01_Grey/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.9, 0, 0) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @./Metal_Share_Material_01_Grey_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0 (
+                customData = {
+                    float default = 0.05
+                    dictionary range = {
+                        float max = 0.2
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            float inputs:displace_out = 0.01 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 0.2
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Outwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter high.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters high.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./Metal_Share_Material_01_height.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.  A pixel of value displace_in / (displace_in + displace_out) will be the original height of the triangle.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @./Metal_Share_Material_01_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Metal_Share_Material_01_normal.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./Metal_Share_Material_01_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+        }
+    }
+
+    def Material "Metal_Share_Material_01_Green"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal_Share_Material_01_Green/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal_Share_Material_01_Green/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal_Share_Material_01_Green/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.9, 0, 0) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @./Metal_Share_Material_01_Green_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0 (
+                customData = {
+                    float default = 0.05
+                    dictionary range = {
+                        float max = 0.2
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            float inputs:displace_out = 0.01 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 0.2
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Outwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter high.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters high.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./Metal_Share_Material_01_height.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.  A pixel of value displace_in / (displace_in + displace_out) will be the original height of the triangle.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @./Metal_Share_Material_01_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Metal_Share_Material_01_normal.dds@ (
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./Metal_Share_Material_01_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+        }
+    }
+}
+

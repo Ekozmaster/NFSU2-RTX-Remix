@@ -29,8 +29,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -45,8 +45,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -60,8 +60,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -99,8 +99,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -115,8 +115,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -130,8 +130,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -169,8 +169,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -185,8 +185,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -200,8 +200,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -239,8 +239,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -255,8 +255,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -270,8 +270,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -309,8 +309,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -325,8 +325,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -340,8 +340,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -379,8 +379,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -395,8 +395,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -410,8 +410,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -449,8 +449,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -465,8 +465,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -480,8 +480,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -519,8 +519,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -535,8 +535,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -550,8 +550,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -589,8 +589,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -605,8 +605,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -620,8 +620,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -659,8 +659,8 @@ over "Looks" (
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -675,8 +675,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -690,8 +690,8 @@ over "Looks" (
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -715,8 +715,8 @@ over "Looks" (
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Measurement Distance"
-                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.
-This parameter is unused.
+                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                 hidden = false
             )
@@ -744,8 +744,8 @@ This parameter is unused.
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -760,8 +760,8 @@ This parameter is unused.
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -775,8 +775,8 @@ This parameter is unused.
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -814,8 +814,8 @@ This parameter is unused.
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -830,8 +830,8 @@ This parameter is unused.
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -845,8 +845,8 @@ This parameter is unused.
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -870,8 +870,8 @@ This parameter is unused.
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Measurement Distance"
-                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.
-This parameter is unused.
+                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                 hidden = false
             )
@@ -885,8 +885,8 @@ This parameter is unused.
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Single Scattering Albedo"
-                doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                 hidden = false
                 renderType = "color"
@@ -901,8 +901,8 @@ This parameter is unused.
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Transmittance Color"
-                doc = """The transmittance color of subsurface material. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                doc = """The transmittance color of subsurface material. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                 hidden = false
                 renderType = "color"
@@ -931,8 +931,8 @@ This parameter is unused.
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
 """
                 hidden = false
                 renderType = "texture_2d"
@@ -947,8 +947,8 @@ This parameter is unused.
                 }
                 displayGroup = "Specular"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
-
+                doc = """Metallic Material\r
+\r
 """
                 hidden = false
             )
@@ -962,8 +962,8 @@ This parameter is unused.
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
-
+                doc = """Higher roughness values lead to more blurry reflections\r
+\r
 """
                 hidden = false
             )
@@ -987,8 +987,8 @@ This parameter is unused.
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Measurement Distance"
-                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.
-This parameter is unused.
+                doc = """The distance between front and back surface of subsurface materials, or the thickness of the surface.\r
+This parameter is unused.\r
 """
                 hidden = false
             )
@@ -1002,8 +1002,8 @@ This parameter is unused.
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Single Scattering Albedo"
-                doc = """The color of light that most easily passes through the material after a single time scattering inside volume.
-This parameter is unused.
+                doc = """The color of light that most easily passes through the material after a single time scattering inside volume.\r
+This parameter is unused.\r
 """
                 hidden = false
                 renderType = "color"
@@ -1018,11 +1018,126 @@ This parameter is unused.
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Transmittance Color"
-                doc = """The transmittance color of subsurface material. This property can be easily considered as the light color after passing through volume.
-This parameter is unused.
+                doc = """The transmittance color of subsurface material. This property can be easily considered as the light color after passing through volume.\r
+This parameter is unused.\r
 """
                 hidden = false
                 renderType = "color"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "traffic_chevroletVan"
+    {
+        token outputs:mdl:displacement.connect = </Looks/traffic_chevroletVan/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/traffic_chevroletVan/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/traffic_chevroletVan/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            bool inputs:blend_enabled = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            asset inputs:diffuse_texture = @./Van01_Body_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @./Van01_Body_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Van01_Body_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./Van01_Body_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_legacy_alpha_state = 1 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
             )
             token outputs:out (
                 renderType = "material"
