@@ -23,20 +23,6 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def Xform "Bolt" (
-                prepend apiSchemas = ["MaterialBindingAPI"]
-                references = @./Bolt.usd@
-            )
-            {
-                rel material:binding = </Looks/Chrome_Rough> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
             def Xform "Light" (
                 references = @./Light.usd@
             )
@@ -146,9 +132,129 @@ over "RootNode"
 
                 over "Van"
                 {
+                    over "Door_Plastic"
+                    {
+                        over "Plane_058" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Seat_Dark_Metal"
+                    {
+                        over "Plane_010" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Front_Reflector"
+                    {
+                        over "Plane_024" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Dark_Metal"
+                    {
+                        over "Plane_040" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Seat_Right_Belt_Buckle"
+                    {
+                        over "Cube_013" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Seat_Dark_Metal_001"
+                    {
+                        over "Plane_010" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Seat_Left_Belt_Buckle"
+                    {
+                        over "Cube_013" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Rear_Reflector"
+                    {
+                        over "Plane_025"
+                        {
+                            over "Reflector_Chrome_Normal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Wiper"
+                    {
+                        over "Plane_064" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
                     over "Interior"
                     {
-                        over "Mesh"
+                        over "Cube_004"
                         {
                             over "Chrome" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
@@ -181,7 +287,7 @@ over "RootNode"
                                 prepend apiSchemas = ["MaterialBindingAPI"]
                             )
                             {
-                                rel material:binding = </Looks/Metal_Share_Material_01_Black> (
+                                rel material:binding = </Looks/Chrome_Black> (
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
@@ -223,161 +329,77 @@ over "RootNode"
                             }
                         }
                     }
+                }
 
-                    over "Seat_Left_Belt_Buckle"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Plastic_Black> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
+                over "License_Plate_Front_Anchor" (
+                    references = @../../00_Shared/trafficShared_licensePlate01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 90)
+                    float3 xformOp:scale = (0.011, 0.011, 0.011)
+                    double3 xformOp:translate = (2.35, 0, 0.04)
 
-                    over "Door_Plastic"
+                    over "XForms"
                     {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
+                        over "World"
                         {
-                            rel material:binding = </Looks/Plastic_Black_Glossy> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
-
-                    over "Seat_Right_Belt_Buckle"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Plastic_Grey> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
-
-                    over "Mirror"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Reflector_Chrome> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
-
-                    over "Rear_Reflector"
-                    {
-                        over "Mesh"
-                        {
-                            over "Reflector_Chrome_Normal" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
+                            over "trafficShared_licensePlate01"
                             {
-                                rel material:binding = </Looks/Reflector_Normal> (
-                                    bindMaterialAs = "weakerThanDescendants"
+                                over "licPlateType01_00_textureCarMisc_GRP_Geo_licPlate01_metal" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
                                 )
-                            }
+                                {
+                                    rel material:binding = </Looks/Chrome_Rough> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
 
-                            over "Reflector_Chrome" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Reflector_Chrome> (
-                                    bindMaterialAs = "weakerThanDescendants"
+                                over "licPlate01_color_licPlateType01_00_textureCarMisc_GRP_Geo" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
                                 )
+                                {
+                                    rel material:binding = </Looks/trafficShared_licSignMat> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
                             }
-                        }
-                    }
-
-                    over "Van_Inside_Dark_Metal"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Metal_Black> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
-
-                    over "Main_VAN_Bottom"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Metal_Share_Material_01_Black> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
-
-                    over "Wiper"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Plastic_Black> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
-
-                    over "Main_VAN_Front_Panel"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Chrome_Rough> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-                        }
-                    }
-
-                    over "Front_Reflector"
-                    {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
-                        {
-                            rel material:binding = </Looks/Reflector_Chrome> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
                         }
                     }
                 }
 
-                over "Door_Front_BlackPlastic"
+                over "License_Plate_Rear_Anchor" (
+                    references = @../../00_Shared/trafficShared_licensePlate02.usd@
+                )
                 {
-                    over "Mesh" (
-                        prepend apiSchemas = ["MaterialBindingAPI"]
-                    )
-                    {
-                        rel material:binding = </Looks/Plastic_Black_Glossy> (
-                            bindMaterialAs = "weakerThanDescendants"
-                        )
-                    }
-                }
+                    float3 xformOp:rotateXYZ = (-90, 180, 90)
+                    float3 xformOp:scale = (0.012, 0.012, 0.012)
+                    double3 xformOp:translate = (-2.55, 0, 0.13)
 
-                over "Door_Front_Lock"
-                {
-                    over "Mesh" (
-                        prepend apiSchemas = ["MaterialBindingAPI"]
-                    )
+                    over "XForms"
                     {
-                        rel material:binding = </Looks/Chrome_More_Rough> (
-                            bindMaterialAs = "weakerThanDescendants"
-                        )
+                        over "World"
+                        {
+                            over "trafficShared_licensePlate02"
+                            {
+                                over "licPlateType02_00_textureCarMisc_GRP_Geo_licPlate02_metal" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/Chrome_Rough> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+
+                                over "licPlate02_color_licPlateType02_00_textureCarMisc_GRP_Geo" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/trafficShared_licSignMat> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -408,7 +430,7 @@ over "RootNode"
                 {
                     over "Front_Headlight_Glass"
                     {
-                        over "Mesh"
+                        over "Plane_004"
                         {
                             over "Glass_Orange" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
@@ -437,15 +459,6 @@ over "RootNode"
                                 )
                             }
 
-                            over "Glass_Clear" (
-                                prepend apiSchemas = ["MaterialBindingAPI"]
-                            )
-                            {
-                                rel material:binding = </Looks/Glass_Clear> (
-                                    bindMaterialAs = "weakerThanDescendants"
-                                )
-                            }
-
                             over "Glass_Clear_Normal_Type_03" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
                             )
@@ -454,19 +467,22 @@ over "RootNode"
                                     bindMaterialAs = "weakerThanDescendants"
                                 )
                             }
+
+                            over "Glass_Clear" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
                         }
                     }
 
                     over "Rear_Light_Bottom_Glass"
                     {
-                        over "Mesh" (
-                            prepend apiSchemas = ["MaterialBindingAPI"]
-                        )
+                        over "Plane_017"
                         {
-                            rel material:binding = </Looks/Glass_Clear> (
-                                bindMaterialAs = "weakerThanDescendants"
-                            )
-
                             over "Glass_Clear" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
                             )
@@ -489,7 +505,7 @@ over "RootNode"
 
                     over "Rear_Top_Light_Glass"
                     {
-                        over "Mesh"
+                        over "Plane_014"
                         {
                             over "Glass_Clear_Red" (
                                 prepend apiSchemas = ["MaterialBindingAPI"]
@@ -513,7 +529,7 @@ over "RootNode"
 
                     over "Interior_Panel_Glass"
                     {
-                        over "Mesh" (
+                        over "Cube_044" (
                             prepend apiSchemas = ["MaterialBindingAPI"]
                         )
                         {
@@ -525,7 +541,7 @@ over "RootNode"
 
                     over "Van_Interior_Glass"
                     {
-                        over "Mesh" (
+                        over "Plane_057" (
                             prepend apiSchemas = ["MaterialBindingAPI"]
                         )
                         {
@@ -537,7 +553,7 @@ over "RootNode"
 
                     over "Window_Glass"
                     {
-                        over "Mesh" (
+                        over "Plane_030" (
                             prepend apiSchemas = ["MaterialBindingAPI"]
                         )
                         {
@@ -566,9 +582,13 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def Xform "Tire" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
                     references = @../../00_Shared/trafficShared_wheelTire_medium01.usd@
                 )
                 {
+                    rel material:binding = </Looks/trafficShared_wheelTireMat> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (0.01, 0.01, 0.01)
                     double3 xformOp:translate = (0, 0, 0)
@@ -576,9 +596,13 @@ over "RootNode"
                 }
 
                 def Xform "Wheel" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
                     references = @../trafficTire_van01.usd@
                 )
                 {
+                    rel material:binding = </Looks/Chrome_Shiny> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (0.01, 0.01, 0.01)
                     double3 xformOp:translate = (0, 0, 0)
@@ -654,9 +678,13 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def Xform "Tire" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
                     references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_wheelTire_medium01.usd@
                 )
                 {
+                    rel material:binding = </Looks/trafficShared_wheelTireMat> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (0.01, 0.01, 0.01)
                     double3 xformOp:translate = (0, 0, 0)
@@ -664,14 +692,1187 @@ over "RootNode"
                 }
 
                 def Xform "Wheel" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
                     references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/trafficTire_van01.usd@
                 )
                 {
+                    rel material:binding = </Looks/Chrome_Shiny> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (0.01, 0.01, 0.01)
                     double3 xformOp:translate = (0, 0, 0)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
+            }
+        }
+
+        over "mesh_FE90BFE396DABC6B"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Window_01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                delete references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Window.usd@
+                prepend references = @./Window.usd@
+            )
+            {
+                rel material:binding = None (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Van"
+                {
+                    over "Front_Headlight_Glass"
+                    {
+                        over "Plane_004"
+                        {
+                            over "Glass_Orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_Normal_Type_11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_03> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_03> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Rear_Light_Bottom_Glass"
+                    {
+                        over "Plane_017"
+                        {
+                            over "Glass_Clear" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_03> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Rear_Top_Light_Glass"
+                    {
+                        over "Plane_014"
+                        {
+                            over "Glass_Clear_Red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_Normal_Type_11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Interior_Panel_Glass"
+                    {
+                        over "Cube_044" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Interior_Glass"
+                    {
+                        over "Plane_057" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Window_Glass"
+                    {
+                        over "Plane_030" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_1727E17057847219"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Body" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                delete references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Body.usd@
+                prepend references = @./Body.usd@
+            )
+            {
+                rel material:binding = </Looks/traffic_chevroletVan> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Body_with_Materials" (
+                references = @./Body_with_mat.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Van"
+                {
+                    over "Door_Plastic"
+                    {
+                        over "Plane_058" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Seat_Dark_Metal"
+                    {
+                        over "Plane_010" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Front_Reflector"
+                    {
+                        over "Plane_024" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Dark_Metal"
+                    {
+                        over "Plane_040" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Seat_Right_Belt_Buckle"
+                    {
+                        over "Cube_013" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Seat_Dark_Metal_001"
+                    {
+                        over "Plane_010" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Seat_Left_Belt_Buckle"
+                    {
+                        over "Cube_013" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Rear_Reflector"
+                    {
+                        over "Plane_025"
+                        {
+                            over "Reflector_Chrome_Normal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Wiper"
+                    {
+                        over "Plane_064" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Interior"
+                    {
+                        over "Cube_004"
+                        {
+                            over "Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Plastic" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Plastic_Rough" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "White_Plastic" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_White> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Diamond_Plate_Dark" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Diamond_Plate_Dark> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Diamond_Plate_Light" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Diamond_Plate_Light> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+
+                over "License_Plate_Front_Anchor" (
+                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 90)
+                    float3 xformOp:scale = (0.011, 0.011, 0.011)
+                    double3 xformOp:translate = (2.35, 0, 0.04)
+
+                    over "XForms"
+                    {
+                        over "World"
+                        {
+                            over "trafficShared_licensePlate01"
+                            {
+                                over "licPlateType01_00_textureCarMisc_GRP_Geo_licPlate01_metal" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/Chrome_Rough> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+
+                                over "licPlate01_color_licPlateType01_00_textureCarMisc_GRP_Geo" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/trafficShared_licSignMat> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+
+                over "License_Plate_Rear_Anchor" (
+                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate02.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (-90, 180, 90)
+                    float3 xformOp:scale = (0.012, 0.012, 0.012)
+                    double3 xformOp:translate = (-2.55, 0, 0.13)
+
+                    over "XForms"
+                    {
+                        over "World"
+                        {
+                            over "trafficShared_licensePlate02"
+                            {
+                                over "licPlateType02_00_textureCarMisc_GRP_Geo_licPlate02_metal" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/Chrome_Rough> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+
+                                over "licPlate02_color_licPlateType02_00_textureCarMisc_GRP_Geo" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/trafficShared_licSignMat> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Light" (
+                references = @./Light.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Rear_Light_Top_004"
+                {
+                    over "Point_007"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Top_Light_Left"
+                {
+                    over "Point_001"
+                    {
+                        float inputs:intensity = 600
+                    }
+                }
+
+                over "Rear_Light_Bottom_001"
+                {
+                    over "Point_009"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Bottom_Main_Light_Left"
+                {
+                    over "Point"
+                    {
+                        float inputs:intensity = 800
+                    }
+                }
+
+                over "Front_Bottom_Main_Light_Right"
+                {
+                    over "Point_003"
+                    {
+                        float inputs:intensity = 800
+                    }
+                }
+
+                over "Rear_Light_Top_001"
+                {
+                    over "Point_004"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Top_Light_Right"
+                {
+                    over "Point_002"
+                    {
+                        float inputs:intensity = 600
+                    }
+                }
+
+                over "Rear_Light_Top_002"
+                {
+                    over "Point_005"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Bottom_002"
+                {
+                    over "Point_010"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Top_003"
+                {
+                    over "Point_006"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Top_005"
+                {
+                    over "Point_008"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+            }
+        }
+
+        over "mesh_746AF22266D5EA17"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_69044186749A2F6F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_4E555A4D7BB972BF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Window" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                prepend references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Window.usd@
+            )
+            {
+                rel material:binding = None (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Van"
+                {
+                    over "Front_Headlight_Glass"
+                    {
+                        over "Plane_004"
+                        {
+                            over "Glass_Orange" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_Normal_Type_11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Orange_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Orange_Normal_Type_03> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_03> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Rear_Light_Bottom_Glass"
+                    {
+                        over "Plane_017"
+                        {
+                            over "Glass_Clear" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Clear_Normal_Type_03" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Clear_Normal_Type_03> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Rear_Top_Light_Glass"
+                    {
+                        over "Plane_014"
+                        {
+                            over "Glass_Clear_Red" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Glass_Red_Normal_Type_11" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Glass_Red_Normal_Type_11> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Interior_Panel_Glass"
+                    {
+                        over "Cube_044" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Interior_Glass"
+                    {
+                        over "Plane_057" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Window_Glass"
+                    {
+                        over "Plane_030" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Glass_Clear> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_19168B976C637A5D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Body" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                delete references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Body.usd@
+                prepend references = @./Body.usd@
+            )
+            {
+                rel material:binding = </Looks/traffic_chevroletVan> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Body_with_Materials" (
+                references = @./Body_with_mat.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Van"
+                {
+                    over "Door_Plastic"
+                    {
+                        over "Plane_058" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Seat_Dark_Metal"
+                    {
+                        over "Plane_010" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Front_Reflector"
+                    {
+                        over "Plane_024" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Reflector_Chrome> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Dark_Metal"
+                    {
+                        over "Plane_040" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Seat_Right_Belt_Buckle"
+                    {
+                        over "Cube_013" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Van_Inside_Seat_Dark_Metal_001"
+                    {
+                        over "Plane_010" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Dark_Metal_Rough> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Seat_Left_Belt_Buckle"
+                    {
+                        over "Cube_013" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Rear_Reflector"
+                    {
+                        over "Plane_025"
+                        {
+                            over "Reflector_Chrome_Normal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Normal> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+
+                    over "Wiper"
+                    {
+                        over "Plane_064" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </Looks/Plastic_Black> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+
+                    over "Interior"
+                    {
+                        over "Cube_004"
+                        {
+                            over "Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Shiny> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Plastic" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black_Glossy> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Plastic_Rough" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Black_Metal" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Chrome_Black> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "White_Plastic" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Plastic_White> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Reflector_Chrome" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Reflector_Chrome> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Diamond_Plate_Dark" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Diamond_Plate_Dark> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+
+                            over "Diamond_Plate_Light" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </Looks/Diamond_Plate_Light> (
+                                    bindMaterialAs = "weakerThanDescendants"
+                                )
+                            }
+                        }
+                    }
+                }
+
+                over "License_Plate_Front_Anchor" (
+                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate01.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 90)
+                    float3 xformOp:scale = (0.011, 0.011, 0.011)
+                    double3 xformOp:translate = (2.35, 0, 0.04)
+
+                    over "XForms"
+                    {
+                        over "World"
+                        {
+                            over "trafficShared_licensePlate01"
+                            {
+                                over "licPlateType01_00_textureCarMisc_GRP_Geo_licPlate01_metal" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/Chrome_Rough> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+
+                                over "licPlate01_color_licPlateType01_00_textureCarMisc_GRP_Geo" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/trafficShared_licSignMat> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+
+                over "License_Plate_Rear_Anchor" (
+                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate02.usd@
+                )
+                {
+                    float3 xformOp:rotateXYZ = (-90, 180, 90)
+                    float3 xformOp:scale = (0.012, 0.012, 0.012)
+                    double3 xformOp:translate = (-2.55, 0, 0.13)
+
+                    over "XForms"
+                    {
+                        over "World"
+                        {
+                            over "trafficShared_licensePlate02"
+                            {
+                                over "licPlateType02_00_textureCarMisc_GRP_Geo_licPlate02_metal" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/Chrome_Rough> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+
+                                over "licPlate02_color_licPlateType02_00_textureCarMisc_GRP_Geo" (
+                                    prepend apiSchemas = ["MaterialBindingAPI"]
+                                )
+                                {
+                                    rel material:binding = </Looks/trafficShared_licSignMat> (
+                                        bindMaterialAs = "weakerThanDescendants"
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            def Xform "Light" (
+                references = @./Light.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Rear_Light_Top_004"
+                {
+                    over "Point_007"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Top_Light_Left"
+                {
+                    over "Point_001"
+                    {
+                        float inputs:intensity = 600
+                    }
+                }
+
+                over "Rear_Light_Bottom_001"
+                {
+                    over "Point_009"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Bottom_Main_Light_Left"
+                {
+                    over "Point"
+                    {
+                        float inputs:intensity = 800
+                    }
+                }
+
+                over "Front_Bottom_Main_Light_Right"
+                {
+                    over "Point_003"
+                    {
+                        float inputs:intensity = 800
+                    }
+                }
+
+                over "Rear_Light_Top_001"
+                {
+                    over "Point_004"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Front_Top_Light_Right"
+                {
+                    over "Point_002"
+                    {
+                        float inputs:intensity = 600
+                    }
+                }
+
+                over "Rear_Light_Top_002"
+                {
+                    over "Point_005"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Bottom_002"
+                {
+                    over "Point_010"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Top_003"
+                {
+                    over "Point_006"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+
+                over "Rear_Light_Top_005"
+                {
+                    over "Point_008"
+                    {
+                        float inputs:intensity = 200
+                    }
+                }
+            }
+        }
+
+        over "mesh_1D41E65609055483"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_793D14B87C06F89C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
     }

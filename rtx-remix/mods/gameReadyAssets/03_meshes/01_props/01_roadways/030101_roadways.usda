@@ -2214,20 +2214,20 @@ over "RootNode"
 
         over "mesh_F27E7E866CBFE686"
         {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
             def Xform "Xform" (
                 references = @./JerseyBarriers/JerseyBarriers.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
+                double3 xformOp:scale = (1.09, 1.2000000178813934, 1.0000000149011612)
+                double3 xformOp:translate = (0, -0.05, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
@@ -2252,20 +2252,20 @@ over "RootNode"
 
         over "mesh_5CBB6921CC6B4D34"
         {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
             def Xform "Xform" (
                 references = @./JerseyBarriers/JerseyBarriersWorn.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1.05, 1.05, 1.05)
-                double3 xformOp:translate = (0, 0, 0.32)
+                double3 xformOp:scale = (1.09, 1.2, 1.06)
+                double3 xformOp:translate = (0, -0.05, -0.05)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 

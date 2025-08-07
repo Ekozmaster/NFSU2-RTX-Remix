@@ -93,10 +93,10 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 0
                 float height = 17.9
-                float intensity = 1500
-                bool normalize = 1
+                float intensity = 10
+                bool normalize = 0
                 float shaping:cone:angle = 90
                 float shaping:cone:softness = 0.5
                 float shaping:focus = 0.7
@@ -107,7 +107,7 @@ over "RootNode"
                 float width = 20.800001
                 double3 xformOp:rotateXYZ = (0, -1.700000025331974, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 5.500000081956387)
+                double3 xformOp:translate = (0, 0, 5.600000083446503)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

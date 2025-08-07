@@ -67,271 +67,6 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_16F3DC8B3FFEB0C3"
-        {
-            over "Shader"
-            {
-                uniform bool enable_opacity = 0
-                float inputs:anisotropy_constant = 0 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = -1
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Anisotropy Amount"
-                    doc = "0 for isotropic, extents of -1 to 1 for anisotropy"
-                    hidden = false
-                )
-                asset inputs:anisotropy_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Anisotropy Map"
-                    hidden = false
-                )
-                color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
-                    customData = {
-                        float3 default = (0.2, 0.2, 0.2)
-                        dictionary range = {
-                            float3 max = (1, 1, 1)
-                            float3 min = (0, 0, 0)
-                        }
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Base Color"
-                    doc = "The base albedo color to use if no texture is specified"
-                    hidden = false
-                )
-                asset inputs:diffuse_texture = @./Textures/uncle_burritoBrokenRefs/16F3DC8B3FFEB0C3.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                color3f inputs:emissive_color_constant = (1, 0.1, 0.1) (
-                    customData = {
-                        float3 default = (1, 0.1, 0.1)
-                        dictionary range = {
-                            float3 max = (1, 1, 1)
-                            float3 min = (0, 0, 0)
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Color"
-                    doc = "The emissive color when no emissive color texture is specified."
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 40 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                bool inputs:enable_opacity = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-                bool inputs:enable_thin_film = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Enable thin film"
-                    doc = "Adds a thin film coating to the material"
-                    hidden = false
-                )
-                int inputs:encoding = 0 (
-                    customData = {
-                        int default = 0
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map Encoding"
-                    doc = "Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."
-                    hidden = false
-                    renderType = "::Z73file_3A::Z19F_3A::Z13Need_2520for_2520Speed_2520Underground_25202::Z58rtx_2Dremix::captures::materials::AperturePBR_Normal::normalmap_encoding"
-                    sdrMetadata = {
-                        string __SDR__enum_value = "octahedral"
-                        string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
-                    }
-                )
-                bool inputs:ignore_material = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Material Flags"
-                    displayName = "Ignore Material"
-                    doc = "Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard."
-                    hidden = false
-                )
-                float inputs:metallic_constant = 0.03 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                asset inputs:metallic_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                float inputs:opacity_constant = 1 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Opacity Amount"
-                    doc = "Used when no albedo/opacity texture is specified. 0 for completely transparent, 1 for completly opaque."
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
-                int inputs:sprite_sheet_cols = 1 (
-                    customData = {
-                        int default = 1
-                        dictionary range = {
-                            int max = 255
-                            int min = 1
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Spritesheet Columns"
-                    doc = "Number of columns the emissive map is divided into"
-                    hidden = false
-                )
-                int inputs:sprite_sheet_fps = 0 (
-                    customData = {
-                        int default = 0
-                        dictionary range = {
-                            int max = 255
-                            int min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Spritesheet FPS"
-                    doc = "Frames Per Second if the emissive map is a spritesheet"
-                    hidden = false
-                )
-                int inputs:sprite_sheet_rows = 1 (
-                    customData = {
-                        int default = 1
-                        dictionary range = {
-                            int max = 255
-                            int min = 1
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Spritesheet Rows"
-                    doc = "Number of row the emissive map is divided into"
-                    hidden = false
-                )
-                float inputs:thin_film_thickness_constant = 200 (
-                    customData = {
-                        float default = 200
-                        dictionary range = {
-                            float max = 1500
-                            float min = 0.001
-                        }
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Thin film constant thickness in nm"
-                    doc = "Thickness of the thin film if not specified in albedo texture"
-                    hidden = false
-                )
-                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Thin film thickness from albedo alpha"
-                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_289CFCB898FA27B1"
         {
             over "Shader"
@@ -611,8 +346,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Anisotropy Amount"
-                    doc = """0 for isotropic, extents of -1 to 1 for anisotropy
-
+                    doc = """0 for isotropic, extents of -1 to 1 for anisotropy\r
+\r
 """
                     hidden = true
                 )
@@ -636,8 +371,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo Color"
-                    doc = """The base albedo color.  (Used if no texture is specified)
-
+                    doc = """The base albedo color.  (Used if no texture is specified)\r
+\r
 """
                     hidden = false
                     renderType = "color"
@@ -661,8 +396,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Color"
-                    doc = """The emissive color when no emissive color texture is specified.
-
+                    doc = """The emissive color when no emissive color texture is specified.\r
+\r
 """
                     hidden = false
                     renderType = "color"
@@ -677,8 +412,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Intensity"
-                    doc = """Intensity of the emission
-
+                    doc = """Intensity of the emission\r
+\r
 """
                     hidden = false
                 )
@@ -689,8 +424,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
-                    doc = """The texture masking the emissive color
-
+                    doc = """The texture masking the emissive color\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -701,8 +436,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Enable Emission"
-                    doc = """Enables the emission of light from the material
-
+                    doc = """Enables the emission of light from the material\r
+\r
 """
                     hidden = false
                 )
@@ -712,8 +447,8 @@ over "RootNode"
                     }
                     displayGroup = "Iridescence"
                     displayName = "Enable Iridescence"
-                    doc = """Adds a thin film coating to the material
-
+                    doc = """Adds a thin film coating to the material\r
+\r
 """
                     hidden = false
                 )
@@ -723,8 +458,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Normal Map Encoding"
-                    doc = """Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel.
-
+                    doc = """Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel.\r
+\r
 """
                     hidden = true
                     renderType = "normalmap_encoding"
@@ -739,8 +474,8 @@ over "RootNode"
                     }
                     displayGroup = "Remix Flags"
                     displayName = "Ignore Material"
-                    doc = """Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard.
-
+                    doc = """Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard.\r
+\r
 """
                     hidden = false
                 )
@@ -787,8 +522,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Opacity Amount"
-                    doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)
-
+                    doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)\r
+\r
 """
                     hidden = false
                 )
@@ -812,8 +547,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -828,8 +563,8 @@ over "RootNode"
                     }
                     displayGroup = "Animation"
                     displayName = "Sprite Sheet Columns"
-                    doc = """Number of columns the spritesheet across all textures is divided into.
-
+                    doc = """Number of columns the spritesheet across all textures is divided into.\r
+\r
 """
                     hidden = false
                 )
@@ -843,8 +578,8 @@ over "RootNode"
                     }
                     displayGroup = "Animation"
                     displayName = "Sprite Sheet FPS"
-                    doc = """Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality.
-
+                    doc = """Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality.\r
+\r
 """
                     hidden = false
                 )
@@ -858,8 +593,8 @@ over "RootNode"
                     }
                     displayGroup = "Animation"
                     displayName = "Sprite Sheet Rows"
-                    doc = """Number of row the spritesheet across all textures is divided into.
-
+                    doc = """Number of row the spritesheet across all textures is divided into.\r
+\r
 """
                     hidden = false
                 )
@@ -873,8 +608,8 @@ over "RootNode"
                     }
                     displayGroup = "Iridescence"
                     displayName = "Thickness"
-                    doc = """Thickness of the thin film in nanometers if not specified in albedo texture
-
+                    doc = """Thickness of the thin film in nanometers if not specified in albedo texture\r
+\r
 """
                     hidden = false
                 )
@@ -884,8 +619,8 @@ over "RootNode"
                     }
                     displayGroup = "Iridescence"
                     displayName = "Use Opacity as Thickness"
-                    doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
-
+                    doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.\r
+\r
 """
                     hidden = false
                 )
@@ -1870,8 +1605,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Anisotropy Amount"
-                    doc = """0 for isotropic, extents of -1 to 1 for anisotropy
-
+                    doc = """0 for isotropic, extents of -1 to 1 for anisotropy\r
+\r
 """
                     hidden = true
                 )
@@ -1895,8 +1630,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo Color"
-                    doc = """The base albedo color.  (Used if no texture is specified)
-
+                    doc = """The base albedo color.  (Used if no texture is specified)\r
+\r
 """
                     hidden = false
                     renderType = "color"
@@ -1920,8 +1655,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Color"
-                    doc = """The emissive color when no emissive color texture is specified.
-
+                    doc = """The emissive color when no emissive color texture is specified.\r
+\r
 """
                     hidden = false
                     renderType = "color"
@@ -1936,8 +1671,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Intensity"
-                    doc = """Intensity of the emission
-
+                    doc = """Intensity of the emission\r
+\r
 """
                     hidden = false
                 )
@@ -1948,8 +1683,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
-                    doc = """The texture masking the emissive color
-
+                    doc = """The texture masking the emissive color\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -1960,8 +1695,8 @@ over "RootNode"
                     }
                     displayGroup = "Emission"
                     displayName = "Enable Emission"
-                    doc = """Enables the emission of light from the material
-
+                    doc = """Enables the emission of light from the material\r
+\r
 """
                     hidden = false
                 )
@@ -1971,8 +1706,8 @@ over "RootNode"
                     }
                     displayGroup = "Iridescence"
                     displayName = "Enable Iridescence"
-                    doc = """Adds a thin film coating to the material
-
+                    doc = """Adds a thin film coating to the material\r
+\r
 """
                     hidden = false
                 )
@@ -1982,8 +1717,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Normal Map Encoding"
-                    doc = """Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel.
-
+                    doc = """Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel.\r
+\r
 """
                     hidden = true
                     renderType = "normalmap_encoding"
@@ -1998,8 +1733,8 @@ over "RootNode"
                     }
                     displayGroup = "Remix Flags"
                     displayName = "Ignore Material"
-                    doc = """Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard.
-
+                    doc = """Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard.\r
+\r
 """
                     hidden = false
                 )
@@ -2046,8 +1781,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Opacity Amount"
-                    doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)
-
+                    doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)\r
+\r
 """
                     hidden = false
                 )
@@ -2071,8 +1806,8 @@ over "RootNode"
                     }
                     displayGroup = "Base Material"
                     displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
 """
                     hidden = false
                     renderType = "texture_2d"
@@ -2087,8 +1822,8 @@ over "RootNode"
                     }
                     displayGroup = "Animation"
                     displayName = "Sprite Sheet Columns"
-                    doc = """Number of columns the spritesheet across all textures is divided into.
-
+                    doc = """Number of columns the spritesheet across all textures is divided into.\r
+\r
 """
                     hidden = false
                 )
@@ -2102,8 +1837,8 @@ over "RootNode"
                     }
                     displayGroup = "Animation"
                     displayName = "Sprite Sheet FPS"
-                    doc = """Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality.
-
+                    doc = """Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality.\r
+\r
 """
                     hidden = false
                 )
@@ -2117,8 +1852,8 @@ over "RootNode"
                     }
                     displayGroup = "Animation"
                     displayName = "Sprite Sheet Rows"
-                    doc = """Number of row the spritesheet across all textures is divided into.
-
+                    doc = """Number of row the spritesheet across all textures is divided into.\r
+\r
 """
                     hidden = false
                 )
@@ -2132,8 +1867,8 @@ over "RootNode"
                     }
                     displayGroup = "Iridescence"
                     displayName = "Thickness"
-                    doc = """Thickness of the thin film in nanometers if not specified in albedo texture
-
+                    doc = """Thickness of the thin film in nanometers if not specified in albedo texture\r
+\r
 """
                     hidden = false
                 )
@@ -2143,8 +1878,8 @@ over "RootNode"
                     }
                     displayGroup = "Iridescence"
                     displayName = "Use Opacity as Thickness"
-                    doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
-
+                    doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.\r
+\r
 """
                     hidden = false
                 )

@@ -1,0 +1,221 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_D0419502E4AA0D49" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./000_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./000_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_0D535E1A83FC3A39" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./001_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./001_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_9A37168FB34F4CDF" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./002_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./002_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_2876C5F0E71AC699" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./003_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./003_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_56FD30F44C09201A" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./004_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./004_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_B492A2A5F772F6F8" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./005_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./005_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_B2B072E827504871" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./006_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./006_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_29CB303E3E6B9AFE" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./007_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./007_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_6FB0C8D429C69191" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./008_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./008_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_4738AFCB599B5DAF" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./009_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./009_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_D938C7EEDC216BE6" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./010_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./010_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_9D7A9B5DA4980AC3" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./011_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./011_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_7EB3302160CA3722" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./012_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./012_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_BDF5613232FE95E0" (
+            references = @../../../materials/AperturePBR_Translucent.usda@</Looks/mat_AperturePBR_Translucent>
+        )
+        {
+            over "Shader"
+            {
+                custom float inputs:ior_constant = 1.33
+                asset inputs:normalmap_texture = @./013_normal.dds@
+                custom color3f inputs:transmittance_color = (0.10688571, 0.72256416, 0.9227799)
+                custom float inputs:transmittance_measurement_distance = 50
+                custom asset inputs:transmittance_texture = @./013_albedo.dds@
+                custom bool inputs:use_diffuse_layer = 1
+            }
+        }
+    }
+}
+

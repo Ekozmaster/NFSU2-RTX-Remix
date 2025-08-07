@@ -3,63 +3,31 @@
     upAxis = "Y"
 )
 
-def Scope "Looks"
-{
-}
-
 over "RootNode"
 {
     over "Looks"
     {
-        over "mat_236A7097911559BA"
+        over "mat_236A7097911559BA" (
+            references = @../../materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./236A7097911559BA_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./236A7097911559BA_diffuse.dds@
                 asset inputs:normalmap_texture = @./236A7097911559BA_normal.dds@
-                asset inputs:reflectionroughness_texture = @./236A7097911559BA_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:reflectionroughness_texture = @./236A7097911559BA_rough.dds@
             }
         }
 
-        over "mat_8CEBB55F8F63EC8E"
+        over "mat_8CEBB55F8F63EC8E" (
+            references = @../../materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./8CEBB55F8F63EC8E.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./8CEBB55F8F63EC8E.dds@
                 asset inputs:normalmap_texture = @./8CEBB55F8F63EC8E_normal.dds@
-                asset inputs:reflectionroughness_texture = @./8CEBB55F8F63EC8E_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:reflectionroughness_texture = @./8CEBB55F8F63EC8E_rough.dds@
             }
         }
     }

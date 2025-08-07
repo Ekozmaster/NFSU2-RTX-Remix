@@ -3,88 +3,45 @@
     upAxis = "Y"
 )
 
-def Scope "Looks"
-{
-}
-
 over "RootNode"
 {
     over "Looks"
     {
-        over "mat_E9130FB985DED082"
+        over "mat_E9130FB985DED082" (
+            references = @./materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/wood/E9130FB985DED082.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./textures/wood/E9130FB985DED082.dds@
                 asset inputs:normalmap_texture = @./textures/wood/E9130FB985DED082_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/wood/E9130FB985DED082_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:reflectionroughness_texture = @./textures/wood/E9130FB985DED082_rough.dds@
             }
         }
-        over "mat_C64571D13F41B067"
+
+        over "mat_C64571D13F41B067" (
+            references = @./materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/wood/C64571D13F41B067_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./textures/wood/C64571D13F41B067_diffuse.dds@
                 asset inputs:normalmap_texture = @./textures/wood/C64571D13F41B067_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/wood/C64571D13F41B067_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:reflectionroughness_texture = @./textures/wood/C64571D13F41B067_rough.dds@
             }
         }
-        over "mat_25D40EE3A0B362D5"
+
+        over "mat_25D40EE3A0B362D5" (
+            references = @./materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/wood/25D40EE3A0B362D5_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./textures/wood/25D40EE3A0B362D5_diffuse.dds@
                 asset inputs:normalmap_texture = @./textures/wood/25D40EE3A0B362D5_normal.dds@
-                asset inputs:reflectionroughness_texture = @./textures/wood/25D40EE3A0B362D5_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:reflectionroughness_texture = @./textures/wood/25D40EE3A0B362D5_rough.dds@
             }
         }
     }
 }
+

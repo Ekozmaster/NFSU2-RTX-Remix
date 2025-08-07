@@ -7,114 +7,40 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_3D83CB0953E58EF2"
+        over "mat_3D83CB0953E58EF2" (
+            references = @./materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/tunnels/3D83CB0953E58EF2_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./Textures/tunnels/3D83CB0953E58EF2_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./Textures/tunnels/3D83CB0953E58EF2_roughness.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./Textures/tunnels/3D83CB0953E58EF2_albedo.dds@
+                asset inputs:normalmap_texture = @./Textures/tunnels/3D83CB0953E58EF2_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/tunnels/3D83CB0953E58EF2_roughness.dds@
             }
         }
 
-        over "mat_F7D8A7B171CD19C6"
+        over "mat_F7D8A7B171CD19C6" (
+            references = @./materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tunnels/F7D8A7B171CD19C6_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tunnels/F7D8A7B171CD19C6_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./textures/tunnels/F7D8A7B171CD19C6_roughness.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./textures/tunnels/F7D8A7B171CD19C6_diffuse.dds@
+                asset inputs:normalmap_texture = @./textures/tunnels/F7D8A7B171CD19C6_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tunnels/F7D8A7B171CD19C6_roughness.dds@
             }
         }
 
-        over "mat_76359FB35D45F610"
+        over "mat_76359FB35D45F610" (
+            references = @./materials/AperturePBR_Opacity.usda@</Looks/mat_AperturePBR_Opacity>
+        )
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/tunnels/76359FB35D45F610_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:metallic_texture = @./textures/tunnels/76359FB35D45F610_metallic.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./textures/tunnels/76359FB35D45F610_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./textures/tunnels/76359FB35D45F610_roughness.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./textures/tunnels/76359FB35D45F610_diffuse.dds@
+                asset inputs:metallic_texture = @./textures/tunnels/76359FB35D45F610_metallic.dds@
+                asset inputs:normalmap_texture = @./textures/tunnels/76359FB35D45F610_normal.dds@
+                asset inputs:reflectionroughness_texture = @./textures/tunnels/76359FB35D45F610_roughness.dds@
             }
         }
     }

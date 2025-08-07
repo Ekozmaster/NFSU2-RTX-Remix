@@ -3,8 +3,9 @@
     subLayers = [
         @./05_effect/020305_effect.usda@,
         @./06_bricks/020306_bricks.usda@,
+        @./07_metal/020307_metal.usda@,
         @./08_stone/020308_stone.usda@,
-        @./07_metal/020307_metal.usda@
+        @./09_water/020309_water.usda@
     ]
     upAxis = "Z"
 )
