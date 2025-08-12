@@ -396,7 +396,7 @@ over "RootNode"
             }
 
             def Xform "bulb_01" (
-                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
+                references = @../00_Shared/bulb_type_01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, -120.70000179857016)
@@ -406,7 +406,7 @@ over "RootNode"
             }
 
             def Xform "bulb_02" (
-                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
+                references = @../00_Shared/bulb_type_01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 210)
@@ -441,7 +441,7 @@ over "RootNode"
             }
 
             def Xform "bulb_01" (
-                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
+                references = @../00_Shared/bulb_type_01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, -120.70000179857016)
@@ -451,7 +451,7 @@ over "RootNode"
             }
 
             def Xform "bulb_02" (
-                references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/bulb_type_01.usd@
+                references = @../00_Shared/bulb_type_01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 210)

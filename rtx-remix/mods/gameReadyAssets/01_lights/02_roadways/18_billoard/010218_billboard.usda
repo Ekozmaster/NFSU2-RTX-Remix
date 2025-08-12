@@ -487,163 +487,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_2940C55F52FB7336"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Billboard_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_05" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_06" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_07" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_08" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_FF1B9B8C461764A1"
         {
             custom int preserveOriginalDrawCall = 1
@@ -2452,558 +2295,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_EE44B74EDA2BD8A1"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Billboard_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_05" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_06" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_07" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_08" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_84DEEA53CDF085C4"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Billboard_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_05" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_06" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_07" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_08" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_628F151F4ECF2837"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Billboard_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (35, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.3000000342726707, 8.50000012665987)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (35, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.3000000342726707, 8.50000012665987)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (35, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.3000000342726707, 8.50000012665987)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (35, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.3000000342726707, 8.50000012665987)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_CB51B8658EF82931"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Billboard_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 1200
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 45
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_05" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_06" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_07" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "Billboard_Light_08" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                float inputs:intensity = 3000
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 35
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_EF8AD0FA36B50104"
         {
             custom int preserveOriginalDrawCall = 1
@@ -3162,6 +2453,953 @@ over "RootNode"
         }
 
         over "mesh_9B2562E14660A3B8"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Billboard_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D8C7682480F01AE3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Billboard_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_19751DF6149567B3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Billboard_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_BC588A94DE505B33"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Billboard_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_9551C210962C8927"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Billboard_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_845DB30A7531935C"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Billboard_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (35, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.3000000342726707, 8.50000012665987)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_1EFFA84B9DDE40ED"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Billboard_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 1200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 45
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Billboard_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:intensity = 3000
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 35
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (50.00000074505806, 180, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.00000013411045, -2.600000038743019, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_334F141999E763DD"
         {
             custom int preserveOriginalDrawCall = 1
 

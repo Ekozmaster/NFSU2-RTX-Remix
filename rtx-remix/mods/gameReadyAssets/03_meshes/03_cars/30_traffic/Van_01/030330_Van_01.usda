@@ -679,7 +679,7 @@ over "RootNode"
 
                 def Xform "Tire" (
                     prepend apiSchemas = ["MaterialBindingAPI"]
-                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_wheelTire_medium01.usd@
+                    references = @../../00_Shared/trafficShared_wheelTire_medium01.usd@
                 )
                 {
                     rel material:binding = </Looks/trafficShared_wheelTireMat> (
@@ -693,7 +693,7 @@ over "RootNode"
 
                 def Xform "Wheel" (
                     prepend apiSchemas = ["MaterialBindingAPI"]
-                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/trafficTire_van01.usd@
+                    references = @../trafficTire_van01.usd@
                 )
                 {
                     rel material:binding = </Looks/Chrome_Shiny> (
@@ -717,7 +717,7 @@ over "RootNode"
 
             def Xform "Window_01" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
-                delete references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Window.usd@
+                delete references = @./Window.usd@
                 prepend references = @./Window.usd@
             )
             {
@@ -879,7 +879,7 @@ over "RootNode"
 
             def Xform "Body" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
-                delete references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Body.usd@
+                delete references = @./Body.usd@
                 prepend references = @./Body.usd@
             )
             {
@@ -1103,7 +1103,7 @@ over "RootNode"
                 }
 
                 over "License_Plate_Front_Anchor" (
-                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate01.usd@
+                    references = @../../00_Shared/trafficShared_licensePlate01.usd@
                 )
                 {
                     float3 xformOp:rotateXYZ = (90, 0, 90)
@@ -1139,7 +1139,7 @@ over "RootNode"
                 }
 
                 over "License_Plate_Rear_Anchor" (
-                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate02.usd@
+                    references = @../../00_Shared/trafficShared_licensePlate02.usd@
                 )
                 {
                     float3 xformOp:rotateXYZ = (-90, 180, 90)
@@ -1302,7 +1302,7 @@ over "RootNode"
 
             def Xform "Window" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
-                prepend references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Window.usd@
+                prepend references = @./Window.usd@
             )
             {
                 rel material:binding = None (
@@ -1463,7 +1463,7 @@ over "RootNode"
 
             def Xform "Body" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
-                delete references = @D:/Games/remix/NFSU2/03_meshes/03_cars/30_traffic/Van_01/Body.usd@
+                delete references = @./Body.usd@
                 prepend references = @./Body.usd@
             )
             {
@@ -1687,7 +1687,7 @@ over "RootNode"
                 }
 
                 over "License_Plate_Front_Anchor" (
-                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate01.usd@
+                    references = @../../00_Shared/trafficShared_licensePlate01.usd@
                 )
                 {
                     float3 xformOp:rotateXYZ = (90, 0, 90)
@@ -1723,7 +1723,7 @@ over "RootNode"
                 }
 
                 over "License_Plate_Rear_Anchor" (
-                    references = @D:/Games/remix/NFSU2/03_meshes/03_cars/00_Shared/trafficShared_licensePlate02.usd@
+                    references = @../../00_Shared/trafficShared_licensePlate02.usd@
                 )
                 {
                     float3 xformOp:rotateXYZ = (-90, 180, 90)

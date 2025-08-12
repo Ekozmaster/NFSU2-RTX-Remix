@@ -1361,9 +1361,9 @@ over "RootNode"
                 float colorTemperature = 5000
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 500
+                float intensity = 1500
                 bool normalize = 0
-                float radius = 0.1
+                float radius = 0.2
                 float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
